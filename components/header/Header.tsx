@@ -14,16 +14,14 @@ export interface NavItem {
   children?: Array<{
     label: string;
     href: string;
+    description?: string
     children?: Array<{
       label: string;
       href: string;
     }>;
   }>;
-  image?: {
-    src?: Image;
-    alt?: string;
-  };
 }
+
 
 export interface Props {
   alerts: string[];
@@ -61,8 +59,8 @@ function Header(
     <>
       <header style={{ height: headerHeight }}>
         <div class="bg-base-100 fixed w-full z-50">
-          <Alert alerts={alerts} />
           <Navbar items={navItems} searchbar={searchbar} />
+          <Alert alerts={alerts} />
         </div>
 
         <Modals
