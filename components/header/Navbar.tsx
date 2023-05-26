@@ -18,7 +18,7 @@ function Navbar({ items, logo, searchbar }: {
       <div // style={{ height: navbarHeight }}
        className="md:hidden flex flex-col justify-center items-center border-b border-base-200 w-full">
         <div className="flex justify-between items-center w-full">
-          <a href="/" aria-label="Store logo" className="block w-[160]">
+          <a href="/" aria-label="Store logo" className="block">
             <Image
               className="p-6"
               src={logo.mobile}
@@ -39,7 +39,7 @@ function Navbar({ items, logo, searchbar }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-around items-center border-b border-base-200 w-full pl-2 pr-6">
+      <div class="hidden md:flex flex-row justify-around items-center border-b border-base-200 w-full pl-2">
         <div class="flex-none w-44">
           {
             <a href="/" aria-label="Store logo" class="block w-[160]">

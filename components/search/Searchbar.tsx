@@ -88,14 +88,15 @@ function Searchbar({
     searchInputRef.current.focus();
   }, []);
 
-  const href = `https://www.eicom.org/search?query=`;
+  
+  const href = `https://www.eicom.org/search?query=null`;
   return (
     <div class="flex flex-col items-center p-4 md:py-6 bg-gray-300 md:px-20">
       <div class="flex items-center gap-4">
         <form
           id="searchbar"
           action={action}
-          class="flex h-10 w-80 border border-base-200"
+          class="flex h-10 w-full border border-base-200"
         >
           <input
             ref={searchInputRef}
@@ -119,20 +120,6 @@ function Searchbar({
             aria-controls="search-suggestion"
             autocomplete="off"
           />
-          <button
-            type="button"
-            aria-label="Clean search"
-            class="focus:outline-none"
-            tabIndex={-1}
-            onClick={(e) => {
-              e.stopPropagation();
-              if (searchInputRef.current === null) return;
-
-              searchInputRef.current.value = "";
-              setSearch("");
-            }}
-          >
-          </button>
         </form>
         <a href={href} target="_blank" rel="noopener noreferrer">
           <button class="h-10 bg-orange-500 text-white font-bold py-2 px-5 rounded font-gravity">

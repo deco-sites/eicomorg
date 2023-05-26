@@ -11,11 +11,11 @@ const Cart = lazy(() => import("$store/components/minicart/Cart.tsx"));
 const Searchbar = lazy(() => import("$store/components/search/Searchbar.tsx"));
 
 interface Props {
-  menu: MenuProps;
+  // menu: MenuProps;
   searchbar?: SearchbarProps;
 }
 
-function Modals({ menu, searchbar }: Props) {
+function Modals({ searchbar }: Props) {
   const { displayCart, displayMenu, displaySearchbar } = useUI();
 
   return (
