@@ -1,54 +1,58 @@
 import Searchbar from "$store/islands/HeaderSearchbar.tsx";
 import Buttons from "$store/islands/HeaderButton.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
-"../../static/Logo-header.png"
-import { navbarHeight } from "./constants.ts";
+"../../static/Logo-header.png";
 import type { INavItem } from "./NavItem.tsx";
+import type { Logo } from "./Header.tsx";
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 
-function Navbar({ items, searchbar }: {
+function Navbar({ items, logo, searchbar }: {
   items: INavItem[];
   searchbar: SearchbarProps;
+  logo: Logo;
 }) {
   return (
     <>
       {/* Mobile Version */}
-      <div
-        style={{ height: navbarHeight }}
-        class="md:hidden flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6 gap-2"
-      >
-        <Buttons variant="menu" />
-
-        <a
-          href="/"
-          class="flex-grow inline-flex items-center"
-          style={{ minHeight: navbarHeight }}
-          aria-label="Store logo"
-        >
-          <Icon id="Logo" width={126} height={16} />
-        </a>
-
-        <div class="flex gap-1">
-          <Buttons variant="search" />
-          <Buttons variant="cart" />
+      <div // style={{ height: navbarHeight }}
+       className="md:hidden flex flex-col justify-center items-center border-b border-base-200 w-full">
+        <div className="flex justify-between items-center w-full">
+          <a href="/" aria-label="Store logo" className="block w-[160]">
+            <Image
+              className="p-6"
+              src={logo.mobile}
+              alt={logo.alt}
+              width={160}
+              height={58}
+              loading="lazy"
+            />
+          </a>
+          <div className="flex gap-1">
+            <Buttons variant="search" />
+            <Searchbar searchbar={searchbar} />
+          </div>
+        </div>
+        <div class="flex-auto flex justify-end max-w-full overflow-x-auto flex-nowrap space-x-4">
+          {items.map((item) => <NavItem item={item} />)}
         </div>
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6">
+      <div class="hidden md:flex flex-row justify-around items-center border-b border-base-200 w-full pl-2 pr-6">
         <div class="flex-none w-44">
-          {/* <a href="/" aria-label="Store logo" class="block px-4 py-4 w-[160px]">
-          <Image
+          {
+            <a href="/" aria-label="Store logo" class="block w-[160]">
+              <Image
                 class="p-6"
-                src="../../static/Logo-header.png"
-                alt="logo"
+                src={logo.desktop}
+                alt={logo.alt}
                 width={160}
                 height={58}
                 loading="lazy"
               />
-          </a> */}
+            </a>
+          }
         </div>
         <div class="flex-auto flex justify-end">
           {items.map((item) => <NavItem item={item} />)}

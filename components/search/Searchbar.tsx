@@ -85,10 +85,10 @@ function Searchbar({
     if (!searchInputRef.current) {
       return;
     }
-
     searchInputRef.current.focus();
   }, []);
 
+  const href = `https://www.eicom.org/search?query=`;
   return (
     <div class="flex flex-col items-center p-4 md:py-6 bg-gray-300 md:px-20">
       <div class="flex items-center gap-4">
@@ -112,7 +112,6 @@ function Searchbar({
                   params: { search_term: value },
                 });
               }
-
               setSearch(value);
             }}
             placeholder={placeholder}
@@ -135,11 +134,17 @@ function Searchbar({
           >
           </button>
         </form>
-        <button class="h-10 bg-orange-500 text-white font-bold py-2 px-5 rounded font-gravity">SEARCH</button>
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <button class="h-10 bg-orange-500 text-white font-bold py-2 px-5 rounded font-gravity">
+            SEARCH
+          </button>
+        </a>
         {variant === "desktop" && <CloseButton />}
       </div>
-      {/* <div class="flex flex-col gap-6 divide-y divide-base-200 mt-6 empty:mt-0 md:flex-row md:divide-y-0">
-      </div> */}
+      {
+        /* <div class="flex flex-col gap-6 divide-y divide-base-200 mt-6 empty:mt-0 md:flex-row md:divide-y-0">
+      </div> */
+      }
     </div>
   );
 }
