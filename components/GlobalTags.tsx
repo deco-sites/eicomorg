@@ -30,6 +30,21 @@ function GlobalTags() {
 
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+          /* AvenirNextLTPro-Bold */
+          @font-face {
+            font-family: 'AvenirNextLTPro';
+            font-style: bold;
+            font-weight: 600;
+            font-display: swap;
+            src: url(${asset("/fonts/AvenirNextLTPro-Bold.woff2")})
+          })   
+      `,
+        }}
+      />
     </Head>
   );
 }
