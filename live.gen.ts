@@ -29,9 +29,10 @@ import * as $$$$$$$$8 from "./sections/Carousel.tsx";
 import * as $$$$$$$$9 from "./sections/SearchResult.tsx";
 import * as $$$$$$$$10 from "./sections/Header.tsx";
 import * as $$$$$$$$11 from "./sections/Highlights.tsx";
-import * as $$$$$$$$12 from "./sections/BannerPLP.tsx";
-import * as $$$$$$$$13 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$14 from "./sections/BannerGrid.tsx";
+import * as $$$$$$$$12 from "./sections/Alert.tsx";
+import * as $$$$$$$$13 from "./sections/BannerPLP.tsx";
+import * as $$$$$$$$14 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$15 from "./sections/BannerGrid.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -175,8 +176,9 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
-    "deco-sites/eicomorg/sections/BannerGrid.tsx": $$$$$$$$14,
-    "deco-sites/eicomorg/sections/BannerPLP.tsx": $$$$$$$$12,
+    "deco-sites/eicomorg/sections/Alert.tsx": $$$$$$$$12,
+    "deco-sites/eicomorg/sections/BannerGrid.tsx": $$$$$$$$15,
+    "deco-sites/eicomorg/sections/BannerPLP.tsx": $$$$$$$$13,
     "deco-sites/eicomorg/sections/Carousel.tsx": $$$$$$$$8,
     "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$5,
     "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$1,
@@ -188,7 +190,7 @@ const manifest = {
     "deco-sites/eicomorg/sections/ProductDetails.tsx": $$$$$$$$6,
     "deco-sites/eicomorg/sections/ProductShelf.tsx": $$$$$$$$0,
     "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$9,
-    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$13,
+    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$14,
     "deco-sites/eicomorg/sections/WishlistGallery.tsx": $$$$$$$$4,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,

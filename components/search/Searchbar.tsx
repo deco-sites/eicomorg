@@ -88,7 +88,6 @@ function Searchbar({
     searchInputRef.current.focus();
   }, []);
 
-  
   const href = `https://www.eicom.org/search?query=null`;
   return (
     <div class="flex flex-col items-center p-4 md:py-6 bg-gray-300 md:px-20">

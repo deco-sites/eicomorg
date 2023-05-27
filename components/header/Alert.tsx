@@ -1,32 +1,52 @@
 import Slider from "$store/components/ui/Slider.tsx";
-import SliderJS from "$store/islands/SliderJS.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
+import Button from "$store/components/ui/Button.tsx";
+import { useUI } from "$store/sdk/useUI.ts";
 import { useId } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 
-export interface Props {
-  alerts: string[];
-  /**
-   * @title Autoplay interval
-   * @description time (in seconds) to start the carousel autoplay
-   */
-  interval?: number;
+export interface Alert {
+  text: string
+  /** @description use the hexadecimal format such as #FFFFFF */ 
+  backgroundColor: string
+  /** @description value in pixels such as 13px */ 
+  fontSize: string
+  url?: string
 }
 
-function Alert({ alerts = [], interval = 5 }: Props) {
-  const id = useId();
+export interface Props {
+  alert: Alert
+}
+
+function Alert({ alert }: Props) {
+  const { text, backgroundColor, fontSize, url } = alert;
+  // const { displayAlert } = useUI();
+  // const id = useId();
+  const [open, setOpen] = useState(true);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
-    <div id={id}>
-      <Slider class="carousel carousel-center bg-[#F27C36] gap-6 scrollbar-none ">
-        {alerts.map((alert, index) => (
-          <Slider.Item index={index} class="carousel-item">
-            <span class="text-sm text-secondary-content  z-20 flex justify-center items-center w-screen h-[38px]">
-              {alert}
-            </span>
-          </Slider.Item>
-        ))}
-      </Slider>
-
-      <SliderJS rootId={id} interval={interval && interval * 1e3} />
+    <div id="alertBar">
+      {open && (
+        <Slider
+          className="carousel carousel-center gap-6 scrollbar-none"
+          style={{ backgroundColor: backgroundColor }}
+        >
+          <a
+            href={url}
+            className="text-secondary-content z-20 flex text-center justify-center items-center w-screen h-[38px]"
+            style={{ fontSize: fontSize }}
+          >
+            {text}
+          </a>
+          <Button class="btn-ghost btn-circle" onClick={handleClose}>
+            <Icon id="XMark" width={20} height={20} strokeWidth={2} />
+          </Button>
+        </Slider>
+      )}
     </div>
   );
 }

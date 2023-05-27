@@ -73,7 +73,6 @@ function Header(
         <div class="bg-base-100 fixed w-full ml-1 z-50">
           <Navbar items={navItems} logo={logo} searchbar={searchbar} />
         </div>
-        {/* <Alert alerts={alerts} /> */}
       </header>
     </>
   );
