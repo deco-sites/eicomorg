@@ -30,9 +30,10 @@ import * as $$$$$$$$9 from "./sections/ProductShelf.tsx";
 import * as $$$$$$$$10 from "./sections/LinkTree.tsx";
 import * as $$$$$$$$11 from "./sections/Carousel.tsx";
 import * as $$$$$$$$12 from "./sections/Features.tsx";
-import * as $$$$$$$$13 from "./sections/CookieConsent.tsx";
-import * as $$$$$$$$14 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$15 from "./sections/SearchResult.tsx";
+import * as $$$$$$$$13 from "./sections/HomeTextSection.tsx";
+import * as $$$$$$$$14 from "./sections/CookieConsent.tsx";
+import * as $$$$$$$$15 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$16 from "./sections/SearchResult.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -176,17 +177,18 @@ const manifest = {
     "deco-sites/eicomorg/sections/BannerPLP.tsx": $$$$$$$$5,
     "deco-sites/eicomorg/sections/BannerSection.tsx": $$$$$$$$3,
     "deco-sites/eicomorg/sections/Carousel.tsx": $$$$$$$$11,
-    "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$13,
+    "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$14,
     "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$6,
     "deco-sites/eicomorg/sections/Features.tsx": $$$$$$$$12,
     "deco-sites/eicomorg/sections/Footer.tsx": $$$$$$$$1,
     "deco-sites/eicomorg/sections/Header.tsx": $$$$$$$$8,
     "deco-sites/eicomorg/sections/Highlights.tsx": $$$$$$$$7,
+    "deco-sites/eicomorg/sections/HomeTextSection.tsx": $$$$$$$$13,
     "deco-sites/eicomorg/sections/LinkTree.tsx": $$$$$$$$10,
     "deco-sites/eicomorg/sections/ProductDetails.tsx": $$$$$$$$0,
     "deco-sites/eicomorg/sections/ProductShelf.tsx": $$$$$$$$9,
-    "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$15,
-    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$14,
+    "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$16,
+    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$15,
     "deco-sites/eicomorg/sections/WishlistGallery.tsx": $$$$$$$$4,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
