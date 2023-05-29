@@ -24,14 +24,6 @@ export interface Props {
 }
 
 function BannerSection({ title, backgroundImage, actionLinksContainer }: Props) {
-  const imageStyle: JSX.CSSProperties = {
-    backgroundImage: `url(${backgroundImage.desktop})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: '80%',
-    zIndex: 0
-  }
-
   const titleContainer: JSX.CSSProperties = {
     backgroundColor: '#fff',
     clipPath: 'polygon(0% 0%, 100% 0%, 100% 70%, 85% 100%, 0% 100%)',

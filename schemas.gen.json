@@ -7594,7 +7594,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@258b296ce27a8196431257d88db20df7&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@9acf53fb852f538c689c2e8537ee6758&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -7610,7 +7610,7 @@
           "required": []
         }
       ],
-      "title": "258b296ce27a8196431257d88db20df7&Colors"
+      "title": "9acf53fb852f538c689c2e8537ee6758&Colors"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -7713,7 +7713,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@258b296ce27a8196431257d88db20df7&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@9acf53fb852f538c689c2e8537ee6758&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
