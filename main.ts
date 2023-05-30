@@ -3,6 +3,7 @@
 /// <reference lib="deno.ns" />
 /// <reference lib="esnext" />
 
+import "preact/debug";
 import { start } from "$fresh/server.ts";
 import { $live } from "$live/mod.ts";
 import partytownPlugin from "partytown/mod.ts";
