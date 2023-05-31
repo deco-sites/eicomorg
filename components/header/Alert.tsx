@@ -10,6 +10,7 @@ export interface Alert {
   backgroundColor: string;
   /** @description value in pixels such as 13px */
   fontSize: string;
+  fontColor: string;
   url?: string;
 }
 
@@ -18,7 +19,7 @@ export interface Props {
 }
 
 function Alert({ alert }: Props) {
-  const { text, backgroundColor, fontSize, url } = alert;
+  const { text, backgroundColor, fontSize, fontColor, url } = alert;
   const id = useId();
   const [showAlert, setShowAlert] = useState(true)
 
@@ -35,8 +36,8 @@ function Alert({ alert }: Props) {
         >
           <a
             href={url}
-            className="text-secondary-content z-20 flex text-center justify-center items-center w-screen h-[38px]"
-            style={{ fontSize: fontSize }}
+            className="text-secondary-content z-20 flex text-center font-semibold justify-center items-center w-screen h-[38px]"
+            style={{ fontSize: fontSize, color: fontColor }}
           >
             {text}
           </a>
