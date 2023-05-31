@@ -15,8 +15,7 @@ function Navbar({ items, logo, searchbar }: {
   return (
     <>
       {/* Mobile Version */}
-      <div
-       className="md:hidden flex flex-col justify-center items-center border-b border-base-200 w-full">
+      <div className="md:hidden flex flex-col justify-center items-center border-b border-base-200 w-full">
         <div className="flex justify-between items-center w-full">
           <a href="/" aria-label="Store logo" className="block">
             <Image

@@ -1,7 +1,7 @@
 import Slider from "$store/components/ui/Slider.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
-import { useState } from 'preact/hooks'
+import { useState } from "preact/hooks";
 import { useId, useRef } from "preact/hooks";
 
 export interface Alert {
@@ -21,7 +21,7 @@ export interface Props {
 function Alert({ alert }: Props) {
   const { text, backgroundColor, fontSize, fontColor, url } = alert;
   const id = useId();
-  const [showAlert, setShowAlert] = useState(true)
+  const [showAlert, setShowAlert] = useState(true);
 
   const handleClick = () => {
     setShowAlert(false);

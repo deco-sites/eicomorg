@@ -59,7 +59,7 @@ export default {
         },
       },
       screens: {
-        'xs': '375px'
+        "xs": "375px",
       },
     },
   },
