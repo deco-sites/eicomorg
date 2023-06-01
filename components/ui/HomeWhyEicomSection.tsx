@@ -113,7 +113,6 @@ function HomeWhyEicomSection(
             </p>
           </div>
         </div>
-
       </div>
     </div>
   );
