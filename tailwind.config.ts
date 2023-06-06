@@ -58,8 +58,11 @@ export default {
           },
         },
       },
+      fontFamily: {
+        'AvenirNextLTPro': ['AvenirNextLTPro']
+      },
       screens: {
-        "xs": "375px",
+        'xs': '375px'
       },
     },
   },
