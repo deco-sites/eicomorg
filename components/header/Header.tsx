@@ -58,7 +58,6 @@ export interface Props {
 
 function Header(
   {
-    alerts,
     searchbar: _searchbar,
     products,
     logo,
