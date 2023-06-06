@@ -30,7 +30,7 @@ function Courses(
 ) {
   const arraySize = courses.length;
   return (
-    <>
+    <div class="container mx-auto block">
       <div class="flex xs:flex-col md:flex-row items-stretch mt-10 pt-16 mx-[-10px] justify-center">
         {courses.map((courseCard, index) => (
           <CourseCard
@@ -40,7 +40,7 @@ function Courses(
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

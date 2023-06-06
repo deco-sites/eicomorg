@@ -16,7 +16,8 @@ import * as $$$$$6 from "./islands/Newsletter.tsx";
 import * as $$$$$7 from "./islands/HeaderSearchbar.tsx";
 import * as $$$$$8 from "./islands/SliderJS.tsx";
 import * as $$$$$9 from "./islands/OutOfStock.tsx";
-import * as $$$$$10 from "./islands/HeaderModals.tsx";
+import * as $$$$$10 from "./islands/Alerts.tsx";
+import * as $$$$$11 from "./islands/HeaderModals.tsx";
 import * as $$$$$$$$0 from "./sections/ProductDetails.tsx";
 import * as $$$$$$$$1 from "./sections/Footer.tsx";
 import * as $$$$$$$$2 from "./sections/HomeWhyEicomBlocksSection.tsx";
@@ -32,10 +33,11 @@ import * as $$$$$$$$11 from "./sections/ProductShelf.tsx";
 import * as $$$$$$$$12 from "./sections/LinkTree.tsx";
 import * as $$$$$$$$13 from "./sections/Carousel.tsx";
 import * as $$$$$$$$14 from "./sections/Features.tsx";
-import * as $$$$$$$$15 from "./sections/HomeTextSection.tsx";
-import * as $$$$$$$$16 from "./sections/CookieConsent.tsx";
-import * as $$$$$$$$17 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$18 from "./sections/SearchResult.tsx";
+import * as $$$$$$$$15 from "./sections/Courses.tsx";
+import * as $$$$$$$$16 from "./sections/HomeTextSection.tsx";
+import * as $$$$$$$$17 from "./sections/CookieConsent.tsx";
+import * as $$$$$$$$18 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$19 from "./sections/SearchResult.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -164,17 +166,18 @@ const manifest = {
     "./routes/styles.css.ts": $$$$1,
   },
   "islands": {
-    "./islands/AddToCartButton.tsx": $$$$$10,
-    "./islands/HeaderButton.tsx": $$$$$8,
-    "./islands/HeaderModals.tsx": $$$$$2,
-    "./islands/HeaderSearchbar.tsx": $$$$$1,
-    "./islands/Newsletter.tsx": $$$$$3,
-    "./islands/OutOfStock.tsx": $$$$$0,
-    "./islands/ProductImageZoom.tsx": $$$$$5,
-    "./islands/SearchControls.tsx": $$$$$4,
-    "./islands/ShippingSimulation.tsx": $$$$$9,
-    "./islands/SliderJS.tsx": $$$$$6,
-    "./islands/WishlistButton.tsx": $$$$$7,
+    "./islands/AddToCartButton.tsx": $$$$$5,
+    "./islands/Alerts.tsx": $$$$$10,
+    "./islands/HeaderButton.tsx": $$$$$3,
+    "./islands/HeaderModals.tsx": $$$$$11,
+    "./islands/HeaderSearchbar.tsx": $$$$$7,
+    "./islands/Newsletter.tsx": $$$$$6,
+    "./islands/OutOfStock.tsx": $$$$$9,
+    "./islands/ProductImageZoom.tsx": $$$$$0,
+    "./islands/SearchControls.tsx": $$$$$2,
+    "./islands/ShippingSimulation.tsx": $$$$$4,
+    "./islands/SliderJS.tsx": $$$$$8,
+    "./islands/WishlistButton.tsx": $$$$$1,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,
@@ -184,20 +187,21 @@ const manifest = {
     "deco-sites/eicomorg/sections/BannerPLP.tsx": $$$$$$$$7,
     "deco-sites/eicomorg/sections/BannerSection.tsx": $$$$$$$$4,
     "deco-sites/eicomorg/sections/Carousel.tsx": $$$$$$$$13,
-    "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$16,
+    "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$17,
+    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$15,
     "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$8,
     "deco-sites/eicomorg/sections/Features.tsx": $$$$$$$$14,
     "deco-sites/eicomorg/sections/Footer.tsx": $$$$$$$$1,
     "deco-sites/eicomorg/sections/Header.tsx": $$$$$$$$10,
     "deco-sites/eicomorg/sections/Highlights.tsx": $$$$$$$$9,
-    "deco-sites/eicomorg/sections/HomeTextSection.tsx": $$$$$$$$15,
+    "deco-sites/eicomorg/sections/HomeTextSection.tsx": $$$$$$$$16,
     "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$2,
     "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx": $$$$$$$$5,
     "deco-sites/eicomorg/sections/LinkTree.tsx": $$$$$$$$12,
     "deco-sites/eicomorg/sections/ProductDetails.tsx": $$$$$$$$0,
     "deco-sites/eicomorg/sections/ProductShelf.tsx": $$$$$$$$11,
-    "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$18,
-    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$17,
+    "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$19,
+    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$18,
     "deco-sites/eicomorg/sections/WishlistGallery.tsx": $$$$$$$$6,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
