@@ -16,7 +16,7 @@ interface Props {
 function Searchbar({ searchbar }: Props) {
   const { displaySearchbar } = useUI();
   const open = displaySearchbar.value &&
-    window?.matchMedia?.("(min-width: 768px)")?.matches;
+    window?.matchMedia?.("(min-width: 200px)")?.matches;
 
   return (
     <div
