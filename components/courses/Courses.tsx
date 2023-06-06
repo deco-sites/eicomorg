@@ -28,14 +28,20 @@ function Courses(
     courses,
   }: Props,
 ) {
-  const arraySize = courses.length
+  const arraySize = courses.length;
   return (
     <>
       <div class="flex xs:flex-col md:flex-row items-stretch mt-10 pt-16 mx-[-10px] justify-center">
-        {courses.map((courseCard, index) => <CourseCard courseCard={courseCard} arraySize={arraySize} index={index}/>)}
+        {courses.map((courseCard, index) => (
+          <CourseCard
+            courseCard={courseCard}
+            arraySize={arraySize}
+            index={index}
+          />
+        ))}
       </div>
     </>
   );
 }
 
-export default Courses
+export default Courses;

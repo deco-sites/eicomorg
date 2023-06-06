@@ -16,12 +16,18 @@ export interface CourseCard {
   footerIcon?: AvailableIcons;
 }
 
-function CourseCard({ courseCard, arraySize, index }: { courseCard: CourseCard, arraySize: number, index: number }) {
-    if (index > 3) {
-        return null; // Maximum of 5 courses
-      }
-  
-    const {
+function CourseCard(
+  { courseCard, arraySize, index }: {
+    courseCard: CourseCard;
+    arraySize: number;
+    index: number;
+  },
+) {
+  if (index > 3) {
+    return null; // Maximum of 5 courses
+  }
+
+  const {
     image,
     label,
     labelColor,
@@ -33,9 +39,12 @@ function CourseCard({ courseCard, arraySize, index }: { courseCard: CourseCard, 
   } = courseCard;
 
   return (
-    <div className={`opacity-100 transform translate-x-0 translate-y-0 translate-z-0 
+    <div
+      className={`opacity-100 transform translate-x-0 translate-y-0 translate-z-0 
     scale-100 rotate-x-0 rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d 
-    md:px-3 xs:p-5 flex flex-row justify-between relative ${arraySize <= 3 ? 'md:w-1/3' : 'w-1/4'}
+    md:px-3 xs:p-5 flex flex-row justify-between relative ${
+        arraySize <= 3 ? "md:w-1/3" : "w-1/4"
+      }
     xs:w-full`}
     >
       <a
@@ -50,8 +59,8 @@ function CourseCard({ courseCard, arraySize, index }: { courseCard: CourseCard, 
               class="text-gray-700 rounded-t-md transition-border duration-200"
               src={image.src}
               alt={image.alt}
-              width={ arraySize <= 3 ? 460 : 360}
-              height={ arraySize <= 3 ? 260 : 203}
+              width={arraySize <= 3 ? 460 : 360}
+              height={arraySize <= 3 ? 260 : 203}
             />
           </div>
           <div class="bg-[#f26f21] block h-1 w-0"></div>
@@ -78,8 +87,12 @@ function CourseCard({ courseCard, arraySize, index }: { courseCard: CourseCard, 
           </div>
           {label && labelColor && (
             <div
-              className={`z-auto rounded-2xl px-4 pb-[2px] absolute left-[6%] ${arraySize <= 3 ? ' xs:top-[57%] md:top-[36%]  lg:top-[57%]' : 'xs:top-[43%] lg:top-[43%] md:top-[25%]'}`}
-              style={{ backgroundColor: labelColor}}
+              className={`z-auto rounded-2xl px-4 pb-[2px] absolute left-[6%] ${
+                arraySize <= 3
+                  ? " xs:top-[57%] md:top-[36%]  lg:top-[57%]"
+                  : "xs:top-[43%] lg:top-[43%] md:top-[25%]"
+              }`}
+              style={{ backgroundColor: labelColor }}
             >
               <div class="text-white tracking-wider uppercase self-center font-gravity text-xs leading-4 inline-block">
                 {label}
@@ -93,5 +106,3 @@ function CourseCard({ courseCard, arraySize, index }: { courseCard: CourseCard, 
 }
 
 export default CourseCard;
-
-
