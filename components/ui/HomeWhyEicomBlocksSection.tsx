@@ -30,15 +30,15 @@ function SectionBlock({ block }: SectionBlockProps) {
   return (
     <div class="xs:px-6 xs:my-4">
       <img
-        class="h-[48px] w-[48px] mb-[25px] text-center m-auto block"
+        class="h-[48px] w-[48px] mb-[25px] block"
         src={block.icon}
         alt=""
       />
-      <h2 class="uppercase text-center font-AvenirNextLTPro text-[18px] font-semibold">
+      <h2 class="uppercase text-left font-AvenirNextLTPro text-[18px] font-semibold">
         {block.title}
       </h2>
       <span
-        class="font-normal text-[#262628]"
+        class="my-3 block font-medium text-[#353536]"
         dangerouslySetInnerHTML={{ __html: block.content }}
       >
       </span>
@@ -52,9 +52,9 @@ function HomeWhyEicomBlocksSection(
   return (
     <div
       style={{ backgroundColor: "#f3f3f3" }}
-      class="container-fluid py-[30px] pb-[20px]"
+      class="container-fluid pb-[20px]"
     >
-      <div class="grid lg:grid-cols-[repeat(auto-fit,_15%)] md:grid-cols-[repeat(auto-fit,_30%)] m-aut justify-center gap-3">
+      <div class="grid lg:grid-cols-[repeat(auto-fit,_20%)] md:grid-cols-[repeat(auto-fit,_30%)] m-aut justify-center gap-3">
         {blocks.map((block) => <SectionBlock block={block} />)}
       </div>
 

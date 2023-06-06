@@ -43,7 +43,7 @@ function CourseCard(
       className={`opacity-100 transform translate-x-0 translate-y-0 translate-z-0 
     scale-100 rotate-x-0 rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d 
     md:px-3 xs:p-5 flex flex-row justify-between relative ${
-        arraySize <= 3 ? "md:w-1/3" : "w-1/4"
+        arraySize <= 3 ? "md:w-96" : "lg:w-96"
       }
     xs:w-full`}
     >
@@ -89,7 +89,7 @@ function CourseCard(
             <div
               className={`z-auto rounded-2xl px-4 pb-[2px] absolute left-[6%] ${
                 arraySize <= 3
-                  ? " xs:top-[57%] md:top-[36%]  lg:top-[57%]"
+                  ? " xs:top-[40%] md:top-[30%]  lg:top-[45%]"
                   : "xs:top-[43%] lg:top-[43%] md:top-[25%]"
               }`}
               style={{ backgroundColor: labelColor }}
