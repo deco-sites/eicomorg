@@ -94,6 +94,7 @@
               "deco-sites/eicomorg/sections/Header.tsx",
               "deco-sites/eicomorg/sections/Highlights.tsx",
               "deco-sites/eicomorg/sections/HomeTextSection.tsx",
+              "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx",
               "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx",
               "deco-sites/eicomorg/sections/LinkTree.tsx",
               "deco-sites/eicomorg/sections/ProductDetails.tsx",
@@ -9027,6 +9028,82 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/HomeTextSection.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
+      "type": "string",
+      "format": "html",
+      "title": "HTML"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVXaHlFaWNvbUJsb2Nrc1NlY3Rpb24udHN4@Block": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        },
+        "icon": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Icon"
+        }
+      },
+      "required": [
+        "title",
+        "content",
+        "icon"
+      ],
+      "title": "Block"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVXaHlFaWNvbUJsb2Nrc1NlY3Rpb24udHN4@Block[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVXaHlFaWNvbUJsb2Nrc1NlY3Rpb24udHN4@Block"
+      },
+      "title": "Block[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVXaHlFaWNvbUJsb2Nrc1NlY3Rpb24udHN4@SectionButton": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "title": "Background Color"
+        },
+        "textColor": {
+          "type": "string",
+          "title": "Text Color"
+        }
+      },
+      "required": [
+        "text",
+        "backgroundColor",
+        "textColor"
+      ],
+      "title": "SectionButton"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVXaHlFaWNvbUJsb2Nrc1NlY3Rpb24udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "blocks": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVXaHlFaWNvbUJsb2Nrc1NlY3Rpb24udHN4@Block[]",
+          "title": "Blocks"
+        },
+        "sectionButton": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVXaHlFaWNvbUJsb2Nrc1NlY3Rpb24udHN4@SectionButton",
+          "title": "Section Button"
+        }
+      },
+      "required": [
+        "blocks",
+        "sectionButton"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/HomeWhyEicomBlocksSection.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVXaHlFaWNvbVNlY3Rpb24udHN4@ContentBox": {
       "type": "object",
       "properties": {
@@ -12040,6 +12117,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lV2h5RWljb21CbG9ja3NTZWN0aW9uLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVXaHlFaWNvbUJsb2Nrc1NlY3Rpb24udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lV2h5RWljb21TZWN0aW9uLnRzeA==": {
       "title": "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx",
       "type": "object",
@@ -13377,6 +13475,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lVGV4dFNlY3Rpb24udHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lV2h5RWljb21CbG9ja3NTZWN0aW9uLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lV2h5RWljb21TZWN0aW9uLnRzeA=="
