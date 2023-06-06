@@ -90,6 +90,7 @@
               "deco-sites/eicomorg/sections/Footer.tsx",
               "deco-sites/eicomorg/sections/Header.tsx",
               "deco-sites/eicomorg/sections/Highlights.tsx",
+              "deco-sites/eicomorg/sections/HomeTextSection.tsx",
               "deco-sites/eicomorg/sections/LinkTree.tsx",
               "deco-sites/eicomorg/sections/ProductDetails.tsx",
               "deco-sites/eicomorg/sections/ProductShelf.tsx",
@@ -8605,6 +8606,24 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/Highlights.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVUZXh0U2VjdGlvbi50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "content": {
+          "type": "string",
+          "title": "Content"
+        }
+      },
+      "required": [
+        "title",
+        "content"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/HomeTextSection.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0xpbmtUcmVlLnRzeA==@Link": {
       "type": "object",
       "properties": {
@@ -11474,6 +11493,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lVGV4dFNlY3Rpb24udHN4": {
+      "title": "deco-sites/eicomorg/sections/HomeTextSection.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hvbWVUZXh0U2VjdGlvbi50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/HomeTextSection.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/HomeTextSection.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9MaW5rVHJlZS50c3g=": {
       "title": "deco-sites/eicomorg/sections/LinkTree.tsx",
       "type": "object",
@@ -12799,6 +12839,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9IaWdobGlnaHRzLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lVGV4dFNlY3Rpb24udHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9MaW5rVHJlZS50c3g="
