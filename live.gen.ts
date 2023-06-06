@@ -161,6 +161,7 @@ const manifest = {
     "./routes/styles.css.ts": $$$$1,
   },
   "islands": {
+
     "./islands/AddToCartButton.tsx": $$$$$10,
     "./islands/HeaderButton.tsx": $$$$$8,
     "./islands/HeaderModals.tsx": $$$$$2,

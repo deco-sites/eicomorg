@@ -1,33 +1,52 @@
 import Slider from "$store/components/ui/Slider.tsx";
-import SliderJS from "$store/islands/SliderJS.tsx";
-import { useId } from "preact/hooks";
+import Icon from "$store/components/ui/Icon.tsx";
+import Button from "$store/components/ui/Button.tsx";
+import { useState } from "preact/hooks";
+import { useId, useRef } from "preact/hooks";
 
-export interface Props {
-  alerts: string[];
-  /**
-   * @title Autoplay interval
-   * @description time (in seconds) to start the carousel autoplay
-   */
-  interval?: number;
+export interface Alert {
+  text: string;
+  /** @description use the hexadecimal format such as #FFFFFF */
+  backgroundColor: string;
+  /** @description value in pixels such as 13px */
+  fontSize: string;
+  fontColor: string;
+  url?: string;
 }
 
-function Alert({ alerts = [], interval = 5 }: Props) {
+export interface Props {
+  alert: Alert;
+}
+
+function Alert({ alert }: Props) {
+  const { text, backgroundColor, fontSize, fontColor, url } = alert;
   const id = useId();
+  const [showAlert, setShowAlert] = useState(true);
+
+  const handleClick = () => {
+    setShowAlert(false);
+  };
 
   return (
-    <div id={id}>
-      <Slider class="carousel carousel-center bg-secondary gap-6 scrollbar-none">
-        {alerts.map((alert, index) => (
-          <Slider.Item index={index} class="carousel-item">
-            <span class="text-sm text-secondary-content flex justify-center items-center w-screen h-[38px]">
-              {alert}
-            </span>
-          </Slider.Item>
-        ))}
-      </Slider>
-
-      <SliderJS rootId={id} interval={interval && interval * 1e3} />
-    </div>
+    <>
+      <div id={id} className={showAlert ? "" : "hidden"}>
+        <Slider
+          className="carousel carousel-center gap-6 scrollbar-none"
+          style={{ backgroundColor: backgroundColor }}
+        >
+          <a
+            href={url}
+            className="text-secondary-content z-20 flex text-center font-semibold justify-center items-center w-screen h-[38px]"
+            style={{ fontSize: fontSize, color: fontColor }}
+          >
+            {text}
+          </a>
+          <Button class="btn-ghost btn-circle" onClick={handleClick}>
+            <Icon id="XMark" width={20} height={20} strokeWidth={2} />
+          </Button>
+        </Slider>
+      </div>
+    </>
   );
 }
 
