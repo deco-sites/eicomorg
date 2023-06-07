@@ -13,6 +13,9 @@ export interface AlumniCardProps {
   name: string;
   position: string;
   nationality: string;
+    /**
+   * @description To make a part of the text bold add the <b> before and after the desired part. Only one part per text
+   */
   text: string;
   avatar: {
     src: Image;
@@ -45,23 +48,29 @@ function Alumni(
     <>
       <div class="z-auto max-w-[1120px] flex-1 pr-0 relative py-24 mx-auto">
         <AlumniTopPart alumniTopPart={alumniTopPart} />
-        <div class="grid grid-cols-3 mt-10 grid-rows-4 gap-y-4 gap-x-4">
-          <span class="col-start-1 col-end-2 row-start-1 row-end-4">
+        <div class="grid lg:grid-cols-3 mt-10 md:px-2 lg:px-0 lg:grid-rows-4 gap-y-4 gap-x-4">
+          <span class="lg:col-start-1 lg:col-span-1 lg:row-start-1 lg:row-end-4
+          md:grid-cols-4 md:grid-rows-2 md:col-span-4 md:row-span-2">
             <AlumniCard alumniInfo={alumni1} />
           </span>
-          <span class="col-start-2 col-span-1 row-start-1 row-span-4">
+          <span class="lg:col-start-2 lg:col-span-1 lg:row-start-1 lg:row-span-4
+          md:col-span-2 md:row-span-2">
             <AlumniCard alumniInfo={alumni2} />
           </span>
-          <span class="col-start-3 col-span-1 row-start-1 row-span-3">
+          <span class="lg:col-start-3 lg:col-span-1 lg:row-start-1 lg:row-span-3
+          md:col-span-2 md:row-span-2">
             <AlumniCard alumniInfo={alumni3} />
           </span>
-          <span class="col-start-1 col-span-1 row-start-4 row-span-3">
+          <span class="lg:col-start-1 lg:col-span-1 lg:row-start-4 lg:row-span-3
+          md:grid-cols-4 md:grid-rows-2 md:col-span-4 md:row-span-2">
             <AlumniCard alumniInfo={alumni4} />
           </span>
-          <span class="ol-start-2 col-span-1 row-start-5 row-span-2">
+          <span class="lg:col-start-2 lg:col-span-1 lg:row-start-5 lg:row-span-2
+          md:col-span-2 md:row-span-3">
             <AlumniCard alumniInfo={alumni5} />
           </span>
-          <span class="col-span-1 row-span-3">
+          <span class="lg:col-span-1 lg:row-span-3 
+          md:col-span-2 md:row-span-3">
             <AlumniCard alumniInfo={alumni6} />
           </span>
         </div>

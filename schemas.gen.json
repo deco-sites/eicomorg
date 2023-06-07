@@ -7260,6 +7260,7 @@
         },
         "text": {
           "type": "string",
+          "description": "To make a part of the text bold add the <b> before and after the desired part. Only one part per text",
           "title": "Text"
         },
         "avatar": {
