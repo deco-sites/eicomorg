@@ -45,39 +45,23 @@ function Alumni(
     <>
       <div class="z-auto max-w-[1120px] flex-1 pr-0 relative py-24 mx-auto">
         <AlumniTopPart alumniTopPart={alumniTopPart} />
-        <div class="grid grid-rows-4 grid-cols-5 gap-y-4 mt-3 grid-cols-auto gap-x-4">
-          <span class="col-start-1 col-end-2 row-start-1 row-end-4 
-        bg-white border-2 border-gray-300 mx-auto p-10 relative">
+        <div class="grid grid-cols-3 mt-10 grid-rows-4 gap-y-4 gap-x-4">
+          <span class="col-start-1 col-end-2 row-start-1 row-end-4">
             <AlumniCard alumniInfo={alumni1} />
           </span>
-        </div>
-        <div class="grid" style="grid-area: 1 / 2 / 5 / 3;">
-          <span class="col-start-1 col-end-2 row-start-1 row-end-4 
-        bg-white border-2 border-gray-300 mx-auto p-10 relative">
+          <span class="col-start-2 col-span-1 row-start-1 row-span-4">
             <AlumniCard alumniInfo={alumni2} />
           </span>
-        </div>
-        <div class="grid" style="grid-area: 1 / 3 / 4 / 4;;">
-          <span class="col-start-1 col-end-2 row-start-1 row-end-4 
-        bg-white border-2 border-gray-300 mx-auto p-10 relative">
+          <span class="col-start-3 col-span-1 row-start-1 row-span-3">
             <AlumniCard alumniInfo={alumni3} />
           </span>
-        </div>
-        <div class="grid" style="grid-area: 4 / 1 / 7 / 2;">
-          <span class="col-start-1 col-end-2 row-start-1 row-end-4 
-        bg-white border-2 border-gray-300 mx-auto p-10 relative">
+          <span class="col-start-1 col-span-1 row-start-4 row-span-3">
             <AlumniCard alumniInfo={alumni4} />
           </span>
-        </div>
-        <div class="grid" style="grid-area: 5 / 2 / 7 / 3">
-          <span class="col-start-1 col-end-2 row-start-1 row-end-4 
-        bg-white border-2 border-gray-300 mx-auto p-10 relative">
+          <span class="ol-start-2 col-span-1 row-start-5 row-span-2">
             <AlumniCard alumniInfo={alumni5} />
           </span>
-        </div>
-        <div class="grid" style="grid-area: span 3 / span 1 / span 3 / span 1;">
-          <span class="col-start-1 col-end-2 row-start-1 row-end-4 
-        bg-white border-2 border-gray-300 mx-auto p-10 relative">
+          <span class="col-span-1 row-span-3">
             <AlumniCard alumniInfo={alumni6} />
           </span>
         </div>

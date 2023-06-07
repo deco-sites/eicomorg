@@ -18,7 +18,8 @@ function AlumniCard({ alumniInfo }: {
   const { name, position, nationality, text, avatar } = alumniInfo;
   return (
     <>
-      <p class="z-10 leading-4 inline-block absolute top-5% right-5%">
+    <div class="bg-white border border-gray-300 mx-auto px-8 py-5 relative">
+      <p class="z-10 leading-4 inline-block absolute left-auto top-[5%] right-[5%]">
         {nationality}
         <br />
       </p>
@@ -44,6 +45,7 @@ function AlumniCard({ alumniInfo }: {
       <p class="text-gray-900 border-t border-gray-300 mt-3 pt-8 py-3 font-gravity font-normal">
         {text}
       </p>
+    </div>
     </>
   );
 }
