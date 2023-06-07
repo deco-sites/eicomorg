@@ -24,7 +24,7 @@ function AlumniCard({ alumniInfo }: {
       {parts[2]}
     </p>
   );
-  
+
   return (
     <>
       <div class="bg-white border border-gray-300 mx-auto px-8 py-5 relative">
