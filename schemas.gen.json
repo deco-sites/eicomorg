@@ -82,6 +82,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/eicomorg/sections/Alumni.tsx",
               "deco-sites/eicomorg/sections/BannerGrid.tsx",
               "deco-sites/eicomorg/sections/BannerPLP.tsx",
               "deco-sites/eicomorg/sections/BannerSection.tsx",
@@ -7209,10 +7210,129 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniTopPartProps": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "titleColor": {
+          "type": "string",
+          "title": "Title Color"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "textColor": {
+          "type": "string",
+          "title": "Text Color"
+        }
+      },
+      "required": [
+        "title",
+        "titleColor",
+        "text",
+        "textColor"
+      ],
+      "title": "AlumniTopPartProps"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
       "type": "string",
       "format": "image-uri",
       "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "position": {
+          "type": "string",
+          "title": "Position"
+        },
+        "nationality": {
+          "type": "string",
+          "title": "Nationality"
+        },
+        "text": {
+          "type": "string",
+          "description": "To make a part of the text bold add the <b> before and after the desired part. Only one part per text",
+          "title": "Text"
+        },
+        "avatar": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Avatar"
+        }
+      },
+      "required": [
+        "name",
+        "position",
+        "nationality",
+        "text",
+        "avatar"
+      ],
+      "title": "AlumniCardProps"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "alumniTopPart": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniTopPartProps",
+          "title": "Alumni Top Part"
+        },
+        "alumni1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
+          "title": "Alumni1"
+        },
+        "alumni2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
+          "title": "Alumni2"
+        },
+        "alumni3": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
+          "title": "Alumni3"
+        },
+        "alumni4": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
+          "title": "Alumni4"
+        },
+        "alumni5": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
+          "title": "Alumni5"
+        },
+        "alumni6": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
+          "title": "Alumni6"
+        }
+      },
+      "required": [
+        "alumniTopPart",
+        "alumni1",
+        "alumni2",
+        "alumni3",
+        "alumni4",
+        "alumni5",
+        "alumni6"
+      ],
+      "title": "deco-sites/eicomorg/components/alumni/Alumni.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckdyaWQudHN4@Banner": {
       "type": "object",
@@ -8087,7 +8207,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@9acf53fb852f538c689c2e8537ee6758&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -8103,7 +8223,7 @@
           "required": []
         }
       ],
-      "title": "9acf53fb852f538c689c2e8537ee6758&Colors"
+      "title": "059c94444960270fb25f4ccb03e57ec3&Colors"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -8206,7 +8326,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@9acf53fb852f538c689c2e8537ee6758&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -11812,6 +11932,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BbHVtbmkudHN4": {
+      "title": "deco-sites/eicomorg/sections/Alumni.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/Alumni.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/Alumni.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJHcmlkLnRzeA==": {
       "title": "deco-sites/eicomorg/sections/BannerGrid.tsx",
       "type": "object",
@@ -13381,6 +13522,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BbHVtbmkudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJHcmlkLnRzeA=="
