@@ -3,8 +3,6 @@ import type {
   Image as LiveImage,
 } from "deco-sites/std/components/types.ts";
 
-import Markdown from "../Markdown.tsx";
-
 export interface Block {
   title: string;
   content: HTML;
