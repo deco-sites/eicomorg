@@ -65,7 +65,7 @@ export default {
         "xs": "375px",
       },
       backgroundImage: {
-        'gray-lines-texture': "url('/texture-lines-grays.svg')",
+        "gray-lines-texture": "url('/texture-lines-grays.svg')",
       },
     },
   },

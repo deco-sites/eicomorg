@@ -1,17 +1,20 @@
-import type { HTML, Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type {
+  HTML,
+  Image as LiveImage,
+} from "deco-sites/std/components/types.ts";
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 
 export interface ActionLink {
-  title: string,
-  href: string,
-  icon: AvailableIcons
+  title: string;
+  href: string;
+  icon: AvailableIcons;
 }
 
 export interface Props {
   title: HTML;
-  image: LiveImage,
-  paragraph: HTML,
-  actionsLinks: ActionLink[]
+  image: LiveImage;
+  paragraph: HTML;
+  actionsLinks: ActionLink[];
 }
 
 function ActionLinkComponent({ actionLink }: { actionLink: ActionLink }) {
@@ -40,9 +43,9 @@ function ActionLinkComponent({ actionLink }: { actionLink: ActionLink }) {
 
         xs:mr-9
       "
-      href={actionLink.href} 
+      href={actionLink.href}
     >
-      { actionLink.title }
+      {actionLink.title}
       <Icon
         id={actionLink.icon}
         width={20}
@@ -51,17 +54,15 @@ function ActionLinkComponent({ actionLink }: { actionLink: ActionLink }) {
         class="align-middle left-[90%] top-[2px] absolute"
       />
     </a>
-  )
+  );
 }
 
 function HomeAboutSection(
   { title, image, paragraph, actionsLinks }: Props,
 ) {
-
   return (
     <div class="container-fluid bg-gray-lines-texture bg-contain bg-no-repeat bg-[100%] h-[760px] lg:py-[100px]">
       <div class="lg:w-[50%] relative m-auto block">
-        
         <div
           class="
             lg:h-[400px]
@@ -89,7 +90,7 @@ function HomeAboutSection(
         >
         </div>
 
-        <div 
+        <div
           style={{ backgroundImage: `url('${image}')` }}
           class="
             lg:w-[600px]
@@ -109,7 +110,8 @@ function HomeAboutSection(
             bg-no-repeat
             bg-cover
             absolute
-        ">
+        "
+        >
         </div>
 
         <div class="
@@ -143,9 +145,9 @@ function HomeAboutSection(
           </span>
 
           <div class="my-5">
-            {actionsLinks.map(actionLink => 
+            {actionsLinks.map((actionLink) => (
               <ActionLinkComponent actionLink={actionLink} />
-            )}
+            ))}
           </div>
         </div>
       </div>
