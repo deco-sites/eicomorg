@@ -4,7 +4,6 @@ import FacultyTopPart from "./FacultyTopPart.tsx";
 import FacultyCard from "./FacultyCard.tsx";
 import FacultyButton from "./FacultyButton.tsx";
 
-
 export interface FacultyTopPartProps {
   title: HTML;
   text: HTML;
@@ -29,8 +28,8 @@ export interface FacultyButtonProps {
 
 export interface Props {
   facultyTopPart: FacultyTopPartProps;
-  facultyMembers: FacultyCardProps[]
-  facultyButton: FacultyButtonProps
+  facultyMembers: FacultyCardProps[];
+  facultyButton: FacultyButtonProps;
 }
 
 function Alumni({ facultyTopPart, facultyMembers = [], facultyButton }: Props) {
@@ -44,10 +43,9 @@ function Alumni({ facultyTopPart, facultyMembers = [], facultyButton }: Props) {
               <FacultyCard facultyInfo={facultyInfo} index={index} />
             ))}
           </div>
-
         </div>
       </div>
-      <div className="pt-10 text-center md:my-16 lg:my-28" >
+      <div className="pt-10 text-center md:my-16 lg:my-28">
         <FacultyButton facultyButton={facultyButton} />
       </div>
     </>
