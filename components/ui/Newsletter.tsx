@@ -29,11 +29,11 @@ function Newsletter({ title, content }: Props) {
             dangerouslySetInnerHTML={{ __html: title }}
           >
           </h2>
-          <p
-            class="my-4 [&>a]:text-[#f26f21] text-[14px]"
+          <div
+            class="my-4 [&>p>a]:text-[#f26f21] text-[14px]"
             dangerouslySetInnerHTML={{ __html: content }}
           >
-          </p>
+          </div>
         </div>
         <div class="
           lg:ml-5
