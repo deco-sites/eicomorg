@@ -1,5 +1,4 @@
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
-import Newsletter from "$store/islands/Newsletter.tsx";
 import type { ComponentChildren } from "preact";
 
 export type IconItem = { icon: AvailableIcons };
@@ -60,9 +59,6 @@ function Footer({ sections = [] }: Props) {
     <footer class="w-full bg-primary flex flex-col divide-y divide-primary-content">
       <div>
         <div class="container w-full flex flex-col divide-y divide-primary-content">
-          <FooterContainer>
-            <Newsletter />
-          </FooterContainer>
 
           <FooterContainer>
             {/* Desktop view */}
