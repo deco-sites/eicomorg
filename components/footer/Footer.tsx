@@ -59,7 +59,6 @@ function Footer({ sections = [] }: Props) {
     <footer class="w-full bg-primary flex flex-col divide-y divide-primary-content">
       <div>
         <div class="container w-full flex flex-col divide-y divide-primary-content">
-
           <FooterContainer>
             {/* Desktop view */}
             <ul class="hidden sm:flex flex-row gap-20">

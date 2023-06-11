@@ -26,7 +26,7 @@ function Newsletter({ title, content }: Props) {
         ">
           <h2
             class="font-AvenirNextLTPro font-bold text-[28px]"
-            dangerouslySetInnerHTML={{ __html: title }}  
+            dangerouslySetInnerHTML={{ __html: title }}
           >
           </h2>
           <p
@@ -49,14 +49,24 @@ function Newsletter({ title, content }: Props) {
         ">
           <div>
             <span class="font-bold">Name</span>
-            <input class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]" placeholder="Type your name" type="text" />
+            <input
+              class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]"
+              placeholder="Type your name"
+              type="text"
+            />
           </div>
           <div class="my-5">
             <span class="font-bold">Email*</span>
-            <input class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]" placeholder="your@email.com" type="email" />
+            <input
+              class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]"
+              placeholder="your@email.com"
+              type="email"
+            />
           </div>
 
-          <button class="uppercase bg-[#f26f21] text-white rounded-sm text-[14px] cursor-pointer p-2">subscribe</button>
+          <button class="uppercase bg-[#f26f21] text-white rounded-sm text-[14px] cursor-pointer p-2">
+            subscribe
+          </button>
         </div>
       </div>
     </div>
