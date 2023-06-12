@@ -64,7 +64,6 @@
               "./islands/HeaderButton.tsx",
               "./islands/HeaderModals.tsx",
               "./islands/HeaderSearchbar.tsx",
-              "./islands/Newsletter.tsx",
               "./islands/OutOfStock.tsx",
               "./islands/ProductImageZoom.tsx",
               "./islands/SearchControls.tsx",
@@ -100,6 +99,7 @@
               "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx",
               "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx",
               "deco-sites/eicomorg/sections/LinkTree.tsx",
+              "deco-sites/eicomorg/sections/Newsletter.tsx",
               "deco-sites/eicomorg/sections/ProductDetails.tsx",
               "deco-sites/eicomorg/sections/ProductShelf.tsx",
               "deco-sites/eicomorg/sections/SearchResult.tsx",
@@ -9675,6 +9675,24 @@
       "required": [],
       "title": "deco-sites/eicomorg/components/ui/LinkTree.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL05ld3NsZXR0ZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        }
+      },
+      "required": [
+        "title",
+        "content"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/Newsletter.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3Byb2R1Y3QvUHJvZHVjdERldGFpbHMudHN4@Props": {
       "type": "object",
       "properties": {
@@ -11912,22 +11930,6 @@
         }
       }
     },
-    "Li9pc2xhbmRzL05ld3NsZXR0ZXIudHN4": {
-      "title": "./islands/Newsletter.tsx",
-      "type": "object",
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "./islands/Newsletter.tsx"
-          ],
-          "default": "./islands/Newsletter.tsx"
-        }
-      }
-    },
     "Li9pc2xhbmRzL091dE9mU3RvY2sudHN4": {
       "title": "./islands/OutOfStock.tsx",
       "type": "object",
@@ -12634,6 +12636,27 @@
             "deco-sites/eicomorg/sections/LinkTree.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/LinkTree.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9OZXdzbGV0dGVyLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/Newsletter.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL05ld3NsZXR0ZXIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/Newsletter.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/Newsletter.tsx"
         }
       }
     },
@@ -13820,9 +13843,6 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlclNlYXJjaGJhci50c3g="
         },
         {
-          "$ref": "#/definitions/Li9pc2xhbmRzL05ld3NsZXR0ZXIudHN4"
-        },
-        {
           "$ref": "#/definitions/Li9pc2xhbmRzL091dE9mU3RvY2sudHN4"
         },
         {
@@ -13950,6 +13970,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9MaW5rVHJlZS50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9OZXdzbGV0dGVyLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Qcm9kdWN0RGV0YWlscy50c3g="
