@@ -126,9 +126,7 @@ function Footer({ sections = [], logo }: Props) {
                   <div>
                     <ul
                       class={`flex ${
-                        isIcon(section.children[0])
-                          ? "flex-row"
-                          : "flex-col"
+                        isIcon(section.children[0]) ? "flex-row" : "flex-col"
                       } gap-2 pt-2`}
                     >
                       {section.children.map((item) => (
