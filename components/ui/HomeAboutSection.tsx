@@ -41,7 +41,8 @@ function ActionLinkComponent({ actionLink }: { actionLink: ActionLink }) {
         md:pr-[26px]
         md:hover:pr-[26px]
 
-        xs:mr-9
+        xs:mr-10
+        xs:pr-[8px]
       "
       href={actionLink.href}
     >
@@ -51,7 +52,17 @@ function ActionLinkComponent({ actionLink }: { actionLink: ActionLink }) {
         width={20}
         height={20}
         strokeWidth={2}
-        class="align-middle left-[90%] top-[2px] absolute"
+        class="
+          align-middle
+          top-[2px]
+          absolute
+        
+          md:top-[2px]
+          xs:top-[0px]
+      
+          md:left-[90%]
+          xs:left-[100%]
+        "
       />
     </a>
   );
