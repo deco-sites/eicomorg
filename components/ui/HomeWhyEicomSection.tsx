@@ -1,4 +1,7 @@
-import type { Image as LiveImage, HTML } from "deco-sites/std/components/types.ts";
+import type {
+  HTML,
+  Image as LiveImage,
+} from "deco-sites/std/components/types.ts";
 
 import Markdown from "../Markdown.tsx";
 
@@ -37,13 +40,12 @@ function HomeWhyEicomSection(
         <div class="
           xs:px-[10px]
         ">
-          
-        { /* DESKTOP VERSION */ }
-        <div
-          style={{
-            backgroundImage: `url(${image.desktop})`,
-          }}
-          class={`
+          {/* DESKTOP VERSION */}
+          <div
+            style={{
+              backgroundImage: `url(${image.desktop})`,
+            }}
+            class={`
             absolute
             
             lg:left-[0px]
@@ -65,11 +67,11 @@ function HomeWhyEicomSection(
             xs:invisible
             md:visible
           `}
-        >
-        </div>
+          >
+          </div>
 
-        { /* MOBILE VERSION */ }
-        <div
+          {/* MOBILE VERSION */}
+          <div
             style={{
               backgroundImage: `url(${image.mobile})`,
             }}
@@ -85,8 +87,7 @@ function HomeWhyEicomSection(
               md:invisible
             `}
           >
-
-        </div>
+          </div>
           <div
             style={{
               boxShadow: "4px 4px 7px rgba(38, 38, 40, .1)",
@@ -127,7 +128,6 @@ function HomeWhyEicomSection(
                 md:text-[20px]
                 xs:text-[18px]
               "
-              
               dangerouslySetInnerHTML={{ __html: contentBox.title }}
             >
             </h2>
