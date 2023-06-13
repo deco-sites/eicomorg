@@ -1,15 +1,20 @@
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type { Image as LiveImage, HTML } from "deco-sites/std/components/types.ts";
 
 import Markdown from "../Markdown.tsx";
 
 export interface ContentBox {
-  title: string;
-  paragraph: string;
+  title: HTML;
+  paragraph: HTML;
+}
+
+export interface ContainerImage {
+  desktop: LiveImage;
+  mobile: LiveImage;
 }
 
 export interface Props {
   title: string;
-  image: LiveImage;
+  image: ContainerImage;
   contentBox: ContentBox;
 }
 
@@ -32,39 +37,56 @@ function HomeWhyEicomSection(
         <div class="
           xs:px-[10px]
         ">
-          <div
+          
+        { /* DESKTOP VERSION */ }
+        <div
+          style={{
+            backgroundImage: `url(${image.desktop})`,
+          }}
+          class={`
+            absolute
+            
+            lg:left-[0px]
+            top-[100px]
+            
+            md:left-[10px]
+
+            lg:w-[600px]
+            lg:h-[400px]
+
+            md:w-[500px]
+            md:h-[300px]
+            
+            lg:[clip-path:polygon(0%_0%,100%_0%,100%_75%,82%_100%,0%_100%)]
+
+            bg-repeat
+            bg-cover
+            
+            xs:invisible
+            md:visible
+          `}
+        >
+        </div>
+
+        { /* MOBILE VERSION */ }
+        <div
             style={{
-              backgroundImage: `url(${image})`,
+              backgroundImage: `url(${image.mobile})`,
             }}
-            class="
-              absolute
-              xs:relative
-              
-              lg:left-[0px]
-              top-[100px]
-
-              xs:top-[50px]
-              
-              md:left-[10px]
-
-              lg:w-[600px]
-              lg:h-[400px]
-
-              md:w-[500px]
-              md:h-[300px]
-
-              xs:w-[100%]
-              xs:h-[200px]
-
-              lg:[clip-path:polygon(0%_0%,100%_0%,100%_75%,82%_100%,0%_100%)]
-
+            class={`
+              relative
+              top-[50px]
+              w-[100%]
+              h-[200px]
               bg-repeat
               bg-cover
+              bg-[50%]
 
-              xs:bg-[50%]
-            "
+              md:invisible
+            `}
           >
-          </div>
+
+        </div>
           <div
             style={{
               boxShadow: "4px 4px 7px rgba(38, 38, 40, .1)",
@@ -105,11 +127,14 @@ function HomeWhyEicomSection(
                 md:text-[20px]
                 xs:text-[18px]
               "
+              
+              dangerouslySetInnerHTML={{ __html: contentBox.title }}
             >
-              <Markdown text={contentBox.title} />
             </h2>
-            <p class="text-left md:text-[16px] xs:text-[14px]">
-              <Markdown text={contentBox.paragraph} />
+            <p
+              class="text-left md:text-[16px] xs:text-[14px]"
+              dangerouslySetInnerHTML={{ __html: contentBox.paragraph }}
+            >
             </p>
           </div>
         </div>
