@@ -1,5 +1,5 @@
 import { JSX } from "preact";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type { Image as LiveImage, HTML } from "deco-sites/std/components/types.ts";
 
 export interface ActionLink {
   text: string;
@@ -12,7 +12,7 @@ export interface BannerBackgroundImage {
 }
 
 export interface ActionLinksContainer {
-  title: string;
+  title: HTML;
   firstButton: ActionLink;
   secondButton: ActionLink;
 }
@@ -71,9 +71,10 @@ function BannerSection(
 
             font-bold
             font-AvenirNextLTPro"
+
             style={titleContainer}
           >
-            {title}
+            { title }
           </div>
         </div>
 
@@ -83,7 +84,10 @@ function BannerSection(
 
           py-8
         ">
-          <span class="text-[18px]">{actionLinksContainer.title}</span>
+          <span
+            class="text-[18px]"
+            dangerouslySetInnerHTML={{ __html: actionLinksContainer.title }}
+          ></span>
           <a
             class="w-fit block bold my-4 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
             style={actionLinkBtn}
