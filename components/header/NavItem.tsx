@@ -107,12 +107,12 @@ function NavItem({ item }: { item: INavItem }) {
                             <span class="text-sm">{leaf.label}</span>
                           </a>
                           <Icon
-                              id='ChevronRight'
-                              width={15}
-                              height={15}
-                              strokeWidth={2}
-                              class="ml-auto opacity-0 group-hover:opacity-100"
-                            />
+                            id="ChevronRight"
+                            width={15}
+                            height={15}
+                            strokeWidth={2}
+                            class="ml-auto opacity-0 group-hover:opacity-100"
+                          />
                         </li>
                       ))}
                     </ul>

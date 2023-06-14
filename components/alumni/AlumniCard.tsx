@@ -22,13 +22,13 @@ function AlumniCard({ alumniInfo }: {
     <>
       <div class="bg-white border border-gray-300 mx-auto px-8 py-5 relative">
         <p class="z-10 leading-4 inline-block absolute left-auto top-[5%] right-[5%]">
-            <Icon
-              id={nationality}
-              width={28}
-              height={28}
-              strokeWidth={2}
-              class="ml-1"
-            />
+          <Icon
+            id={nationality}
+            width={28}
+            height={28}
+            strokeWidth={2}
+            class="ml-1"
+          />
           <br />
         </p>
         <div class="justify-start items-center flex">
