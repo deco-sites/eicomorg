@@ -30,9 +30,15 @@ function Navbar({ items, logo, searchbar }: {
       justify-between
     ">
         <img
-          class="w-[160px] h-[58px] py-[4px]"
-          src="https://global-uploads.webflow.com/611d568e03584148cb24ca2b/61fd19835f24c1373852d98c_EICOM-Institute-logo-black.svg"
-          alt=""
+          class="xs:hidden w-[160px] h-[58px] py-[4px]"
+          src={logo.desktop}
+          alt={logo.alt}
+        />
+
+        <img
+          class="md:hidden w-[160px] h-[58px] py-[4px]"
+          src={logo.mobile}
+          alt={logo.alt}
         />
 
         <div class="pr-4 md:flex xs:hidden absolute lg:right-0 md:right-4 top-7">

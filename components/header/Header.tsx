@@ -1,4 +1,3 @@
-import Modals from "$store/islands/HeaderModals.tsx";
 import { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import type { EditableProps as SearchbarProps } from "$store/components/search/Searchbar.tsx";
@@ -6,7 +5,6 @@ import type { LoaderReturnType } from "$live/types.ts";
 import type { Product, Suggestion } from "deco-sites/std/commerce/types.ts";
 
 import Navbar from "./Navbar.tsx";
-import { headerHeight } from "./constants.ts";
 
 export interface NavItem {
   label: string;
