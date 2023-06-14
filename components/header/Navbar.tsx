@@ -14,53 +14,51 @@ function Navbar({ items, logo, searchbar }: {
 }) {
   return (
     <>
-      {/* Mobile Version */}
-      <div className="md:hidden flex flex-col justify-center items-center border-b border-base-200 w-full">
-        <div className="flex justify-between items-center w-full">
-          <a href="/" aria-label="Store logo" className="block">
-            <Image
-              className="p-6"
-              src={logo.mobile}
-              alt={logo.alt}
-              width={160}
-              height={58}
-              loading="lazy"
-            />
-          </a>
-          <div className="flex gap-1">
-            <Buttons variant="search" />
-            <Searchbar searchbar={searchbar} />
-          </div>
-        </div>
-        <div class="flex-auto flex justify-end max-w-full overflow-x-auto flex-nowrap space-x-4">
-          {items.map((item) => <NavItem item={item} />)}
-        </div>
-      </div>
+      <div class="
+      lg:w-[70rem]
+      
+      lg:container
+      md:container-fluid
 
-      {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-around items-center border-b border-base-200 w-full pl-2">
-        <div class="flex-none w-44">
-          {
-            <a href="/" aria-label="Store logo" class="block w-[160]">
-              <Image
-                class="p-6"
-                src={logo.desktop}
-                alt={logo.alt}
-                width={160}
-                height={58}
-                loading="lazy"
-              />
-            </a>
-          }
+      md:flex
+      xs:block
+
+      h-[100%]
+      m-auto
+      py-1
+      relative
+      justify-between
+    ">
+        <img class="w-[160px] h-[58px] py-[4px]" src="https://global-uploads.webflow.com/611d568e03584148cb24ca2b/61fd19835f24c1373852d98c_EICOM-Institute-logo-black.svg" alt="" />
+
+        <div class="pr-4 md:flex xs:hidden absolute lg:right-0 md:right-4 top-7">
+          {items.map((item, index) => <NavItem item={{ ...item, isMobile: false, itemIndex: index }} />)}
         </div>
-        <div class="flex-auto flex justify-end">
-          {items.map((item) => <NavItem item={item} />)}
-        </div>
-        <div class="flex-none w-44 flex items-center justify-left gap-2">
+
+
+        <span
+          class="
+            lg:right-[-3rem]
+            md:right-[0rem]
+            xs:right-2
+
+            top-2
+
+            w-[50px]
+            h-[50px]
+
+            block
+            absolute
+        ">
           <Buttons variant="search" />
-          <Searchbar searchbar={searchbar} />
+        </span>
+
+        <div class="md:hidden xs:flex ml-4 my-4">
+          {items.map((item, index) => <NavItem item={{ ...item, isMobile: true, itemIndex: index }} />)}
         </div>
       </div>
+      
+      <Searchbar searchbar={searchbar} />
     </>
   );
 }

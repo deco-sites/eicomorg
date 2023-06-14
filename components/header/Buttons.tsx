@@ -24,7 +24,7 @@ function SearchButton() {
         displaySearchbar.value = !displaySearchbar.peek();
       }}
     >
-      <Icon id="MagnifyingGlass" width={20} height={20} strokeWidth={0.1} />
+      <Icon id="MagnifyingGlass" class="text-[#696969]" width={20} height={20} strokeWidth={0.1} />
     </Button>
   );
 }

@@ -69,7 +69,7 @@ function Header(
   return (
     <>
       <header>
-        <div class="bg-base-100 fixed w-full ml-1 z-50">
+        <div class="container-fluid fixed md:h-[70px] xs:h-[105px] z-[1000] w-[100%] bg-white shadow-md">
           <Navbar items={navItems} logo={logo} searchbar={searchbar} />
         </div>
       </header>
