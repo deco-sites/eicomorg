@@ -38,7 +38,7 @@ function AlumniCard({ alumniInfo }: {
               alt={avatar.alt}
               width={50}
               height={50}
-              class="bg-center bg-cover border-3 border-gray-300 rounded-3xl relative w-14"
+              className="bg-center bg-cover border-[3px] border-solid border-gray-300 rounded-[40px] relative w-14"
             />
           </div>
           <div class="flex flex-col items-start py-3 pl-5 w-52">
