@@ -45,7 +45,7 @@ function BannerSection(
 
   return (
     <div
-      class="container-fluid top-[90px] grid relative px-4 lg:h-[640px]"
+      class="container-fluid top-[65px] grid relative px-4 lg:h-[640px]"
       style={{ backgroundColor: "#f3f3f3" }}
     >
       <div class="lg:w-1/3 lg:mx-56 sm:w-auto" style={{ zIndex: 1 }}>
