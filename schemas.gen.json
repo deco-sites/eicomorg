@@ -6853,40 +6853,34 @@
       ],
       "title": "deco-sites/std/packs/vtex/loaders/wishlist.ts@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
+      "type": "string",
+      "format": "html",
+      "title": "HTML"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2hlYWRlci9BbGVydC50c3g=@Alert": {
       "type": "object",
       "properties": {
         "text": {
-          "type": "string",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Text"
         },
         "backgroundColor": {
           "type": "string",
-          "description": "use the hexadecimal format such as #FFFFFF",
           "title": "Background Color"
-        },
-        "fontSize": {
-          "type": "string",
-          "description": "value in pixels such as 13px",
-          "title": "Font Size"
-        },
-        "fontColor": {
-          "type": "string",
-          "title": "Font Color"
         },
         "url": {
           "type": [
             "string",
             "null"
           ],
+          "description": "value in pixels such as 13px",
           "title": "Url"
         }
       },
       "required": [
         "text",
-        "backgroundColor",
-        "fontSize",
-        "fontColor"
+        "backgroundColor"
       ],
       "title": "Alert"
     },
@@ -7256,27 +7250,17 @@
       "type": "object",
       "properties": {
         "title": {
-          "type": "string",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Title"
         },
-        "titleColor": {
-          "type": "string",
-          "title": "Title Color"
-        },
         "text": {
-          "type": "string",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Text"
-        },
-        "textColor": {
-          "type": "string",
-          "title": "Text Color"
         }
       },
       "required": [
         "title",
-        "titleColor",
-        "text",
-        "textColor"
+        "text"
       ],
       "title": "AlumniTopPartProps"
     },
@@ -7297,11 +7281,189 @@
           "title": "Position"
         },
         "nationality": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ChevronLeft"
+            },
+            {
+              "type": "string",
+              "const": "ChevronRight"
+            },
+            {
+              "type": "string",
+              "const": "ChevronUp"
+            },
+            {
+              "type": "string",
+              "const": "ChevronDown"
+            },
+            {
+              "type": "string",
+              "const": "QuestionMarkCircle"
+            },
+            {
+              "type": "string",
+              "const": "User"
+            },
+            {
+              "type": "string",
+              "const": "ShoppingCart"
+            },
+            {
+              "type": "string",
+              "const": "Bars3"
+            },
+            {
+              "type": "string",
+              "const": "Heart"
+            },
+            {
+              "type": "string",
+              "const": "MagnifyingGlass"
+            },
+            {
+              "type": "string",
+              "const": "XMark"
+            },
+            {
+              "type": "string",
+              "const": "Plus"
+            },
+            {
+              "type": "string",
+              "const": "Minus"
+            },
+            {
+              "type": "string",
+              "const": "MapPin"
+            },
+            {
+              "type": "string",
+              "const": "Phone"
+            },
+            {
+              "type": "string",
+              "const": "Elo"
+            },
+            {
+              "type": "string",
+              "const": "Mastercard"
+            },
+            {
+              "type": "string",
+              "const": "Visa"
+            },
+            {
+              "type": "string",
+              "const": "Pix"
+            },
+            {
+              "type": "string",
+              "const": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "FacebookBlack"
+            },
+            {
+              "type": "string",
+              "const": "Instagram"
+            },
+            {
+              "type": "string",
+              "const": "InstagramBlack"
+            },
+            {
+              "type": "string",
+              "const": "Tiktok"
+            },
+            {
+              "type": "string",
+              "const": "Truck"
+            },
+            {
+              "type": "string",
+              "const": "Discount"
+            },
+            {
+              "type": "string",
+              "const": "Return"
+            },
+            {
+              "type": "string",
+              "const": "CreditCard"
+            },
+            {
+              "type": "string",
+              "const": "Deco"
+            },
+            {
+              "type": "string",
+              "const": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "Trash"
+            },
+            {
+              "type": "string",
+              "const": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "Linkedin"
+            },
+            {
+              "type": "string",
+              "const": "LinkedinBlack"
+            },
+            {
+              "type": "string",
+              "const": "YoutubeBlack"
+            },
+            {
+              "type": "string",
+              "const": "Brazil"
+            },
+            {
+              "type": "string",
+              "const": "Spain"
+            },
+            {
+              "type": "string",
+              "const": "Italy"
+            },
+            {
+              "type": "string",
+              "const": "Chile"
+            },
+            {
+              "type": "string",
+              "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "Computer"
+            },
+            {
+              "type": "string",
+              "const": "ArrowsPointingOut"
+            }
+          ],
           "type": "string",
           "title": "Nationality"
         },
         "text": {
-          "type": "string",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "description": "To make a part of the text bold add the <b> before and after the desired part. Only one part per text",
           "title": "Text"
         },
@@ -8020,6 +8182,30 @@
             },
             {
               "type": "string",
+              "const": "Brazil"
+            },
+            {
+              "type": "string",
+              "const": "Spain"
+            },
+            {
+              "type": "string",
+              "const": "Italy"
+            },
+            {
+              "type": "string",
+              "const": "Chile"
+            },
+            {
+              "type": "string",
+              "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "Computer"
+            },
+            {
+              "type": "string",
               "const": "ArrowsPointingOut"
             }
           ],
@@ -8403,11 +8589,6 @@
       "required": [],
       "title": "deco-sites/eicomorg/sections/DesignSystem.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
-      "type": "string",
-      "format": "html",
-      "title": "HTML"
-    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhY3VsdHkvRmFjdWx0eS50c3g=@FacultyTopPartProps": {
       "type": "object",
       "properties": {
@@ -8681,6 +8862,30 @@
             },
             {
               "type": "string",
+              "const": "Brazil"
+            },
+            {
+              "type": "string",
+              "const": "Spain"
+            },
+            {
+              "type": "string",
+              "const": "Italy"
+            },
+            {
+              "type": "string",
+              "const": "Chile"
+            },
+            {
+              "type": "string",
+              "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "Computer"
+            },
+            {
+              "type": "string",
               "const": "ArrowsPointingOut"
             }
           ],
@@ -8948,6 +9153,30 @@
             {
               "type": "string",
               "const": "YoutubeBlack"
+            },
+            {
+              "type": "string",
+              "const": "Brazil"
+            },
+            {
+              "type": "string",
+              "const": "Spain"
+            },
+            {
+              "type": "string",
+              "const": "Italy"
+            },
+            {
+              "type": "string",
+              "const": "Chile"
+            },
+            {
+              "type": "string",
+              "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "Computer"
             },
             {
               "type": "string",
@@ -9253,6 +9482,30 @@
             },
             {
               "type": "string",
+              "const": "Brazil"
+            },
+            {
+              "type": "string",
+              "const": "Spain"
+            },
+            {
+              "type": "string",
+              "const": "Italy"
+            },
+            {
+              "type": "string",
+              "const": "Chile"
+            },
+            {
+              "type": "string",
+              "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "Computer"
+            },
+            {
+              "type": "string",
               "const": "ArrowsPointingOut"
             }
           ],
@@ -9330,13 +9583,6 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2hlYWRlci9IZWFkZXIudHN4@Logo",
           "title": "Logo"
         },
-        "alerts": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Alerts"
-        },
         "searchbar": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NlYXJjaC9TZWFyY2hiYXIudHN4@EditableProps",
           "title": "Search Bar"
@@ -9357,8 +9603,7 @@
         }
       },
       "required": [
-        "logo",
-        "alerts"
+        "logo"
       ],
       "title": "deco-sites/eicomorg/components/header/Header.tsx@Props"
     },
@@ -9574,6 +9819,30 @@
             {
               "type": "string",
               "const": "YoutubeBlack"
+            },
+            {
+              "type": "string",
+              "const": "Brazil"
+            },
+            {
+              "type": "string",
+              "const": "Spain"
+            },
+            {
+              "type": "string",
+              "const": "Italy"
+            },
+            {
+              "type": "string",
+              "const": "Chile"
+            },
+            {
+              "type": "string",
+              "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "Computer"
             },
             {
               "type": "string",

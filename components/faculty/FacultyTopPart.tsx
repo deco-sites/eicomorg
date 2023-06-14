@@ -6,7 +6,7 @@ function FacultyTopPart({ facultyTopPart }: {
   const { title, text } = facultyTopPart;
   return (
     <>
-      <div>
+      <div class="text-center">
         <h2 class="mt-5">
           <span dangerouslySetInnerHTML={{ __html: title }}></span>
         </h2>
