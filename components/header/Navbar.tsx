@@ -30,13 +30,13 @@ function Navbar({ items, logo, searchbar }: {
       justify-between
     ">
         <img
-          class="xs:hidden w-[160px] h-[58px] py-[4px]"
+          class="xs:hidden md:block py-[4px]"
           src={logo.desktop}
           alt={logo.alt}
         />
 
         <img
-          class="md:hidden w-[160px] h-[58px] py-[4px]"
+          class="md:hidden w-[120px] px-[4px] py-[4px]"
           src={logo.mobile}
           alt={logo.alt}
         />
