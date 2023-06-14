@@ -64,6 +64,7 @@ export default {
       },
       screens: {
         "xs": "320px",
+        "xl": "2000px",
       },
       backgroundImage: {
         "gray-lines-texture": "url('/texture-lines-grays.svg')",

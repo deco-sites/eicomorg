@@ -73,7 +73,7 @@ function HomeAboutSection(
 ) {
   return (
     <div class="container-fluid bg-gray-lines-texture bg-contain bg-no-repeat bg-[100%] h-[760px] lg:py-[100px]">
-      <div class="lg:w-[50%] relative m-auto block">
+      <div class="lg:w-[70rem] relative m-auto block">
         <div
           class="
             lg:h-[400px]

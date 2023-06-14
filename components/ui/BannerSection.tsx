@@ -48,8 +48,8 @@ function BannerSection(
       class="container-fluid top-[65px] grid relative px-4 lg:h-[640px]"
       style={{ backgroundColor: "#f3f3f3" }}
     >
-      <div class="lg:w-1/3 lg:mx-56 sm:w-auto" style={{ zIndex: 1 }}>
-        <div class="lg:mx-36 lg:my-16 w-full my-64 mb-0">
+      <div class="lg:w-1/3 lg:mx-0 xl:mx-56 sm:w-auto z-[1]">
+        <div class="lg:mx-8 xl:mx-36 lg:my-16 w-full my-64 mb-0">
           <div
             class="
             lg:w-[660px]
@@ -82,7 +82,8 @@ function BannerSection(
 
         <div class="
           lg:w-[460px]
-          lg:mx-44
+          lg:mx-20
+          xl:mx-44
 
           py-8
         ">
@@ -113,10 +114,9 @@ function BannerSection(
           backgroundImage: `url(${backgroundImage.desktop})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPosition: "80%",
           zIndex: 0,
         }}
-        class={`hidden lg:block w-5/6 h-full absolute top-0 right-0`}
+        class={`hidden lg:block w-5/6 xl:bg-[80%] lg:bg-[-45%_100%] h-full absolute top-0 right-0`}
       >
       </div>
 
