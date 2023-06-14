@@ -1,6 +1,8 @@
+import type { HTML } from "deco-sites/std/components/types.ts";
+
 export interface Props {
   title: string;
-  content: string;
+  content: HTML;
 }
 
 function HomeTextSection(
@@ -15,7 +17,11 @@ function HomeTextSection(
         {title}
       </span>
       <div class="md:w-[560px] xs:w-[420px] m-auto">
-        <span style={{ color: "#696969" }}>{content}</span>
+        <span
+          style={{ color: "#696969" }}
+          dangerouslySetInnerHTML={{ __html: content }}
+        >
+        </span>
       </div>
     </div>
   );

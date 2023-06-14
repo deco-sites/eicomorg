@@ -28,15 +28,44 @@ function SectionBlock({ block }: SectionBlockProps) {
   return (
     <div class="xs:px-6 xs:my-4">
       <img
-        class="h-[48px] w-[48px] mb-[25px] block"
+        class="
+          h-[48px]
+          w-[48px]
+          mb-[25px]
+          block
+          
+          md:mr-0
+          md:ml-0
+          xs:mr-auto
+          xs:ml-auto
+        "
         src={block.icon}
         alt=""
       />
-      <h2 class="uppercase text-left font-AvenirNextLTPro text-[18px] font-semibold">
+      <h2 class="
+        uppercase
+        
+        md:text-left
+        xs:text-center
+
+        font-AvenirNextLTPro
+        text-[18px]
+        font-semibold
+      ">
         {block.title}
       </h2>
       <span
-        class="my-3 block font-medium text-[#353536]"
+        class="
+          my-3
+          block
+          font-medium
+          text-[#353536]
+        
+          xs:text-[14px]
+          md:text-[16px]
+
+          xs:leading-[22px]
+        "
         dangerouslySetInnerHTML={{ __html: block.content }}
       >
       </span>
@@ -62,7 +91,20 @@ function HomeWhyEicomBlocksSection(
             backgroundColor: sectionButton.backgroundColor,
             color: sectionButton.textColor,
           }}
-          class="rounded uppercase font-bold py-[16px] px-[24px] xs:w-[90%] md:w-auto mx-auto inline-block"
+          class="
+            rounded
+            uppercase
+            font-bold
+            px-[24px]
+            
+            xs:w-[90%]
+            md:w-auto
+            
+            md:py-[16px]
+            xs:py-[12px]
+
+            mx-auto
+            inline-block"
           href="#"
         >
           {sectionButton.text}
