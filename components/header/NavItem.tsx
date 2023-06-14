@@ -1,136 +1,136 @@
+import { JSX } from "preact";
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
-import { headerHeight } from "./constants.ts";
+import { useUI } from "$store/sdk/useUI.ts";
+
+export interface INavItemChildren {
+  label: string;
+  href: string;
+  description?: string;
+  children?: Array<{
+    label: string;
+    href: string;
+  }>;
+}
 
 export interface INavItem {
   label: string;
   href: string;
   icon: AvailableIcons;
+
+  isMobile?: boolean;
+  itemIndex?: number;
+
   children?: Array<{
     label: string;
     href: string;
     description?: string;
-    children?: Array<{
-      label: string;
-      href: string;
-    }>;
+    children?: INavItemChildren[];
   }>;
   image?: { src?: string; alt?: string };
 }
 
 function NavItem({ item }: { item: INavItem }) {
-  const { href, label, children, icon } = item;
+  const { href, label, isMobile, itemIndex } = item;
 
   const mobileLabel = label.split(" ");
-  const lastWord = mobileLabel[mobileLabel.length - 1];
+  const lastLabelWord = mobileLabel[mobileLabel.length - 1];
+
+  const { displayNavbarMenu } = useUI();
+
+  const toggleExpand = () => {
+    if (itemIndex === displayNavbarMenu.value) {
+      displayNavbarMenu.value = undefined;
+    } else displayNavbarMenu.value = itemIndex;
+  };
+
+  const buttonArrow: JSX.CSSProperties = {
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
-    <>
-      <li class="md:hidden flex group items-center border-r border-solid w-full border-gray-300">
-        <details>
-          <summary class="py-3 px-0 text-gray-500 font-semibold flex text-left">
-            <a href={href} class="group-hover:underline flex text-left text-xs">
-              {lastWord}
-            </a>
-            <Icon
-              id={icon}
-              width={15}
-              height={15}
-              strokeWidth={2}
-              class="ml-1"
-            />
-          </summary>
+    <div class="flex mr-6 cursor-pointer h-[100%] md:relative">
+      <div class="m-auto flex">
+        <a
+          href={!isMobile ? href : "#"}
+          class="
+            lg:text-[13px]
+            md:text-[12px]
+            xs:text-[10px]
 
-          {children && children.length > 0 && (
-            <div class="fixed shadow-md duration-300 text-left bg-base-100 z-50 items-center justify-center border-t border-b-2 border-base-200 w-80 mx-auto mt-9 left-0 right-0">
-              <ul class="flex flex-col items-start ml-2 justify-center gap-6">
-                {children.map((node) => (
-                  <li class={node.children ? "p-3" : ""}>
-                    <a
-                      class="hover:underline text-base font-medium border-b-2 border-solid border-base-200"
-                      href={node.href}
-                    >
-                      <span>{node.label}</span>
-                    </a>
-                    <p class="text-gray-500 font-medium">{node.description}</p>
-                    <ul class="flex flex-col gap-1 mt-4">
-                      {node.children?.map((leaf) => (
-                        <li class="border-b border-solid border-gray-300">
-                          <a class="hover:underline ml-4" href={leaf.href}>
-                            <span class="text-sm">{leaf.label}</span>
-                            <Icon
-                              id="ArrowRight"
-                              width={15}
-                              height={15}
-                              strokeWidth={2}
-                              class="ml-auto opacity-0 group-hover:opacity-100"
-                            />
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                ))}
-              </ul>
+            uppercase
+            inline-block
+            h-5
+            align-middle
+            md:hover:underline
+            text-[#696969]
+            font-medium
+          "
+        >
+          {!isMobile ? label : lastLabelWord}
+        </a>
+
+        <Icon
+          id={(item.children && displayNavbarMenu.value === itemIndex)
+            ? "ChevronUp"
+            : "ChevronDown"}
+          width={!isMobile ? 12 : 10}
+          height={!isMobile ? 12 : 10}
+          strokeWidth={3}
+          class="ml-2 top-[1px] relative text-[#696969] font-bold"
+          onClick={toggleExpand}
+        />
+      </div>
+
+      {(item.children && displayNavbarMenu.value === itemIndex)
+        ? (
+          <>
+            <div class="
+            absolute
+            
+            md:top-14
+            xs:top-28
+
+            xs:left-3
+
+            md:w-[230px]
+            xs:w-[94%]
+
+            p-4
+            bg-white
+            rounded
+            shadow-md
+            cursor-default
+          ">
+              {item.children.map((item) => (
+                <div class="mb-2">
+                  <a
+                    href={item.href}
+                    class="text-[12px] uppercase text-[#101010] border-b-[#475769] border-b-[1px] hover:border-b-[2px] font-medium outline-none"
+                  >
+                    {item.label}
+                  </a>
+                  <p class="text-[#848b94] text-[12px] my-1 mb-1">
+                    {item.description}
+                  </p>
+
+                  <div class="ml-2 my-4">
+                    {item.children?.map((link) => (
+                      <a
+                        style={buttonArrow}
+                        href={link.href}
+                        class="text-[#505050] hover:text-[#202020] text-[12px] border-b-[#eaeaea] border-b-[1px] w-[90%] pb-2 mb-2 block bg-[length:15px] bg-[99%_20%] hover:bg-[url(/icons/Arrow-right-black.svg)]"
+                      >
+                        <span class="w-[90%] block">{link.label}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
-          )}
-        </details>
-      </li>
-
-      {/* Desktop Version */}
-      <li class="hidden md:flex group items-center border-r border-solid border-gray-300">
-        <details>
-          <summary class="px-4 text-gray-500 font-medium flex items-center">
-            <a href={href} class="group-hover:underline flex">
-              {label}
-            </a>
-            <Icon
-              id={icon}
-              width={15}
-              height={15}
-              strokeWidth={2}
-              class="ml-1"
-            />
-          </summary>
-
-          {children && children.length > 0 && (
-            <div
-              class="fixed shadow-md duration-300 text-left bg-base-100 z-50 items-start justify-center gap-6 border-t border-b-2 border-base-200 w-80"
-              style={{ top: "0px", left: "auto", marginTop: headerHeight }}
-            >
-              <ul class="flex mt-4 flex-col items-start  ml-2 justify-center gap-6">
-                {children.map((node) => (
-                  <li class={node.children ? "p-3" : ""}>
-                    <a
-                      class="hover:underline text-base font-medium border-b-2 border-solid border-base-200"
-                      href={node.href}
-                    >
-                      <span>{node.label}</span>
-                    </a>
-
-                    <p class="text-gray-500 font-medium">{node.description}</p>
-                    <ul class="flex flex-col gap-1 mt-4">
-                      {node.children?.map((leaf) => (
-                        <li class="border-b border-solid border-gray-300 flex">
-                          <a class="hover:underline ml-4" href={leaf.href}>
-                            <span class="text-sm">{leaf.label}</span>
-                          </a>
-                          <Icon
-                            id="ArrowRight"
-                            width={15}
-                            height={15}
-                            strokeWidth={2}
-                            class="ml-auto opacity-0 hover:opacity-100"
-                          />
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </details>
-      </li>
-    </>
+          </>
+        )
+        : <></>}
+    </div>
   );
 }
 

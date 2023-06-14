@@ -63,7 +63,7 @@ export default {
         "AvenirNextLTPro": ["AvenirNextLTPro"],
       },
       screens: {
-        "xs": "375px",
+        "xs": "320px",
       },
       backgroundImage: {
         "gray-lines-texture": "url('/texture-lines-grays.svg')",

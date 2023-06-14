@@ -1,4 +1,3 @@
-import Modals from "$store/islands/HeaderModals.tsx";
 import { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import type { EditableProps as SearchbarProps } from "$store/components/search/Searchbar.tsx";
@@ -6,7 +5,6 @@ import type { LoaderReturnType } from "$live/types.ts";
 import type { Product, Suggestion } from "deco-sites/std/commerce/types.ts";
 
 import Navbar from "./Navbar.tsx";
-import { headerHeight } from "./constants.ts";
 
 export interface NavItem {
   label: string;
@@ -67,7 +65,7 @@ function Header(
   return (
     <>
       <header>
-        <div class="bg-base-100 fixed w-full ml-1 z-50">
+        <div class="container-fluid fixed md:h-[70px] xs:h-[105px] z-[1000] w-[100%] bg-white shadow-md">
           <Navbar items={navItems} logo={logo} searchbar={searchbar} />
         </div>
       </header>
