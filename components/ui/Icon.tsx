@@ -44,6 +44,7 @@ export type AvailableIcons =
   | "Italy"
   | "Chile"
   | "Romania"
+  | "ArrowRight"
   | "Computer"
   | "ArrowsPointingOut";
 

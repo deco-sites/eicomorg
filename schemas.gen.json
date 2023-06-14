@@ -7452,6 +7452,10 @@
             },
             {
               "type": "string",
+              "const": "ArrowRight"
+            },
+            {
+              "type": "string",
               "const": "Computer"
             },
             {
@@ -8202,6 +8206,10 @@
             },
             {
               "type": "string",
+              "const": "ArrowRight"
+            },
+            {
+              "type": "string",
               "const": "Computer"
             },
             {
@@ -8882,6 +8890,10 @@
             },
             {
               "type": "string",
+              "const": "ArrowRight"
+            },
+            {
+              "type": "string",
               "const": "Computer"
             },
             {
@@ -9173,6 +9185,10 @@
             {
               "type": "string",
               "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "ArrowRight"
             },
             {
               "type": "string",
@@ -9499,6 +9515,10 @@
             {
               "type": "string",
               "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "ArrowRight"
             },
             {
               "type": "string",
@@ -9839,6 +9859,10 @@
             {
               "type": "string",
               "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "ArrowRight"
             },
             {
               "type": "string",

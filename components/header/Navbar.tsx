@@ -15,11 +15,11 @@ function Navbar({ items, logo, searchbar }: {
   return (
     <>
       {/* Mobile Version */}
-      <div className="md:hidden flex flex-col justify-center items-center border-b border-base-200 w-full">
+      <div className="md:hidden flex flex-col justify-center items-center border-b border-base-200 w-full py-1">
         <div className="flex justify-between items-center w-full">
           <a href="/" aria-label="Store logo" className="block">
             <Image
-              className="p-6"
+              className="py-4"
               src={logo.mobile}
               alt={logo.alt}
               width={160}
@@ -38,12 +38,12 @@ function Navbar({ items, logo, searchbar }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-around items-center border-b border-base-200 w-full pl-2">
+      <div class="hidden md:flex flex-row justify-around items-center border-b border-base-200 w-full h-[70px] py-1 pl-2">
         <div class="flex-none w-44">
           {
             <a href="/" aria-label="Store logo" class="block w-[160]">
               <Image
-                class="p-6"
+                class="ml-10"
                 src={logo.desktop}
                 alt={logo.alt}
                 width={160}
