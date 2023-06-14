@@ -29,15 +29,19 @@ function Navbar({ items, logo, searchbar }: {
       relative
       justify-between
     ">
-        <img class="w-[160px] h-[58px] py-[4px]" src="https://global-uploads.webflow.com/611d568e03584148cb24ca2b/61fd19835f24c1373852d98c_EICOM-Institute-logo-black.svg" alt="" />
+        <img
+          class="w-[160px] h-[58px] py-[4px]"
+          src="https://global-uploads.webflow.com/611d568e03584148cb24ca2b/61fd19835f24c1373852d98c_EICOM-Institute-logo-black.svg"
+          alt=""
+        />
 
         <div class="pr-4 md:flex xs:hidden absolute lg:right-0 md:right-4 top-7">
-          {items.map((item, index) => <NavItem item={{ ...item, isMobile: false, itemIndex: index }} />)}
+          {items.map((item, index) => (
+            <NavItem item={{ ...item, isMobile: false, itemIndex: index }} />
+          ))}
         </div>
 
-
-        <span
-          class="
+        <span class="
             lg:right-[-3rem]
             md:right-[0rem]
             xs:right-2
@@ -54,10 +58,12 @@ function Navbar({ items, logo, searchbar }: {
         </span>
 
         <div class="md:hidden xs:flex ml-4 my-4">
-          {items.map((item, index) => <NavItem item={{ ...item, isMobile: true, itemIndex: index }} />)}
+          {items.map((item, index) => (
+            <NavItem item={{ ...item, isMobile: true, itemIndex: index }} />
+          ))}
         </div>
       </div>
-      
+
       <Searchbar searchbar={searchbar} />
     </>
   );
