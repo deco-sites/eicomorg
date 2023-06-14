@@ -30,6 +30,7 @@ export default {
       center: true,
     },
     extend: {
+      display: ["group-hover"],
       animation: {
         "slide-left": "slide-left-frame 0.4s ease normal",
         "slide-right": "slide-right-frame 0.4s ease normal",

@@ -39,6 +39,13 @@ export type AvailableIcons =
   | "Linkedin"
   | "LinkedinBlack"
   | "YoutubeBlack"
+  | "Brazil"
+  | "Spain"
+  | "Italy"
+  | "Chile"
+  | "Romania"
+  | "ArrowRight"
+  | "Computer"
   | "ArrowsPointingOut";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {

@@ -30,7 +30,7 @@ export interface INavItem {
 }
 
 function NavItem({ item }: { item: INavItem }) {
-  const { href, label, children, icon, isMobile, itemIndex } = item;
+  const { href, label, isMobile, itemIndex } = item;
 
   const mobileLabel = label.split(" ");
   const lastLabelWord = mobileLabel[mobileLabel.length - 1];
