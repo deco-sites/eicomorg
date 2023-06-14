@@ -3,14 +3,12 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import { useState } from "preact/hooks";
 import { useId, useRef } from "preact/hooks";
+import type { HTML } from "deco-sites/std/components/types.ts";
 
 export interface Alert {
-  text: string;
-  /** @description use the hexadecimal format such as #FFFFFF */
+  text: HTML;
   backgroundColor: string;
   /** @description value in pixels such as 13px */
-  fontSize: string;
-  fontColor: string;
   url?: string;
 }
 
@@ -19,7 +17,7 @@ export interface Props {
 }
 
 function Alert({ alert }: Props) {
-  const { text, backgroundColor, fontSize, fontColor, url } = alert;
+  const { text, backgroundColor, url } = alert;
   const id = useId();
   const [showAlert, setShowAlert] = useState(true);
 
@@ -37,9 +35,8 @@ function Alert({ alert }: Props) {
           <a
             href={url}
             className="text-secondary-content z-20 flex text-center font-semibold justify-center items-center w-screen h-[38px]"
-            style={{ fontSize: fontSize, color: fontColor }}
           >
-            {text}
+            <span dangerouslySetInnerHTML={{ __html: text }}></span>
           </a>
           <Button class="btn-ghost btn-circle" onClick={handleClick}>
             <Icon id="XMark" width={20} height={20} strokeWidth={2} />

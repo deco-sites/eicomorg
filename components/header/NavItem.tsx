@@ -56,6 +56,13 @@ function NavItem({ item }: { item: INavItem }) {
                         <li class="border-b border-solid border-gray-300">
                           <a class="hover:underline ml-4" href={leaf.href}>
                             <span class="text-sm">{leaf.label}</span>
+                            <Icon
+                              id="ArrowRight"
+                              width={15}
+                              height={15}
+                              strokeWidth={2}
+                              class="ml-auto opacity-0 group-hover:opacity-100"
+                            />
                           </a>
                         </li>
                       ))}
@@ -102,10 +109,17 @@ function NavItem({ item }: { item: INavItem }) {
                     <p class="text-gray-500 font-medium">{node.description}</p>
                     <ul class="flex flex-col gap-1 mt-4">
                       {node.children?.map((leaf) => (
-                        <li class="border-b border-solid border-gray-300">
+                        <li class="border-b border-solid border-gray-300 flex">
                           <a class="hover:underline ml-4" href={leaf.href}>
                             <span class="text-sm">{leaf.label}</span>
                           </a>
+                          <Icon
+                            id="ArrowRight"
+                            width={15}
+                            height={15}
+                            strokeWidth={2}
+                            class="ml-auto opacity-0 hover:opacity-100"
+                          />
                         </li>
                       ))}
                     </ul>

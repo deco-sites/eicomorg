@@ -1,11 +1,13 @@
 import Image from "deco-sites/std/components/Image.tsx";
+import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type { HTML } from "deco-sites/std/components/types.ts";
 
 export interface AlumniCardProps {
   name: string;
   position: string;
-  nationality: string;
-  text: string;
+  nationality: AvailableIcons;
+  text: HTML;
   avatar: {
     src: LiveImage;
     alt: string;
@@ -16,20 +18,17 @@ function AlumniCard({ alumniInfo }: {
   alumniInfo: AlumniCardProps;
 }) {
   const { name, position, nationality, text, avatar } = alumniInfo;
-  const parts = text.split("<b>");
-  const textWithBold = (
-    <p className="text-gray-900 border-t border-gray-300 mt-3 pt-8 py-3 font-gravity font-normal text-xl">
-      {parts[0]}
-      <b>{parts[1]}</b>
-      {parts[2]}
-    </p>
-  );
-
   return (
     <>
       <div class="bg-white border border-gray-300 mx-auto px-8 py-5 relative">
-        <p class="z-10 leading-4 inline-block font-semibold absolute text-base left-auto top-[5%] right-[5%]">
-          {nationality}
+        <p class="z-10 leading-4 inline-block absolute left-auto top-[5%] right-[5%]">
+          <Icon
+            id={nationality}
+            width={28}
+            height={28}
+            strokeWidth={2}
+            class="ml-1"
+          />
           <br />
         </p>
         <div class="justify-start items-center flex">
@@ -51,7 +50,7 @@ function AlumniCard({ alumniInfo }: {
             </p>
           </div>
         </div>
-        {textWithBold}
+        <span dangerouslySetInnerHTML={{ __html: text }}></span>
       </div>
     </>
   );
