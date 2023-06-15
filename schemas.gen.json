@@ -83,6 +83,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/eicomorg/sections/Alert.tsx",
               "deco-sites/eicomorg/sections/Alumni.tsx",
               "deco-sites/eicomorg/sections/BannerGrid.tsx",
               "deco-sites/eicomorg/sections/BannerPLP.tsx",
@@ -6875,7 +6876,6 @@
             "string",
             "null"
           ],
-          "description": "value in pixels such as 13px",
           "title": "Url"
         }
       },
@@ -7475,10 +7475,6 @@
             "null"
           ],
           "title": "Path"
-        },
-        "layout": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page",
-          "title": "Layout"
         },
         "sections": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]",
@@ -8362,11 +8358,11 @@
           "title": "Image"
         },
         "title": {
-          "type": "string",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Title"
         },
         "subtitle": {
-          "type": "string",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Subtitle"
         },
         "label": {
@@ -8823,7 +8819,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@258b296ce27a8196431257d88db20df7&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -8839,7 +8835,7 @@
           "required": []
         }
       ],
-      "title": "258b296ce27a8196431257d88db20df7&Colors"
+      "title": "059c94444960270fb25f4ccb03e57ec3&Colors"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -8942,7 +8938,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@258b296ce27a8196431257d88db20df7&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -10913,7 +10909,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@2dc3ea494e366f0c07f2bf4cd27907ef|WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|fd0fcd78c4b899b30e00299b516a5aff": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -10931,13 +10927,13 @@
           ]
         }
       ],
-      "title": "2dc3ea494e366f0c07f2bf4cd27907ef|WorkflowRef"
+      "title": "WorkflowRef|fd0fcd78c4b899b30e00299b516a5aff"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@2dc3ea494e366f0c07f2bf4cd27907ef|WorkflowRef",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|fd0fcd78c4b899b30e00299b516a5aff",
           "title": "Workflow"
         },
         "id": {
@@ -12808,6 +12804,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BbGVydC50c3g=": {
+      "title": "deco-sites/eicomorg/sections/Alert.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2hlYWRlci9BbGVydC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/Alert.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/Alert.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BbHVtbmkudHN4": {
       "title": "deco-sites/eicomorg/sections/Alumni.tsx",
       "type": "object",
@@ -14466,6 +14483,9 @@
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BbGVydC50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BbHVtbmkudHN4"
         },
         {
@@ -14698,7 +14718,8 @@
       "required": [
         "./routes/_middleware.ts",
         "./routes/[...catchall].tsx",
-        "./routes/index.tsx"
+        "./routes/index.tsx",
+        "./routes/live/previews/index.tsx"
       ],
       "properties": {
         "./routes/_middleware.ts": {
@@ -14719,6 +14740,13 @@
           "anyOf": [
             {
               "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler"
+            }
+          ]
+        },
+        "./routes/live/previews/index.tsx": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page"
             }
           ]
         }

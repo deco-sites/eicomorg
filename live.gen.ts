@@ -37,11 +37,12 @@ import * as $$$$$$$$15 from "./sections/SearchResult.tsx";
 import * as $$$$$$$$16 from "./sections/Header.tsx";
 import * as $$$$$$$$17 from "./sections/BannerSection.tsx";
 import * as $$$$$$$$18 from "./sections/Highlights.tsx";
-import * as $$$$$$$$19 from "./sections/BannerPLP.tsx";
-import * as $$$$$$$$20 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$21 from "./sections/BannerGrid.tsx";
-import * as $$$$$$$$22 from "./sections/HomeWhyEicomBlocksSection.tsx";
-import * as $$$$$$$$23 from "./sections/Courses.tsx";
+import * as $$$$$$$$19 from "./sections/Alert.tsx";
+import * as $$$$$$$$20 from "./sections/BannerPLP.tsx";
+import * as $$$$$$$$21 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$22 from "./sections/BannerGrid.tsx";
+import * as $$$$$$$$23 from "./sections/HomeWhyEicomBlocksSection.tsx";
+import * as $$$$$$$$24 from "./sections/Courses.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -50,7 +51,8 @@ import * as $live_editorData from "$live/routes/live/editorData.ts";
 import * as $live_inspect from "$live/routes/live/inspect/[...block].ts";
 import * as $live_release from "$live/routes/live/release.ts";
 import * as $live_meta from "$live/routes/live/_meta.ts";
-import * as $live_previews from "$live/routes/live/previews/[...block].tsx";
+import * as $live_previews_block from "$live/routes/live/previews/[...block].tsx";
+import * as $live_previews_index from "$live/routes/live/previews/index.tsx";
 import * as $live_catchall from "$live/routes/[...catchall].tsx";
 import * as i2$$$0 from "$live/loaders/state.ts";
 import * as i2$$$1 from "$live/loaders/workflows/events.ts";
@@ -165,7 +167,8 @@ const manifest = {
     "./routes/live/inspect/[...block].ts": $live_inspect,
     "./routes/live/invoke/[...key].ts": $live_invoke_key,
     "./routes/live/invoke/index.ts": $live_invoke,
-    "./routes/live/previews/[...block].tsx": $live_previews,
+    "./routes/live/previews/[...block].tsx": $live_previews_block,
+    "./routes/live/previews/index.tsx": $live_previews_index,
     "./routes/live/release.ts": $live_release,
     "./routes/live/workbench.ts": $live_workbench,
     "./routes/styles.css.ts": $$$$1,
@@ -188,13 +191,14 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
+    "deco-sites/eicomorg/sections/Alert.tsx": $$$$$$$$19,
     "deco-sites/eicomorg/sections/Alumni.tsx": $$$$$$$$4,
-    "deco-sites/eicomorg/sections/BannerGrid.tsx": $$$$$$$$21,
-    "deco-sites/eicomorg/sections/BannerPLP.tsx": $$$$$$$$19,
+    "deco-sites/eicomorg/sections/BannerGrid.tsx": $$$$$$$$22,
+    "deco-sites/eicomorg/sections/BannerPLP.tsx": $$$$$$$$20,
     "deco-sites/eicomorg/sections/BannerSection.tsx": $$$$$$$$17,
     "deco-sites/eicomorg/sections/Carousel.tsx": $$$$$$$$14,
     "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$8,
-    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$23,
+    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$24,
     "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$1,
     "deco-sites/eicomorg/sections/Faculty.tsx": $$$$$$$$7,
     "deco-sites/eicomorg/sections/Features.tsx": $$$$$$$$3,
@@ -203,14 +207,14 @@ const manifest = {
     "deco-sites/eicomorg/sections/Highlights.tsx": $$$$$$$$18,
     "deco-sites/eicomorg/sections/HomeAboutSection.tsx": $$$$$$$$5,
     "deco-sites/eicomorg/sections/HomeTextSection.tsx": $$$$$$$$13,
-    "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$22,
+    "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$23,
     "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx": $$$$$$$$9,
     "deco-sites/eicomorg/sections/LinkTree.tsx": $$$$$$$$2,
     "deco-sites/eicomorg/sections/Newsletter.tsx": $$$$$$$$12,
     "deco-sites/eicomorg/sections/ProductDetails.tsx": $$$$$$$$10,
     "deco-sites/eicomorg/sections/ProductShelf.tsx": $$$$$$$$0,
     "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$15,
-    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$20,
+    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$21,
     "deco-sites/eicomorg/sections/WishlistGallery.tsx": $$$$$$$$6,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,

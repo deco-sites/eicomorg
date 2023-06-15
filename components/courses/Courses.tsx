@@ -1,5 +1,6 @@
 import type { Image } from "deco-sites/std/components/types.ts";
 import type { AvailableIcons } from "../ui/Icon.tsx";
+import type { HTML } from "deco-sites/std/components/types.ts";
 import CourseCard from "./CourseCard.tsx";
 
 export interface CourseInfo {
@@ -7,8 +8,8 @@ export interface CourseInfo {
     src: Image;
     alt: string;
   };
-  title: string;
-  subtitle: string;
+  title: HTML;
+  subtitle: HTML;
   label?: string;
   labelColor?: string;
   href: string;

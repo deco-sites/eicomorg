@@ -1,5 +1,6 @@
 import Image from "deco-sites/std/components/Image.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type { HTML } from "deco-sites/std/components/types.ts";
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 
 export interface CourseCard {
@@ -7,8 +8,8 @@ export interface CourseCard {
     src: LiveImage;
     alt: string;
   };
-  title: string;
-  subtitle: string;
+  title: HTML;
+  subtitle: HTML;
   label?: string;
   labelColor?: string;
   href: string;
@@ -89,8 +90,8 @@ function CourseCard(
             <div
               className={`z-auto rounded-2xl px-4 pb-[2px] absolute left-[6%] ${
                 arraySize <= 3
-                  ? " xs:top-[40%] md:top-[30%]  lg:top-[45%]"
-                  : "xs:top-[43%] lg:top-[43%] md:top-[25%]"
+                  ? " xs:top-[40%] md:top-[30%]  lg:top-[40%] xl:top-[45%]"
+                  : "xs:top-[39%] lg:top-[30%] md:top-[25%] xl:top-[45%]"
               }`}
               style={{ backgroundColor: labelColor }}
             >
