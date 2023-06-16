@@ -5,7 +5,7 @@ export interface Props {
 }
 
 function ForIndividualsTextSection(
-  { title  }: Props,
+  { title }: Props,
 ) {
   return (
     <div class="container-fluid translate-y-20 text-center py-[100px]">
