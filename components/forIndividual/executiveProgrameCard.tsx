@@ -16,7 +16,7 @@ export interface topTextProps {
 }
 
 export interface CardInfo {
-  image: LiveImage
+  image: LiveImage;
   label1: LabelProps;
   label2: LabelProps;
   labelUrl: string;
