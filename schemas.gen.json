@@ -9849,21 +9849,7 @@
       "type": "object",
       "properties": {
         "image": {
-          "type": "object",
-          "properties": {
-            "desktop": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-              "title": "Desktop"
-            },
-            "mobile": {
-              "type": "string",
-              "title": "Mobile"
-            }
-          },
-          "required": [
-            "desktop",
-            "mobile"
-          ],
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Image"
         },
         "label1": {
