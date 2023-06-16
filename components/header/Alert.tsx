@@ -26,8 +26,13 @@ function Alert({ alert }: Props) {
 
   return (
     <>
-      <div id={id} className={showAlert ? "flex z-50 relative md:top-[70px] xs:top-[100px]" : "hidden "}
-        style={{ backgroundColor: backgroundColor }}>
+      <div
+        id={id}
+        className={showAlert
+          ? "flex z-50 relative md:top-[70px] xs:top-[100px]"
+          : "hidden "}
+        style={{ backgroundColor: backgroundColor }}
+      >
         <a
           href={url}
           className="text-secondary-content xs:mt-2 md:mt-0 flex text-center font-semibold xs:text-sm md:text-base justify-center items-center w-screen md:h-[38px] xs:h-[30px]"
