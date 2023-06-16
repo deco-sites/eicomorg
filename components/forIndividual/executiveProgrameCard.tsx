@@ -16,10 +16,7 @@ export interface topTextProps {
 }
 
 export interface CardInfo {
-  image: {
-    desktop: LiveImage;
-    mobile: string;
-  };
+  image: LiveImage;
   label1: LabelProps;
   label2: LabelProps;
   labelUrl: string;
@@ -52,7 +49,7 @@ function Courses(
           <div class="border-1 bg-white border-solid border-gray-300 rounded-md mt-10 mb-16 xs:mx-3 lg:mx-0 p-0 flex xs:flex-col md:flex-row">
             <div
               style={{
-                backgroundImage: `url(${executiveProgramme.image.desktop})`,
+                backgroundImage: `url(${executiveProgramme.image})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "0%",
