@@ -80,7 +80,7 @@ function Courses(
                     {executiveProgramme.label2.text}
                   </div>
                 </a>
-                <div class="md:pt-1 lg:pt-6 mt-3 mb-1 lg:text-3xl md:text-lg font-semibold">
+                <div class="md:pt-1 lg:pt-6 mt-3 mb-1 lg:text-3xl md:text-lg lg:overflow-hidden font-semibold">
                   <h3>
                     <span
                       dangerouslySetInnerHTML={{
@@ -90,7 +90,7 @@ function Courses(
                     </span>
                   </h3>
                 </div>
-                <div class="h-14 max-h-16  text-gray-700 mt-0 md:mb-14 lg:mb-12 lg:overflow-hidden md:text-base lg:text-xl">
+                <div class="h-14 max-h-16  text-gray-700 mt-0 xs:mb-8 md:mb-14 lg:mb-12 lg:overflow-hidden md:text-base lg:text-xl">
                   <p>
                     <span
                       dangerouslySetInnerHTML={{
