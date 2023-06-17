@@ -2,6 +2,8 @@ import Image from "deco-sites/std/components/Image.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import type { HTML } from "deco-sites/std/components/types.ts";
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import { Ref } from 'preact/hooks';
+import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface CourseCard {
   image: {
@@ -39,14 +41,21 @@ function CourseCard(
     footerIcon,
   } = courseCard;
 
+  const [elementRef, isShown] = useScrollShow();
+
   return (
     <div
-      className={`opacity-100 transform translate-x-0 translate-y-0 translate-z-0 
-    scale-100 rotate-x-0 rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d 
-    md:px-3 xs:p-5 flex flex-row justify-between relative ${
+      ref={elementRef as Ref<HTMLDivElement>}
+      className={`
+        opacity-100 transform translate-x-0 translate-y-0 translate-z-0 
+        scale-100 rotate-x-0 rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d 
+        md:px-3 xs:p-5 flex flex-row justify-between relative ${
         arraySize <= 3 ? "md:w-96" : "lg:w-96"
       }
-    xs:w-full`}
+        xs:w-full
+        ${isShown ? "animate-slide-bottom" : ""}
+    
+    `}
     >
       <a
         href={href}
