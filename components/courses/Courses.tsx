@@ -1,7 +1,7 @@
 import type { Image } from "deco-sites/std/components/types.ts";
 import type { AvailableIcons } from "../ui/Icon.tsx";
 import type { HTML } from "deco-sites/std/components/types.ts";
-import CourseCard from "./CourseCard.tsx";
+import CourseCard from "$store/islands/CourseCard.tsx";
 
 export interface CourseInfo {
   image: {

@@ -1,1 +1,1 @@
-export { default } from "$store/components/ui/HomeWhyEicomSection.tsx";
+export { default } from "$store/islands/HomeWhyEicomSection.tsx";
