@@ -73,7 +73,7 @@ function CourseCard(
           </h2>
           <p class="h-auto mt-0 mb-3 text-base leading-5 overflow-hidden">
             <span dangerouslySetInnerHTML={{ __html: subtitle }}></span>
-          </p>
+            </p>
           <div class="justify-start items-center pt-0 pb-2 flex">
             {footerIcon && (
               <Icon
