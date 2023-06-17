@@ -116,7 +116,7 @@ function BannerSection(
           backgroundSize: "cover",
           zIndex: 0,
         }}
-        class={`hidden lg:block w-5/6 xl:bg-[80%] lg:bg-[-45%_100%] h-full absolute top-0 right-0`}
+        class={`hidden lg:block w-5/6 xl:bg-[80%] lg:bg-[-45%_100%] h-full absolute top-0 right-0 animate-slide-banner-right`}
       >
       </div>
 
@@ -128,7 +128,7 @@ function BannerSection(
           backgroundPosition: "80%",
           zIndex: 0,
         }}
-        class={`lg:hidden w-full h-[300px] absolute top-0 right-0`}
+        class={`lg:hidden w-full h-[300px] absolute top-0 right-0 `}
       >
       </div>
     </div>
