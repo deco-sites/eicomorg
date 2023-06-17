@@ -68,11 +68,11 @@ function CourseCard(
         </div>
         <div id="text-part" class="flex flex-col justify-around py-3 px-5">
           <h2 class="text-lg font-bold text-[#262628] mt-5 mb-3">
-          <span dangerouslySetInnerHTML={{ __html: title }}></span>
+            <span dangerouslySetInnerHTML={{ __html: title }}></span>
             <br />
           </h2>
           <p class="h-auto mt-0 mb-3 text-base leading-5 overflow-hidden">
-          <span dangerouslySetInnerHTML={{ __html: subtitle }}></span>
+            <span dangerouslySetInnerHTML={{ __html: subtitle }}></span>
           </p>
           <div class="justify-start items-center pt-0 pb-2 flex">
             {footerIcon && (
