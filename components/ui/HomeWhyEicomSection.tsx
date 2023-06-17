@@ -2,7 +2,7 @@ import type {
   HTML,
   Image as LiveImage,
 } from "deco-sites/std/components/types.ts";
-import { Ref } from 'preact/hooks';
+import { Ref } from "preact/hooks";
 import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface ContentBox {

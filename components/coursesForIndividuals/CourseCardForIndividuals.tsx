@@ -64,7 +64,6 @@ function CourseCardForIndividuals(
           </h2>
           <p class="h-auto mt-0 text-lg  overflow-hidden">
             <span dangerouslySetInnerHTML={{ __html: subtitle }}>
-              daikdajkajlaakalaldaldaladaddajdadaldajhl
             </span>
           </p>
         </div>
