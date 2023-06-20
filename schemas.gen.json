@@ -103,6 +103,7 @@
               "deco-sites/eicomorg/sections/Footer.tsx",
               "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx",
               "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx",
+              "deco-sites/eicomorg/sections/Graphics.tsx",
               "deco-sites/eicomorg/sections/Header.tsx",
               "deco-sites/eicomorg/sections/Highlights.tsx",
               "deco-sites/eicomorg/sections/HomeAboutSection.tsx",
@@ -6652,7 +6653,7 @@
             "boolean",
             "null"
           ],
-          "description": "remove unavailable items from result",
+          "description": "remove unavailable items from result. This may result in slower websites",
           "title": "Hide Unavailable Items"
         }
       },
@@ -6714,7 +6715,8 @@
         "pathTemplate",
         "handler"
       ],
-      "title": "Route"
+      "title": "Route",
+      "titleBy": "pathTemplate"
     },
     "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]": {
       "anyOf": [
@@ -10701,6 +10703,65 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/ForIndividualsTextSection.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@topPartText": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        }
+      },
+      "required": [
+        "title",
+        "content"
+      ],
+      "title": "topPartText"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@graphicImage": {
+      "type": "object",
+      "properties": {
+        "graphic": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Graphic"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        }
+      },
+      "required": [
+        "graphic",
+        "title"
+      ],
+      "title": "graphicImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@topPartText",
+          "title": "Top Text"
+        },
+        "graphic1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@graphicImage",
+          "title": "Graphic1"
+        },
+        "graphic2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@graphicImage",
+          "title": "Graphic2"
+        }
+      },
+      "required": [
+        "topText",
+        "graphic1",
+        "graphic2"
+      ],
+      "title": "deco-sites/eicomorg/components/graphics/graphics.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hpZ2hsaWdodHMudHN4@Highlight": {
       "type": "object",
       "properties": {
@@ -11599,51 +11660,12 @@
       ],
       "title": "deco-cx/live/actions/workflows/signal.ts@Props"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowProps": {
+      "title": "WorkflowProps"
+    },
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@CommonProps": {
       "type": "object",
       "properties": {
-        "key": {
-          "type": "string",
-          "title": "Key"
-        },
-        "props": {
-          "type": "object",
-          "title": "Props"
-        }
-      },
-      "required": [
-        "key",
-        "props"
-      ],
-      "title": "WorkflowRef"
-    },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@649808247687af7388e003a267dc99e5|WorkflowRef": {
-      "anyOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
-        },
-        {
-          "type": "object",
-          "properties": {
-            "ref": {
-              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy93b3JrZmxvdy50cw==@Workflow",
-              "title": "Ref"
-            }
-          },
-          "required": [
-            "ref"
-          ]
-        }
-      ],
-      "title": "649808247687af7388e003a267dc99e5|WorkflowRef"
-    },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
-      "type": "object",
-      "properties": {
-        "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@649808247687af7388e003a267dc99e5|WorkflowRef",
-          "title": "Workflow"
-        },
         "id": {
           "type": [
             "string",
@@ -11651,18 +11673,59 @@
           ],
           "title": "Id"
         },
+        "metadata": {
+          "title": "Metadata"
+        }
+      },
+      "required": [],
+      "title": "CommonProps"
+    },
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@AnyWorkflow": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@CommonProps"
+        }
+      ],
+      "properties": {
         "args": {
-          "type": "array",
-          "items": {
-            "type": "object"
-          },
           "title": "Args"
+        },
+        "workflow": {
+          "type": "object",
+          "properties": {
+            "data": {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy93b3JrZmxvdy50cw==@Workflow",
+              "title": "Data"
+            },
+            "__resolveType": {
+              "type": "string",
+              "const": "resolved",
+              "title": "__resolve Type"
+            }
+          },
+          "required": [
+            "data",
+            "__resolveType"
+          ],
+          "title": "Workflow"
         }
       },
       "required": [
         "workflow"
       ],
-      "title": "deco-cx/live/actions/workflows/start.ts@Props"
+      "title": "AnyWorkflow"
+    },
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@AnyWorkflow|WorkflowProps": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowProps"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@AnyWorkflow"
+        }
+      ],
+      "title": "deco-cx/live/actions/workflows/start.ts@AnyWorkflow|WorkflowProps"
     },
     "ZGVjby1zaXRlcy9zdGQvcGFja3MvdnRleC9hY3Rpb25zL2NhcnQvYWRkSXRlbXMudHM=@Item": {
       "type": "object",
@@ -13922,6 +13985,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmFwaGljcy50c3g=": {
+      "title": "deco-sites/eicomorg/sections/Graphics.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/Graphics.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/Graphics.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9IZWFkZXIudHN4": {
       "title": "deco-sites/eicomorg/sections/Header.tsx",
       "type": "object",
@@ -14727,7 +14811,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@AnyWorkflow|WorkflowProps"
         }
       ],
       "required": [
@@ -15412,6 +15496,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Gb3JJbmRpdmlkdWFsc1RleHRTZWN0aW9uLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmFwaGljcy50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9IZWFkZXIudHN4"
