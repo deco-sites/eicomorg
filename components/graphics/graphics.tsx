@@ -3,19 +3,19 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 
 export interface topPartText {
-    title: string;
-    content: HTML;
+  title: string;
+  content: HTML;
 }
 
 export interface graphicImage {
-    graphic: LiveImage
-    title: string
+  graphic: LiveImage;
+  title: string;
 }
 
 export interface Props {
-    topText: topPartText
-    graphic1: graphicImage
-    graphic2: graphicImage
+  topText: topPartText;
+  graphic1: graphicImage;
+  graphic2: graphicImage;
 }
 
 function Graphics(
@@ -38,10 +38,10 @@ function Graphics(
       </div>
       <div class="mx-3 px-[-10px]">
         <div class="lg:w-1/2 xs:w-full float-left min-h-1 relative">
-            <div class="text-gray-900 uppercase text-lg font-bold leading-6 mt-5">
-                {graphic1.title}
-            </div>
-            <div>
+          <div class="text-gray-900 uppercase text-lg font-bold leading-6 mt-5">
+            {graphic1.title}
+          </div>
+          <div>
             <Image
               src={graphic1.graphic}
               alt={graphic1.title}
@@ -49,13 +49,13 @@ function Graphics(
               height={360}
               class="lg:h-[360px]  mx-auto max-w-full inline-block align-middle"
             />
-            </div>
+          </div>
         </div>
         <div class="lg:w-1/2 xs:w-full float-left min-h-1 px-3 relative">
-        <div class="text-gray-900 uppercase text-lg font-bold leading-6 mt-5">
-                {graphic2.title}
-            </div>
-            <div>
+          <div class="text-gray-900 uppercase text-lg font-bold leading-6 mt-5">
+            {graphic2.title}
+          </div>
+          <div>
             <Image
               src={graphic2.graphic}
               alt={graphic2.title}
@@ -63,7 +63,7 @@ function Graphics(
               height={360}
               class="lg:h-[360px]  mx-auto max-w-full inline-block align-middle"
             />
-            </div>
+          </div>
         </div>
       </div>
     </div>
