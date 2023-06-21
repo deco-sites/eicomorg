@@ -71,6 +71,9 @@ export default {
         "xs": "320px",
         "xl": "2000px",
       },
+      listStyleType: {
+        square: "square",
+      },
       backgroundImage: {
         "gray-lines-texture": "url('/texture-lines-grays.svg')",
       },

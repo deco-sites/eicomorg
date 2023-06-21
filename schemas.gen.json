@@ -96,6 +96,7 @@
               "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx",
               "deco-sites/eicomorg/sections/Carousel.tsx",
               "deco-sites/eicomorg/sections/CookieConsent.tsx",
+              "deco-sites/eicomorg/sections/CourseInfo.tsx",
               "deco-sites/eicomorg/sections/Courses.tsx",
               "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx",
               "deco-sites/eicomorg/sections/DesignSystem.tsx",
@@ -104,6 +105,7 @@
               "deco-sites/eicomorg/sections/Footer.tsx",
               "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx",
               "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx",
+              "deco-sites/eicomorg/sections/Graphics.tsx",
               "deco-sites/eicomorg/sections/Header.tsx",
               "deco-sites/eicomorg/sections/Highlights.tsx",
               "deco-sites/eicomorg/sections/HomeAboutSection.tsx",
@@ -9335,6 +9337,106 @@
       "required": [],
       "title": "deco-sites/eicomorg/components/ui/BannerCarousel.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@topPartText": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        }
+      },
+      "required": [
+        "title",
+        "content"
+      ],
+      "title": "topPartText"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@backGroundInfo": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile"
+        },
+        "color": {
+          "type": "string",
+          "title": "Color"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile",
+        "color"
+      ],
+      "title": "backGroundInfo"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML"
+      },
+      "title": "HTML[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "label": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Label"
+        },
+        "children": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML[]",
+          "title": "Children"
+        }
+      },
+      "required": [
+        "title",
+        "label",
+        "children"
+      ],
+      "title": "courseInfo"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo"
+      },
+      "title": "courseInfo[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@topPartText",
+          "title": "Top Text"
+        },
+        "backgroundInfo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@backGroundInfo",
+          "title": "Background Info"
+        },
+        "courseInfoDetails": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo[]",
+          "title": "Course Info Details"
+        }
+      },
+      "required": [
+        "topText",
+        "backgroundInfo"
+      ],
+      "title": "deco-sites/eicomorg/components/courseInfo/CourseInfo.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZXMvQ291cnNlcy50c3g=@CourseInfo": {
       "type": "object",
       "properties": {
@@ -10981,6 +11083,65 @@
         "title"
       ],
       "title": "deco-sites/eicomorg/components/ui/ForIndividualsTextSection.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@topPartText": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        }
+      },
+      "required": [
+        "title",
+        "content"
+      ],
+      "title": "topPartText"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@graphicImage": {
+      "type": "object",
+      "properties": {
+        "graphic": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Graphic"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        }
+      },
+      "required": [
+        "graphic",
+        "title"
+      ],
+      "title": "graphicImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@topPartText",
+          "title": "Top Text"
+        },
+        "graphic1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@graphicImage",
+          "title": "Graphic1"
+        },
+        "graphic2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@graphicImage",
+          "title": "Graphic2"
+        }
+      },
+      "required": [
+        "topText",
+        "graphic1",
+        "graphic2"
+      ],
+      "title": "deco-sites/eicomorg/components/graphics/graphics.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hpZ2hsaWdodHMudHN4@Highlight": {
       "type": "object",
@@ -14058,6 +14219,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db3Vyc2VJbmZvLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/CourseInfo.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/CourseInfo.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/CourseInfo.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db3Vyc2VzLnRzeA==": {
       "title": "deco-sites/eicomorg/sections/Courses.tsx",
       "type": "object",
@@ -14223,6 +14405,27 @@
             "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmFwaGljcy50c3g=": {
+      "title": "deco-sites/eicomorg/sections/Graphics.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/Graphics.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/Graphics.tsx"
         }
       }
     },
@@ -15697,6 +15900,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db29raWVDb25zZW50LnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db3Vyc2VJbmZvLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db3Vyc2VzLnRzeA=="
         },
         {
@@ -15719,6 +15925,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Gb3JJbmRpdmlkdWFsc1RleHRTZWN0aW9uLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmFwaGljcy50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9IZWFkZXIudHN4"
