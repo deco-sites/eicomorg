@@ -2,6 +2,8 @@ import type {
   HTML,
   Image as LiveImage,
 } from "deco-sites/std/components/types.ts";
+import { Ref } from "preact/hooks";
+import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface Block {
   title: string;
@@ -76,12 +78,19 @@ function SectionBlock({ block }: SectionBlockProps) {
 function HomeWhyEicomBlocksSection(
   { blocks, sectionButton }: Props,
 ) {
+  const [elementRef, isShown] = useScrollShow();
+
   return (
     <div
+      ref={elementRef as Ref<HTMLDivElement>}
       style={{ backgroundColor: "#f3f3f3" }}
       class="container-fluid pb-[20px]"
     >
-      <div class="grid lg:grid-cols-[repeat(auto-fit,_20%)] md:grid-cols-[repeat(auto-fit,_30%)] m-aut justify-center gap-3">
+      <div
+        class={`grid lg:grid-cols-[repeat(auto-fit,_20%)] md:grid-cols-[repeat(auto-fit,_30%)] m-aut justify-center gap-3 ${
+          isShown ? "animate-slide-bottom" : ""
+        }`}
+      >
         {blocks.map((block) => <SectionBlock block={block} />)}
       </div>
 

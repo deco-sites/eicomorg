@@ -1,7 +1,7 @@
 import type { Image } from "deco-sites/std/components/types.ts";
 import type { AvailableIcons } from "../ui/Icon.tsx";
 import type { HTML } from "deco-sites/std/components/types.ts";
-import CourseCard from "$store/islands/CourseCard.tsx";
+import CourseCardForIndividuals from "./CourseCardForIndividuals.tsx";
 
 export interface CourseInfo {
   image: {
@@ -10,11 +10,7 @@ export interface CourseInfo {
   };
   title: HTML;
   subtitle: HTML;
-  label?: string;
-  labelColor?: string;
   href: string;
-  footerText?: string;
-  footerIcon?: AvailableIcons;
 }
 
 export interface Props {
@@ -24,7 +20,7 @@ export interface Props {
   courses: CourseInfo[];
 }
 
-function Courses(
+function CoursesForIndividuals(
   {
     courses,
   }: Props,
@@ -34,7 +30,7 @@ function Courses(
     <div class="container mx-auto block">
       <div class="flex xs:flex-col md:flex-row items-stretch mt-10 pt-16 mx-[-10px] justify-center">
         {courses.map((courseCard, index) => (
-          <CourseCard
+          <CourseCardForIndividuals
             courseCard={courseCard}
             arraySize={arraySize}
             index={index}
@@ -45,4 +41,4 @@ function Courses(
   );
 }
 
-export default Courses;
+export default CoursesForIndividuals;

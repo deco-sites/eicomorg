@@ -26,7 +26,7 @@ export interface Props {
   actionLinksContainer: ActionLinksContainer;
 }
 
-function BannerSection(
+function BannerSectionForIndividuals(
   { title, backgroundImage, actionLinksContainer }: Props,
 ) {
   const titleContainer: JSX.CSSProperties = {
@@ -45,21 +45,21 @@ function BannerSection(
 
   return (
     <div
-      class="container-fluid top-[65px] grid relative px-4 lg:h-[640px]"
+      class="container-fluid top-[65px] grid relative px-4 lg:h-[720px]"
       style={{ backgroundColor: "#f3f3f3" }}
     >
-      <div class="lg:w-1/3 lg:mx-0 xl:mx-56 sm:w-auto z-[1]">
+      <div class="lg:w-1/3 lg:ml-6 lg:mx-0 xl:mx-56 sm:w-auto z-[1]">
         <div class="lg:mx-8 xl:mx-36 lg:my-16 w-full my-64 mb-0">
           <div
             class="
-            lg:w-[660px]
-            lg:h-[300px]
+            lg:w-[820px]
+            lg:h-[330px]
             lg:leading-[68px]
             lg:px-12
-            lg:py-12 
+            lg:py-6 
             lg:text-[55px]
             
-            md:text-[52px]
+            md:text-[48px]
             md:leading-[60px]
             md:px-4 
             md:py-4
@@ -84,8 +84,8 @@ function BannerSection(
           lg:w-[460px]
           lg:mx-20
           xl:mx-44
-
-          py-8
+          lg:mt-[-50px]
+          py-2
         ">
           <span
             class="text-[18px]"
@@ -116,7 +116,7 @@ function BannerSection(
           backgroundSize: "cover",
           zIndex: 0,
         }}
-        class={`hidden lg:block w-5/6 xl:bg-[80%] lg:bg-[-45%_100%] h-full absolute top-0 right-0 animate-slide-banner-right`}
+        class={`hidden lg:block w-5/6 xl:bg-[80%] lg:bg-[-45%_100%] h-full absolute top-0 right-0`}
       >
       </div>
 
@@ -128,11 +128,11 @@ function BannerSection(
           backgroundPosition: "80%",
           zIndex: 0,
         }}
-        class={`lg:hidden w-full h-[300px] absolute top-0 right-0 `}
+        class={`lg:hidden w-full h-[300px] absolute top-0 right-0`}
       >
       </div>
     </div>
   );
 }
 
-export default BannerSection;
+export default BannerSectionForIndividuals;

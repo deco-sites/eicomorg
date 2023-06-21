@@ -8,7 +8,6 @@ import type { HTML } from "deco-sites/std/components/types.ts";
 export interface Alert {
   text: HTML;
   backgroundColor: string;
-  /** @description value in pixels such as 13px */
   url?: string;
 }
 
@@ -27,21 +26,22 @@ function Alert({ alert }: Props) {
 
   return (
     <>
-      <div id={id} className={showAlert ? "" : "hidden"}>
-        <Slider
-          className="carousel carousel-center gap-6 scrollbar-none"
-          style={{ backgroundColor: backgroundColor }}
+      <div
+        id={id}
+        className={showAlert
+          ? "flex z-50 relative md:top-[70px] xs:top-[100px]"
+          : "hidden "}
+        style={{ backgroundColor: backgroundColor }}
+      >
+        <a
+          href={url}
+          className="text-secondary-content xs:mt-2 md:mt-0 flex text-center font-semibold xs:text-sm md:text-base justify-center items-center w-screen md:h-[38px] xs:h-[30px]"
         >
-          <a
-            href={url}
-            className="text-secondary-content z-20 flex text-center font-semibold justify-center items-center w-screen h-[38px]"
-          >
-            <span dangerouslySetInnerHTML={{ __html: text }}></span>
-          </a>
-          <Button class="btn-ghost btn-circle" onClick={handleClick}>
-            <Icon id="XMark" width={20} height={20} strokeWidth={2} />
-          </Button>
-        </Slider>
+          <span dangerouslySetInnerHTML={{ __html: text }}></span>
+        </a>
+        <Button class="btn-ghost btn-circle float-right" onClick={handleClick}>
+          <Icon id="XMark" width={20} height={20} strokeWidth={2} />
+        </Button>
       </div>
     </>
   );

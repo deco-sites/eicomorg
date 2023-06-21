@@ -3,6 +3,8 @@ import type {
   Image as LiveImage,
 } from "deco-sites/std/components/types.ts";
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import { Ref } from "preact/hooks";
+import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface ActionLink {
   title: string;
@@ -71,8 +73,13 @@ function ActionLinkComponent({ actionLink }: { actionLink: ActionLink }) {
 function HomeAboutSection(
   { title, image, paragraph, actionsLinks }: Props,
 ) {
+  const [elementRef, isShown] = useScrollShow();
+
   return (
-    <div class="container-fluid bg-gray-lines-texture bg-contain bg-no-repeat bg-[100%] h-[760px] lg:py-[100px]">
+    <div
+      ref={elementRef as Ref<HTMLDivElement>}
+      class="container-fluid bg-gray-lines-texture bg-contain bg-no-repeat bg-[100%] h-[760px] lg:py-[100px]"
+    >
       <div class="lg:w-[70rem] relative m-auto block">
         <div
           class="
@@ -125,7 +132,8 @@ function HomeAboutSection(
         >
         </div>
 
-        <div class="
+        <div
+          class={`
           bg-white
           rounded-sm
           border
@@ -149,7 +157,10 @@ function HomeAboutSection(
 
           xs:bottom-[40px]
           xs:w-[97%]
-        ">
+
+          ${isShown ? "animate-slide-bottom" : ""}
+        `}
+        >
           <span
             dangerouslySetInnerHTML={{ __html: paragraph }}
           >

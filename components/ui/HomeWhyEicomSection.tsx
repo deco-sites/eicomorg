@@ -2,8 +2,8 @@ import type {
   HTML,
   Image as LiveImage,
 } from "deco-sites/std/components/types.ts";
-
-import Markdown from "../Markdown.tsx";
+import { Ref } from "preact/hooks";
+import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface ContentBox {
   title: HTML;
@@ -24,8 +24,11 @@ export interface Props {
 function HomeWhyEicomSection(
   { title, image, contentBox }: Props,
 ) {
+  const [elementRef, isShown] = useScrollShow();
+
   return (
     <div
+      ref={elementRef as Ref<HTMLDivElement>}
       style={{ backgroundColor: "#f3f3f3" }}
       class="container-fluid py-[100px] pb-[100px] md:h-[43rem] xs:h-[50rem]"
     >
@@ -93,7 +96,7 @@ function HomeWhyEicomSection(
               boxShadow: "4px 4px 7px rgba(38, 38, 40, .1)",
               borderRadius: "2px",
             }}
-            class="
+            class={`
               md:absolute
               xs:relative
               
@@ -116,7 +119,10 @@ function HomeWhyEicomSection(
               xs:py-[25px]
               xs:px-[15px]
               
-              bg-white"
+              bg-white
+              
+              ${isShown ? "animate-slide-left" : ""}
+            `}
           >
             <h2
               style={{ color: "#262628" }}
