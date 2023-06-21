@@ -72,7 +72,7 @@ export default {
         "xl": "2000px",
       },
       listStyleType: {
-        square: 'square'
+        square: "square",
       },
       backgroundImage: {
         "gray-lines-texture": "url('/texture-lines-grays.svg')",

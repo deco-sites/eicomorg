@@ -1,6 +1,6 @@
 import type { HTML } from "deco-sites/std/components/types.ts";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import CourseInfoDetail  from './CourseInfoDetail.tsx'
+import CourseInfoDetail from "./CourseInfoDetail.tsx";
 
 export interface topPartText {
   title: string;
@@ -14,9 +14,9 @@ export interface backGroundInfo {
 }
 
 export interface courseInfo {
-    title: string;
-    label: HTML;
-    children: HTML[]
+  title: string;
+  label: HTML;
+  children: HTML[];
 }
 
 export interface Props {
@@ -25,12 +25,11 @@ export interface Props {
   courseInfoDetails?: courseInfo[];
 }
 
-
 function CourseInfo(
-    { topText, backgroundInfo, courseInfoDetails = [] }: Props,
-  ) {
-    return (
-      <>
+  { topText, backgroundInfo, courseInfoDetails = [] }: Props,
+) {
+  return (
+    <>
       {/* desktop view */}
       <div
         style={{
@@ -45,11 +44,16 @@ function CourseInfo(
       >
         <div class="max-w-[1120px] mx-auto pr-0 relative">
           <div class="max-w-[720px]">
-            <h2 class="text-orange-500 text-left uppercase my-5 font-bold text-3xl leading-9 block">{topText.title}</h2>
-            <p class="mb-5"><span
-            style={{ color: "#f3f3f3" }}
-            dangerouslySetInnerHTML={{ __html: topText.content }}
-            ></span></p>
+            <h2 class="text-orange-500 text-left uppercase my-5 font-bold text-3xl leading-9 block">
+              {topText.title}
+            </h2>
+            <p class="mb-5">
+              <span
+                style={{ color: "#f3f3f3" }}
+                dangerouslySetInnerHTML={{ __html: topText.content }}
+              >
+              </span>
+            </p>
             <div class="mt-5">
               {courseInfoDetails.map((course) => (
                 <CourseInfoDetail course={course} />
@@ -59,23 +63,31 @@ function CourseInfo(
         </div>
       </div>
       {/* mobile view */}
-    <div class={`py-[100px] px-4 xs:block md:hidden`} style={{backgroundColor: backgroundInfo.color}}>
-      <div class="max-w-[1120px] mx-auto pr-0 relative">
-        <div class="max-w-[720px]">
-          <h2 class="text-orange-500 text-left uppercase my-5 font-bold text-3xl leading-9 block">{topText.title}</h2>
-          <p class="mb-5"><span
-          style={{ color: "#f3f3f3" }}
-          dangerouslySetInnerHTML={{ __html: topText.content }}
-          ></span></p>
-          <div class="mt-5">
-            {courseInfoDetails.map((course) => (
-              <CourseInfoDetail course={course} />
-            ))}
+      <div
+        class={`py-[100px] px-4 xs:block md:hidden`}
+        style={{ backgroundColor: backgroundInfo.color }}
+      >
+        <div class="max-w-[1120px] mx-auto pr-0 relative">
+          <div class="max-w-[720px]">
+            <h2 class="text-orange-500 text-left uppercase my-5 font-bold text-3xl leading-9 block">
+              {topText.title}
+            </h2>
+            <p class="mb-5">
+              <span
+                style={{ color: "#f3f3f3" }}
+                dangerouslySetInnerHTML={{ __html: topText.content }}
+              >
+              </span>
+            </p>
+            <div class="mt-5">
+              {courseInfoDetails.map((course) => (
+                <CourseInfoDetail course={course} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </>
-    )
+  );
 }
 export default CourseInfo;
