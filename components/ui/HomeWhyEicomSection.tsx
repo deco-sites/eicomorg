@@ -16,7 +16,7 @@ export interface ContainerImage {
 }
 
 export interface Props {
-  title: string;
+  title: HTML;
   image: ContainerImage;
   contentBox: ContentBox;
 }
@@ -30,14 +30,14 @@ function HomeWhyEicomSection(
     <div
       ref={elementRef as Ref<HTMLDivElement>}
       style={{ backgroundColor: "#f3f3f3" }}
-      class="container-fluid py-[100px] pb-[100px] md:h-[43rem] xs:h-[50rem]"
+      class="container-fluid py-[100px] pb-[100px] md:h-[43rem] xs:min-h-[42rem]"
     >
       <div class="lg:w-[1120px] m-auto relative">
         <span
           class="block text-center font-AvenirNextLTPro uppercase text-[28px]"
+          dangerouslySetInnerHTML={{ __html: title }}
           style={{ color: "#f26f21", fontWeight: "bold" }}
         >
-          {title}
         </span>
 
         <div class="
@@ -87,7 +87,7 @@ function HomeWhyEicomSection(
               bg-cover
               bg-[50%]
 
-              md:invisible
+              md:hidden
             `}
           >
           </div>
@@ -127,7 +127,8 @@ function HomeWhyEicomSection(
             <h2
               style={{ color: "#262628" }}
               class="
-                pb-[10px]
+                md:pb-[10px]
+                xs:pb-[15px]
                 text-left
                 font-medium
                 lg:text-[22px]
