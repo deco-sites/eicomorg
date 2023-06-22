@@ -30,7 +30,7 @@ function HomeWhyEicomSection(
     <div
       ref={elementRef as Ref<HTMLDivElement>}
       style={{ backgroundColor: "#f3f3f3" }}
-      class="container-fluid py-[100px] pb-[100px] md:h-[43rem] xs:h-[50rem]"
+      class="container-fluid py-[100px] pb-[100px] md:h-[43rem] xs:min-h-[42rem]"
     >
       <div class="lg:w-[1120px] m-auto relative">
         <span

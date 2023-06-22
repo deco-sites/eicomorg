@@ -2,7 +2,7 @@ import type {
   HTML,
   Image as LiveImage,
 } from "deco-sites/std/components/types.ts";
-import { Ref } from "preact/hooks";
+import { Ref, MutableRef } from "preact/hooks";
 import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface BlockIcon {
@@ -29,11 +29,22 @@ export interface Props {
 
 interface SectionBlockProps {
   block: Block;
+  index: number;
+  isShown: boolean | MutableRef<HTMLDivElement | null>;
 }
 
-function SectionBlock({ block }: SectionBlockProps) {
+function SectionBlock({ block, index, isShown }: SectionBlockProps) {
   return (
-    <div class="xs:px-6 xs:my-4">
+    <div
+      style={{ animationDelay: `${index * 120}ms` }}
+      class={`
+        xs:px-6 xs:my-10 xs:first-of-type:my-0
+        opacity-0
+        md:w-1/3
+        ${isShown ? "animate-slide-bottom" : ""}
+      `}
+      
+    >
       <img
         class="
           h-[48px]
@@ -92,11 +103,9 @@ function HomeWhyEicomBlocksSection(
       class="container-fluid pb-[20px]"
     >
       <div
-        class={`grid lg:grid-cols-[repeat(auto-fit,_20%)] md:grid-cols-[repeat(auto-fit,_30%)] m-aut justify-center gap-3 ${
-          isShown ? "animate-slide-bottom" : ""
-        }`}
+        class={`lg:max-w-[1120px] md:flex xs:block m-auto justify-center`}
       >
-        {blocks.map((block) => <SectionBlock block={block} />)}
+        {blocks.map((block, index) => <SectionBlock block={block} index={index} isShown={isShown} />)}
       </div>
 
       <div class="text-center my-[60px]">
