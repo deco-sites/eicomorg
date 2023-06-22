@@ -40,7 +40,7 @@ export default {
       },
       keyframes: {
         "slide-banner-right-frame": {
-          from: { opacity: 0, backgroundPosition: "500px" },
+          from: { opacity: 0, backgroundPosition: "100px" },
           to: { opacity: 1, BackgroundPosition: "cover" },
         },
         "slide-left-frame": {
