@@ -5,10 +5,15 @@ import type {
 import { Ref } from "preact/hooks";
 import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
+export interface BlockIcon {
+  image: LiveImage;
+  alt: string;
+}
+
 export interface Block {
   title: string;
   content: HTML;
-  icon: LiveImage;
+  icon: BlockIcon;
 }
 
 export interface SectionButton {
@@ -41,8 +46,8 @@ function SectionBlock({ block }: SectionBlockProps) {
           xs:mr-auto
           xs:ml-auto
         "
-        src={block.icon}
-        alt=""
+        src={block.icon.image}
+        alt={block.icon.alt}
       />
       <h2 class="
         uppercase
