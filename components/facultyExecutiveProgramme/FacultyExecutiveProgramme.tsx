@@ -18,13 +18,14 @@ export interface FacultyCardProps {
   };
 }
 
-
 export interface Props {
   facultyTopPart: FacultyTopPartProps;
   facultyMembers: FacultyCardProps[];
 }
 
-function FacultyExecutiveProgramme({ facultyTopPart, facultyMembers = [] }: Props) {
+function FacultyExecutiveProgramme(
+  { facultyTopPart, facultyMembers = [] }: Props,
+) {
   return (
     <div className="flex justify-center">
       <div className="z-auto max-w-[1120px] flex-1 pr-0 relative">
@@ -32,7 +33,10 @@ function FacultyExecutiveProgramme({ facultyTopPart, facultyMembers = [] }: Prop
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 justify-center md:ml-20 lg:ml-0">
           {facultyMembers.map((facultyInfo, index) => (
             <div key={index}>
-              <FacultyExecutiveProgrammeCard facultyInfo={facultyInfo} index={index} />
+              <FacultyExecutiveProgrammeCard
+                facultyInfo={facultyInfo}
+                index={index}
+              />
             </div>
           ))}
         </div>

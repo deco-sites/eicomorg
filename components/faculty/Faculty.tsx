@@ -32,7 +32,9 @@ export interface Props {
   facultyButton: FacultyButtonProps;
 }
 
-function Faculty({ facultyTopPart, facultyMembers = [], facultyButton }: Props) {
+function Faculty(
+  { facultyTopPart, facultyMembers = [], facultyButton }: Props,
+) {
   return (
     <>
       <div className="flex justify-center">
