@@ -37,10 +37,20 @@ function Alert({ alert }: Props) {
           href={url}
           className="md:mt-0 block text-center m-auto text-[#f3f3f3] xs:w-11/12"
         >
-          <span class="md:leading-[30px] xs:leading-[13px] xs:text-[11px] break-words" dangerouslySetInnerHTML={{ __html: text }}></span>
+          <span
+            class="md:leading-[30px] xs:leading-[13px] xs:text-[11px] break-words"
+            dangerouslySetInnerHTML={{ __html: text }}
+          >
+          </span>
         </a>
         <button class="absolute right-1 bottom-[6px]" onClick={handleClick}>
-          <Icon id="XMark" width={20} height={20} strokeWidth={2} class="text-white" />
+          <Icon
+            id="XMark"
+            width={20}
+            height={20}
+            strokeWidth={2}
+            class="text-white"
+          />
         </button>
       </div>
     </>

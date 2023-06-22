@@ -2,7 +2,7 @@ import type {
   HTML,
   Image as LiveImage,
 } from "deco-sites/std/components/types.ts";
-import { Ref, MutableRef } from "preact/hooks";
+import { MutableRef, Ref } from "preact/hooks";
 import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface BlockIcon {
@@ -43,7 +43,6 @@ function SectionBlock({ block, index, isShown }: SectionBlockProps) {
         md:w-1/3
         ${isShown ? "animate-slide-bottom" : ""}
       `}
-      
     >
       <img
         class="
@@ -105,7 +104,9 @@ function HomeWhyEicomBlocksSection(
       <div
         class={`lg:max-w-[1120px] md:flex xs:block m-auto justify-center`}
       >
-        {blocks.map((block, index) => <SectionBlock block={block} index={index} isShown={isShown} />)}
+        {blocks.map((block, index) => (
+          <SectionBlock block={block} index={index} isShown={isShown} />
+        ))}
       </div>
 
       <div class="text-center my-[60px]">
