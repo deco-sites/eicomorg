@@ -7,9 +7,8 @@ import { Ref } from "preact/hooks";
 import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface ActionLink {
-  title: string;
+  title: HTML;
   href: string;
-  icon: AvailableIcons;
 }
 
 export interface Props {
@@ -44,28 +43,14 @@ function ActionLinkComponent({ actionLink }: { actionLink: ActionLink }) {
         md:hover:pr-[26px]
 
         xs:mr-10
-        xs:pr-[8px]
+        xs:pr-[30px]
+        xs:text-[14px]
+
+        bg-[length:20px] bg-[right] bg-no-repeat bg-[url(/icons/Arrow-right-ORANGE.svg)]
       "
       href={actionLink.href}
+      dangerouslySetInnerHTML={{ __html: actionLink.title }}
     >
-      {actionLink.title}
-      <Icon
-        id={actionLink.icon}
-        width={20}
-        height={20}
-        strokeWidth={2}
-        class="
-          align-middle
-          top-[2px]
-          absolute
-        
-          md:top-[2px]
-          xs:top-[0px]
-      
-          md:left-[90%]
-          xs:left-[100%]
-        "
-      />
     </a>
   );
 }
@@ -138,9 +123,7 @@ function HomeAboutSection(
           rounded-sm
           border
           border-[#dfdfdf]
-          py-[40px]
           pr-[40px]
-          pb-[24px]
           px-[24px]
           block
           m-auto
@@ -151,14 +134,17 @@ function HomeAboutSection(
           lg:left-[-30px]
           lg:w-[710px]
 
+          md:py-[40px]
+          md:pb-[24px]
           md:bottom-[20px]
           md:left-[00px]
           md:w-[95%]
 
-          xs:bottom-[40px]
+          xs:py-[14px]
+          xs:pb-[0px]
           xs:w-[97%]
 
-          ${isShown ? "animate-slide-bottom" : ""}
+          ${isShown ? "animate-slide-right" : ""}
         `}
         >
           <span

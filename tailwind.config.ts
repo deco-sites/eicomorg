@@ -33,7 +33,7 @@ export default {
       display: ["group-hover"],
       animation: {
         "slide-left": "slide-left-frame 1s ease normal",
-        "slide-right": "slide-right-frame 0.4s ease normal",
+        "slide-right": "slide-right-frame 1s ease normal",
         "slide-bottom": "slide-bottom-frame 1s ease normal forwards",
         "slide-banner-right": "slide-banner-right-frame 1s ease normal",
         "progress": "progress-frame ease normal",
@@ -48,7 +48,7 @@ export default {
           to: { opacity: 1, transform: "translateX(0)" },
         },
         "slide-right-frame": {
-          from: { opacity: 0, transform: "translateX(-100%)" },
+          from: { opacity: 0, transform: "translateX(-20%)" },
           to: { opacity: 1, transform: "translateX(0)" },
         },
         "slide-bottom-frame": {
