@@ -100,6 +100,7 @@
               "deco-sites/eicomorg/sections/Courses.tsx",
               "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx",
               "deco-sites/eicomorg/sections/DesignSystem.tsx",
+              "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx",
               "deco-sites/eicomorg/sections/Faculty.tsx",
               "deco-sites/eicomorg/sections/Features.tsx",
               "deco-sites/eicomorg/sections/Footer.tsx",
@@ -10117,6 +10118,39 @@
       "required": [],
       "title": "deco-sites/eicomorg/sections/DesignSystem.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2V4ZWN1dGl2ZVByb2dyYW1tZS9FeGVjdXRpdmVQcm9ncmFtbWVXYXJuaW5nLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "leftText": {
+          "type": "string",
+          "title": "Left Text"
+        },
+        "backGroundColor": {
+          "type": "string",
+          "title": "Back Ground Color"
+        },
+        "buttonColor": {
+          "type": "string",
+          "title": "Button Color"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        },
+        "buttonUrl": {
+          "type": "string",
+          "title": "Button Url"
+        }
+      },
+      "required": [
+        "leftText",
+        "backGroundColor",
+        "buttonColor",
+        "buttonText",
+        "buttonUrl"
+      ],
+      "title": "deco-sites/eicomorg/components/executiveProgramme/ExecutiveProgrammeWarning.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhY3VsdHkvRmFjdWx0eS50c3g=@FacultyTopPartProps": {
       "type": "object",
       "properties": {
@@ -14303,6 +14337,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FeGVjdXRpdmVQcm9ncmFtbWVXYXJuaW5nLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2V4ZWN1dGl2ZVByb2dyYW1tZS9FeGVjdXRpdmVQcm9ncmFtbWVXYXJuaW5nLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9GYWN1bHR5LnRzeA==": {
       "title": "deco-sites/eicomorg/sections/Faculty.tsx",
       "type": "object",
@@ -15910,6 +15965,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FeGVjdXRpdmVQcm9ncmFtbWVXYXJuaW5nLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9GYWN1bHR5LnRzeA=="
