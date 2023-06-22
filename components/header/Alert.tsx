@@ -29,19 +29,19 @@ function Alert({ alert }: Props) {
       <div
         id={id}
         className={showAlert
-          ? "flex z-50 relative md:top-[70px] xs:top-[100px]"
+          ? "flex z-50 relative md:top-[70px] xs:top-[100px] h-[30px]"
           : "hidden "}
         style={{ backgroundColor: backgroundColor }}
       >
         <a
           href={url}
-          className="text-secondary-content xs:mt-2 md:mt-0 flex text-center font-semibold xs:text-sm md:text-base justify-center items-center w-screen md:h-[38px] xs:h-[30px]"
+          className="md:mt-0 block text-center m-auto text-[#f3f3f3] xs:w-11/12"
         >
-          <span dangerouslySetInnerHTML={{ __html: text }}></span>
+          <span class="md:leading-[30px] xs:leading-[13px] xs:text-[11px] break-words" dangerouslySetInnerHTML={{ __html: text }}></span>
         </a>
-        <Button class="btn-ghost btn-circle float-right" onClick={handleClick}>
-          <Icon id="XMark" width={20} height={20} strokeWidth={2} />
-        </Button>
+        <button class="absolute right-1 bottom-[6px]" onClick={handleClick}>
+          <Icon id="XMark" width={20} height={20} strokeWidth={2} class="text-white" />
+        </button>
       </div>
     </>
   );
