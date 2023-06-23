@@ -24,7 +24,7 @@ function FacultyCard({ facultyInfo, index }: {
   return (
     <>
       <label htmlFor={stringIndex}>
-        <div class="lg:w-64 lg:h-52 md:h-[335px] md:w-[335px] float-left mx-3 mb-5">
+        <div class="lg:w-64 lg:h-52 md:h-[335px] md:w-[335px] float-left mx-3 mb-5 group">
           <div class="cursor-pointer bg-white border border-gray-300 rounded-md ml-0 mr-0 p-0">
             <Image
               src={image.src}
@@ -33,17 +33,20 @@ function FacultyCard({ facultyInfo, index }: {
               height={200}
               class="bg-center bg-no-repeat bg-cover borde border-tl-[3px] border-tr-[3px] md:w-[500] w-full"
             />
-            <div class="h-36 text-left px-4 py-2">
-              <h3>
+            <div class="bg-[#f26f21] w-0 h-1 transition-all duration-1000 group-hover:w-full">
+            </div>
+            <div class="h-36 text-left px-3 py-2">
+              <div class="font-bold text-[#262628] font-AvenirNextLTPro text-[18px] my-[20px] mb-[10px]">
                 <span dangerouslySetInnerHTML={{ __html: name }}></span>
-              </h3>
-              <p>
+              </div>
+              <div class="text-[#696969] text-[14px]">
                 <span dangerouslySetInnerHTML={{ __html: position }}></span>
-              </p>
+              </div>
             </div>
           </div>
         </div>
       </label>
+
       <input type="checkbox" id={stringIndex} className="modal-toggle" />
       <div className="modal">
         <div className="modal-box max-w-[900px] h-[520px] bg-white rounded-md mx-auto p-5 shadow-md">
@@ -64,6 +67,7 @@ function FacultyCard({ facultyInfo, index }: {
             <a
               href={linkedinURL}
               class="w-6 h-6 float-right cursor-pointer mt-6 xs:ml-6 lg:ml-0"
+              target="_blank"
             >
               <Icon id="Linkedin" width={28} height={28} class="w-6 h-6"></Icon>
             </a>
