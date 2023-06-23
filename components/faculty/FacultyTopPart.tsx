@@ -8,11 +8,11 @@ function FacultyTopPart({ facultyTopPart }: {
     <>
       <div class="text-center">
         <h2 class="mt-5">
-          <span dangerouslySetInnerHTML={{ __html: title }}></span>
+          <span class="[&>h1]:text-3xl" dangerouslySetInnerHTML={{ __html: title }}></span>
         </h2>
-        <p class="max-w-[560px] mx-auto my-10 pb-0 m-10">
+        <div class="max-w-[540px] mx-auto my-10 pb-0 m-10 md:text-[16px] xs:text-[14px]">
           <span dangerouslySetInnerHTML={{ __html: text }}></span>
-        </p>
+        </div>
       </div>
     </>
   );
