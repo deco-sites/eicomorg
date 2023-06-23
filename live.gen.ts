@@ -24,39 +24,40 @@ import * as $$$$$14 from "./islands/AddToCartButton.tsx";
 import * as $$$$$15 from "./islands/HomeWhyEicomBlocksSection.tsx";
 import * as $$$$$$$$0 from "./sections/ProductShelf.tsx";
 import * as $$$$$$$$1 from "./sections/ExecutiveProgrammeWarning.tsx";
-import * as $$$$$$$$2 from "./sections/ForIndividualsTextSection.tsx";
-import * as $$$$$$$$3 from "./sections/DesignSystem.tsx";
-import * as $$$$$$$$4 from "./sections/LinkTree.tsx";
-import * as $$$$$$$$5 from "./sections/Features.tsx";
-import * as $$$$$$$$6 from "./sections/Alumni.tsx";
-import * as $$$$$$$$7 from "./sections/HomeAboutSection.tsx";
-import * as $$$$$$$$8 from "./sections/forIndividualsExecuteProgrameCard.tsx";
-import * as $$$$$$$$9 from "./sections/WishlistGallery.tsx";
-import * as $$$$$$$$10 from "./sections/Faculty.tsx";
-import * as $$$$$$$$11 from "./sections/CookieConsent.tsx";
-import * as $$$$$$$$12 from "./sections/HomeWhyEicomSection.tsx";
-import * as $$$$$$$$13 from "./sections/FacultyExecutiveProgramme.tsx";
-import * as $$$$$$$$14 from "./sections/ProductDetails.tsx";
-import * as $$$$$$$$15 from "./sections/Footer.tsx";
-import * as $$$$$$$$16 from "./sections/BannerSectionForIndividuals.tsx";
-import * as $$$$$$$$17 from "./sections/Newsletter.tsx";
-import * as $$$$$$$$18 from "./sections/HomeTextSection.tsx";
-import * as $$$$$$$$19 from "./sections/Carousel.tsx";
-import * as $$$$$$$$20 from "./sections/SearchResult.tsx";
-import * as $$$$$$$$21 from "./sections/Header.tsx";
-import * as $$$$$$$$22 from "./sections/BannerSection.tsx";
-import * as $$$$$$$$23 from "./sections/BannerExecutiveProgram.tsx";
-import * as $$$$$$$$24 from "./sections/Highlights.tsx";
-import * as $$$$$$$$25 from "./sections/CourseInfo.tsx";
-import * as $$$$$$$$26 from "./sections/Alert.tsx";
-import * as $$$$$$$$27 from "./sections/BannerPLP.tsx";
-import * as $$$$$$$$28 from "./sections/Graphics.tsx";
-import * as $$$$$$$$29 from "./sections/CoursesForIndividuals.tsx";
-import * as $$$$$$$$30 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$31 from "./sections/BannerGrid.tsx";
-import * as $$$$$$$$32 from "./sections/GreatExperienceSection.tsx";
-import * as $$$$$$$$33 from "./sections/HomeWhyEicomBlocksSection.tsx";
-import * as $$$$$$$$34 from "./sections/Courses.tsx";
+import * as $$$$$$$$2 from "./sections/WaitingList.tsx";
+import * as $$$$$$$$3 from "./sections/ForIndividualsTextSection.tsx";
+import * as $$$$$$$$4 from "./sections/DesignSystem.tsx";
+import * as $$$$$$$$5 from "./sections/LinkTree.tsx";
+import * as $$$$$$$$6 from "./sections/Features.tsx";
+import * as $$$$$$$$7 from "./sections/Alumni.tsx";
+import * as $$$$$$$$8 from "./sections/HomeAboutSection.tsx";
+import * as $$$$$$$$9 from "./sections/forIndividualsExecuteProgrameCard.tsx";
+import * as $$$$$$$$10 from "./sections/WishlistGallery.tsx";
+import * as $$$$$$$$11 from "./sections/Faculty.tsx";
+import * as $$$$$$$$12 from "./sections/CookieConsent.tsx";
+import * as $$$$$$$$13 from "./sections/HomeWhyEicomSection.tsx";
+import * as $$$$$$$$14 from "./sections/FacultyExecutiveProgramme.tsx";
+import * as $$$$$$$$15 from "./sections/ProductDetails.tsx";
+import * as $$$$$$$$16 from "./sections/Footer.tsx";
+import * as $$$$$$$$17 from "./sections/BannerSectionForIndividuals.tsx";
+import * as $$$$$$$$18 from "./sections/Newsletter.tsx";
+import * as $$$$$$$$19 from "./sections/HomeTextSection.tsx";
+import * as $$$$$$$$20 from "./sections/Carousel.tsx";
+import * as $$$$$$$$21 from "./sections/SearchResult.tsx";
+import * as $$$$$$$$22 from "./sections/Header.tsx";
+import * as $$$$$$$$23 from "./sections/BannerSection.tsx";
+import * as $$$$$$$$24 from "./sections/BannerExecutiveProgram.tsx";
+import * as $$$$$$$$25 from "./sections/Highlights.tsx";
+import * as $$$$$$$$26 from "./sections/CourseInfo.tsx";
+import * as $$$$$$$$27 from "./sections/Alert.tsx";
+import * as $$$$$$$$28 from "./sections/BannerPLP.tsx";
+import * as $$$$$$$$29 from "./sections/Graphics.tsx";
+import * as $$$$$$$$30 from "./sections/CoursesForIndividuals.tsx";
+import * as $$$$$$$$31 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$32 from "./sections/BannerGrid.tsx";
+import * as $$$$$$$$33 from "./sections/GreatExperienceSection.tsx";
+import * as $$$$$$$$34 from "./sections/HomeWhyEicomBlocksSection.tsx";
+import * as $$$$$$$$35 from "./sections/Courses.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -79,10 +80,13 @@ import * as i2$$$$$$4 from "$live/handlers/router.ts";
 import * as i2$$$$$$5 from "$live/handlers/routesSelection.ts";
 import * as i2$$$$$$6 from "$live/handlers/workflowRunner.ts";
 import * as i2$$$$$$$0 from "$live/pages/LivePage.tsx";
+import * as i1$$$$0 from "$live/sections/Conditional_Beta.tsx";
+import * as i1$$$$1 from "$live/sections/EmptySection.tsx";
 import * as i2$$$$0 from "$live/sections/PageInclude.tsx";
 import * as i2$$$$1 from "$live/sections/Slot.tsx";
 import * as i2$$$$2 from "$live/sections/UseSlot.tsx";
 import * as i2$$$$$$$$0 from "$live/matchers/MatchAlways.ts";
+import * as i1$$$$$1 from "$live/matchers/MatchCron.ts";
 import * as i2$$$$$$$$1 from "$live/matchers/MatchDate.ts";
 import * as i2$$$$$$$$2 from "$live/matchers/MatchDevice.ts";
 import * as i2$$$$$$$$3 from "$live/matchers/MatchEnvironment.ts";
@@ -206,45 +210,48 @@ const manifest = {
     "./islands/WishlistButton.tsx": $$$$$11,
   },
   "sections": {
+    "$live/sections/Conditional_Beta.tsx": i1$$$$0,
+    "$live/sections/EmptySection.tsx": i1$$$$1,
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
-    "deco-sites/eicomorg/sections/Alert.tsx": $$$$$$$$26,
-    "deco-sites/eicomorg/sections/Alumni.tsx": $$$$$$$$6,
-    "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx": $$$$$$$$23,
-    "deco-sites/eicomorg/sections/BannerGrid.tsx": $$$$$$$$31,
-    "deco-sites/eicomorg/sections/BannerPLP.tsx": $$$$$$$$27,
-    "deco-sites/eicomorg/sections/BannerSection.tsx": $$$$$$$$22,
-    "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx": $$$$$$$$16,
-    "deco-sites/eicomorg/sections/Carousel.tsx": $$$$$$$$19,
-    "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$11,
-    "deco-sites/eicomorg/sections/CourseInfo.tsx": $$$$$$$$25,
-    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$34,
-    "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx": $$$$$$$$29,
-    "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$3,
+    "deco-sites/eicomorg/sections/Alert.tsx": $$$$$$$$27,
+    "deco-sites/eicomorg/sections/Alumni.tsx": $$$$$$$$7,
+    "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx": $$$$$$$$24,
+    "deco-sites/eicomorg/sections/BannerGrid.tsx": $$$$$$$$32,
+    "deco-sites/eicomorg/sections/BannerPLP.tsx": $$$$$$$$28,
+    "deco-sites/eicomorg/sections/BannerSection.tsx": $$$$$$$$23,
+    "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx": $$$$$$$$17,
+    "deco-sites/eicomorg/sections/Carousel.tsx": $$$$$$$$20,
+    "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$12,
+    "deco-sites/eicomorg/sections/CourseInfo.tsx": $$$$$$$$26,
+    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$35,
+    "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx": $$$$$$$$30,
+    "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$4,
     "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx": $$$$$$$$1,
-    "deco-sites/eicomorg/sections/Faculty.tsx": $$$$$$$$10,
-    "deco-sites/eicomorg/sections/FacultyExecutiveProgramme.tsx": $$$$$$$$13,
-    "deco-sites/eicomorg/sections/Features.tsx": $$$$$$$$5,
-    "deco-sites/eicomorg/sections/Footer.tsx": $$$$$$$$15,
+    "deco-sites/eicomorg/sections/Faculty.tsx": $$$$$$$$11,
+    "deco-sites/eicomorg/sections/FacultyExecutiveProgramme.tsx": $$$$$$$$14,
+    "deco-sites/eicomorg/sections/Features.tsx": $$$$$$$$6,
+    "deco-sites/eicomorg/sections/Footer.tsx": $$$$$$$$16,
     "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx":
-      $$$$$$$$8,
-    "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx": $$$$$$$$2,
-    "deco-sites/eicomorg/sections/Graphics.tsx": $$$$$$$$28,
-    "deco-sites/eicomorg/sections/GreatExperienceSection.tsx": $$$$$$$$32,
-    "deco-sites/eicomorg/sections/Header.tsx": $$$$$$$$21,
-    "deco-sites/eicomorg/sections/Highlights.tsx": $$$$$$$$24,
-    "deco-sites/eicomorg/sections/HomeAboutSection.tsx": $$$$$$$$7,
-    "deco-sites/eicomorg/sections/HomeTextSection.tsx": $$$$$$$$18,
-    "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$33,
-    "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx": $$$$$$$$12,
-    "deco-sites/eicomorg/sections/LinkTree.tsx": $$$$$$$$4,
-    "deco-sites/eicomorg/sections/Newsletter.tsx": $$$$$$$$17,
-    "deco-sites/eicomorg/sections/ProductDetails.tsx": $$$$$$$$14,
+      $$$$$$$$9,
+    "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx": $$$$$$$$3,
+    "deco-sites/eicomorg/sections/Graphics.tsx": $$$$$$$$29,
+    "deco-sites/eicomorg/sections/GreatExperienceSection.tsx": $$$$$$$$33,
+    "deco-sites/eicomorg/sections/Header.tsx": $$$$$$$$22,
+    "deco-sites/eicomorg/sections/Highlights.tsx": $$$$$$$$25,
+    "deco-sites/eicomorg/sections/HomeAboutSection.tsx": $$$$$$$$8,
+    "deco-sites/eicomorg/sections/HomeTextSection.tsx": $$$$$$$$19,
+    "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$34,
+    "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx": $$$$$$$$13,
+    "deco-sites/eicomorg/sections/LinkTree.tsx": $$$$$$$$5,
+    "deco-sites/eicomorg/sections/Newsletter.tsx": $$$$$$$$18,
+    "deco-sites/eicomorg/sections/ProductDetails.tsx": $$$$$$$$15,
     "deco-sites/eicomorg/sections/ProductShelf.tsx": $$$$$$$$0,
-    "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$20,
-    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$30,
-    "deco-sites/eicomorg/sections/WishlistGallery.tsx": $$$$$$$$9,
+    "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$21,
+    "deco-sites/eicomorg/sections/WaitingList.tsx": $$$$$$$$2,
+    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$31,
+    "deco-sites/eicomorg/sections/WishlistGallery.tsx": $$$$$$$$10,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,
@@ -291,6 +298,7 @@ const manifest = {
   },
   "matchers": {
     "$live/matchers/MatchAlways.ts": i2$$$$$$$$0,
+    "$live/matchers/MatchCron.ts": i1$$$$$1,
     "$live/matchers/MatchDate.ts": i2$$$$$$$$1,
     "$live/matchers/MatchDevice.ts": i2$$$$$$$$2,
     "$live/matchers/MatchEnvironment.ts": i2$$$$$$$$3,
