@@ -57,8 +57,8 @@ export default {
           to: { opacity: 1, transform: "translateY(0)" },
         },
         "expand-bar-frame": {
-          from: { width: '0%' },
-          to: { width: '100%' },
+          from: { width: "0%" },
+          to: { width: "100%" },
         },
         "progress-frame": {
           from: {

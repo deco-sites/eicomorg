@@ -33,7 +33,8 @@ function FacultyCard({ facultyInfo, index }: {
               height={200}
               class="bg-center bg-no-repeat bg-cover borde border-tl-[3px] border-tr-[3px] md:w-[500] w-full"
             />
-            <div class="bg-[#f26f21] w-0 h-1 transition-all duration-1000 group-hover:w-full"></div>
+            <div class="bg-[#f26f21] w-0 h-1 transition-all duration-1000 group-hover:w-full">
+            </div>
             <div class="h-36 text-left px-3 py-2">
               <div class="font-bold text-[#262628] font-AvenirNextLTPro text-[18px] my-[20px] mb-[10px]">
                 <span dangerouslySetInnerHTML={{ __html: name }}></span>
