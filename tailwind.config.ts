@@ -32,27 +32,27 @@ export default {
     extend: {
       display: ["group-hover"],
       animation: {
-        "slide-left": "slide-left-frame 1.5s ease normal",
-        "slide-right": "slide-right-frame 0.4s ease normal",
-        "slide-bottom": "slide-bottom-frame 1s ease normal",
+        "slide-left": "slide-left-frame 1s ease normal",
+        "slide-right": "slide-right-frame 1s ease normal",
+        "slide-bottom": "slide-bottom-frame 1s ease normal forwards",
         "slide-banner-right": "slide-banner-right-frame 1s ease normal",
         "progress": "progress-frame ease normal",
       },
       keyframes: {
         "slide-banner-right-frame": {
-          from: { opacity: 0, backgroundPosition: "500px" },
+          from: { opacity: 0, backgroundPosition: "100px" },
           to: { opacity: 1, BackgroundPosition: "cover" },
         },
         "slide-left-frame": {
-          from: { opacity: 0, transform: "translateX(100%)" },
+          from: { opacity: 0, transform: "translateX(20%)" },
           to: { opacity: 1, transform: "translateX(0)" },
         },
         "slide-right-frame": {
-          from: { opacity: 0, transform: "translateX(-100%)" },
+          from: { opacity: 0, transform: "translateX(-20%)" },
           to: { opacity: 1, transform: "translateX(0)" },
         },
         "slide-bottom-frame": {
-          from: { opacity: 0, transform: "translateY(100%)" },
+          from: { opacity: 0, transform: "translateY(30%)" },
           to: { opacity: 1, transform: "translateY(0)" },
         },
         "progress-frame": {
