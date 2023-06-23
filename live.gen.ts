@@ -54,8 +54,9 @@ import * as $$$$$$$$28 from "./sections/Graphics.tsx";
 import * as $$$$$$$$29 from "./sections/CoursesForIndividuals.tsx";
 import * as $$$$$$$$30 from "./sections/WhatsApp.tsx";
 import * as $$$$$$$$31 from "./sections/BannerGrid.tsx";
-import * as $$$$$$$$32 from "./sections/HomeWhyEicomBlocksSection.tsx";
-import * as $$$$$$$$33 from "./sections/Courses.tsx";
+import * as $$$$$$$$32 from "./sections/GreatExperienceSection.tsx";
+import * as $$$$$$$$33 from "./sections/HomeWhyEicomBlocksSection.tsx";
+import * as $$$$$$$$34 from "./sections/Courses.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -218,7 +219,7 @@ const manifest = {
     "deco-sites/eicomorg/sections/Carousel.tsx": $$$$$$$$19,
     "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$11,
     "deco-sites/eicomorg/sections/CourseInfo.tsx": $$$$$$$$25,
-    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$33,
+    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$34,
     "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx": $$$$$$$$29,
     "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$3,
     "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx": $$$$$$$$1,
@@ -230,11 +231,12 @@ const manifest = {
       $$$$$$$$8,
     "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx": $$$$$$$$2,
     "deco-sites/eicomorg/sections/Graphics.tsx": $$$$$$$$28,
+    "deco-sites/eicomorg/sections/GreatExperienceSection.tsx": $$$$$$$$32,
     "deco-sites/eicomorg/sections/Header.tsx": $$$$$$$$21,
     "deco-sites/eicomorg/sections/Highlights.tsx": $$$$$$$$24,
     "deco-sites/eicomorg/sections/HomeAboutSection.tsx": $$$$$$$$7,
     "deco-sites/eicomorg/sections/HomeTextSection.tsx": $$$$$$$$18,
-    "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$32,
+    "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$33,
     "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx": $$$$$$$$12,
     "deco-sites/eicomorg/sections/LinkTree.tsx": $$$$$$$$4,
     "deco-sites/eicomorg/sections/Newsletter.tsx": $$$$$$$$17,

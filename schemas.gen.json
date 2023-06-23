@@ -108,6 +108,7 @@
               "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx",
               "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx",
               "deco-sites/eicomorg/sections/Graphics.tsx",
+              "deco-sites/eicomorg/sections/GreatExperienceSection.tsx",
               "deco-sites/eicomorg/sections/Header.tsx",
               "deco-sites/eicomorg/sections/Highlights.tsx",
               "deco-sites/eicomorg/sections/HomeAboutSection.tsx",
@@ -11094,6 +11095,58 @@
       ],
       "title": "deco-sites/eicomorg/components/graphics/graphics.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyZWF0RXhwZXJpZW5jZS9HcmVhdEV4cGVyaWVuY2UudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        },
+        "npsGrade": {
+          "type": "string",
+          "title": "Nps Grade"
+        },
+        "npsBackGroundColor": {
+          "type": "string",
+          "title": "Nps Back Ground Color"
+        },
+        "npsText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Nps Text"
+        },
+        "bottomBoxTitle": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Box Title"
+        },
+        "bottomBoxText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Box Text"
+        }
+      },
+      "required": [
+        "image",
+        "npsGrade",
+        "npsBackGroundColor",
+        "npsText",
+        "bottomBoxTitle",
+        "bottomBoxText"
+      ],
+      "title": "deco-sites/eicomorg/components/greatExperience/GreatExperience.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hpZ2hsaWdodHMudHN4@Highlight": {
       "type": "object",
       "properties": {
@@ -14422,6 +14475,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmVhdEV4cGVyaWVuY2VTZWN0aW9uLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/GreatExperienceSection.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyZWF0RXhwZXJpZW5jZS9HcmVhdEV4cGVyaWVuY2UudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/GreatExperienceSection.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/GreatExperienceSection.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9IZWFkZXIudHN4": {
       "title": "deco-sites/eicomorg/sections/Header.tsx",
       "type": "object",
@@ -15927,6 +16001,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmFwaGljcy50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmVhdEV4cGVyaWVuY2VTZWN0aW9uLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9IZWFkZXIudHN4"
