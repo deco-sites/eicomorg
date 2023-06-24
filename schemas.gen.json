@@ -96,6 +96,7 @@
               "deco-sites/eicomorg/sections/BannerPLP.tsx",
               "deco-sites/eicomorg/sections/BannerSection.tsx",
               "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx",
+              "deco-sites/eicomorg/sections/Brochure.tsx",
               "deco-sites/eicomorg/sections/Carousel.tsx",
               "deco-sites/eicomorg/sections/CookieConsent.tsx",
               "deco-sites/eicomorg/sections/CourseInfo.tsx",
@@ -9535,6 +9536,107 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/BannerSectionForIndividuals.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jyb2NodXJlL0Jyb2NodXJlLnRzeA==@TopText": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "title",
+        "text"
+      ],
+      "title": "TopText"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jyb2NodXJlL0Jyb2NodXJlLnRzeA==@FormData": {
+      "type": "object",
+      "properties": {
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "placeholder": {
+                "type": "string",
+                "title": "Placeholder"
+              },
+              "field": {
+                "type": "string",
+                "title": "Field"
+              },
+              "id": {
+                "type": "string",
+                "title": "Id"
+              },
+              "required": {
+                "type": "boolean",
+                "title": "Required"
+              }
+            },
+            "required": [
+              "placeholder",
+              "field",
+              "id",
+              "required"
+            ]
+          },
+          "title": "Fields"
+        },
+        "action": {
+          "type": "string",
+          "title": "Action"
+        },
+        "buttonColor": {
+          "type": "string",
+          "title": "Button Color"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        },
+        "buttonUrl": {
+          "type": "string",
+          "title": "Button Url"
+        }
+      },
+      "required": [
+        "fields",
+        "action",
+        "buttonColor",
+        "buttonText",
+        "buttonUrl"
+      ],
+      "title": "FormData"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jyb2NodXJlL0Jyb2NodXJlLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Image"
+        },
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jyb2NodXJlL0Jyb2NodXJlLnRzeA==@TopText",
+          "title": "Top Text"
+        },
+        "form": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jyb2NodXJlL0Jyb2NodXJlLnRzeA==@FormData",
+          "title": "Form"
+        }
+      },
+      "required": [
+        "backgroundImage",
+        "topText",
+        "form"
+      ],
+      "title": "deco-sites/eicomorg/components/brochure/Brochure.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNhcm91c2VsLnRzeA==@Banner": {
       "type": "object",
       "properties": {
@@ -15070,6 +15172,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ccm9jaHVyZS50c3g=": {
+      "title": "deco-sites/eicomorg/sections/Brochure.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jyb2NodXJlL0Jyb2NodXJlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/Brochure.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/Brochure.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DYXJvdXNlbC50c3g=": {
       "title": "deco-sites/eicomorg/sections/Carousel.tsx",
       "type": "object",
@@ -16892,6 +17015,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJTZWN0aW9uRm9ySW5kaXZpZHVhbHMudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ccm9jaHVyZS50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DYXJvdXNlbC50c3g="
