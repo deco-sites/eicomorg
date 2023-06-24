@@ -51,8 +51,8 @@ function AlumniCard({ alumniInfo }: {
             </p>
             {graduation && (
               <p class="text-gray-600 mb-0 italic font-gravity text-xs leading-4">
-              {graduation}
-            </p>
+                {graduation}
+              </p>
             )}
           </div>
         </div>
