@@ -6,6 +6,7 @@ import type { HTML } from "deco-sites/std/components/types.ts";
 export interface AlumniCardProps {
   name: string;
   position: string;
+  graduation?: string;
   nationality: AvailableIcons;
   text: HTML;
   avatar: {
@@ -17,7 +18,7 @@ export interface AlumniCardProps {
 function AlumniCard({ alumniInfo }: {
   alumniInfo: AlumniCardProps;
 }) {
-  const { name, position, nationality, text, avatar } = alumniInfo;
+  const { name, position, graduation, nationality, text, avatar } = alumniInfo;
   return (
     <>
       <div class="bg-white border border-gray-300 mx-auto px-8 py-5 relative">
@@ -48,6 +49,11 @@ function AlumniCard({ alumniInfo }: {
             <p class="text-gray-600 mb-0 font-gravity text-sm leading-4">
               {position}
             </p>
+            {graduation && (
+              <p class="text-gray-600 mb-0 italic font-gravity text-xs leading-4">
+                {graduation}
+              </p>
+            )}
           </div>
         </div>
         <span dangerouslySetInnerHTML={{ __html: text }}></span>

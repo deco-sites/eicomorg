@@ -12,6 +12,7 @@ export interface AlumniTopPartProps {
 export interface AlumniCardProps {
   name: string;
   position: string;
+  graduation?: string;
   nationality: AvailableIcons;
   /**
    * @description To make a part of the text bold add the <b> before and after the desired part. Only one part per text

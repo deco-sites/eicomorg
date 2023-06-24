@@ -22,7 +22,7 @@ function Graphics(
   { topText, graphic1, graphic2 }: Props,
 ) {
   return (
-    <div class="container-fluid translate-y-20 text-center py-[100px]">
+    <div class="container-fluid text-center py-[100px] xs:mb-[700px] md:mb-[800px] lg:mb-[450px] ">
       <div>
         <span
           class="block uppercase text-[28px] mb-[40px] "

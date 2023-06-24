@@ -8440,6 +8440,13 @@
           "type": "string",
           "title": "Position"
         },
+        "graduation": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Graduation"
+        },
         "nationality": {
           "anyOf": [
             {
@@ -11790,7 +11797,7 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/ForIndividualsTextSection.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@topPartText": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL0dyYXBoaWNzLnRzeA==@topPartText": {
       "type": "object",
       "properties": {
         "title": {
@@ -11808,7 +11815,7 @@
       ],
       "title": "topPartText"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@graphicImage": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL0dyYXBoaWNzLnRzeA==@graphicImage": {
       "type": "object",
       "properties": {
         "graphic": {
@@ -11826,19 +11833,19 @@
       ],
       "title": "graphicImage"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL0dyYXBoaWNzLnRzeA==@Props": {
       "type": "object",
       "properties": {
         "topText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@topPartText",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL0dyYXBoaWNzLnRzeA==@topPartText",
           "title": "Top Text"
         },
         "graphic1": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@graphicImage",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL0dyYXBoaWNzLnRzeA==@graphicImage",
           "title": "Graphic1"
         },
         "graphic2": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@graphicImage",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL0dyYXBoaWNzLnRzeA==@graphicImage",
           "title": "Graphic2"
         }
       },
@@ -11847,7 +11854,7 @@
         "graphic1",
         "graphic2"
       ],
-      "title": "deco-sites/eicomorg/components/graphics/graphics.tsx@Props"
+      "title": "deco-sites/eicomorg/components/graphics/Graphics.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyZWF0RXhwZXJpZW5jZS9HcmVhdEV4cGVyaWVuY2UudHN4@Props": {
       "type": "object",
@@ -15466,7 +15473,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL2dyYXBoaWNzLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL0dyYXBoaWNzLnRzeA==@Props"
         }
       ],
       "required": [

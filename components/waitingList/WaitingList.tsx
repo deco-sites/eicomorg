@@ -28,7 +28,7 @@ function WaitingList(
 ) {
   return (
     <>
-      <div class="xs:py-10 xs:px-3 md:py-14 md:px-5 lg:px-0 lg:py-24 bg-gray-200 xs:h-[700px] md:h-[600px]">
+      <div class="xs:py-10 xs:px-3 md:py-14 md:px-5 lg:px-0 lg:py-24 bg-gray-100 xs:h-[700px] md:h-[600px]">
         <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
           <h2 class="text-left my-5 xs:text-xl md:text-3xl font-bold block">
             <span dangerouslySetInnerHTML={{ __html: leftText.title }}></span>
