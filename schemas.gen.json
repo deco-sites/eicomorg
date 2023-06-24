@@ -8440,6 +8440,13 @@
           "type": "string",
           "title": "Position"
         },
+        "graduation": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Graduation"
+        },
         "nationality": {
           "anyOf": [
             {
