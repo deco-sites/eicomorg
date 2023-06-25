@@ -42,4 +42,43 @@
   .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
+  
+  .richtext h4,
+  .richtext h3,
+  .richtext h2,
+  .richtext h1 {
+    font-family: 'AvenirNextLTPro';
+  }
+
+  .richtext h6 {
+    font-size: 10.72px;
+  }
+
+  .richtext h5 {
+    font-size: 13.28px;
+  }
+
+  .richtext h4 {
+    font-size: 16px;
+  }
+
+  .richtext h3 {
+    font-size: 18.72px;
+  }
+
+  .richtext h2 {
+    font-size: 24px;
+  }
+
+  .richtext h1 {
+    font-size: 32px;
+  }
+
+  .richtext strong {
+    font-weight: bold;
+  }
+
+  .richtext .ql-size-small {
+    font-size: 14px;
+  }
 }
