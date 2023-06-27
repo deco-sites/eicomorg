@@ -16,7 +16,7 @@ export interface Props {
   icon3: AvailableIcons;
 }
 
-function Brochure(
+function WhoIsForDigitalCommerceExpert(
   {
     backgroundImage,
     cardImage,
@@ -29,10 +29,6 @@ function Brochure(
     icon3,
   }: Props,
 ) {
-  const mobileParagraph1 = paragraph1.replace(
-    /(<p[^>]*>|<\/p>)(?!.*(<p[^>]*>|<\/p>))/g,
-    "",
-  );
   return (
     <>
       <div
@@ -108,4 +104,4 @@ function Brochure(
   );
 }
 
-export default Brochure;
+export default WhoIsForDigitalCommerceExpert;
