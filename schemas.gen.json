@@ -110,6 +110,7 @@
               "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx",
               "deco-sites/eicomorg/sections/Faculty.tsx",
               "deco-sites/eicomorg/sections/FacultyExecutiveProgramme.tsx",
+              "deco-sites/eicomorg/sections/FAQ.tsx",
               "deco-sites/eicomorg/sections/Features.tsx",
               "deco-sites/eicomorg/sections/Footer.tsx",
               "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx",
@@ -11302,6 +11303,49 @@
       ],
       "title": "deco-sites/eicomorg/components/facultyExecutiveProgramme/FacultyExecutiveProgramme.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Question"
+        },
+        "answer": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Answer"
+        }
+      },
+      "required": [
+        "question",
+        "answer"
+      ],
+      "title": "Questions"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions"
+      },
+      "title": "Questions[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "questions": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]",
+          "title": "Questions"
+        }
+      },
+      "required": [
+        "title",
+        "questions"
+      ],
+      "title": "deco-sites/eicomorg/components/faq/FAQ.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0ZlYXR1cmVzLnRzeA==@Feature": {
       "type": "object",
       "properties": {
@@ -17090,6 +17134,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9GQVEudHN4": {
+      "title": "deco-sites/eicomorg/sections/FAQ.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/FAQ.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/FAQ.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9GZWF0dXJlcy50c3g=": {
       "title": "deco-sites/eicomorg/sections/Features.tsx",
       "type": "object",
@@ -18833,6 +18898,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9GYWN1bHR5RXhlY3V0aXZlUHJvZ3JhbW1lLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9GQVEudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9GZWF0dXJlcy50c3g="
