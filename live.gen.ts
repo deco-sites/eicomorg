@@ -47,21 +47,22 @@ import * as $$$$$$$$21 from "./sections/Carousel.tsx";
 import * as $$$$$$$$22 from "./sections/SearchResult.tsx";
 import * as $$$$$$$$23 from "./sections/Header.tsx";
 import * as $$$$$$$$24 from "./sections/DetailsSection.tsx";
-import * as $$$$$$$$25 from "./sections/BannerSection.tsx";
-import * as $$$$$$$$26 from "./sections/BannerExecutiveProgram.tsx";
-import * as $$$$$$$$27 from "./sections/Highlights.tsx";
-import * as $$$$$$$$28 from "./sections/TextSection.tsx";
-import * as $$$$$$$$29 from "./sections/WhoIsForDigitalCommerceExpert.tsx";
-import * as $$$$$$$$30 from "./sections/CourseInfo.tsx";
-import * as $$$$$$$$31 from "./sections/Alert.tsx";
-import * as $$$$$$$$32 from "./sections/BannerPLP.tsx";
-import * as $$$$$$$$33 from "./sections/Graphics.tsx";
-import * as $$$$$$$$34 from "./sections/CoursesForIndividuals.tsx";
-import * as $$$$$$$$35 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$36 from "./sections/BannerGrid.tsx";
-import * as $$$$$$$$37 from "./sections/GreatExperienceSection.tsx";
-import * as $$$$$$$$38 from "./sections/HomeWhyEicomBlocksSection.tsx";
-import * as $$$$$$$$39 from "./sections/Courses.tsx";
+import * as $$$$$$$$25 from "./sections/MoreAboutEicomDCE.tsx";
+import * as $$$$$$$$26 from "./sections/BannerSection.tsx";
+import * as $$$$$$$$27 from "./sections/BannerExecutiveProgram.tsx";
+import * as $$$$$$$$28 from "./sections/Highlights.tsx";
+import * as $$$$$$$$29 from "./sections/TextSection.tsx";
+import * as $$$$$$$$30 from "./sections/WhoIsForDigitalCommerceExpert.tsx";
+import * as $$$$$$$$31 from "./sections/CourseInfo.tsx";
+import * as $$$$$$$$32 from "./sections/Alert.tsx";
+import * as $$$$$$$$33 from "./sections/BannerPLP.tsx";
+import * as $$$$$$$$34 from "./sections/Graphics.tsx";
+import * as $$$$$$$$35 from "./sections/CoursesForIndividuals.tsx";
+import * as $$$$$$$$36 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$37 from "./sections/BannerGrid.tsx";
+import * as $$$$$$$$38 from "./sections/GreatExperienceSection.tsx";
+import * as $$$$$$$$39 from "./sections/HomeWhyEicomBlocksSection.tsx";
+import * as $$$$$$$$40 from "./sections/Courses.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -76,35 +77,36 @@ import * as $live_catchall from "$live/routes/[...catchall].tsx";
 import * as i2$$$0 from "$live/loaders/state.ts";
 import * as i2$$$1 from "$live/loaders/workflows/events.ts";
 import * as i2$$$2 from "$live/loaders/workflows/get.ts";
-import * as i2$$$$$$0 from "$live/handlers/devPage.ts";
-import * as i2$$$$$$1 from "$live/handlers/fresh.ts";
-import * as i2$$$$$$2 from "$live/handlers/proxy.ts";
-import * as i2$$$$$$3 from "$live/handlers/redirect.ts";
-import * as i2$$$$$$4 from "$live/handlers/router.ts";
-import * as i2$$$$$$5 from "$live/handlers/routesSelection.ts";
-import * as i2$$$$$$6 from "$live/handlers/workflowRunner.ts";
+import * as i2$$$$0 from "$live/handlers/devPage.ts";
+import * as i2$$$$1 from "$live/handlers/fresh.ts";
+import * as i2$$$$2 from "$live/handlers/proxy.ts";
+import * as i2$$$$3 from "$live/handlers/redirect.ts";
+import * as i2$$$$4 from "$live/handlers/router.ts";
+import * as i2$$$$5 from "$live/handlers/routesSelection.ts";
+import * as i2$$$$6 from "$live/handlers/workflowRunner.ts";
 import * as i2$$$$$$$0 from "$live/pages/LivePage.tsx";
-import * as i1$$$$0 from "$live/sections/Conditional_Beta.tsx";
-import * as i1$$$$1 from "$live/sections/EmptySection.tsx";
-import * as i2$$$$0 from "$live/sections/PageInclude.tsx";
-import * as i2$$$$1 from "$live/sections/Slot.tsx";
-import * as i2$$$$2 from "$live/sections/UseSlot.tsx";
+import * as i2$$$$$0 from "$live/sections/Conditional_Beta.tsx";
+import * as i2$$$$$1 from "$live/sections/EmptySection.tsx";
+import * as i2$$$$$2 from "$live/sections/PageInclude.tsx";
+import * as i2$$$$$3 from "$live/sections/Slot.tsx";
+import * as i2$$$$$4 from "$live/sections/UseSlot.tsx";
 import * as i2$$$$$$$$0 from "$live/matchers/MatchAlways.ts";
-import * as i1$$$$$1 from "$live/matchers/MatchCron.ts";
-import * as i2$$$$$$$$1 from "$live/matchers/MatchDate.ts";
-import * as i2$$$$$$$$2 from "$live/matchers/MatchDevice.ts";
-import * as i2$$$$$$$$3 from "$live/matchers/MatchEnvironment.ts";
-import * as i2$$$$$$$$4 from "$live/matchers/MatchHost.ts";
-import * as i2$$$$$$$$5 from "$live/matchers/MatchMulti.ts";
-import * as i2$$$$$$$$6 from "$live/matchers/MatchRandom.ts";
-import * as i2$$$$$$$$7 from "$live/matchers/MatchSite.ts";
-import * as i2$$$$$$$$8 from "$live/matchers/MatchUserAgent.ts";
+import * as i2$$$$$$$$1 from "$live/matchers/MatchCron.ts";
+import * as i2$$$$$$$$2 from "$live/matchers/MatchDate.ts";
+import * as i2$$$$$$$$3 from "$live/matchers/MatchDevice.ts";
+import * as i2$$$$$$$$4 from "$live/matchers/MatchEnvironment.ts";
+import * as i2$$$$$$$$5 from "$live/matchers/MatchHost.ts";
+import * as i2$$$$$$$$6 from "$live/matchers/MatchMulti.ts";
+import * as i2$$$$$$$$7 from "$live/matchers/MatchRandom.ts";
+import * as i2$$$$$$$$8 from "$live/matchers/MatchSite.ts";
+import * as i2$$$$$$$$9 from "$live/matchers/MatchUserAgent.ts";
 import * as i2$$$$$$$$$0 from "$live/flags/audience.ts";
 import * as i2$$$$$$$$$1 from "$live/flags/everyone.ts";
-import * as i2$$$$$0 from "$live/actions/workflows/cancel.ts";
-import * as i2$$$$$1 from "$live/actions/workflows/run.ts";
-import * as i2$$$$$2 from "$live/actions/workflows/signal.ts";
-import * as i2$$$$$3 from "$live/actions/workflows/start.ts";
+import * as i2$$$$$$$$$2 from "$live/flags/flag.ts";
+import * as i2$$$$$$0 from "$live/actions/workflows/cancel.ts";
+import * as i2$$$$$$1 from "$live/actions/workflows/run.ts";
+import * as i2$$$$$$2 from "$live/actions/workflows/signal.ts";
+import * as i2$$$$$$3 from "$live/actions/workflows/start.ts";
 import * as i2$0 from "deco-sites/std/functions/butterCMSAds.ts";
 import * as i2$1 from "deco-sites/std/functions/butterCMSBrands.ts";
 import * as i2$2 from "deco-sites/std/functions/butterCMSCategories.ts";
@@ -151,32 +153,33 @@ import * as i2$$$13 from "deco-sites/std/loaders/vtex/navbar.ts";
 import * as i2$$$14 from "deco-sites/std/loaders/vtex/proxy.ts";
 import * as i2$$$15 from "deco-sites/std/loaders/vtex/user.ts";
 import * as i2$$$16 from "deco-sites/std/loaders/vtex/wishlist.ts";
-import * as i2$$$$3 from "deco-sites/std/sections/Analytics.tsx";
-import * as i2$$$$4 from "deco-sites/std/sections/configButterCMS.global.tsx";
-import * as i2$$$$5 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as i2$$$$6 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as i2$$$$7 from "deco-sites/std/sections/configVTEX.global.tsx";
-import * as i2$$$$8 from "deco-sites/std/sections/configYourViews.global.tsx";
-import * as i2$$$$9 from "deco-sites/std/sections/SEO.tsx";
-import * as i2$$$$10 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as i2$$$$11 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as i2$$$$12 from "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx";
-import * as i2$$$$$4 from "deco-sites/std/actions/vtex/cart/addItems.ts";
-import * as i2$$$$$5 from "deco-sites/std/actions/vtex/cart/getInstallment.ts";
-import * as i2$$$$$6 from "deco-sites/std/actions/vtex/cart/removeItemAttachment.ts";
-import * as i2$$$$$7 from "deco-sites/std/actions/vtex/cart/removeItems.ts";
-import * as i2$$$$$8 from "deco-sites/std/actions/vtex/cart/simulation.ts";
-import * as i2$$$$$9 from "deco-sites/std/actions/vtex/cart/updateAttachment.ts";
-import * as i2$$$$$10 from "deco-sites/std/actions/vtex/cart/updateCoupons.ts";
-import * as i2$$$$$11 from "deco-sites/std/actions/vtex/cart/updateItemAttachment.ts";
-import * as i2$$$$$12 from "deco-sites/std/actions/vtex/cart/updateItemPrice.ts";
-import * as i2$$$$$13 from "deco-sites/std/actions/vtex/cart/updateItems.ts";
-import * as i2$$$$$14 from "deco-sites/std/actions/vtex/cart/updateProfile.ts";
-import * as i2$$$$$15 from "deco-sites/std/actions/vtex/cart/updateUser.ts";
-import * as i2$$$$$16 from "deco-sites/std/actions/vtex/newsletter/subscribe.ts";
-import * as i2$$$$$17 from "deco-sites/std/actions/vtex/notifyme.ts";
-import * as i2$$$$$18 from "deco-sites/std/actions/vtex/wishlist/addItem.ts";
-import * as i2$$$$$19 from "deco-sites/std/actions/vtex/wishlist/removeItem.ts";
+import * as i2$$$$7 from "deco-sites/std/handlers/vtex/sitemap.ts";
+import * as i2$$$$$5 from "deco-sites/std/sections/Analytics.tsx";
+import * as i2$$$$$6 from "deco-sites/std/sections/configButterCMS.global.tsx";
+import * as i2$$$$$7 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as i2$$$$$8 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as i2$$$$$9 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as i2$$$$$10 from "deco-sites/std/sections/configYourViews.global.tsx";
+import * as i2$$$$$11 from "deco-sites/std/sections/SEO.tsx";
+import * as i2$$$$$12 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as i2$$$$$13 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as i2$$$$$14 from "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx";
+import * as i2$$$$$$4 from "deco-sites/std/actions/vtex/cart/addItems.ts";
+import * as i2$$$$$$5 from "deco-sites/std/actions/vtex/cart/getInstallment.ts";
+import * as i2$$$$$$6 from "deco-sites/std/actions/vtex/cart/removeItemAttachment.ts";
+import * as i2$$$$$$7 from "deco-sites/std/actions/vtex/cart/removeItems.ts";
+import * as i2$$$$$$8 from "deco-sites/std/actions/vtex/cart/simulation.ts";
+import * as i2$$$$$$9 from "deco-sites/std/actions/vtex/cart/updateAttachment.ts";
+import * as i2$$$$$$10 from "deco-sites/std/actions/vtex/cart/updateCoupons.ts";
+import * as i2$$$$$$11 from "deco-sites/std/actions/vtex/cart/updateItemAttachment.ts";
+import * as i2$$$$$$12 from "deco-sites/std/actions/vtex/cart/updateItemPrice.ts";
+import * as i2$$$$$$13 from "deco-sites/std/actions/vtex/cart/updateItems.ts";
+import * as i2$$$$$$14 from "deco-sites/std/actions/vtex/cart/updateProfile.ts";
+import * as i2$$$$$$15 from "deco-sites/std/actions/vtex/cart/updateUser.ts";
+import * as i2$$$$$$16 from "deco-sites/std/actions/vtex/newsletter/subscribe.ts";
+import * as i2$$$$$$17 from "deco-sites/std/actions/vtex/notifyme.ts";
+import * as i2$$$$$$18 from "deco-sites/std/actions/vtex/wishlist/addItem.ts";
+import * as i2$$$$$$19 from "deco-sites/std/actions/vtex/wishlist/removeItem.ts";
 
 const manifest = {
   "routes": {
@@ -215,24 +218,24 @@ const manifest = {
     "./islands/WishlistButton.tsx": $$$$$12,
   },
   "sections": {
-    "$live/sections/Conditional_Beta.tsx": i1$$$$0,
-    "$live/sections/EmptySection.tsx": i1$$$$1,
-    "$live/sections/PageInclude.tsx": i2$$$$0,
-    "$live/sections/Slot.tsx": i2$$$$1,
-    "$live/sections/UseSlot.tsx": i2$$$$2,
-    "deco-sites/eicomorg/sections/Alert.tsx": $$$$$$$$31,
+    "$live/sections/Conditional_Beta.tsx": i2$$$$$0,
+    "$live/sections/EmptySection.tsx": i2$$$$$1,
+    "$live/sections/PageInclude.tsx": i2$$$$$2,
+    "$live/sections/Slot.tsx": i2$$$$$3,
+    "$live/sections/UseSlot.tsx": i2$$$$$4,
+    "deco-sites/eicomorg/sections/Alert.tsx": $$$$$$$$32,
     "deco-sites/eicomorg/sections/Alumni.tsx": $$$$$$$$7,
-    "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx": $$$$$$$$26,
-    "deco-sites/eicomorg/sections/BannerGrid.tsx": $$$$$$$$36,
-    "deco-sites/eicomorg/sections/BannerPLP.tsx": $$$$$$$$32,
-    "deco-sites/eicomorg/sections/BannerSection.tsx": $$$$$$$$25,
+    "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx": $$$$$$$$27,
+    "deco-sites/eicomorg/sections/BannerGrid.tsx": $$$$$$$$37,
+    "deco-sites/eicomorg/sections/BannerPLP.tsx": $$$$$$$$33,
+    "deco-sites/eicomorg/sections/BannerSection.tsx": $$$$$$$$26,
     "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx": $$$$$$$$18,
     "deco-sites/eicomorg/sections/Brochure.tsx": $$$$$$$$13,
     "deco-sites/eicomorg/sections/Carousel.tsx": $$$$$$$$21,
     "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$12,
-    "deco-sites/eicomorg/sections/CourseInfo.tsx": $$$$$$$$30,
-    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$39,
-    "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx": $$$$$$$$34,
+    "deco-sites/eicomorg/sections/CourseInfo.tsx": $$$$$$$$31,
+    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$40,
+    "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx": $$$$$$$$35,
     "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$4,
     "deco-sites/eicomorg/sections/DetailsSection.tsx": $$$$$$$$24,
     "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx": $$$$$$$$1,
@@ -243,35 +246,36 @@ const manifest = {
     "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx":
       $$$$$$$$9,
     "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx": $$$$$$$$3,
-    "deco-sites/eicomorg/sections/Graphics.tsx": $$$$$$$$33,
-    "deco-sites/eicomorg/sections/GreatExperienceSection.tsx": $$$$$$$$37,
+    "deco-sites/eicomorg/sections/Graphics.tsx": $$$$$$$$34,
+    "deco-sites/eicomorg/sections/GreatExperienceSection.tsx": $$$$$$$$38,
     "deco-sites/eicomorg/sections/Header.tsx": $$$$$$$$23,
-    "deco-sites/eicomorg/sections/Highlights.tsx": $$$$$$$$27,
+    "deco-sites/eicomorg/sections/Highlights.tsx": $$$$$$$$28,
     "deco-sites/eicomorg/sections/HomeAboutSection.tsx": $$$$$$$$8,
     "deco-sites/eicomorg/sections/HomeTextSection.tsx": $$$$$$$$20,
-    "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$38,
+    "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$39,
     "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx": $$$$$$$$14,
     "deco-sites/eicomorg/sections/LinkTree.tsx": $$$$$$$$5,
+    "deco-sites/eicomorg/sections/MoreAboutEicomDCE.tsx": $$$$$$$$25,
     "deco-sites/eicomorg/sections/Newsletter.tsx": $$$$$$$$19,
     "deco-sites/eicomorg/sections/ProductDetails.tsx": $$$$$$$$16,
     "deco-sites/eicomorg/sections/ProductShelf.tsx": $$$$$$$$0,
     "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$22,
-    "deco-sites/eicomorg/sections/TextSection.tsx": $$$$$$$$28,
+    "deco-sites/eicomorg/sections/TextSection.tsx": $$$$$$$$29,
     "deco-sites/eicomorg/sections/WaitingList.tsx": $$$$$$$$2,
-    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$35,
+    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$36,
     "deco-sites/eicomorg/sections/WhoIsForDigitalCommerceExpert.tsx":
-      $$$$$$$$29,
+      $$$$$$$$30,
     "deco-sites/eicomorg/sections/WishlistGallery.tsx": $$$$$$$$10,
-    "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
-    "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
-    "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,
-    "deco-sites/std/sections/configShopify.global.tsx": i2$$$$6,
-    "deco-sites/std/sections/configVTEX.global.tsx": i2$$$$7,
-    "deco-sites/std/sections/configYourViews.global.tsx": i2$$$$8,
-    "deco-sites/std/sections/SEO.tsx": i2$$$$9,
-    "deco-sites/std/sections/SEOPDP.tsx": i2$$$$10,
-    "deco-sites/std/sections/SEOPLP.tsx": i2$$$$11,
-    "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx": i2$$$$12,
+    "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
+    "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
+    "deco-sites/std/sections/configOCC.global.tsx": i2$$$$$7,
+    "deco-sites/std/sections/configShopify.global.tsx": i2$$$$$8,
+    "deco-sites/std/sections/configVTEX.global.tsx": i2$$$$$9,
+    "deco-sites/std/sections/configYourViews.global.tsx": i2$$$$$10,
+    "deco-sites/std/sections/SEO.tsx": i2$$$$$11,
+    "deco-sites/std/sections/SEOPDP.tsx": i2$$$$$12,
+    "deco-sites/std/sections/SEOPLP.tsx": i2$$$$$13,
+    "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx": i2$$$$$14,
   },
   "loaders": {
     "$live/loaders/state.ts": i2$$$0,
@@ -295,54 +299,56 @@ const manifest = {
     "deco-sites/std/loaders/vtex/wishlist.ts": i2$$$16,
   },
   "handlers": {
-    "$live/handlers/devPage.ts": i2$$$$$$0,
-    "$live/handlers/fresh.ts": i2$$$$$$1,
-    "$live/handlers/proxy.ts": i2$$$$$$2,
-    "$live/handlers/redirect.ts": i2$$$$$$3,
-    "$live/handlers/router.ts": i2$$$$$$4,
-    "$live/handlers/routesSelection.ts": i2$$$$$$5,
-    "$live/handlers/workflowRunner.ts": i2$$$$$$6,
+    "$live/handlers/devPage.ts": i2$$$$0,
+    "$live/handlers/fresh.ts": i2$$$$1,
+    "$live/handlers/proxy.ts": i2$$$$2,
+    "$live/handlers/redirect.ts": i2$$$$3,
+    "$live/handlers/router.ts": i2$$$$4,
+    "$live/handlers/routesSelection.ts": i2$$$$5,
+    "$live/handlers/workflowRunner.ts": i2$$$$6,
+    "deco-sites/std/handlers/vtex/sitemap.ts": i2$$$$7,
   },
   "pages": {
     "$live/pages/LivePage.tsx": i2$$$$$$$0,
   },
   "matchers": {
     "$live/matchers/MatchAlways.ts": i2$$$$$$$$0,
-    "$live/matchers/MatchCron.ts": i1$$$$$1,
-    "$live/matchers/MatchDate.ts": i2$$$$$$$$1,
-    "$live/matchers/MatchDevice.ts": i2$$$$$$$$2,
-    "$live/matchers/MatchEnvironment.ts": i2$$$$$$$$3,
-    "$live/matchers/MatchHost.ts": i2$$$$$$$$4,
-    "$live/matchers/MatchMulti.ts": i2$$$$$$$$5,
-    "$live/matchers/MatchRandom.ts": i2$$$$$$$$6,
-    "$live/matchers/MatchSite.ts": i2$$$$$$$$7,
-    "$live/matchers/MatchUserAgent.ts": i2$$$$$$$$8,
+    "$live/matchers/MatchCron.ts": i2$$$$$$$$1,
+    "$live/matchers/MatchDate.ts": i2$$$$$$$$2,
+    "$live/matchers/MatchDevice.ts": i2$$$$$$$$3,
+    "$live/matchers/MatchEnvironment.ts": i2$$$$$$$$4,
+    "$live/matchers/MatchHost.ts": i2$$$$$$$$5,
+    "$live/matchers/MatchMulti.ts": i2$$$$$$$$6,
+    "$live/matchers/MatchRandom.ts": i2$$$$$$$$7,
+    "$live/matchers/MatchSite.ts": i2$$$$$$$$8,
+    "$live/matchers/MatchUserAgent.ts": i2$$$$$$$$9,
   },
   "flags": {
     "$live/flags/audience.ts": i2$$$$$$$$$0,
     "$live/flags/everyone.ts": i2$$$$$$$$$1,
+    "$live/flags/flag.ts": i2$$$$$$$$$2,
   },
   "actions": {
-    "$live/actions/workflows/cancel.ts": i2$$$$$0,
-    "$live/actions/workflows/run.ts": i2$$$$$1,
-    "$live/actions/workflows/signal.ts": i2$$$$$2,
-    "$live/actions/workflows/start.ts": i2$$$$$3,
-    "deco-sites/std/actions/vtex/cart/addItems.ts": i2$$$$$4,
-    "deco-sites/std/actions/vtex/cart/getInstallment.ts": i2$$$$$5,
-    "deco-sites/std/actions/vtex/cart/removeItemAttachment.ts": i2$$$$$6,
-    "deco-sites/std/actions/vtex/cart/removeItems.ts": i2$$$$$7,
-    "deco-sites/std/actions/vtex/cart/simulation.ts": i2$$$$$8,
-    "deco-sites/std/actions/vtex/cart/updateAttachment.ts": i2$$$$$9,
-    "deco-sites/std/actions/vtex/cart/updateCoupons.ts": i2$$$$$10,
-    "deco-sites/std/actions/vtex/cart/updateItemAttachment.ts": i2$$$$$11,
-    "deco-sites/std/actions/vtex/cart/updateItemPrice.ts": i2$$$$$12,
-    "deco-sites/std/actions/vtex/cart/updateItems.ts": i2$$$$$13,
-    "deco-sites/std/actions/vtex/cart/updateProfile.ts": i2$$$$$14,
-    "deco-sites/std/actions/vtex/cart/updateUser.ts": i2$$$$$15,
-    "deco-sites/std/actions/vtex/newsletter/subscribe.ts": i2$$$$$16,
-    "deco-sites/std/actions/vtex/notifyme.ts": i2$$$$$17,
-    "deco-sites/std/actions/vtex/wishlist/addItem.ts": i2$$$$$18,
-    "deco-sites/std/actions/vtex/wishlist/removeItem.ts": i2$$$$$19,
+    "$live/actions/workflows/cancel.ts": i2$$$$$$0,
+    "$live/actions/workflows/run.ts": i2$$$$$$1,
+    "$live/actions/workflows/signal.ts": i2$$$$$$2,
+    "$live/actions/workflows/start.ts": i2$$$$$$3,
+    "deco-sites/std/actions/vtex/cart/addItems.ts": i2$$$$$$4,
+    "deco-sites/std/actions/vtex/cart/getInstallment.ts": i2$$$$$$5,
+    "deco-sites/std/actions/vtex/cart/removeItemAttachment.ts": i2$$$$$$6,
+    "deco-sites/std/actions/vtex/cart/removeItems.ts": i2$$$$$$7,
+    "deco-sites/std/actions/vtex/cart/simulation.ts": i2$$$$$$8,
+    "deco-sites/std/actions/vtex/cart/updateAttachment.ts": i2$$$$$$9,
+    "deco-sites/std/actions/vtex/cart/updateCoupons.ts": i2$$$$$$10,
+    "deco-sites/std/actions/vtex/cart/updateItemAttachment.ts": i2$$$$$$11,
+    "deco-sites/std/actions/vtex/cart/updateItemPrice.ts": i2$$$$$$12,
+    "deco-sites/std/actions/vtex/cart/updateItems.ts": i2$$$$$$13,
+    "deco-sites/std/actions/vtex/cart/updateProfile.ts": i2$$$$$$14,
+    "deco-sites/std/actions/vtex/cart/updateUser.ts": i2$$$$$$15,
+    "deco-sites/std/actions/vtex/newsletter/subscribe.ts": i2$$$$$$16,
+    "deco-sites/std/actions/vtex/notifyme.ts": i2$$$$$$17,
+    "deco-sites/std/actions/vtex/wishlist/addItem.ts": i2$$$$$$18,
+    "deco-sites/std/actions/vtex/wishlist/removeItem.ts": i2$$$$$$19,
   },
   "functions": {
     "deco-sites/std/functions/butterCMSAds.ts": i2$0,
