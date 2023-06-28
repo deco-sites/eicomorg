@@ -16,12 +16,12 @@ export interface backGroundInfo {
 export interface Button {
   text: string;
   backgroundColor: string;
-  url: string
+  url: string;
 }
 
 export interface Children {
   title: HTML;
-  children?: string[]
+  children?: string[];
 }
 
 export interface courseInfo {
@@ -60,13 +60,13 @@ function CourseInfo(
               {topText.title}
             </h2>
             {topText.content && (
-            <p class="mb-5">
-              <span
-                style={{ color: "#f3f3f3" }}
-                dangerouslySetInnerHTML={{ __html: topText.content }}
-              >
-              </span>
-            </p>
+              <p class="mb-5">
+                <span
+                  style={{ color: "#f3f3f3" }}
+                  dangerouslySetInnerHTML={{ __html: topText.content }}
+                >
+                </span>
+              </p>
             )}
             <div class="mt-5">
               {courseInfoDetails.map((course) => (
@@ -76,9 +76,12 @@ function CourseInfo(
           </div>
           {button && (
             <div class="text-center pt-14">
-              <a href={button.url} class="text-white font-bold mx-auto btn w-auto uppercase tracking-tight cursor-pointer border-2 border-solid border-orange-500 rounded-md  py-2 px-4"
-              style={{backgroundColor: button.backgroundColor}}>
-                  {button.text}
+              <a
+                href={button.url}
+                class="text-white font-bold mx-auto btn w-auto uppercase tracking-tight cursor-pointer border-2 border-solid border-orange-500 rounded-md  py-2 px-4"
+                style={{ backgroundColor: button.backgroundColor }}
+              >
+                {button.text}
               </a>
             </div>
           )}
@@ -95,14 +98,14 @@ function CourseInfo(
             <h2 class="text-orange-500 text-left uppercase my-5 font-bold text-3xl leading-9 block">
               {topText.title}
             </h2>
-            { topText.content && (
-            <p class="mb-5">
-              <span
-                style={{ color: "#f3f3f3" }}
-                dangerouslySetInnerHTML={{ __html: topText.content }}
-              >
-              </span>
-            </p>
+            {topText.content && (
+              <p class="mb-5">
+                <span
+                  style={{ color: "#f3f3f3" }}
+                  dangerouslySetInnerHTML={{ __html: topText.content }}
+                >
+                </span>
+              </p>
             )}
             <div class="mt-5">
               {courseInfoDetails.map((course) => (
@@ -110,13 +113,16 @@ function CourseInfo(
               ))}
             </div>
             {button && (
-            <div class="text-center pt-14">
-              <a href={button.url} class="text-white font-bold mx-auto btn w-full uppercase tracking-tight cursor-pointer border-2 border-solid border-orange-500 rounded-md  py-2 px-4"
-              style={{backgroundColor: button.backgroundColor}}>
+              <div class="text-center pt-14">
+                <a
+                  href={button.url}
+                  class="text-white font-bold mx-auto btn w-full uppercase tracking-tight cursor-pointer border-2 border-solid border-orange-500 rounded-md  py-2 px-4"
+                  style={{ backgroundColor: button.backgroundColor }}
+                >
                   {button.text}
-              </a>
-            </div>
-          )}
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>
