@@ -10240,8 +10240,7 @@
         }
       },
       "required": [
-        "title",
-        "content"
+        "title"
       ],
       "title": "topPartText"
     },
@@ -10268,12 +10267,35 @@
       ],
       "title": "backGroundInfo"
     },
-    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML[]": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title": "Children"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "Children"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children[]": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML"
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children"
       },
-      "title": "HTML[]"
+      "title": "Children[]"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo": {
       "type": "object",
@@ -10287,13 +10309,12 @@
           "title": "Label"
         },
         "children": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML[]",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children[]",
           "title": "Children"
         }
       },
       "required": [
         "title",
-        "label",
         "children"
       ],
       "title": "courseInfo"
@@ -10304,6 +10325,29 @@
         "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo"
       },
       "title": "courseInfo[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Button": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "title": "Background Color"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        }
+      },
+      "required": [
+        "text",
+        "backgroundColor",
+        "url"
+      ],
+      "title": "Button"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Props": {
       "type": "object",
@@ -10319,6 +10363,10 @@
         "courseInfoDetails": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo[]",
           "title": "Course Info Details"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Button",
+          "title": "Button"
         }
       },
       "required": [
