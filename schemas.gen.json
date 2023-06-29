@@ -124,6 +124,7 @@
               "deco-sites/eicomorg/sections/HomeTextSection.tsx",
               "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx",
               "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx",
+              "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx",
               "deco-sites/eicomorg/sections/LinkTree.tsx",
               "deco-sites/eicomorg/sections/MoreAboutEicomDCE.tsx",
               "deco-sites/eicomorg/sections/Newsletter.tsx",
@@ -12692,6 +12693,83 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/HomeTextSection.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Header": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "description": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "title",
+        "description"
+      ],
+      "title": "Header"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@ContentImage": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Source"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        }
+      },
+      "required": [
+        "source",
+        "alt"
+      ],
+      "title": "ContentImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Content": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@ContentImage",
+          "title": "Image"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "image",
+        "text"
+      ],
+      "title": "Content"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "header": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Header",
+          "title": "Header"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Content",
+          "title": "Content"
+        },
+        "submitButtonText": {
+          "type": "string",
+          "title": "Submit Button Text"
+        }
+      },
+      "required": [
+        "header",
+        "content",
+        "submitButtonText"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/JoinWaitlistSection.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0xpbmtUcmVlLnRzeA==@Link": {
       "type": "object",
       "properties": {
@@ -16899,6 +16977,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Kb2luV2FpdGxpc3RTZWN0aW9uLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9MaW5rVHJlZS50c3g=": {
       "title": "deco-sites/eicomorg/sections/LinkTree.tsx",
       "type": "object",
@@ -18453,6 +18552,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lV2h5RWljb21TZWN0aW9uLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Kb2luV2FpdGxpc3RTZWN0aW9uLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9MaW5rVHJlZS50c3g="
