@@ -46,6 +46,7 @@ export type AvailableIcons =
   | "Romania"
   | "GreatBritain"
   | "ArrowRight"
+  | "ArrowRightOrange"
   | "Computer"
   | "Seed"
   | "ArrowsPointingOut";
