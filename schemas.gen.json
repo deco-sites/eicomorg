@@ -94,6 +94,7 @@
               "$live/sections/UseSlot.tsx",
               "deco-sites/eicomorg/sections/Alert.tsx",
               "deco-sites/eicomorg/sections/Alumni.tsx",
+              "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
               "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx",
               "deco-sites/eicomorg/sections/BannerGrid.tsx",
               "deco-sites/eicomorg/sections/BannerPLP.tsx",
@@ -129,6 +130,7 @@
               "deco-sites/eicomorg/sections/ProductDetails.tsx",
               "deco-sites/eicomorg/sections/ProductShelf.tsx",
               "deco-sites/eicomorg/sections/SearchResult.tsx",
+              "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
               "deco-sites/eicomorg/sections/TextSection.tsx",
               "deco-sites/eicomorg/sections/WaitingList.tsx",
               "deco-sites/eicomorg/sections/WhatsApp.tsx",
@@ -9244,6 +9246,92 @@
       ],
       "title": "deco-sites/eicomorg/components/alumni/Alumni.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@Image": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Source"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        }
+      },
+      "required": [
+        "source",
+        "alt"
+      ],
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@ActionButton": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string",
+          "title": "Content"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "content",
+        "href"
+      ],
+      "title": "ActionButton"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@BannerBackgroundImage": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile"
+      ],
+      "title": "BannerBackgroundImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@Image",
+          "title": "Image"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@ActionButton",
+          "title": "Button"
+        },
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@BannerBackgroundImage",
+          "title": "Background Image"
+        },
+        "footerContent": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Footer Content"
+        }
+      },
+      "required": [
+        "title",
+        "button",
+        "backgroundImage",
+        "footerContent"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/BannerDigitalTransformation.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckV4ZWN1dGl2ZVByb2dyYW0udHN4@BannerBackground": {
       "type": "object",
       "properties": {
@@ -10981,7 +11069,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@258b296ce27a8196431257d88db20df7&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -10997,7 +11085,7 @@
           "required": []
         }
       ],
-      "title": "059c94444960270fb25f4ccb03e57ec3&Colors"
+      "title": "258b296ce27a8196431257d88db20df7&Colors"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -11100,7 +11188,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@258b296ce27a8196431257d88db20df7&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -13122,6 +13210,67 @@
         "columns"
       ],
       "title": "deco-sites/eicomorg/components/search/SearchResult.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@TestimonialPerson": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "role": {
+          "type": "string",
+          "title": "Role"
+        }
+      },
+      "required": [
+        "name",
+        "role"
+      ],
+      "title": "TestimonialPerson"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        },
+        "person": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@TestimonialPerson",
+          "title": "Person"
+        }
+      },
+      "required": [
+        "content",
+        "person"
+      ],
+      "title": "Testimonial"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial"
+      },
+      "title": "Testimonial[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "testimonials": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial[]",
+          "title": "Testimonials"
+        }
+      },
+      "required": [
+        "title",
+        "testimonials"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/TestimonialsSection.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1RleHRTZWN0aW9uLnRzeA==@MobileButton": {
       "type": "object",
@@ -16851,6 +17000,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4": {
+      "title": "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJFeGVjdXRpdmVQcm9ncmFtLnRzeA==": {
       "title": "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx",
       "type": "object",
@@ -17578,6 +17748,27 @@
             "deco-sites/eicomorg/sections/SearchResult.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/SearchResult.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXN0aW1vbmlhbHNTZWN0aW9uLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/TestimonialsSection.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/TestimonialsSection.tsx"
         }
       }
     },
@@ -18900,6 +19091,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BbHVtbmkudHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJFeGVjdXRpdmVQcm9ncmFtLnRzeA=="
         },
         {
@@ -19003,6 +19197,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TZWFyY2hSZXN1bHQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXN0aW1vbmlhbHNTZWN0aW9uLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXh0U2VjdGlvbi50c3g="
