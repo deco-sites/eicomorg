@@ -1,4 +1,7 @@
-import type { HTML, Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type {
+  HTML,
+  Image as LiveImage,
+} from "deco-sites/std/components/types.ts";
 
 export interface Header {
   title: HTML;
@@ -40,7 +43,11 @@ function JoinWaitlistSection(
 
         <div class="md:flex xs:block my-2">
           <div class="md:w-2/5 xs:w-11/12 m-auto">
-            <img class="w-[460px] border-b-4 border-[#f26f21]" src={content.image.source} alt={content.image.alt} />
+            <img
+              class="w-[460px] border-b-4 border-[#f26f21]"
+              src={content.image.source}
+              alt={content.image.alt}
+            />
             <div
               class="text-left richtext py-1"
               dangerouslySetInnerHTML={{ __html: content.text }}
@@ -51,17 +58,26 @@ function JoinWaitlistSection(
             <div class="mt-[25px] text-[14px]">
               <div>
                 <span class="font-bold">Full Name</span>
-                <input class="block mt-1 w-full p-1" type="text" placeholder="Type your name" />
+                <input
+                  class="block mt-1 w-full p-1"
+                  type="text"
+                  placeholder="Type your name"
+                />
               </div>
               <div class="mt-4">
                 <span class="font-bold">Email*</span>
-                <input class="block mt-1 w-full p-1" type="email" placeholder="Type your email" />
+                <input
+                  class="block mt-1 w-full p-1"
+                  type="email"
+                  placeholder="Type your email"
+                />
               </div>
-              <button class="rounded bg-[#f26f28] p-[10px] cursor-pointer text-[#fefefe] my-4"> { submitButtonText } </button>
+              <button class="rounded bg-[#f26f28] p-[10px] cursor-pointer text-[#fefefe] my-4">
+                {submitButtonText}
+              </button>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );
