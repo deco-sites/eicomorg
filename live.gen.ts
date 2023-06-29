@@ -60,9 +60,10 @@ import * as $$$$$$$$34 from "./sections/Graphics.tsx";
 import * as $$$$$$$$35 from "./sections/CoursesForIndividuals.tsx";
 import * as $$$$$$$$36 from "./sections/WhatsApp.tsx";
 import * as $$$$$$$$37 from "./sections/BannerGrid.tsx";
-import * as $$$$$$$$38 from "./sections/GreatExperienceSection.tsx";
-import * as $$$$$$$$39 from "./sections/HomeWhyEicomBlocksSection.tsx";
-import * as $$$$$$$$40 from "./sections/Courses.tsx";
+import * as $$$$$$$$38 from "./sections/TestimonialsSection.tsx";
+import * as $$$$$$$$39 from "./sections/GreatExperienceSection.tsx";
+import * as $$$$$$$$40 from "./sections/HomeWhyEicomBlocksSection.tsx";
+import * as $$$$$$$$41 from "./sections/Courses.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -233,7 +234,7 @@ const manifest = {
     "deco-sites/eicomorg/sections/Carousel.tsx": $$$$$$$$22,
     "deco-sites/eicomorg/sections/CookieConsent.tsx": $$$$$$$$13,
     "deco-sites/eicomorg/sections/CourseInfo.tsx": $$$$$$$$31,
-    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$40,
+    "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$41,
     "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx": $$$$$$$$35,
     "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$5,
     "deco-sites/eicomorg/sections/DetailsSection.tsx": $$$$$$$$25,
@@ -246,18 +247,19 @@ const manifest = {
       $$$$$$$$10,
     "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx": $$$$$$$$4,
     "deco-sites/eicomorg/sections/Graphics.tsx": $$$$$$$$34,
-    "deco-sites/eicomorg/sections/GreatExperienceSection.tsx": $$$$$$$$38,
+    "deco-sites/eicomorg/sections/GreatExperienceSection.tsx": $$$$$$$$39,
     "deco-sites/eicomorg/sections/Header.tsx": $$$$$$$$24,
     "deco-sites/eicomorg/sections/Highlights.tsx": $$$$$$$$28,
     "deco-sites/eicomorg/sections/HomeAboutSection.tsx": $$$$$$$$9,
     "deco-sites/eicomorg/sections/HomeTextSection.tsx": $$$$$$$$21,
-    "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$39,
+    "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$40,
     "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx": $$$$$$$$15,
     "deco-sites/eicomorg/sections/LinkTree.tsx": $$$$$$$$6,
     "deco-sites/eicomorg/sections/Newsletter.tsx": $$$$$$$$20,
     "deco-sites/eicomorg/sections/ProductDetails.tsx": $$$$$$$$17,
     "deco-sites/eicomorg/sections/ProductShelf.tsx": $$$$$$$$0,
     "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$23,
+    "deco-sites/eicomorg/sections/TestimonialsSection.tsx": $$$$$$$$38,
     "deco-sites/eicomorg/sections/TextSection.tsx": $$$$$$$$29,
     "deco-sites/eicomorg/sections/WaitingList.tsx": $$$$$$$$2,
     "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$36,

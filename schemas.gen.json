@@ -127,6 +127,7 @@
               "deco-sites/eicomorg/sections/ProductDetails.tsx",
               "deco-sites/eicomorg/sections/ProductShelf.tsx",
               "deco-sites/eicomorg/sections/SearchResult.tsx",
+              "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
               "deco-sites/eicomorg/sections/TextSection.tsx",
               "deco-sites/eicomorg/sections/WaitingList.tsx",
               "deco-sites/eicomorg/sections/WhatsApp.tsx",
@@ -12755,6 +12756,67 @@
       ],
       "title": "deco-sites/eicomorg/components/search/SearchResult.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@TestimonialPerson": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "role": {
+          "type": "string",
+          "title": "Role"
+        }
+      },
+      "required": [
+        "name",
+        "role"
+      ],
+      "title": "TestimonialPerson"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        },
+        "person": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@TestimonialPerson",
+          "title": "Person"
+        }
+      },
+      "required": [
+        "content",
+        "person"
+      ],
+      "title": "Testimonial"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial"
+      },
+      "title": "Testimonial[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "testimonials": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial[]",
+          "title": "Testimonials"
+        }
+      },
+      "required": [
+        "title",
+        "testimonials"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/TestimonialsSection.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1RleHRTZWN0aW9uLnRzeA==@MobileButton": {
       "type": "object",
       "properties": {
@@ -17168,6 +17230,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXN0aW1vbmlhbHNTZWN0aW9uLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/TestimonialsSection.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/TestimonialsSection.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXh0U2VjdGlvbi50c3g=": {
       "title": "deco-sites/eicomorg/sections/TextSection.tsx",
       "type": "object",
@@ -18563,6 +18646,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TZWFyY2hSZXN1bHQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXN0aW1vbmlhbHNTZWN0aW9uLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXh0U2VjdGlvbi50c3g="
