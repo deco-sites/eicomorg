@@ -9,11 +9,11 @@ export interface Props {
   cardImage: LiveImage;
   title: HTML;
   paragraph1: string;
-  icon1: AvailableIcons;
+  emoji1: HTML;
   paragraph2: string;
-  icon2: AvailableIcons;
+  emoji2: HTML;
   paragraph3: string;
-  icon3: AvailableIcons;
+  emoji3: HTML;
 }
 
 function WhoIsForDigitalCommerceExpert(
@@ -22,11 +22,11 @@ function WhoIsForDigitalCommerceExpert(
     cardImage,
     title,
     paragraph1,
-    icon1,
+    emoji1,
     paragraph2,
-    icon2,
+    emoji2,
     paragraph3,
-    icon3,
+    emoji3,
   }: Props,
 ) {
   return (
@@ -62,34 +62,19 @@ function WhoIsForDigitalCommerceExpert(
                 </h2>
                 <div class="mx-0 overflow-hidden">
                   <div class="xs:pr-3 xs:left-auto xs:right-auto md:px-4 w-full md:w-1/3 float-left relative">
-                    <Icon
-                      id={icon1}
-                      width={28}
-                      height={28}
-                      strokeWidth={2}
-                    />
+                    <span class="text-3xl" dangerouslySetInnerHTML={{ __html: emoji1 }}></span>
                     <p class="text-left mb-3">
                       {paragraph1}
                     </p>
                   </div>
                   <div class="md:px-4 xs:w-full md:w-1/3 float-left relative">
-                    <Icon
-                      id={icon2}
-                      width={28}
-                      height={28}
-                      strokeWidth={2}
-                    />
+                    <span class="text-3xl" dangerouslySetInnerHTML={{ __html: emoji2 }}></span>
                     <p class="text-left mb-3">
                       {paragraph2}
                     </p>
                   </div>
                   <div class="xs:w-full md:w-1/3 float-left relative">
-                    <Icon
-                      id={icon2}
-                      width={28}
-                      height={28}
-                      strokeWidth={2}
-                    />
+                    <span class="text-3xl" dangerouslySetInnerHTML={{ __html: emoji3 }}></span>
                     <p class="text-left mb-3">
                       {paragraph3}
                     </p>
