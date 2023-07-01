@@ -62,19 +62,31 @@ function WhoIsForDigitalCommerceExpert(
                 </h2>
                 <div class="mx-0 overflow-hidden">
                   <div class="xs:pr-3 xs:left-auto xs:right-auto md:px-4 w-full md:w-1/3 float-left relative">
-                    <span class="text-3xl" dangerouslySetInnerHTML={{ __html: emoji1 }}></span>
+                    <span
+                      class="text-3xl"
+                      dangerouslySetInnerHTML={{ __html: emoji1 }}
+                    >
+                    </span>
                     <p class="text-left mb-3">
                       {paragraph1}
                     </p>
                   </div>
                   <div class="md:px-4 xs:w-full md:w-1/3 float-left relative">
-                    <span class="text-3xl" dangerouslySetInnerHTML={{ __html: emoji2 }}></span>
+                    <span
+                      class="text-3xl"
+                      dangerouslySetInnerHTML={{ __html: emoji2 }}
+                    >
+                    </span>
                     <p class="text-left mb-3">
                       {paragraph2}
                     </p>
                   </div>
                   <div class="xs:w-full md:w-1/3 float-left relative">
-                    <span class="text-3xl" dangerouslySetInnerHTML={{ __html: emoji3 }}></span>
+                    <span
+                      class="text-3xl"
+                      dangerouslySetInnerHTML={{ __html: emoji3 }}
+                    >
+                    </span>
                     <p class="text-left mb-3">
                       {paragraph3}
                     </p>
