@@ -98,6 +98,7 @@
               "$live/sections/UseSlot.tsx",
               "deco-sites/eicomorg/sections/Alert.tsx",
               "deco-sites/eicomorg/sections/Alumni.tsx",
+              "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
               "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx",
               "deco-sites/eicomorg/sections/BannerGrid.tsx",
               "deco-sites/eicomorg/sections/BannerPLP.tsx",
@@ -128,12 +129,14 @@
               "deco-sites/eicomorg/sections/HomeTextSection.tsx",
               "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx",
               "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx",
+              "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx",
               "deco-sites/eicomorg/sections/LinkTree.tsx",
               "deco-sites/eicomorg/sections/MoreAboutEicomDCE.tsx",
               "deco-sites/eicomorg/sections/Newsletter.tsx",
               "deco-sites/eicomorg/sections/ProductDetails.tsx",
               "deco-sites/eicomorg/sections/ProductShelf.tsx",
               "deco-sites/eicomorg/sections/SearchResult.tsx",
+              "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
               "deco-sites/eicomorg/sections/TextSection.tsx",
               "deco-sites/eicomorg/sections/WaitingList.tsx",
               "deco-sites/eicomorg/sections/WhatsApp.tsx",
@@ -9466,6 +9469,92 @@
       ],
       "title": "deco-sites/eicomorg/components/alumni/Alumni.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@Image": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Source"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        }
+      },
+      "required": [
+        "source",
+        "alt"
+      ],
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@ActionButton": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string",
+          "title": "Content"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "content",
+        "href"
+      ],
+      "title": "ActionButton"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@BannerBackgroundImage": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile"
+      ],
+      "title": "BannerBackgroundImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@Image",
+          "title": "Image"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@ActionButton",
+          "title": "Button"
+        },
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@BannerBackgroundImage",
+          "title": "Background Image"
+        },
+        "footerContent": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Footer Content"
+        }
+      },
+      "required": [
+        "title",
+        "button",
+        "backgroundImage",
+        "footerContent"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/BannerDigitalTransformation.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckV4ZWN1dGl2ZVByb2dyYW0udHN4@BannerBackground": {
       "type": "object",
       "properties": {
@@ -11203,7 +11292,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@258b296ce27a8196431257d88db20df7&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -11219,7 +11308,7 @@
           "required": []
         }
       ],
-      "title": "059c94444960270fb25f4ccb03e57ec3&Colors"
+      "title": "258b296ce27a8196431257d88db20df7&Colors"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -11322,7 +11411,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@258b296ce27a8196431257d88db20df7&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -12873,6 +12962,83 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/HomeTextSection.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Header": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "description": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "title",
+        "description"
+      ],
+      "title": "Header"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@ContentImage": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Source"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        }
+      },
+      "required": [
+        "source",
+        "alt"
+      ],
+      "title": "ContentImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Content": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@ContentImage",
+          "title": "Image"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "image",
+        "text"
+      ],
+      "title": "Content"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "header": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Header",
+          "title": "Header"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Content",
+          "title": "Content"
+        },
+        "submitButtonText": {
+          "type": "string",
+          "title": "Submit Button Text"
+        }
+      },
+      "required": [
+        "header",
+        "content",
+        "submitButtonText"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/JoinWaitlistSection.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0xpbmtUcmVlLnRzeA==@Link": {
       "type": "object",
       "properties": {
@@ -13392,6 +13558,67 @@
       ],
       "title": "deco-sites/eicomorg/components/search/SearchResult.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@TestimonialPerson": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "role": {
+          "type": "string",
+          "title": "Role"
+        }
+      },
+      "required": [
+        "name",
+        "role"
+      ],
+      "title": "TestimonialPerson"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        },
+        "person": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@TestimonialPerson",
+          "title": "Person"
+        }
+      },
+      "required": [
+        "content",
+        "person"
+      ],
+      "title": "Testimonial"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial"
+      },
+      "title": "Testimonial[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "testimonials": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Testimonial[]",
+          "title": "Testimonials"
+        }
+      },
+      "required": [
+        "title",
+        "testimonials"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/TestimonialsSection.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1RleHRTZWN0aW9uLnRzeA==@MobileButton": {
       "type": "object",
       "properties": {
@@ -13557,751 +13784,25 @@
           "type": "string",
           "title": "Paragraph1"
         },
-        "icon1": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
-            },
-            {
-              "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
-            },
-            {
-              "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
-            },
-            {
-              "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
-            },
-            {
-              "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
-            },
-            {
-              "type": "string",
-              "const": "User",
-              "default": "User"
-            },
-            {
-              "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
-            },
-            {
-              "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
-            },
-            {
-              "type": "string",
-              "const": "Heart",
-              "default": "Heart"
-            },
-            {
-              "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
-            },
-            {
-              "type": "string",
-              "const": "XMark",
-              "default": "XMark"
-            },
-            {
-              "type": "string",
-              "const": "Plus",
-              "default": "Plus"
-            },
-            {
-              "type": "string",
-              "const": "Minus",
-              "default": "Minus"
-            },
-            {
-              "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
-            },
-            {
-              "type": "string",
-              "const": "Phone",
-              "default": "Phone"
-            },
-            {
-              "type": "string",
-              "const": "Elo",
-              "default": "Elo"
-            },
-            {
-              "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
-            },
-            {
-              "type": "string",
-              "const": "Visa",
-              "default": "Visa"
-            },
-            {
-              "type": "string",
-              "const": "Pix",
-              "default": "Pix"
-            },
-            {
-              "type": "string",
-              "const": "Logo",
-              "default": "Logo"
-            },
-            {
-              "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
-            },
-            {
-              "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
-            },
-            {
-              "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
-            },
-            {
-              "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
-            },
-            {
-              "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
-            },
-            {
-              "type": "string",
-              "const": "Truck",
-              "default": "Truck"
-            },
-            {
-              "type": "string",
-              "const": "Discount",
-              "default": "Discount"
-            },
-            {
-              "type": "string",
-              "const": "Return",
-              "default": "Return"
-            },
-            {
-              "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
-            },
-            {
-              "type": "string",
-              "const": "Deco",
-              "default": "Deco"
-            },
-            {
-              "type": "string",
-              "const": "Discord",
-              "default": "Discord"
-            },
-            {
-              "type": "string",
-              "const": "Trash",
-              "default": "Trash"
-            },
-            {
-              "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
-            },
-            {
-              "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
-            },
-            {
-              "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
-            },
-            {
-              "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
-            },
-            {
-              "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
-            },
-            {
-              "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
-            },
-            {
-              "type": "string",
-              "const": "Spain",
-              "default": "Spain"
-            },
-            {
-              "type": "string",
-              "const": "Italy",
-              "default": "Italy"
-            },
-            {
-              "type": "string",
-              "const": "Chile",
-              "default": "Chile"
-            },
-            {
-              "type": "string",
-              "const": "Romania",
-              "default": "Romania"
-            },
-            {
-              "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
-            },
-            {
-              "type": "string",
-              "const": "Computer",
-              "default": "Computer"
-            },
-            {
-              "type": "string",
-              "const": "Seed",
-              "default": "Seed"
-            },
-            {
-              "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
-            }
-          ],
-          "type": "string",
-          "title": "Icon1"
+        "emoji1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Emoji1"
         },
         "paragraph2": {
           "type": "string",
           "title": "Paragraph2"
         },
-        "icon2": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
-            },
-            {
-              "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
-            },
-            {
-              "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
-            },
-            {
-              "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
-            },
-            {
-              "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
-            },
-            {
-              "type": "string",
-              "const": "User",
-              "default": "User"
-            },
-            {
-              "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
-            },
-            {
-              "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
-            },
-            {
-              "type": "string",
-              "const": "Heart",
-              "default": "Heart"
-            },
-            {
-              "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
-            },
-            {
-              "type": "string",
-              "const": "XMark",
-              "default": "XMark"
-            },
-            {
-              "type": "string",
-              "const": "Plus",
-              "default": "Plus"
-            },
-            {
-              "type": "string",
-              "const": "Minus",
-              "default": "Minus"
-            },
-            {
-              "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
-            },
-            {
-              "type": "string",
-              "const": "Phone",
-              "default": "Phone"
-            },
-            {
-              "type": "string",
-              "const": "Elo",
-              "default": "Elo"
-            },
-            {
-              "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
-            },
-            {
-              "type": "string",
-              "const": "Visa",
-              "default": "Visa"
-            },
-            {
-              "type": "string",
-              "const": "Pix",
-              "default": "Pix"
-            },
-            {
-              "type": "string",
-              "const": "Logo",
-              "default": "Logo"
-            },
-            {
-              "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
-            },
-            {
-              "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
-            },
-            {
-              "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
-            },
-            {
-              "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
-            },
-            {
-              "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
-            },
-            {
-              "type": "string",
-              "const": "Truck",
-              "default": "Truck"
-            },
-            {
-              "type": "string",
-              "const": "Discount",
-              "default": "Discount"
-            },
-            {
-              "type": "string",
-              "const": "Return",
-              "default": "Return"
-            },
-            {
-              "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
-            },
-            {
-              "type": "string",
-              "const": "Deco",
-              "default": "Deco"
-            },
-            {
-              "type": "string",
-              "const": "Discord",
-              "default": "Discord"
-            },
-            {
-              "type": "string",
-              "const": "Trash",
-              "default": "Trash"
-            },
-            {
-              "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
-            },
-            {
-              "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
-            },
-            {
-              "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
-            },
-            {
-              "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
-            },
-            {
-              "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
-            },
-            {
-              "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
-            },
-            {
-              "type": "string",
-              "const": "Spain",
-              "default": "Spain"
-            },
-            {
-              "type": "string",
-              "const": "Italy",
-              "default": "Italy"
-            },
-            {
-              "type": "string",
-              "const": "Chile",
-              "default": "Chile"
-            },
-            {
-              "type": "string",
-              "const": "Romania",
-              "default": "Romania"
-            },
-            {
-              "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
-            },
-            {
-              "type": "string",
-              "const": "Computer",
-              "default": "Computer"
-            },
-            {
-              "type": "string",
-              "const": "Seed",
-              "default": "Seed"
-            },
-            {
-              "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
-            }
-          ],
-          "type": "string",
-          "title": "Icon2"
+        "emoji2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Emoji2"
         },
         "paragraph3": {
           "type": "string",
           "title": "Paragraph3"
         },
-        "icon3": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
-            },
-            {
-              "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
-            },
-            {
-              "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
-            },
-            {
-              "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
-            },
-            {
-              "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
-            },
-            {
-              "type": "string",
-              "const": "User",
-              "default": "User"
-            },
-            {
-              "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
-            },
-            {
-              "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
-            },
-            {
-              "type": "string",
-              "const": "Heart",
-              "default": "Heart"
-            },
-            {
-              "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
-            },
-            {
-              "type": "string",
-              "const": "XMark",
-              "default": "XMark"
-            },
-            {
-              "type": "string",
-              "const": "Plus",
-              "default": "Plus"
-            },
-            {
-              "type": "string",
-              "const": "Minus",
-              "default": "Minus"
-            },
-            {
-              "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
-            },
-            {
-              "type": "string",
-              "const": "Phone",
-              "default": "Phone"
-            },
-            {
-              "type": "string",
-              "const": "Elo",
-              "default": "Elo"
-            },
-            {
-              "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
-            },
-            {
-              "type": "string",
-              "const": "Visa",
-              "default": "Visa"
-            },
-            {
-              "type": "string",
-              "const": "Pix",
-              "default": "Pix"
-            },
-            {
-              "type": "string",
-              "const": "Logo",
-              "default": "Logo"
-            },
-            {
-              "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
-            },
-            {
-              "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
-            },
-            {
-              "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
-            },
-            {
-              "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
-            },
-            {
-              "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
-            },
-            {
-              "type": "string",
-              "const": "Truck",
-              "default": "Truck"
-            },
-            {
-              "type": "string",
-              "const": "Discount",
-              "default": "Discount"
-            },
-            {
-              "type": "string",
-              "const": "Return",
-              "default": "Return"
-            },
-            {
-              "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
-            },
-            {
-              "type": "string",
-              "const": "Deco",
-              "default": "Deco"
-            },
-            {
-              "type": "string",
-              "const": "Discord",
-              "default": "Discord"
-            },
-            {
-              "type": "string",
-              "const": "Trash",
-              "default": "Trash"
-            },
-            {
-              "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
-            },
-            {
-              "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
-            },
-            {
-              "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
-            },
-            {
-              "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
-            },
-            {
-              "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
-            },
-            {
-              "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
-            },
-            {
-              "type": "string",
-              "const": "Spain",
-              "default": "Spain"
-            },
-            {
-              "type": "string",
-              "const": "Italy",
-              "default": "Italy"
-            },
-            {
-              "type": "string",
-              "const": "Chile",
-              "default": "Chile"
-            },
-            {
-              "type": "string",
-              "const": "Romania",
-              "default": "Romania"
-            },
-            {
-              "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
-            },
-            {
-              "type": "string",
-              "const": "Computer",
-              "default": "Computer"
-            },
-            {
-              "type": "string",
-              "const": "Seed",
-              "default": "Seed"
-            },
-            {
-              "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
-            }
-          ],
-          "type": "string",
-          "title": "Icon3"
+        "emoji3": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Emoji3"
         }
       },
       "required": [
@@ -14309,11 +13810,11 @@
         "cardImage",
         "title",
         "paragraph1",
-        "icon1",
+        "emoji1",
         "paragraph2",
-        "icon2",
+        "emoji2",
         "paragraph3",
-        "icon3"
+        "emoji3"
       ],
       "title": "deco-sites/eicomorg/components/whoIsForDigitalCommerceExpert/WhoIsForDigitalCommerceExpert.tsx@Props"
     },
@@ -17210,6 +16711,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4": {
+      "title": "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJFeGVjdXRpdmVQcm9ncmFtLnRzeA==": {
       "title": "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx",
       "type": "object",
@@ -17835,6 +17357,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Kb2luV2FpdGxpc3RTZWN0aW9uLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9MaW5rVHJlZS50c3g=": {
       "title": "deco-sites/eicomorg/sections/LinkTree.tsx",
       "type": "object",
@@ -17958,6 +17501,27 @@
             "deco-sites/eicomorg/sections/SearchResult.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/SearchResult.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXN0aW1vbmlhbHNTZWN0aW9uLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/TestimonialsSection.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/TestimonialsSection.tsx"
         }
       }
     },
@@ -19313,6 +18877,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BbHVtbmkudHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJFeGVjdXRpdmVQcm9ncmFtLnRzeA=="
         },
         {
@@ -19403,6 +18970,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lV2h5RWljb21TZWN0aW9uLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Kb2luV2FpdGxpc3RTZWN0aW9uLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9MaW5rVHJlZS50c3g="
         },
         {
@@ -19419,6 +18989,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TZWFyY2hSZXN1bHQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXN0aW1vbmlhbHNTZWN0aW9uLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXh0U2VjdGlvbi50c3g="
