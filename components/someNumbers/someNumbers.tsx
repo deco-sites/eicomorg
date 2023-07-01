@@ -34,42 +34,50 @@ function SomeNumbers(
       >
         <div class="max-w-[1120px] pr-0 relative mx-auto">
           <div class="max-w-[700px] mx-auto text-center pt-3 block">
-              <p class="text-base">
-                <span dangerouslySetInnerHTML={{ __html: topText }}></span>
-              </p>
+            <p class="text-base">
+              <span dangerouslySetInnerHTML={{ __html: topText }}></span>
+            </p>
           </div>
           <div class="mx-[-10px] mb-5 px-10 xs:mt-16 md:mt-24 pt-0">
             <div class="xs:w-full md:w-1/2 mb-5 px-10 pt-0 float-left relative">
-                <div class="border-b-4 border-solid border-orange-500 mb-3 block">
-                    <h1 class=" my-0 pr-5 font-bold text-6xl mb-[7px] inline-block">
-                        <span dangerouslySetInnerHTML={{ __html: leftCard.number }}></span>
-                    </h1>
-                </div>
-                <p class="text-xl text-left mb-3 mt-0">
-                    <span dangerouslySetInnerHTML={{ __html: leftCard.subtitle }}></span>
-                </p>
-                <p class="text-xl text-left mb-3 mt-0">
-                    <span dangerouslySetInnerHTML={{ __html: leftCard.text }}></span>
-                </p>
-                <p class="text-sm mb-0">
-                    <span dangerouslySetInnerHTML={{ __html: leftCard.source }}></span>
-                </p>
+              <div class="border-b-4 border-solid border-orange-500 mb-3 block">
+                <h1 class=" my-0 pr-5 font-bold text-6xl mb-[7px] inline-block">
+                  <span dangerouslySetInnerHTML={{ __html: leftCard.number }}>
+                  </span>
+                </h1>
+              </div>
+              <p class="text-xl text-left mb-3 mt-0">
+                <span dangerouslySetInnerHTML={{ __html: leftCard.subtitle }}>
+                </span>
+              </p>
+              <p class="text-xl text-left mb-3 mt-0">
+                <span dangerouslySetInnerHTML={{ __html: leftCard.text }}>
+                </span>
+              </p>
+              <p class="text-sm mb-0">
+                <span dangerouslySetInnerHTML={{ __html: leftCard.source }}>
+                </span>
+              </p>
             </div>
             <div class="xs:w-full md:w-1/2 px-10 pt-0 float-left relative">
-                <div class="border-b-4 border-solid border-orange-500 mb-3 block">
-                    <h1 class=" my-0 pr-5 font-bold text-6xl mb-[7px] inline-block">
-                        <span dangerouslySetInnerHTML={{ __html: rightCard.number }}></span>
-                    </h1>
-                </div>
-                <p class="text-xl text-left mb-3 mt-0">
-                    <span dangerouslySetInnerHTML={{ __html: rightCard.subtitle }}></span>
-                </p>
-                <p class="text-xl text-left mb-3 mt-0">
-                    <span dangerouslySetInnerHTML={{ __html: rightCard.text }}></span>
-                </p>
-                <p class="text-sm mb-0">
-                    <span dangerouslySetInnerHTML={{ __html: rightCard.source }}></span>
-                </p>
+              <div class="border-b-4 border-solid border-orange-500 mb-3 block">
+                <h1 class=" my-0 pr-5 font-bold text-6xl mb-[7px] inline-block">
+                  <span dangerouslySetInnerHTML={{ __html: rightCard.number }}>
+                  </span>
+                </h1>
+              </div>
+              <p class="text-xl text-left mb-3 mt-0">
+                <span dangerouslySetInnerHTML={{ __html: rightCard.subtitle }}>
+                </span>
+              </p>
+              <p class="text-xl text-left mb-3 mt-0">
+                <span dangerouslySetInnerHTML={{ __html: rightCard.text }}>
+                </span>
+              </p>
+              <p class="text-sm mb-0">
+                <span dangerouslySetInnerHTML={{ __html: rightCard.source }}>
+                </span>
+              </p>
             </div>
           </div>
         </div>
