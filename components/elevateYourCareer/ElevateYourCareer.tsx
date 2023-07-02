@@ -36,7 +36,11 @@ function ElevateYourCareer(
           <div class="mx-[-10px] align-center flex xs:flex-col md:flex-row px-2">
             <div class="xs:w-full md:w-[40%] md:mt-16 float-left px-3 mb-3 relative md:">
               <p>
-                <span class="text-left pb-3 text-2xl mb-3" dangerouslySetInnerHTML={{ __html: subTitle }}></span>
+                <span
+                  class="text-left pb-3 text-2xl mb-3"
+                  dangerouslySetInnerHTML={{ __html: subTitle }}
+                >
+                </span>
               </p>
               <p class="text-left mb-5 text-base">
                 <span dangerouslySetInnerHTML={{ __html: text }}></span>
