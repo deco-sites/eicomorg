@@ -11,17 +11,18 @@ import * as $$$$$2 from "./islands/CourseCard.tsx";
 import * as $$$$$3 from "./islands/HomeAboutSection.tsx";
 import * as $$$$$4 from "./islands/HeaderModals.tsx";
 import * as $$$$$5 from "./islands/HomeWhyEicomSection.tsx";
-import * as $$$$$6 from "./islands/SearchControls.tsx";
-import * as $$$$$7 from "./islands/Header.tsx";
-import * as $$$$$8 from "./islands/DetailsSection.tsx";
-import * as $$$$$9 from "./islands/ProductImageZoom.tsx";
-import * as $$$$$10 from "./islands/SliderJS.tsx";
-import * as $$$$$11 from "./islands/Alerts.tsx";
-import * as $$$$$12 from "./islands/WishlistButton.tsx";
-import * as $$$$$13 from "./islands/HeaderButton.tsx";
-import * as $$$$$14 from "./islands/ShippingSimulation.tsx";
-import * as $$$$$15 from "./islands/AddToCartButton.tsx";
-import * as $$$$$16 from "./islands/HomeWhyEicomBlocksSection.tsx";
+import * as $$$$$6 from "./islands/Footer.tsx";
+import * as $$$$$7 from "./islands/SearchControls.tsx";
+import * as $$$$$8 from "./islands/Header.tsx";
+import * as $$$$$9 from "./islands/DetailsSection.tsx";
+import * as $$$$$10 from "./islands/ProductImageZoom.tsx";
+import * as $$$$$11 from "./islands/SliderJS.tsx";
+import * as $$$$$12 from "./islands/Alerts.tsx";
+import * as $$$$$13 from "./islands/WishlistButton.tsx";
+import * as $$$$$14 from "./islands/HeaderButton.tsx";
+import * as $$$$$15 from "./islands/ShippingSimulation.tsx";
+import * as $$$$$16 from "./islands/AddToCartButton.tsx";
+import * as $$$$$17 from "./islands/HomeWhyEicomBlocksSection.tsx";
 import * as $$$$$$$$0 from "./sections/ProductShelf.tsx";
 import * as $$$$$$$$1 from "./sections/Bonus.tsx";
 import * as $$$$$$$$2 from "./sections/ExecutiveProgrammeWarning.tsx";
@@ -213,23 +214,24 @@ const manifest = {
     "./routes/styles.css.ts": $$$$1,
   },
   "islands": {
-    "./islands/AddToCartButton.tsx": $$$$$15,
-    "./islands/Alerts.tsx": $$$$$11,
+    "./islands/AddToCartButton.tsx": $$$$$16,
+    "./islands/Alerts.tsx": $$$$$12,
     "./islands/CourseCard.tsx": $$$$$2,
-    "./islands/DetailsSection.tsx": $$$$$8,
-    "./islands/Header.tsx": $$$$$7,
-    "./islands/HeaderButton.tsx": $$$$$13,
+    "./islands/DetailsSection.tsx": $$$$$9,
+    "./islands/Footer.tsx": $$$$$6,
+    "./islands/Header.tsx": $$$$$8,
+    "./islands/HeaderButton.tsx": $$$$$14,
     "./islands/HeaderModals.tsx": $$$$$4,
     "./islands/HeaderSearchbar.tsx": $$$$$1,
     "./islands/HomeAboutSection.tsx": $$$$$3,
-    "./islands/HomeWhyEicomBlocksSection.tsx": $$$$$16,
+    "./islands/HomeWhyEicomBlocksSection.tsx": $$$$$17,
     "./islands/HomeWhyEicomSection.tsx": $$$$$5,
     "./islands/OutOfStock.tsx": $$$$$0,
-    "./islands/ProductImageZoom.tsx": $$$$$9,
-    "./islands/SearchControls.tsx": $$$$$6,
-    "./islands/ShippingSimulation.tsx": $$$$$14,
-    "./islands/SliderJS.tsx": $$$$$10,
-    "./islands/WishlistButton.tsx": $$$$$12,
+    "./islands/ProductImageZoom.tsx": $$$$$10,
+    "./islands/SearchControls.tsx": $$$$$7,
+    "./islands/ShippingSimulation.tsx": $$$$$15,
+    "./islands/SliderJS.tsx": $$$$$11,
+    "./islands/WishlistButton.tsx": $$$$$13,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i2$$$$$0,

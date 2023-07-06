@@ -1,4 +1,3 @@
-
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import { useState } from "preact/hooks";
@@ -46,8 +45,11 @@ function Alert({ alert }: Props) {
             </span>
           </a>
         </div>
-        <button class="absolute right-1 xs:p-[6px] md:py-[6px] md:px-[10px]" onClick={handleClick}>
-        <Image
+        <button
+          class="absolute right-1 xs:p-[6px] md:py-[6px] md:px-[10px]"
+          onClick={handleClick}
+        >
+          <Image
             src={x}
             alt="x"
             width={16}

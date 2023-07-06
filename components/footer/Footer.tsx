@@ -2,6 +2,7 @@ import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import type { HTML } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
+import { useState } from 'preact/hooks';
 import type { ComponentChildren } from "preact";
 
 export interface Logo {
@@ -15,176 +16,124 @@ export interface Logo {
   copyrightText: HTML;
 }
 
-export type IconItem = { icon: AvailableIcons; href: string };
-export type StringItem = {
+export interface Infos {
   label: HTML;
   href?: string;
   isEmail?: boolean;
   isPhone?: boolean;
-};
+}
+
+export interface Policies {
+  label: HTML;
+  href: string;
+}
 
 export type FooterIcons = {
-  icon: IconItem;
+  icon: AvailableIcons;
   href: string;
 };
 
-export type Item = StringItem | IconItem;
-
-export type Section = {
-  children: Item[];
-};
-
-const isIcon = (item: Item): item is IconItem =>
-  // deno-lint-ignore no-explicit-any
-  typeof (item as any)?.icon === "string";
-
-function SectionItem({ item }: { item: Item }) {
-  return (
-    <span class="text-primary-content">
-      {isIcon(item)
-        ? (
-          <a href={item.href}>
-            <Icon
-              id={item.icon}
-              width={32}
-              height={32}
-              strokeWidth={0.01}
-            />
-          </a>
-        )
-        : (
-          <>
-            {item.isEmail
-              ? (
-                <a href={`mailto:${item.href}`} className="hover:underline">
-                  <span dangerouslySetInnerHTML={{ __html: item.label }}></span>
-                </a>
-              )
-              : item.isPhone
-              ? (
-                <a href={`tel:${item.href}`} className="hover:underline">
-                  <span dangerouslySetInnerHTML={{ __html: item.label }}></span>
-                </a>
-              )
-              : (
-                <a href={item.href}>
-                  <span dangerouslySetInnerHTML={{ __html: item.label }}></span>
-                </a>
-              )}
-          </>
-        )}
-    </span>
-  );
-}
-
-function FooterContainer(
-  { children, class: _class = "" }: {
-    class?: string;
-    children: ComponentChildren;
-  },
-) {
-  return <div class={`py-6 px-4 sm:py-12 sm:px-0 ${_class}`}>{children}</div>;
-}
 
 export interface Props {
   logo: Logo;
-  sections?: Section[];
+  infos: Infos[];
+  policies: Policies[];
+  icons: FooterIcons[]
 }
 
-function Footer({ sections = [], logo }: Props) {
+function Footer({logo, infos = [], policies = [], icons = [] }: Props) {
   return (
-    <footer class="w-full bg-black flex flex-col divide-y divide-primary-content">
-      <div>
-        <div class="container w-full flex flex-col divide-y divide-primary-content max-w-[1120px] relative ml-auto mr-auto">
-          <FooterContainer>
-            {/* Desktop view */}
-            <ul class="hidden sm:flex flex-row gap-20">
-              <div class="h-32 flex flex-col justify-between float-left px-3 w-1/3">
-                <a
-                  href={logo.href}
-                  aria-label="Store logo"
-                  class="block w-[160]"
-                >
-                  <Image
-                    class="py-1"
-                    src={logo.desktop}
-                    alt={logo.alt}
-                    width={160}
-                    height={58}
-                    loading="lazy"
-                  />
-                </a>
-                <p>
+    <>
+      <div class="bg-black h-10 w-full"></div>
+      <div class="bg-black md:px-0">
+        <div class="bg-blackz-auto max-w-[1120px] pr-0 xs:pl-0 relative mx-auto h-full">
+          <div class=" xs:mx-0 md:mx-[-10] h-[120px] bg-black">
+            <div class="bg-black xs:h-[100px] md:h-[120px] flex flex-col xs:justify-center  md:justify-between xs:w-full md:w-1/3 float-left px-3 relative">
+              <a href={logo.href} class="max-w-full inline-block cursor-pointer bg-black">
+                <Image
+                  src={logo.desktop}
+                  alt={logo.alt}
+                  width={160}
+                  height={58}
+                  class="p-1 block w-[160px] h-[58px]"
+                />
+              </a>
+              <p class="text-sx text-left mb-3">
                   <span
                     dangerouslySetInnerHTML={{ __html: logo.copyrightText }}
                   >
                   </span>
-                </p>
-              </div>
-              {sections.map((section) => (
-                <li>
-                  <div>
-                    <ul
-                      class={`flex ${
-                        isIcon(section.children[0]) ? "flex-row" : "flex-col"
-                      } gap-2 pt-2`}
-                    >
-                      {section.children.map((item) => (
-                        <SectionItem item={item} />
-                      ))}
-                    </ul>
-                  </div>
-                </li>
-              ))}
-            </ul>
+              </p>
+            </div>
+            <div class="bg-black xs:h-[100px] md:h-[120px] flex flex-col xs:justify-center  md:justify-between xs:w-full md:w-1/4 float-left px-3 relative">
+                {infos.map((info => {
+                  return (
+                    <>
+                      {info.isEmail
+                        ? (
+                          <p class="text-xs my-0 text-left">
+                            <a href={`mailto:${info.href}`} className="hover:underline cursor-pointer">
+                              <span dangerouslySetInnerHTML={{ __html: info.label }}></span>
+                            </a>
+                          </p>
 
-            {/* Mobile view */}
-            <ul class="flex flex-col sm:hidden sm:flex-row gap-4">
-              <div class="h-32 flex flex-col justify-between float-left px-3 md:w-1/3 xs:1/2">
-                <a
-                  href={logo.href}
-                  aria-label="Store logo"
-                  class="block w-[160]"
-                >
-                  <Image
-                    class="py-1"
-                    src={logo.desktop}
-                    alt={logo.alt}
-                    width={160}
-                    height={58}
-                    loading="lazy"
-                  />
-                </a>
-                <p>
-                  <span
-                    dangerouslySetInnerHTML={{ __html: logo.copyrightText }}
-                  >
-                  </span>
-                </p>
-              </div>
-              {sections.map((section) => (
-                <li>
-                  <span class="text-primary-content">
-                    <ul
-                      class={`flex ${
-                        isIcon(section.children[0])
-                          ? "flex-row items-center"
-                          : "flex-col"
-                      } gap-2 px-2 pt-2`}
-                    >
-                      {section.children.map((item) => (
-                        <SectionItem item={item} /> // Remove the extra <li> wrapper here
-                      ))}
-                    </ul>
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </FooterContainer>
+                        )
+                        : info.isPhone
+                        ? (
+                          <p class="text-xs my-0 text-left">
+                            <a href={`tel:${info.href}`} className="hover:underline cursor-pointer">
+                              <span dangerouslySetInnerHTML={{ __html: info.label }}></span>
+                            </a>
+                          </p>
+                        )
+                        : (
+                          <p class="text-xs my-0 text-left">
+                              <span dangerouslySetInnerHTML={{ __html: info.label }}></span>
+                          </p>
+                        )}
+                    </>
+                  )
+                }))}
+            </div>
+            <div class="bg-black xs:h-[100px] md:h-[120px] flex flex-col xs:justify-center  md:justify-between xs:w-full md:w-1/4 float-left px-3 relative">
+                <ul class="pl-0 list-none mb-3 mt-0 block" role="list">
+                  {policies.map((policy) => {
+                    return (
+                      <li class="pb-1 text-base"> 
+                        <div class="w-embed w-iframe w-script">
+                          <a href={policy.href}>
+                            <span dangerouslySetInnerHTML={{ __html: policy.label }}></span>
+                          </a>
+                        </div>
+                      </li>
+                    )
+                  })}
+                </ul>
+            </div>
+            <div class="bg-black flex flex-row xs:justify-start md:justify-end h-[120px] xs:w-full md:w-1/6 float-left px-3 relative">
+                {icons.map((icon) => {
+                  return (
+                    <a href={icon.href} class="w-6 h-6 xs:ml-3 md:ml-2 lg:ml-3">
+                      <Icon
+                        id={icon.icon}
+                        width={24}
+                        height={24}
+                        strokeWidth={3}
+                        class="max-w-full align-middle inline-block"
+                      />
+                    </a>
+                  )
+                })}
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+      <div class="bg-black h-10 w-full"></div>
+    </>
   );
 }
 
 export default Footer;
+
+
+{/* <div class="hidden sm:flex flex-row "> */}
