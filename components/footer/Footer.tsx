@@ -3,7 +3,7 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import type { HTML } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import { useState } from "preact/hooks";
-import type { ComponentChildren } from "preact";
+import Policy from "./Policy.tsx"
 
 export interface Logo {
   /** @description desktop otimized image */
@@ -26,6 +26,7 @@ export interface Infos {
 export interface Policies {
   label: HTML;
   href: string;
+  closeButton: LiveImage;
 }
 
 export type FooterIcons = {
@@ -40,11 +41,7 @@ export interface Props {
   icons: FooterIcons[];
 }
 
-
 function Footer({ logo, infos = [], policies = [], icons = [] }: Props) {
-
-  const [isOpen, setIsOpen] = useState(false);
-  
   return (
     <>
       <div class="bg-black h-10 w-full"></div>
@@ -117,20 +114,9 @@ function Footer({ logo, infos = [], policies = [], icons = [] }: Props) {
             </div>
             <div class=" xs:h-[100px] md:h-[120px] flex flex-col xs:justify-center  md:justify-between xs:w-full md:w-1/4 float-left px-3 relative">
               <ul class="pl-0 list-none mb-3 mt-0 block" role="list">
-                {policies.map((policy) => {
-                  return (
-                    <li class="pb-1 text-base">
-                      <div class="w-embed w-iframe w-script">
-                        <a href={policy.href}>
-                          <span
-                            dangerouslySetInnerHTML={{ __html: policy.label }}
-                          >
-                          </span>
-                        </a>
-                      </div>
-                    </li>
-                  );
-                })}
+              {policies.map((policyData, index) => (
+                <Policy policyData={policyData} index={index} />
+              ))}
               </ul>
             </div>
             <div class="flex flex-row xs:justify-start md:justify-end h-[120px] xs:w-full md:w-1/6 float-left px-3 relative">
