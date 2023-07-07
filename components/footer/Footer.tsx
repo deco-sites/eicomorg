@@ -3,7 +3,7 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import type { HTML } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import { useState } from "preact/hooks";
-import Policy from "./Policy.tsx"
+import Policy from "./Policy.tsx";
 
 export interface Logo {
   /** @description desktop otimized image */
@@ -114,9 +114,9 @@ function Footer({ logo, infos = [], policies = [], icons = [] }: Props) {
             </div>
             <div class=" xs:h-[100px] md:h-[120px] flex flex-col xs:justify-center  md:justify-between xs:w-full md:w-1/4 float-left px-3 relative">
               <ul class="pl-0 list-none mb-3 mt-0 block" role="list">
-              {policies.map((policyData, index) => (
-                <Policy policyData={policyData} index={index} />
-              ))}
+                {policies.map((policyData, index) => (
+                  <Policy policyData={policyData} index={index} />
+                ))}
               </ul>
             </div>
             <div class="flex flex-row xs:justify-start md:justify-end h-[120px] xs:w-full md:w-1/6 float-left px-3 relative">

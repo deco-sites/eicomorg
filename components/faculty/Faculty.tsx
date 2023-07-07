@@ -37,7 +37,7 @@ function Faculty(
 ) {
   return (
     <>
-      <div className="flex justify-center lg:py-20 xs:py-8">
+      <div className="flex justify-center lg:py-[100px] xs:py-8">
         <div className="z-auto max-w-[1120px] flex-1 pr-0 relative">
           <FacultyTopPart facultyTopPart={facultyTopPart} />
           <div className="text-left lg:flex-row xs:flex-col md:flex-row justify-center md:ml-20 lg:ml-0">
