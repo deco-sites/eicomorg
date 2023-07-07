@@ -51,42 +51,46 @@ function FacultyCard({ facultyInfo, index }: {
       <div className="modal z-[9999] modal-action">
         <div className="modal-box max-w-[900px] h-auto bg-white rounded-md mx-auto shadow-md">
           <div className="modal-action">
-            <label htmlFor={stringIndex} class="h-4 float-right cursor-pointer left-3 relative"
-            style={{marginTop: "-35px"}}>
+            <label
+              htmlFor={stringIndex}
+              class="h-4 float-right cursor-pointer left-3 relative"
+              style={{ marginTop: "-35px" }}
+            >
               <Icon id="XMark" width={20} height={20} strokeWidth={2} />
             </label>
           </div>
           <div class="mx-[-10px] mt-[-15px]">
             <div class="border-r lg:border-solid lg:border-gray-300 pr-5 w-1/4 float-left min-h-1 px-3 relative 
           xs:justify-start xs:items-end md:pb-5 lg:pb-0 xs:flex md:flex lg:block xs:mb-5 lg:mb-0">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={190}
-              height={190}
-              class="border-b-[6px] max-w-[190px] border-solid border-orange-500 bg-center bg-no-repeat bg-cover"
-            />
-            <a
-              href={linkedinURL}
-              class="w-6 h-6 float-right cursor-pointer mt-5 xs:ml-6 lg:ml-0"
-              target="_blank"
-            >
-              <Icon id="Linkedin" width={28} height={28} class="w-6 h-6"></Icon>
-            </a>
-          </div>
-            <div class="pl-7 pr-5 lg:w-3/4 float-left min-h-1 xs:w-full md:w-full md:left-auto md:right-auto relative">
-            <h3 class="text-2xl font-bold ">
-              <span dangerouslySetInnerHTML={{ __html: name }}></span>
-            </h3>
-            <p class="text-base">
-              <span dangerouslySetInnerHTML={{ __html: position }}></span>
-            </p>
-            <div class="mt-3">
-              <p>
-                <span dangerouslySetInnerHTML={{ __html: text }}></span>
-              </p>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={190}
+                height={190}
+                class="border-b-[6px] max-w-[190px] border-solid border-orange-500 bg-center bg-no-repeat bg-cover"
+              />
+              <a
+                href={linkedinURL}
+                class="w-6 h-6 float-right cursor-pointer mt-5 xs:ml-6 lg:ml-0"
+                target="_blank"
+              >
+                <Icon id="Linkedin" width={28} height={28} class="w-6 h-6">
+                </Icon>
+              </a>
             </div>
-          </div>
+            <div class="pl-7 pr-5 lg:w-3/4 float-left min-h-1 xs:w-full md:w-full md:left-auto md:right-auto relative">
+              <h3 class="text-2xl font-bold ">
+                <span dangerouslySetInnerHTML={{ __html: name }}></span>
+              </h3>
+              <p class="text-base">
+                <span dangerouslySetInnerHTML={{ __html: position }}></span>
+              </p>
+              <div class="mt-3">
+                <p>
+                  <span dangerouslySetInnerHTML={{ __html: text }}></span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <label className="modal-backdrop" htmlFor={stringIndex}></label>
