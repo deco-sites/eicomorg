@@ -39,7 +39,6 @@
               "deco-sites/std/functions/vtexProductListingPage.ts",
               "deco-sites/std/functions/vtexSuggestions.ts",
               "deco-sites/std/functions/vtexWishlist.ts",
-              "deco-sites/std/accounts/nuvemShop.ts",
               "deco-sites/std/accounts/occ.ts",
               "deco-sites/std/accounts/shopify.ts",
               "deco-sites/std/accounts/vnda.ts",
@@ -48,10 +47,6 @@
               "$live/loaders/state.ts",
               "$live/loaders/workflows/events.ts",
               "$live/loaders/workflows/get.ts",
-              "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts",
-              "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts",
-              "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts",
-              "deco-sites/std/loaders/vnda/proxy.ts",
               "deco-sites/std/loaders/vtex/cart.ts",
               "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts",
               "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts",
@@ -90,10 +85,7 @@
               "$live/handlers/router.ts",
               "$live/handlers/routesSelection.ts",
               "$live/handlers/workflowRunner.ts",
-              "deco-sites/std/handlers/vtex/sitemap.ts",
               "$live/pages/LivePage.tsx",
-              "$live/sections/Conditional_Beta.tsx",
-              "$live/sections/EmptySection.tsx",
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
@@ -148,9 +140,9 @@
               "deco-sites/eicomorg/sections/WishlistGallery.tsx",
               "deco-sites/std/sections/Analytics.tsx",
               "deco-sites/std/sections/configButterCMS.global.tsx",
-              "deco-sites/std/sections/configNuvemShop.tsx",
               "deco-sites/std/sections/configOCC.global.tsx",
               "deco-sites/std/sections/configShopify.global.tsx",
+              "deco-sites/std/sections/configVNDA.global.tsx",
               "deco-sites/std/sections/configVTEX.global.tsx",
               "deco-sites/std/sections/configYourViews.global.tsx",
               "deco-sites/std/sections/SEO.tsx",
@@ -158,7 +150,6 @@
               "deco-sites/std/sections/SEOPLP.tsx",
               "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx",
               "$live/matchers/MatchAlways.ts",
-              "$live/matchers/MatchCron.ts",
               "$live/matchers/MatchDate.ts",
               "$live/matchers/MatchDevice.ts",
               "$live/matchers/MatchEnvironment.ts",
@@ -169,9 +160,8 @@
               "$live/matchers/MatchUserAgent.ts",
               "$live/flags/audience.ts",
               "$live/flags/everyone.ts",
-              "$live/flags/flag.ts",
-              "$live/flags/multivariate.ts",
               "$live/actions/workflows/cancel.ts",
+              "$live/actions/workflows/run.ts",
               "$live/actions/workflows/signal.ts",
               "$live/actions/workflows/start.ts",
               "deco-sites/std/actions/vtex/cart/addItems.ts",
@@ -777,7 +767,6 @@
         "@type": {
           "type": "string",
           "const": "ImageObject",
-          "default": "ImageObject",
           "title": "@type"
         }
       },
@@ -885,11 +874,9 @@
         "@type": {
           "type": "string",
           "const": "ListItem",
-          "default": "ListItem",
           "title": "@type"
         },
         "item": {
-          "type": "string",
           "title": "Item"
         },
         "position": {
@@ -945,7 +932,6 @@
         "@type": {
           "type": "string",
           "const": "BreadcrumbList",
-          "default": "BreadcrumbList",
           "title": "@type"
         }
       },
@@ -965,7 +951,6 @@
         "@type": {
           "type": "string",
           "const": "PropertyValue",
-          "default": "PropertyValue",
           "title": "@type"
         },
         "maxValue": {
@@ -1036,7 +1021,6 @@
         "@type": {
           "type": "string",
           "const": "AggregateRating",
-          "default": "AggregateRating",
           "title": "@type"
         },
         "ratingCount": {
@@ -1095,7 +1079,6 @@
         "@type": {
           "type": "string",
           "const": "ProductGroup",
-          "default": "ProductGroup",
           "title": "@type"
         },
         "hasVariant": {
@@ -1180,40 +1163,33 @@
         "@type": {
           "type": "string",
           "const": "UnitPriceSpecification",
-          "default": "UnitPriceSpecification",
           "title": "@type"
         },
         "priceComponentType": {
           "anyOf": [
             {
               "type": "string",
-              "const": "https://schema.org/ActivationFee",
-              "default": "https://schema.org/ActivationFee"
+              "const": "https://schema.org/ActivationFee"
             },
             {
               "type": "string",
-              "const": "https://schema.org/CleaningFee",
-              "default": "https://schema.org/CleaningFee"
+              "const": "https://schema.org/CleaningFee"
             },
             {
               "type": "string",
-              "const": "https://schema.org/DistanceFee",
-              "default": "https://schema.org/DistanceFee"
+              "const": "https://schema.org/DistanceFee"
             },
             {
               "type": "string",
-              "const": "https://schema.org/Downpayment",
-              "default": "https://schema.org/Downpayment"
+              "const": "https://schema.org/Downpayment"
             },
             {
               "type": "string",
-              "const": "https://schema.org/Installment",
-              "default": "https://schema.org/Installment"
+              "const": "https://schema.org/Installment"
             },
             {
               "type": "string",
-              "const": "https://schema.org/Subscription",
-              "default": "https://schema.org/Subscription"
+              "const": "https://schema.org/Subscription"
             }
           ],
           "type": "string",
@@ -1223,33 +1199,27 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "https://schema.org/InvoicePrice",
-              "default": "https://schema.org/InvoicePrice"
+              "const": "https://schema.org/InvoicePrice"
             },
             {
               "type": "string",
-              "const": "https://schema.org/ListPrice",
-              "default": "https://schema.org/ListPrice"
+              "const": "https://schema.org/ListPrice"
             },
             {
               "type": "string",
-              "const": "https://schema.org/MinimumAdvertisedPrice",
-              "default": "https://schema.org/MinimumAdvertisedPrice"
+              "const": "https://schema.org/MinimumAdvertisedPrice"
             },
             {
               "type": "string",
-              "const": "https://schema.org/MSRP",
-              "default": "https://schema.org/MSRP"
+              "const": "https://schema.org/MSRP"
             },
             {
               "type": "string",
-              "const": "https://schema.org/SalePrice",
-              "default": "https://schema.org/SalePrice"
+              "const": "https://schema.org/SalePrice"
             },
             {
               "type": "string",
-              "const": "https://schema.org/SRP",
-              "default": "https://schema.org/SRP"
+              "const": "https://schema.org/SRP"
             }
           ],
           "type": "string",
@@ -1294,60 +1264,49 @@
         "@type": {
           "type": "string",
           "const": "Offer",
-          "default": "Offer",
           "title": "@type"
         },
         "availability": {
           "anyOf": [
             {
               "type": "string",
-              "const": "https://schema.org/BackOrder",
-              "default": "https://schema.org/BackOrder"
+              "const": "https://schema.org/BackOrder"
             },
             {
               "type": "string",
-              "const": "https://schema.org/Discontinued",
-              "default": "https://schema.org/Discontinued"
+              "const": "https://schema.org/Discontinued"
             },
             {
               "type": "string",
-              "const": "https://schema.org/InStock",
-              "default": "https://schema.org/InStock"
+              "const": "https://schema.org/InStock"
             },
             {
               "type": "string",
-              "const": "https://schema.org/InStoreOnly",
-              "default": "https://schema.org/InStoreOnly"
+              "const": "https://schema.org/InStoreOnly"
             },
             {
               "type": "string",
-              "const": "https://schema.org/LimitedAvailability",
-              "default": "https://schema.org/LimitedAvailability"
+              "const": "https://schema.org/LimitedAvailability"
             },
             {
               "type": "string",
-              "const": "https://schema.org/OnlineOnly",
-              "default": "https://schema.org/OnlineOnly"
+              "const": "https://schema.org/OnlineOnly"
             },
             {
               "type": "string",
-              "const": "https://schema.org/OutOfStock",
-              "default": "https://schema.org/OutOfStock"
+              "const": "https://schema.org/OutOfStock"
             },
             {
               "type": "string",
-              "const": "https://schema.org/PreOrder",
-              "default": "https://schema.org/PreOrder"
+              "const": "https://schema.org/PreOrder"
             },
             {
               "type": "string",
-              "const": "https://schema.org/PreSale",
-              "default": "https://schema.org/PreSale"
+              "const": "https://schema.org/PreSale"
             },
             {
               "type": "string",
-              "const": "https://schema.org/SoldOut",
-              "default": "https://schema.org/SoldOut"
+              "const": "https://schema.org/SoldOut"
             }
           ],
           "type": "string",
@@ -1368,23 +1327,19 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "https://schema.org/DamagedCondition",
-              "default": "https://schema.org/DamagedCondition"
+              "const": "https://schema.org/DamagedCondition"
             },
             {
               "type": "string",
-              "const": "https://schema.org/NewCondition",
-              "default": "https://schema.org/NewCondition"
+              "const": "https://schema.org/NewCondition"
             },
             {
               "type": "string",
-              "const": "https://schema.org/RefurbishedCondition",
-              "default": "https://schema.org/RefurbishedCondition"
+              "const": "https://schema.org/RefurbishedCondition"
             },
             {
               "type": "string",
-              "const": "https://schema.org/UsedCondition",
-              "default": "https://schema.org/UsedCondition"
+              "const": "https://schema.org/UsedCondition"
             }
           ],
           "type": "string",
@@ -1442,7 +1397,6 @@
         "@type": {
           "type": "string",
           "const": "AggregateOffer",
-          "default": "AggregateOffer",
           "title": "@type"
         },
         "highPrice": {
@@ -1489,7 +1443,6 @@
         "@type": {
           "type": "string",
           "const": "Review",
-          "default": "Review",
           "title": "@type"
         },
         "itemReviewed": {
@@ -1502,20 +1455,14 @@
         "negativeNotes": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "title": "Negative Notes"
         },
         "positiveNotes": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "title": "Positive Notes"
         },
@@ -1554,7 +1501,6 @@
         "@type": {
           "type": "string",
           "const": "Product",
-          "default": "Product",
           "title": "@type"
         },
         "additionalProperty": {
@@ -1599,13 +1545,6 @@
             "null"
           ],
           "title": "In Product Group With I D"
-        },
-        "isSimilarTo": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Product"
-          },
-          "title": "Is Similar To"
         },
         "isVariantOf": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductGroup",
@@ -1693,7 +1632,6 @@
         "@type": {
           "type": "string",
           "const": "ProductDetailsPage",
-          "default": "ProductDetailsPage",
           "title": "@type"
         },
         "breadcrumbList": {
@@ -1779,7 +1717,7 @@
           }
         },
         {
-          "title": "VTEX Catalog - Product Details Page (deprecated)",
+          "title": "VTEX product details page - legacy (deprecated)",
           "description": "Works on routes of type /:slug/p",
           "deprecated": true,
           "type": "object",
@@ -1797,7 +1735,7 @@
           }
         },
         {
-          "title": "VTEX Intelligent Search - Product Details Page (deprecated)",
+          "title": "VTEX Intelligent Search - Product Details page",
           "description": "For routes of type /:slug/p",
           "deprecated": true,
           "type": "object",
@@ -1815,28 +1753,7 @@
           }
         },
         {
-          "title": "NuvemShop - PDP",
-          "type": "object",
-          "allOf": [
-            {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdERldGFpbHNQYWdlLnRz@Props"
-            }
-          ],
-          "required": [
-            "__resolveType"
-          ],
-          "properties": {
-            "__resolveType": {
-              "type": "string",
-              "enum": [
-                "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts"
-              ],
-              "default": "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts"
-            }
-          }
-        },
-        {
-          "title": "VTEX Intelligent Search - Product Details Page",
+          "title": "VTEX product details page - Intelligent Search",
           "description": "Works on routes of type /:slug/p",
           "type": "object",
           "allOf": [
@@ -1858,7 +1775,7 @@
           }
         },
         {
-          "title": "VTEX Catalog - Product Details Page",
+          "title": "VTEX Legacy - Product Details page",
           "description": "For routes of type /:slug/p",
           "type": "object",
           "allOf": [
@@ -1992,7 +1909,7 @@
           }
         },
         {
-          "title": "VTEX Legacy - Search Products (deprecated)",
+          "title": "VTEX - Search Products - legacy (deprecated)",
           "description": "Useful for shelves and static galleries.",
           "deprecated": true,
           "type": "object",
@@ -2015,7 +1932,7 @@
           }
         },
         {
-          "title": "VTEX Catalog - Related Products (deprecated)",
+          "title": "VTEX Legacy - Related Products (deprecated)",
           "description": "Works on routes of type /:slug/p",
           "deprecated": true,
           "type": "object",
@@ -2038,7 +1955,7 @@
           }
         },
         {
-          "title": "VTEX Intelligent Search - Search Products (deprecated)",
+          "title": "VTEX Intelligent Search - Search Products",
           "description": "Use it in Shelves and static Galleries.",
           "deprecated": true,
           "type": "object",
@@ -2061,28 +1978,7 @@
           }
         },
         {
-          "title": "NuvemShop - Search Products",
-          "type": "object",
-          "allOf": [
-            {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdExpc3QudHM=@Props"
-            }
-          ],
-          "required": [
-            "__resolveType"
-          ],
-          "properties": {
-            "__resolveType": {
-              "type": "string",
-              "enum": [
-                "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts"
-              ],
-              "default": "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts"
-            }
-          }
-        },
-        {
-          "title": "VTEX Intelligent Search - Search Products",
+          "title": "VTEX product list - Intelligent Search",
           "description": "Useful for shelves and galleries.",
           "type": "object",
           "allOf": [
@@ -2104,7 +2000,7 @@
           }
         },
         {
-          "title": "VTEX Catalog - Search Products",
+          "title": "VTEX Legacy - Search Products",
           "description": "Use it in Shelves and static Galleries.",
           "type": "object",
           "allOf": [
@@ -2126,7 +2022,7 @@
           }
         },
         {
-          "title": "VTEX Related Products - Catalog",
+          "title": "VTEX related products - Portal",
           "description": "Works on routes of type /:slug/p",
           "type": "object",
           "allOf": [
@@ -2238,7 +2134,6 @@
         "@type": {
           "type": "string",
           "const": "FilterToggle",
-          "default": "FilterToggle",
           "title": "@type"
         },
         "values": {
@@ -2286,7 +2181,6 @@
         "@type": {
           "type": "string",
           "const": "FilterRange",
-          "default": "FilterRange",
           "title": "@type"
         },
         "values": {
@@ -2349,7 +2243,6 @@
         "@type": {
           "type": "string",
           "const": "ProductListingPage",
-          "default": "ProductListingPage",
           "title": "@type"
         },
         "breadcrumb": {
@@ -2498,7 +2391,7 @@
           }
         },
         {
-          "title": "VTEX Catalog - Product Listing Page (deprecated)",
+          "title": "VTEX Legacy - Product Listing page",
           "description": "Useful for category, search, brand and collection pages.",
           "deprecated": true,
           "type": "object",
@@ -2521,7 +2414,7 @@
           }
         },
         {
-          "title": "VTEX Intelligent Search - Product Listing page (deprecated)",
+          "title": "VTEX Intelligent Search - Product Listing page",
           "description": "Useful for category, search, brand and collection pages.",
           "deprecated": true,
           "type": "object",
@@ -2567,28 +2460,6 @@
           }
         },
         {
-          "title": "NuvemShop - Product Listing page",
-          "description": "Useful for category, search, brand and collection pages.",
-          "type": "object",
-          "allOf": [
-            {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdExpc3RpbmdQYWdlLnRz@Props"
-            }
-          ],
-          "required": [
-            "__resolveType"
-          ],
-          "properties": {
-            "__resolveType": {
-              "type": "string",
-              "enum": [
-                "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts"
-              ],
-              "default": "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts"
-            }
-          }
-        },
-        {
           "title": "VTEX Intelligent Search - Product Listing page",
           "description": "Returns data ready for search pages like category,brand pages",
           "type": "object",
@@ -2611,7 +2482,7 @@
           }
         },
         {
-          "title": "VTEX Catalog - Product Listing Page",
+          "title": "VTEX product listing page - Portal",
           "description": "Returns data ready for search pages like category,brand pages",
           "type": "object",
           "allOf": [
@@ -2684,23 +2555,19 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "newest",
-              "default": "newest"
+              "const": "newest"
             },
             {
               "type": "string",
-              "const": "oldest",
-              "default": "oldest"
+              "const": "oldest"
             },
             {
               "type": "string",
-              "const": "lowest_price",
-              "default": "lowest_price"
+              "const": "lowest_price"
             },
             {
               "type": "string",
-              "const": "highest_price",
-              "default": "highest_price"
+              "const": "highest_price"
             }
           ],
           "type": "string",
@@ -2710,10 +2577,7 @@
         "tags": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "description": "search for products that have certain tag",
           "title": "Tags"
@@ -2738,10 +2602,7 @@
         "tags": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "description": "filter products by tag",
           "title": "Tags"
@@ -2776,10 +2637,7 @@
         "collection": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "description": "Collection ID or (Product Cluster id). For more info: https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/search .",
           "pattern": "\\d*",
@@ -2836,53 +2694,43 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "OrderByPriceDESC",
-              "default": "OrderByPriceDESC"
+              "const": "OrderByPriceDESC"
             },
             {
               "type": "string",
-              "const": "OrderByPriceASC",
-              "default": "OrderByPriceASC"
+              "const": "OrderByPriceASC"
             },
             {
               "type": "string",
-              "const": "OrderByTopSaleDESC",
-              "default": "OrderByTopSaleDESC"
+              "const": "OrderByTopSaleDESC"
             },
             {
               "type": "string",
-              "const": "OrderByReviewRateDESC",
-              "default": "OrderByReviewRateDESC"
+              "const": "OrderByReviewRateDESC"
             },
             {
               "type": "string",
-              "const": "OrderByNameASC",
-              "default": "OrderByNameASC"
+              "const": "OrderByNameASC"
             },
             {
               "type": "string",
-              "const": "OrderByNameDESC",
-              "default": "OrderByNameDESC"
+              "const": "OrderByNameDESC"
             },
             {
               "type": "string",
-              "const": "OrderByReleaseDateDESC",
-              "default": "OrderByReleaseDateDESC"
+              "const": "OrderByReleaseDateDESC"
             },
             {
               "type": "string",
-              "const": "OrderByBestDiscountDESC",
-              "default": "OrderByBestDiscountDESC"
+              "const": "OrderByBestDiscountDESC"
             },
             {
               "type": "string",
-              "const": "OrderByScoreDESC",
-              "default": "OrderByScoreDESC"
+              "const": "OrderByScoreDESC"
             },
             {
               "type": "string",
-              "const": "",
-              "default": ""
+              "const": ""
             }
           ],
           "type": "string",
@@ -2892,13 +2740,11 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "dynamic",
-              "default": "dynamic"
+              "const": "dynamic"
             },
             {
               "type": "string",
-              "const": "static",
-              "default": "static"
+              "const": "static"
             }
           ],
           "type": "string",
@@ -2926,38 +2772,31 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "whosawalsosaw",
-              "default": "whosawalsosaw"
+              "const": "whosawalsosaw"
             },
             {
               "type": "string",
-              "const": "whosawalsobought",
-              "default": "whosawalsobought"
+              "const": "whosawalsobought"
             },
             {
               "type": "string",
-              "const": "whoboughtalsobought",
-              "default": "whoboughtalsobought"
+              "const": "whoboughtalsobought"
             },
             {
               "type": "string",
-              "const": "showtogether",
-              "default": "showtogether"
+              "const": "showtogether"
             },
             {
               "type": "string",
-              "const": "accessories",
-              "default": "accessories"
+              "const": "accessories"
             },
             {
               "type": "string",
-              "const": "similars",
-              "default": "similars"
+              "const": "similars"
             },
             {
               "type": "string",
-              "const": "suggestions",
-              "default": "suggestions"
+              "const": "suggestions"
             }
           ],
           "type": "string",
@@ -3027,10 +2866,7 @@
         "children": {
           "type": "array",
           "items": {
-            "type": [
-              "object",
-              "null"
-            ]
+            "type": "object"
           },
           "title": "Children"
         }
@@ -3057,7 +2893,7 @@
           "type": "null"
         },
         {
-          "title": "Navigation Bar",
+          "title": "deco-sites/std/functions/vtexNavbar.ts",
           "deprecated": true,
           "type": "object",
           "allOf": [
@@ -3134,43 +2970,35 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "",
-              "default": ""
+              "const": ""
             },
             {
               "type": "string",
-              "const": "price:desc",
-              "default": "price:desc"
+              "const": "price:desc"
             },
             {
               "type": "string",
-              "const": "price:asc",
-              "default": "price:asc"
+              "const": "price:asc"
             },
             {
               "type": "string",
-              "const": "orders:desc",
-              "default": "orders:desc"
+              "const": "orders:desc"
             },
             {
               "type": "string",
-              "const": "name:desc",
-              "default": "name:desc"
+              "const": "name:desc"
             },
             {
               "type": "string",
-              "const": "name:asc",
-              "default": "name:asc"
+              "const": "name:asc"
             },
             {
               "type": "string",
-              "const": "release:desc",
-              "default": "release:desc"
+              "const": "release:desc"
             },
             {
               "type": "string",
-              "const": "discount:desc",
-              "default": "discount:desc"
+              "const": "discount:desc"
             }
           ],
           "type": "string",
@@ -3180,10 +3008,7 @@
         "collection": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "title": "Collection ID",
           "pattern": "\\d*"
@@ -3240,43 +3065,35 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "price:desc",
-              "default": "price:desc"
+              "const": "price:desc"
             },
             {
               "type": "string",
-              "const": "price:asc",
-              "default": "price:asc"
+              "const": "price:asc"
             },
             {
               "type": "string",
-              "const": "orders:desc",
-              "default": "orders:desc"
+              "const": "orders:desc"
             },
             {
               "type": "string",
-              "const": "name:desc",
-              "default": "name:desc"
+              "const": "name:desc"
             },
             {
               "type": "string",
-              "const": "name:asc",
-              "default": "name:asc"
+              "const": "name:asc"
             },
             {
               "type": "string",
-              "const": "release:desc",
-              "default": "release:desc"
+              "const": "release:desc"
             },
             {
               "type": "string",
-              "const": "discount:desc",
-              "default": "discount:desc"
+              "const": "discount:desc"
             },
             {
               "type": "string",
-              "const": "",
-              "default": ""
+              "const": ""
             }
           ],
           "type": "string",
@@ -3286,18 +3103,15 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "automatic",
-              "default": "automatic"
+              "const": "automatic"
             },
             {
               "type": "string",
-              "const": "disabled",
-              "default": "disabled"
+              "const": "disabled"
             },
             {
               "type": "string",
-              "const": "enabled",
-              "default": "enabled"
+              "const": "enabled"
             }
           ],
           "type": "string",
@@ -3377,7 +3191,7 @@
           "type": "null"
         },
         {
-          "title": "VTEX Intelligent Search - Search Suggestions (deprecated)",
+          "title": "VTEX search suggestions - Intelligent Search (deprecated)",
           "deprecated": true,
           "type": "object",
           "allOf": [
@@ -3399,7 +3213,7 @@
           }
         },
         {
-          "title": "VTEX Intelligent Search - Search Suggestions",
+          "title": "VTEX search suggestions - Intelligent Search",
           "type": "object",
           "allOf": [
             {
@@ -3459,32 +3273,6 @@
       ],
       "title": "deco-sites/std/functions/vtexWishlist.ts@Props"
     },
-    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvbnV2ZW1TaG9wL3R5cGVzLnRz@Account": {
-      "type": "object",
-      "properties": {
-        "userAgent": {
-          "type": "string",
-          "description": "Header to define our app. For example, https://tiendanube.github.io/api-documentation/intro#authentication.",
-          "title": "User Agent"
-        },
-        "accessToken": {
-          "type": "string",
-          "description": "The token generated from admin panel. Read here: https://tiendanube.github.io/api-documentation/authentication.",
-          "title": "Access Token"
-        },
-        "storeId": {
-          "type": "string",
-          "description": "The id of the store in nuvemshop. Check: https://tiendanube.github.io/api-documentation/intro#languages-and-internationalization",
-          "title": "Store Id"
-        }
-      },
-      "required": [
-        "userAgent",
-        "accessToken",
-        "storeId"
-      ],
-      "title": "deco-sites/std/commerce/nuvemShop/types.ts@Account"
-    },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9hY2NvdW50LnRz@Account": {
       "type": "object",
       "properties": {},
@@ -3541,23 +3329,13 @@
       ],
       "title": "deco-sites/std/commerce/shopify/client.ts@ConfigShopify"
     },
-    "ZGVjby1zaXRlcy9zdGQvcGFja3Mvdm5kYS92bmRhQWNjb3VudC50cw==@Account": {
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2Uvdm5kYS90eXBlcy50cw==@ConfigVNDA": {
       "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9hY2NvdW50LnRz@Account"
-        }
-      ],
       "properties": {
         "domain": {
           "type": "string",
           "description": "Your VNDA domain name. For example, https://mystore.vnda.com.br",
           "title": "Domain"
-        },
-        "internalDomain": {
-          "type": "string",
-          "description": "e.g: deco.cdn.vnda.com.br",
-          "title": "Internal Domain"
         },
         "authToken": {
           "type": "string",
@@ -3578,12 +3356,11 @@
       },
       "required": [
         "domain",
-        "internalDomain",
         "authToken",
         "useSandbox",
         "defaultPriceCurrency"
       ],
-      "title": "deco-sites/std/packs/vnda/vndaAccount.ts@Account"
+      "title": "deco-sites/std/commerce/vnda/types.ts@ConfigVNDA"
     },
     "ZGVjby1zaXRlcy9zdGQvcGFja3MvdnRleC9hY2NvdW50cy92dGV4LnRz@Account": {
       "type": "object",
@@ -3629,12 +3406,12 @@
           ],
           "title": "Default Region Id"
         },
-        "defaultHideUnavailableItems": {
+        "defaultHideUnnavailableItems": {
           "type": [
             "boolean",
             "null"
           ],
-          "title": "Default Hide Unavailable Items"
+          "title": "Default Hide Unnavailable Items"
         }
       },
       "required": [
@@ -3765,8 +3542,7 @@
         "key",
         "value"
       ],
-      "title": "StateProp",
-      "titleBy": "key"
+      "title": "StateProp"
     },
     "ZGVjby1jeC9saXZlL2xvYWRlcnMvc3RhdGUudHM=@StateProp[]": {
       "type": "array",
@@ -3787,15 +3563,6 @@
         "state"
       ],
       "title": "deco-cx/live/loaders/state.ts@Props"
-    },
-    "ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@Metadata": {
-      "type": "object",
-      "properties": {},
-      "required": [],
-      "title": "Metadata"
-    },
-    "ZGVjby1jeC9kdXJhYmxlL3R5cGVzLnRz@Arg": {
-      "title": "Arg"
     },
     "ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@WorkflowExecution": {
       "anyOf": [
@@ -3820,11 +3587,9 @@
               "title": "Status"
             },
             "metadata": {
-              "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@Metadata",
               "title": "Metadata"
             },
             "input": {
-              "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL3R5cGVzLnRz@Arg",
               "title": "Input"
             },
             "output": {
@@ -3889,7 +3654,7 @@
       ],
       "title": "deco-cx/live/loaders/workflows/events.ts@Props"
     },
-    "ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessstatusWorkflowExecution+Arg": {
+    "ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessstatusWorkflowExecution": {
       "type": "object",
       "properties": {
         "status": {
@@ -3899,21 +3664,17 @@
       "required": [
         "status"
       ],
-      "title": "indexedAccessstatusWorkflowExecution+Arg"
+      "title": "indexedAccessstatusWorkflowExecution"
     },
-    "ZGVjby1jeC9saXZlL2NvbW1vbnMvd29ya2Zsb3dzL3R5cGVzLnRz@Arg": {
-      "title": "Arg"
-    },
-    "ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessinputWorkflowExecution+Arg": {
+    "ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessinputWorkflowExecution": {
       "type": "object",
       "properties": {
         "input": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2NvbW1vbnMvd29ya2Zsb3dzL3R5cGVzLnRz@Arg",
           "title": "Input"
         }
       },
       "required": [],
-      "title": "indexedAccessinputWorkflowExecution+Arg"
+      "title": "indexedAccessinputWorkflowExecution"
     },
     "ZGVjby1jeC9saXZlL2NvbW1vbnMvd29ya2Zsb3dzL3R5cGVzLnRz@WorkflowExecution": {
       "anyOf": [
@@ -3931,7 +3692,7 @@
               "title": "Id"
             },
             "status": {
-              "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessstatusWorkflowExecution+Arg",
+              "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessstatusWorkflowExecution",
               "title": "Status"
             },
             "workflow": {
@@ -3939,7 +3700,7 @@
               "title": "Workflow"
             },
             "input": {
-              "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessinputWorkflowExecution+Arg",
+              "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2JhY2tlbmRzL2JhY2tlbmQudHM=@indexedAccessinputWorkflowExecution",
               "title": "Input"
             },
             "output": {
@@ -3992,268 +3753,6 @@
         "id"
       ],
       "title": "deco-cx/live/loaders/workflows/get.ts@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdERldGFpbHNQYWdlLnRz@Props": {
-      "type": "object",
-      "properties": {
-        "slug": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3JlcXVlc3RUb1BhcmFtLnRz@RequestURLParam",
-          "title": "Slug"
-        }
-      },
-      "required": [
-        "slug"
-      ],
-      "title": "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdExpc3QudHM=@Props": {
-      "type": "object",
-      "properties": {
-        "term": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "query to use on search. if used will break sort",
-          "title": "Term"
-        },
-        "limit": {
-          "type": "number",
-          "description": "total number of items to display",
-          "title": "Limit"
-        },
-        "sort": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "user",
-              "default": "user"
-            },
-            {
-              "type": "string",
-              "const": "price-ascending",
-              "default": "price-ascending"
-            },
-            {
-              "type": "string",
-              "const": "price-descending",
-              "default": "price-descending"
-            },
-            {
-              "type": "string",
-              "const": "alpha-ascending",
-              "default": "alpha-ascending"
-            },
-            {
-              "type": "string",
-              "const": "alpha-descending",
-              "default": "alpha-descending"
-            },
-            {
-              "type": "string",
-              "const": "created-at-ascending",
-              "default": "created-at-ascending"
-            },
-            {
-              "type": "string",
-              "const": "created-at-descending",
-              "default": "created-at-descending"
-            },
-            {
-              "type": "string",
-              "const": "best-selling",
-              "default": "best-selling"
-            }
-          ],
-          "type": "string",
-          "description": "search sort parameter",
-          "title": "Sort"
-        }
-      },
-      "required": [
-        "limit"
-      ],
-      "title": "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdExpc3RpbmdQYWdlLnRz@Props": {
-      "type": "object",
-      "properties": {
-        "term": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "overides the query term",
-          "title": "Term"
-        },
-        "limit": {
-          "type": "number",
-          "title": "Items per page",
-          "description": "number of products per page to display"
-        }
-      },
-      "required": [
-        "limit"
-      ],
-      "title": "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts@Props"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler": {
-      "$ref": "#/root/handlers",
-      "title": "Handler"
-    },
-    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route": {
-      "type": "object",
-      "properties": {
-        "pathTemplate": {
-          "type": "string",
-          "title": "Path Template"
-        },
-        "isHref": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "description": "if true so the path will be checked agaisnt the coming from request instead of using urlpattern.",
-          "title": "Is Href"
-        },
-        "handler": {
-          "type": "object",
-          "properties": {
-            "value": {
-              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler",
-              "title": "Value"
-            }
-          },
-          "required": [
-            "value"
-          ],
-          "title": "Handler"
-        }
-      },
-      "required": [
-        "pathTemplate",
-        "handler"
-      ],
-      "title": "Site Route",
-      "titleBy": "pathTemplate"
-    },
-    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]": {
-      "anyOf": [
-        {
-          "$ref": "#/definitions/Resolvable"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route"
-          },
-          "title": "deco-cx/live/flags/audience.ts@Route[]"
-        },
-        {
-          "title": "VNDA Proxy Routes",
-          "type": "object",
-          "allOf": [
-            {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92bmRhL3Byb3h5LnRz@Props"
-            }
-          ],
-          "required": [
-            "__resolveType"
-          ],
-          "properties": {
-            "__resolveType": {
-              "type": "string",
-              "enum": [
-                "deco-sites/std/loaders/vnda/proxy.ts"
-              ],
-              "default": "deco-sites/std/loaders/vnda/proxy.ts"
-            }
-          }
-        },
-        {
-          "title": "VTEX Proxy Routes",
-          "type": "object",
-          "allOf": [
-            {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L3Byb3h5LnRz@Props"
-            }
-          ],
-          "required": [
-            "__resolveType"
-          ],
-          "properties": {
-            "__resolveType": {
-              "type": "string",
-              "enum": [
-                "deco-sites/std/loaders/vtex/proxy.ts"
-              ],
-              "default": "deco-sites/std/loaders/vtex/proxy.ts"
-            }
-          }
-        },
-        {
-          "title": "Audience",
-          "description": "Select routes based on the matched audience.",
-          "type": "object",
-          "allOf": [
-            {
-              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Audience"
-            }
-          ],
-          "required": [
-            "__resolveType"
-          ],
-          "properties": {
-            "__resolveType": {
-              "type": "string",
-              "enum": [
-                "$live/flags/audience.ts"
-              ],
-              "default": "$live/flags/audience.ts"
-            }
-          }
-        },
-        {
-          "title": "Audience Everyone",
-          "description": "Always match regardless of the current user",
-          "type": "object",
-          "allOf": [
-            {
-              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2V2ZXJ5b25lLnRz@EveryoneConfig"
-            }
-          ],
-          "required": [
-            "__resolveType"
-          ],
-          "properties": {
-            "__resolveType": {
-              "type": "string",
-              "enum": [
-                "$live/flags/everyone.ts"
-              ],
-              "default": "$live/flags/everyone.ts"
-            }
-          }
-        }
-      ]
-    },
-    "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92bmRhL3Byb3h5LnRz@Props": {
-      "type": "object",
-      "properties": {
-        "pagesToProxy": {
-          "type": "array",
-          "items": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "description": "ex: /p/fale-conosco",
-          "title": "Pages To Proxy"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/std/loaders/vnda/proxy.ts@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvcGFja3MvdnRleC90eXBlcy50cw==@Fields": {
       "type": "object",
@@ -6762,43 +6261,35 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "price:desc",
-              "default": "price:desc"
+              "const": "price:desc"
             },
             {
               "type": "string",
-              "const": "price:asc",
-              "default": "price:asc"
+              "const": "price:asc"
             },
             {
               "type": "string",
-              "const": "orders:desc",
-              "default": "orders:desc"
+              "const": "orders:desc"
             },
             {
               "type": "string",
-              "const": "name:desc",
-              "default": "name:desc"
+              "const": "name:desc"
             },
             {
               "type": "string",
-              "const": "name:asc",
-              "default": "name:asc"
+              "const": "name:asc"
             },
             {
               "type": "string",
-              "const": "release:desc",
-              "default": "release:desc"
+              "const": "release:desc"
             },
             {
               "type": "string",
-              "const": "discount:desc",
-              "default": "discount:desc"
+              "const": "discount:desc"
             },
             {
               "type": "string",
-              "const": "",
-              "default": ""
+              "const": ""
             }
           ],
           "type": "string",
@@ -6831,43 +6322,35 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "price:desc",
-              "default": "price:desc"
+              "const": "price:desc"
             },
             {
               "type": "string",
-              "const": "price:asc",
-              "default": "price:asc"
+              "const": "price:asc"
             },
             {
               "type": "string",
-              "const": "orders:desc",
-              "default": "orders:desc"
+              "const": "orders:desc"
             },
             {
               "type": "string",
-              "const": "name:desc",
-              "default": "name:desc"
+              "const": "name:desc"
             },
             {
               "type": "string",
-              "const": "name:asc",
-              "default": "name:asc"
+              "const": "name:asc"
             },
             {
               "type": "string",
-              "const": "release:desc",
-              "default": "release:desc"
+              "const": "release:desc"
             },
             {
               "type": "string",
-              "const": "discount:desc",
-              "default": "discount:desc"
+              "const": "discount:desc"
             },
             {
               "type": "string",
-              "const": "",
-              "default": ""
+              "const": ""
             }
           ],
           "type": "string",
@@ -6975,53 +6458,43 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "OrderByPriceDESC",
-              "default": "OrderByPriceDESC"
+              "const": "OrderByPriceDESC"
             },
             {
               "type": "string",
-              "const": "OrderByPriceASC",
-              "default": "OrderByPriceASC"
+              "const": "OrderByPriceASC"
             },
             {
               "type": "string",
-              "const": "OrderByTopSaleDESC",
-              "default": "OrderByTopSaleDESC"
+              "const": "OrderByTopSaleDESC"
             },
             {
               "type": "string",
-              "const": "OrderByReviewRateDESC",
-              "default": "OrderByReviewRateDESC"
+              "const": "OrderByReviewRateDESC"
             },
             {
               "type": "string",
-              "const": "OrderByNameASC",
-              "default": "OrderByNameASC"
+              "const": "OrderByNameASC"
             },
             {
               "type": "string",
-              "const": "OrderByNameDESC",
-              "default": "OrderByNameDESC"
+              "const": "OrderByNameDESC"
             },
             {
               "type": "string",
-              "const": "OrderByReleaseDateDESC",
-              "default": "OrderByReleaseDateDESC"
+              "const": "OrderByReleaseDateDESC"
             },
             {
               "type": "string",
-              "const": "OrderByBestDiscountDESC",
-              "default": "OrderByBestDiscountDESC"
+              "const": "OrderByBestDiscountDESC"
             },
             {
               "type": "string",
-              "const": "OrderByScoreDESC",
-              "default": "OrderByScoreDESC"
+              "const": "OrderByScoreDESC"
             },
             {
               "type": "string",
-              "const": "",
-              "default": ""
+              "const": ""
             }
           ],
           "type": "string",
@@ -7052,53 +6525,43 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "OrderByPriceDESC",
-              "default": "OrderByPriceDESC"
+              "const": "OrderByPriceDESC"
             },
             {
               "type": "string",
-              "const": "OrderByPriceASC",
-              "default": "OrderByPriceASC"
+              "const": "OrderByPriceASC"
             },
             {
               "type": "string",
-              "const": "OrderByTopSaleDESC",
-              "default": "OrderByTopSaleDESC"
+              "const": "OrderByTopSaleDESC"
             },
             {
               "type": "string",
-              "const": "OrderByReviewRateDESC",
-              "default": "OrderByReviewRateDESC"
+              "const": "OrderByReviewRateDESC"
             },
             {
               "type": "string",
-              "const": "OrderByNameASC",
-              "default": "OrderByNameASC"
+              "const": "OrderByNameASC"
             },
             {
               "type": "string",
-              "const": "OrderByNameDESC",
-              "default": "OrderByNameDESC"
+              "const": "OrderByNameDESC"
             },
             {
               "type": "string",
-              "const": "OrderByReleaseDateDESC",
-              "default": "OrderByReleaseDateDESC"
+              "const": "OrderByReleaseDateDESC"
             },
             {
               "type": "string",
-              "const": "OrderByBestDiscountDESC",
-              "default": "OrderByBestDiscountDESC"
+              "const": "OrderByBestDiscountDESC"
             },
             {
               "type": "string",
-              "const": "OrderByScoreDESC",
-              "default": "OrderByScoreDESC"
+              "const": "OrderByScoreDESC"
             },
             {
               "type": "string",
-              "const": "",
-              "default": ""
+              "const": ""
             }
           ],
           "type": "string",
@@ -7147,38 +6610,31 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "whosawalsosaw",
-              "default": "whosawalsosaw"
+              "const": "whosawalsosaw"
             },
             {
               "type": "string",
-              "const": "whosawalsobought",
-              "default": "whosawalsobought"
+              "const": "whosawalsobought"
             },
             {
               "type": "string",
-              "const": "whoboughtalsobought",
-              "default": "whoboughtalsobought"
+              "const": "whoboughtalsobought"
             },
             {
               "type": "string",
-              "const": "showtogether",
-              "default": "showtogether"
+              "const": "showtogether"
             },
             {
               "type": "string",
-              "const": "accessories",
-              "default": "accessories"
+              "const": "accessories"
             },
             {
               "type": "string",
-              "const": "similars",
-              "default": "similars"
+              "const": "similars"
             },
             {
               "type": "string",
-              "const": "suggestions",
-              "default": "suggestions"
+              "const": "suggestions"
             }
           ],
           "type": "string",
@@ -7210,7 +6666,7 @@
             "boolean",
             "null"
           ],
-          "description": "remove unavailable items from result. This may result in slower websites",
+          "description": "remove unavailable items from result",
           "title": "Hide Unavailable Items"
         }
       },
@@ -7235,22 +6691,74 @@
       "required": [],
       "title": "deco-sites/std/packs/vtex/loaders/navbar.ts@Props"
     },
-    "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L3Byb3h5LnRz@Props": {
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler": {
+      "$ref": "#/root/handlers",
+      "title": "Handler"
+    },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route": {
       "type": "object",
       "properties": {
-        "extraPathsToProxy": {
-          "type": "array",
-          "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+        "pathTemplate": {
+          "type": "string",
+          "title": "Path Template"
+        },
+        "isHref": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "if true so the path will be checked agaisnt the coming from request instead of using urlpattern.",
+          "title": "Is Href"
+        },
+        "handler": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler",
+              "title": "Value"
+            }
           },
-          "title": "Extra Paths To Proxy"
+          "required": [
+            "value"
+          ],
+          "title": "Handler"
         }
       },
-      "required": [],
-      "title": "deco-sites/std/loaders/vtex/proxy.ts@Props"
+      "required": [
+        "pathTemplate",
+        "handler"
+      ],
+      "title": "Route"
+    },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route"
+          },
+          "title": "deco-cx/live/flags/audience.ts@Route[]"
+        },
+        {
+          "title": "VTEX Proxy Routes",
+          "type": "object",
+          "required": [
+            "__resolveType"
+          ],
+          "properties": {
+            "__resolveType": {
+              "type": "string",
+              "enum": [
+                "deco-sites/std/loaders/vtex/proxy.ts"
+              ],
+              "default": "deco-sites/std/loaders/vtex/proxy.ts"
+            }
+          }
+        }
+      ]
     },
     "ZGVjby1zaXRlcy9zdGQvcGFja3MvdnRleC9sb2FkZXJzL3VzZXIudHM=@User": {
       "type": "object",
@@ -7488,243 +6996,195 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
+              "const": "ChevronLeft"
             },
             {
               "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
+              "const": "ChevronRight"
             },
             {
               "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
+              "const": "ChevronUp"
             },
             {
               "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
+              "const": "ChevronDown"
             },
             {
               "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
+              "const": "QuestionMarkCircle"
             },
             {
               "type": "string",
-              "const": "User",
-              "default": "User"
+              "const": "User"
             },
             {
               "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
+              "const": "ShoppingCart"
             },
             {
               "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
+              "const": "Bars3"
             },
             {
               "type": "string",
-              "const": "Heart",
-              "default": "Heart"
+              "const": "Heart"
             },
             {
               "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
+              "const": "MagnifyingGlass"
             },
             {
               "type": "string",
-              "const": "XMark",
-              "default": "XMark"
+              "const": "XMark"
             },
             {
               "type": "string",
-              "const": "Plus",
-              "default": "Plus"
+              "const": "Plus"
             },
             {
               "type": "string",
-              "const": "Minus",
-              "default": "Minus"
+              "const": "Minus"
             },
             {
               "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
+              "const": "MapPin"
             },
             {
               "type": "string",
-              "const": "Phone",
-              "default": "Phone"
+              "const": "Phone"
             },
             {
               "type": "string",
-              "const": "Elo",
-              "default": "Elo"
+              "const": "Elo"
             },
             {
               "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
+              "const": "Mastercard"
             },
             {
               "type": "string",
-              "const": "Visa",
-              "default": "Visa"
+              "const": "Visa"
             },
             {
               "type": "string",
-              "const": "Pix",
-              "default": "Pix"
+              "const": "Pix"
             },
             {
               "type": "string",
-              "const": "Logo",
-              "default": "Logo"
+              "const": "Logo"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             },
             {
               "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
+              "const": "FacebookBlack"
             },
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
+              "const": "InstagramBlack"
             },
             {
               "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
+              "const": "Tiktok"
             },
             {
               "type": "string",
-              "const": "Truck",
-              "default": "Truck"
+              "const": "Truck"
             },
             {
               "type": "string",
-              "const": "Discount",
-              "default": "Discount"
+              "const": "Discount"
             },
             {
               "type": "string",
-              "const": "Return",
-              "default": "Return"
+              "const": "Return"
             },
             {
               "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
+              "const": "CreditCard"
             },
             {
               "type": "string",
-              "const": "Deco",
-              "default": "Deco"
+              "const": "Deco"
             },
             {
               "type": "string",
-              "const": "Discord",
-              "default": "Discord"
+              "const": "Discord"
             },
             {
               "type": "string",
-              "const": "Trash",
-              "default": "Trash"
+              "const": "Trash"
             },
             {
               "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
+              "const": "FilterList"
             },
             {
               "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
+              "const": "WhatsApp"
             },
             {
               "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
+              "const": "Linkedin"
             },
             {
               "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
+              "const": "LinkedinBlack"
             },
             {
               "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
+              "const": "YoutubeBlack"
             },
             {
               "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
+              "const": "Brazil"
             },
             {
               "type": "string",
-              "const": "Spain",
-              "default": "Spain"
+              "const": "Spain"
             },
             {
               "type": "string",
-              "const": "Italy",
-              "default": "Italy"
+              "const": "Italy"
             },
             {
               "type": "string",
-              "const": "Chile",
-              "default": "Chile"
+              "const": "Chile"
             },
             {
               "type": "string",
-              "const": "Romania",
-              "default": "Romania"
+              "const": "Romania"
             },
             {
               "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
+              "const": "GreatBritain"
             },
             {
               "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
+              "const": "ArrowRight"
             },
             {
               "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
+              "const": "ArrowRightOrange"
             },
             {
               "type": "string",
-              "const": "Computer",
-              "default": "Computer"
+              "const": "Computer"
             },
             {
               "type": "string",
-              "const": "Seed",
-              "default": "Seed"
+              "const": "Seed"
             },
             {
               "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
+              "const": "ArrowsPointingOut"
             }
           ],
           "type": "string",
@@ -7750,243 +7210,195 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
+              "const": "ChevronLeft"
             },
             {
               "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
+              "const": "ChevronRight"
             },
             {
               "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
+              "const": "ChevronUp"
             },
             {
               "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
+              "const": "ChevronDown"
             },
             {
               "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
+              "const": "QuestionMarkCircle"
             },
             {
               "type": "string",
-              "const": "User",
-              "default": "User"
+              "const": "User"
             },
             {
               "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
+              "const": "ShoppingCart"
             },
             {
               "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
+              "const": "Bars3"
             },
             {
               "type": "string",
-              "const": "Heart",
-              "default": "Heart"
+              "const": "Heart"
             },
             {
               "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
+              "const": "MagnifyingGlass"
             },
             {
               "type": "string",
-              "const": "XMark",
-              "default": "XMark"
+              "const": "XMark"
             },
             {
               "type": "string",
-              "const": "Plus",
-              "default": "Plus"
+              "const": "Plus"
             },
             {
               "type": "string",
-              "const": "Minus",
-              "default": "Minus"
+              "const": "Minus"
             },
             {
               "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
+              "const": "MapPin"
             },
             {
               "type": "string",
-              "const": "Phone",
-              "default": "Phone"
+              "const": "Phone"
             },
             {
               "type": "string",
-              "const": "Elo",
-              "default": "Elo"
+              "const": "Elo"
             },
             {
               "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
+              "const": "Mastercard"
             },
             {
               "type": "string",
-              "const": "Visa",
-              "default": "Visa"
+              "const": "Visa"
             },
             {
               "type": "string",
-              "const": "Pix",
-              "default": "Pix"
+              "const": "Pix"
             },
             {
               "type": "string",
-              "const": "Logo",
-              "default": "Logo"
+              "const": "Logo"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             },
             {
               "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
+              "const": "FacebookBlack"
             },
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
+              "const": "InstagramBlack"
             },
             {
               "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
+              "const": "Tiktok"
             },
             {
               "type": "string",
-              "const": "Truck",
-              "default": "Truck"
+              "const": "Truck"
             },
             {
               "type": "string",
-              "const": "Discount",
-              "default": "Discount"
+              "const": "Discount"
             },
             {
               "type": "string",
-              "const": "Return",
-              "default": "Return"
+              "const": "Return"
             },
             {
               "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
+              "const": "CreditCard"
             },
             {
               "type": "string",
-              "const": "Deco",
-              "default": "Deco"
+              "const": "Deco"
             },
             {
               "type": "string",
-              "const": "Discord",
-              "default": "Discord"
+              "const": "Discord"
             },
             {
               "type": "string",
-              "const": "Trash",
-              "default": "Trash"
+              "const": "Trash"
             },
             {
               "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
+              "const": "FilterList"
             },
             {
               "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
+              "const": "WhatsApp"
             },
             {
               "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
+              "const": "Linkedin"
             },
             {
               "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
+              "const": "LinkedinBlack"
             },
             {
               "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
+              "const": "YoutubeBlack"
             },
             {
               "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
+              "const": "Brazil"
             },
             {
               "type": "string",
-              "const": "Spain",
-              "default": "Spain"
+              "const": "Spain"
             },
             {
               "type": "string",
-              "const": "Italy",
-              "default": "Italy"
+              "const": "Italy"
             },
             {
               "type": "string",
-              "const": "Chile",
-              "default": "Chile"
+              "const": "Chile"
             },
             {
               "type": "string",
-              "const": "Romania",
-              "default": "Romania"
+              "const": "Romania"
             },
             {
               "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
+              "const": "GreatBritain"
             },
             {
               "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
+              "const": "ArrowRight"
             },
             {
               "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
+              "const": "ArrowRightOrange"
             },
             {
               "type": "string",
-              "const": "Computer",
-              "default": "Computer"
+              "const": "Computer"
             },
             {
               "type": "string",
-              "const": "Seed",
-              "default": "Seed"
+              "const": "Seed"
             },
             {
               "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
+              "const": "ArrowsPointingOut"
             }
           ],
           "type": "string",
@@ -8220,243 +7632,195 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
+              "const": "ChevronLeft"
             },
             {
               "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
+              "const": "ChevronRight"
             },
             {
               "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
+              "const": "ChevronUp"
             },
             {
               "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
+              "const": "ChevronDown"
             },
             {
               "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
+              "const": "QuestionMarkCircle"
             },
             {
               "type": "string",
-              "const": "User",
-              "default": "User"
+              "const": "User"
             },
             {
               "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
+              "const": "ShoppingCart"
             },
             {
               "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
+              "const": "Bars3"
             },
             {
               "type": "string",
-              "const": "Heart",
-              "default": "Heart"
+              "const": "Heart"
             },
             {
               "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
+              "const": "MagnifyingGlass"
             },
             {
               "type": "string",
-              "const": "XMark",
-              "default": "XMark"
+              "const": "XMark"
             },
             {
               "type": "string",
-              "const": "Plus",
-              "default": "Plus"
+              "const": "Plus"
             },
             {
               "type": "string",
-              "const": "Minus",
-              "default": "Minus"
+              "const": "Minus"
             },
             {
               "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
+              "const": "MapPin"
             },
             {
               "type": "string",
-              "const": "Phone",
-              "default": "Phone"
+              "const": "Phone"
             },
             {
               "type": "string",
-              "const": "Elo",
-              "default": "Elo"
+              "const": "Elo"
             },
             {
               "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
+              "const": "Mastercard"
             },
             {
               "type": "string",
-              "const": "Visa",
-              "default": "Visa"
+              "const": "Visa"
             },
             {
               "type": "string",
-              "const": "Pix",
-              "default": "Pix"
+              "const": "Pix"
             },
             {
               "type": "string",
-              "const": "Logo",
-              "default": "Logo"
+              "const": "Logo"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             },
             {
               "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
+              "const": "FacebookBlack"
             },
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
+              "const": "InstagramBlack"
             },
             {
               "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
+              "const": "Tiktok"
             },
             {
               "type": "string",
-              "const": "Truck",
-              "default": "Truck"
+              "const": "Truck"
             },
             {
               "type": "string",
-              "const": "Discount",
-              "default": "Discount"
+              "const": "Discount"
             },
             {
               "type": "string",
-              "const": "Return",
-              "default": "Return"
+              "const": "Return"
             },
             {
               "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
+              "const": "CreditCard"
             },
             {
               "type": "string",
-              "const": "Deco",
-              "default": "Deco"
+              "const": "Deco"
             },
             {
               "type": "string",
-              "const": "Discord",
-              "default": "Discord"
+              "const": "Discord"
             },
             {
               "type": "string",
-              "const": "Trash",
-              "default": "Trash"
+              "const": "Trash"
             },
             {
               "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
+              "const": "FilterList"
             },
             {
               "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
+              "const": "WhatsApp"
             },
             {
               "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
+              "const": "Linkedin"
             },
             {
               "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
+              "const": "LinkedinBlack"
             },
             {
               "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
+              "const": "YoutubeBlack"
             },
             {
               "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
+              "const": "Brazil"
             },
             {
               "type": "string",
-              "const": "Spain",
-              "default": "Spain"
+              "const": "Spain"
             },
             {
               "type": "string",
-              "const": "Italy",
-              "default": "Italy"
+              "const": "Italy"
             },
             {
               "type": "string",
-              "const": "Chile",
-              "default": "Chile"
+              "const": "Chile"
             },
             {
               "type": "string",
-              "const": "Romania",
-              "default": "Romania"
+              "const": "Romania"
             },
             {
               "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
+              "const": "GreatBritain"
             },
             {
               "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
+              "const": "ArrowRight"
             },
             {
               "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
+              "const": "ArrowRightOrange"
             },
             {
               "type": "string",
-              "const": "Computer",
-              "default": "Computer"
+              "const": "Computer"
             },
             {
               "type": "string",
-              "const": "Seed",
-              "default": "Seed"
+              "const": "Seed"
             },
             {
               "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
+              "const": "ArrowsPointingOut"
             }
           ],
           "type": "string",
@@ -8590,243 +7954,195 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
+              "const": "ChevronLeft"
             },
             {
               "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
+              "const": "ChevronRight"
             },
             {
               "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
+              "const": "ChevronUp"
             },
             {
               "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
+              "const": "ChevronDown"
             },
             {
               "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
+              "const": "QuestionMarkCircle"
             },
             {
               "type": "string",
-              "const": "User",
-              "default": "User"
+              "const": "User"
             },
             {
               "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
+              "const": "ShoppingCart"
             },
             {
               "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
+              "const": "Bars3"
             },
             {
               "type": "string",
-              "const": "Heart",
-              "default": "Heart"
+              "const": "Heart"
             },
             {
               "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
+              "const": "MagnifyingGlass"
             },
             {
               "type": "string",
-              "const": "XMark",
-              "default": "XMark"
+              "const": "XMark"
             },
             {
               "type": "string",
-              "const": "Plus",
-              "default": "Plus"
+              "const": "Plus"
             },
             {
               "type": "string",
-              "const": "Minus",
-              "default": "Minus"
+              "const": "Minus"
             },
             {
               "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
+              "const": "MapPin"
             },
             {
               "type": "string",
-              "const": "Phone",
-              "default": "Phone"
+              "const": "Phone"
             },
             {
               "type": "string",
-              "const": "Elo",
-              "default": "Elo"
+              "const": "Elo"
             },
             {
               "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
+              "const": "Mastercard"
             },
             {
               "type": "string",
-              "const": "Visa",
-              "default": "Visa"
+              "const": "Visa"
             },
             {
               "type": "string",
-              "const": "Pix",
-              "default": "Pix"
+              "const": "Pix"
             },
             {
               "type": "string",
-              "const": "Logo",
-              "default": "Logo"
+              "const": "Logo"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             },
             {
               "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
+              "const": "FacebookBlack"
             },
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
+              "const": "InstagramBlack"
             },
             {
               "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
+              "const": "Tiktok"
             },
             {
               "type": "string",
-              "const": "Truck",
-              "default": "Truck"
+              "const": "Truck"
             },
             {
               "type": "string",
-              "const": "Discount",
-              "default": "Discount"
+              "const": "Discount"
             },
             {
               "type": "string",
-              "const": "Return",
-              "default": "Return"
+              "const": "Return"
             },
             {
               "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
+              "const": "CreditCard"
             },
             {
               "type": "string",
-              "const": "Deco",
-              "default": "Deco"
+              "const": "Deco"
             },
             {
               "type": "string",
-              "const": "Discord",
-              "default": "Discord"
+              "const": "Discord"
             },
             {
               "type": "string",
-              "const": "Trash",
-              "default": "Trash"
+              "const": "Trash"
             },
             {
               "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
+              "const": "FilterList"
             },
             {
               "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
+              "const": "WhatsApp"
             },
             {
               "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
+              "const": "Linkedin"
             },
             {
               "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
+              "const": "LinkedinBlack"
             },
             {
               "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
+              "const": "YoutubeBlack"
             },
             {
               "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
+              "const": "Brazil"
             },
             {
               "type": "string",
-              "const": "Spain",
-              "default": "Spain"
+              "const": "Spain"
             },
             {
               "type": "string",
-              "const": "Italy",
-              "default": "Italy"
+              "const": "Italy"
             },
             {
               "type": "string",
-              "const": "Chile",
-              "default": "Chile"
+              "const": "Chile"
             },
             {
               "type": "string",
-              "const": "Romania",
-              "default": "Romania"
+              "const": "Romania"
             },
             {
               "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
+              "const": "GreatBritain"
             },
             {
               "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
+              "const": "ArrowRight"
             },
             {
               "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
+              "const": "ArrowRightOrange"
             },
             {
               "type": "string",
-              "const": "Computer",
-              "default": "Computer"
+              "const": "Computer"
             },
             {
               "type": "string",
-              "const": "Seed",
-              "default": "Seed"
+              "const": "Seed"
             },
             {
               "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
+              "const": "ArrowsPointingOut"
             }
           ],
           "type": "string",
@@ -9234,13 +8550,11 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "permanent",
-              "default": "permanent"
+              "const": "permanent"
             },
             {
               "type": "string",
-              "const": "temporary",
-              "default": "temporary"
+              "const": "temporary"
             }
           ],
           "type": "string",
@@ -9272,18 +8586,32 @@
       ],
       "title": "deco-cx/live/handlers/router.ts@RouterConfig"
     },
-    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[][]": {
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@15b1ddc7b4bb6e032bd22948a3dc02c4|9cc5443ad72a10e9797a691a19b4ce81|Flag": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag"
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvZmxhZ3MvYXVkaWVuY2UudHM="
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvZmxhZ3MvZXZlcnlvbmUudHM="
+        }
+      ],
+      "title": "Audiences"
+    },
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@15b1ddc7b4bb6e032bd22948a3dc02c4|9cc5443ad72a10e9797a691a19b4ce81|Flag[]": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]"
+        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@15b1ddc7b4bb6e032bd22948a3dc02c4|9cc5443ad72a10e9797a691a19b4ce81|Flag"
       },
-      "title": "Route[][]"
+      "title": "15b1ddc7b4bb6e032bd22948a3dc02c4|9cc5443ad72a10e9797a691a19b4ce81|Flag[]"
     },
     "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig": {
       "type": "object",
       "properties": {
         "audiences": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[][]",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@15b1ddc7b4bb6e032bd22948a3dc02c4|9cc5443ad72a10e9797a691a19b4ce81|Flag[]",
           "title": "Audiences"
         }
       },
@@ -9310,39 +8638,11 @@
       "title": "deco-cx/live/handlers/workflowRunner.ts@Config"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]": {
-      "anyOf": [
-        {
-          "$ref": "#/definitions/Resolvable"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section"
-          },
-          "title": "Page Sections"
-        },
-        {
-          "title": "Variant",
-          "type": "object",
-          "allOf": [
-            {
-              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@MultivariateFlag+Section[]+Section[]"
-            }
-          ],
-          "required": [
-            "__resolveType"
-          ],
-          "properties": {
-            "__resolveType": {
-              "type": "string",
-              "enum": [
-                "$live/flags/multivariate.ts"
-              ],
-              "default": "$live/flags/multivariate.ts"
-            }
-          }
-        }
-      ]
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section"
+      },
+      "title": "Section[]"
     },
     "ZGVjby1jeC9saXZlL3BhZ2VzL0xpdmVQYWdlLnRzeA==@Props": {
       "type": "object",
@@ -9367,56 +8667,7 @@
         "name",
         "sections"
       ],
-      "title": "deco-cx/live/pages/LivePage.tsx@Props",
-      "titleBy": "name"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher": {
-      "$ref": "#/root/matchers",
-      "title": "Matcher"
-    },
-    "ZGVjby1jeC9saXZlL3V0aWxzL2NvbmRpdGlvbmFscy50cw==@Rule+Section[]": {
-      "type": "object",
-      "properties": {
-        "if": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher",
-          "title": "If"
-        },
-        "then": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]",
-          "title": "Then"
-        }
-      },
-      "required": [
-        "if",
-        "then"
-      ],
-      "title": "Rule"
-    },
-    "ZGVjby1jeC9saXZlL3V0aWxzL2NvbmRpdGlvbmFscy50cw==@Rule+Section[][]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1jeC9saXZlL3V0aWxzL2NvbmRpdGlvbmFscy50cw==@Rule+Section[]"
-      },
-      "title": "Rule+Section[][]"
-    },
-    "ZGVjby1jeC9saXZlL3V0aWxzL2NvbmRpdGlvbmFscy50cw==@Props+Section[]": {
-      "type": "object",
-      "properties": {
-        "rules": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL3V0aWxzL2NvbmRpdGlvbmFscy50cw==@Rule+Section[][]",
-          "title": "Rules"
-        },
-        "else": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]",
-          "title": "Otherwise",
-          "description": "Used in case of none of the previous values are used."
-        }
-      },
-      "required": [
-        "rules",
-        "else"
-      ],
-      "title": "deco-cx/live/utils/conditionals.ts@Props+Section[]"
+      "title": "deco-cx/live/pages/LivePage.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL3NlY3Rpb25zL1BhZ2VJbmNsdWRlLnRzeA==@Props": {
       "type": "object",
@@ -9451,33 +8702,27 @@
               "anyOf": [
                 {
                   "type": "string",
-                  "const": "content",
-                  "default": "content"
+                  "const": "content"
                 },
                 {
                   "type": "string",
-                  "const": "footer",
-                  "default": "footer"
+                  "const": "footer"
                 },
                 {
                   "type": "string",
-                  "const": "header",
-                  "default": "header"
+                  "const": "header"
                 },
                 {
                   "type": "string",
-                  "const": "analytics",
-                  "default": "analytics"
+                  "const": "analytics"
                 },
                 {
                   "type": "string",
-                  "const": "design-system",
-                  "default": "design-system"
+                  "const": "design-system"
                 },
                 {
                   "type": "string",
-                  "const": "SEO",
-                  "default": "SEO"
+                  "const": "SEO"
                 }
               ],
               "type": "string"
@@ -9504,33 +8749,27 @@
               "anyOf": [
                 {
                   "type": "string",
-                  "const": "content",
-                  "default": "content"
+                  "const": "content"
                 },
                 {
                   "type": "string",
-                  "const": "footer",
-                  "default": "footer"
+                  "const": "footer"
                 },
                 {
                   "type": "string",
-                  "const": "header",
-                  "default": "header"
+                  "const": "header"
                 },
                 {
                   "type": "string",
-                  "const": "analytics",
-                  "default": "analytics"
+                  "const": "analytics"
                 },
                 {
                   "type": "string",
-                  "const": "design-system",
-                  "default": "design-system"
+                  "const": "design-system"
                 },
                 {
                   "type": "string",
-                  "const": "SEO",
-                  "default": "SEO"
+                  "const": "SEO"
                 }
               ],
               "type": "string"
@@ -9590,243 +8829,195 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
+              "const": "ChevronLeft"
             },
             {
               "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
+              "const": "ChevronRight"
             },
             {
               "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
+              "const": "ChevronUp"
             },
             {
               "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
+              "const": "ChevronDown"
             },
             {
               "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
+              "const": "QuestionMarkCircle"
             },
             {
               "type": "string",
-              "const": "User",
-              "default": "User"
+              "const": "User"
             },
             {
               "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
+              "const": "ShoppingCart"
             },
             {
               "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
+              "const": "Bars3"
             },
             {
               "type": "string",
-              "const": "Heart",
-              "default": "Heart"
+              "const": "Heart"
             },
             {
               "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
+              "const": "MagnifyingGlass"
             },
             {
               "type": "string",
-              "const": "XMark",
-              "default": "XMark"
+              "const": "XMark"
             },
             {
               "type": "string",
-              "const": "Plus",
-              "default": "Plus"
+              "const": "Plus"
             },
             {
               "type": "string",
-              "const": "Minus",
-              "default": "Minus"
+              "const": "Minus"
             },
             {
               "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
+              "const": "MapPin"
             },
             {
               "type": "string",
-              "const": "Phone",
-              "default": "Phone"
+              "const": "Phone"
             },
             {
               "type": "string",
-              "const": "Elo",
-              "default": "Elo"
+              "const": "Elo"
             },
             {
               "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
+              "const": "Mastercard"
             },
             {
               "type": "string",
-              "const": "Visa",
-              "default": "Visa"
+              "const": "Visa"
             },
             {
               "type": "string",
-              "const": "Pix",
-              "default": "Pix"
+              "const": "Pix"
             },
             {
               "type": "string",
-              "const": "Logo",
-              "default": "Logo"
+              "const": "Logo"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             },
             {
               "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
+              "const": "FacebookBlack"
             },
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
+              "const": "InstagramBlack"
             },
             {
               "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
+              "const": "Tiktok"
             },
             {
               "type": "string",
-              "const": "Truck",
-              "default": "Truck"
+              "const": "Truck"
             },
             {
               "type": "string",
-              "const": "Discount",
-              "default": "Discount"
+              "const": "Discount"
             },
             {
               "type": "string",
-              "const": "Return",
-              "default": "Return"
+              "const": "Return"
             },
             {
               "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
+              "const": "CreditCard"
             },
             {
               "type": "string",
-              "const": "Deco",
-              "default": "Deco"
+              "const": "Deco"
             },
             {
               "type": "string",
-              "const": "Discord",
-              "default": "Discord"
+              "const": "Discord"
             },
             {
               "type": "string",
-              "const": "Trash",
-              "default": "Trash"
+              "const": "Trash"
             },
             {
               "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
+              "const": "FilterList"
             },
             {
               "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
+              "const": "WhatsApp"
             },
             {
               "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
+              "const": "Linkedin"
             },
             {
               "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
+              "const": "LinkedinBlack"
             },
             {
               "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
+              "const": "YoutubeBlack"
             },
             {
               "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
+              "const": "Brazil"
             },
             {
               "type": "string",
-              "const": "Spain",
-              "default": "Spain"
+              "const": "Spain"
             },
             {
               "type": "string",
-              "const": "Italy",
-              "default": "Italy"
+              "const": "Italy"
             },
             {
               "type": "string",
-              "const": "Chile",
-              "default": "Chile"
+              "const": "Chile"
             },
             {
               "type": "string",
-              "const": "Romania",
-              "default": "Romania"
+              "const": "Romania"
             },
             {
               "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
+              "const": "GreatBritain"
             },
             {
               "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
+              "const": "ArrowRight"
             },
             {
               "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
+              "const": "ArrowRightOrange"
             },
             {
               "type": "string",
-              "const": "Computer",
-              "default": "Computer"
+              "const": "Computer"
             },
             {
               "type": "string",
-              "const": "Seed",
-              "default": "Seed"
+              "const": "Seed"
             },
             {
               "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
+              "const": "ArrowsPointingOut"
             }
           ],
           "type": "string",
@@ -10019,243 +9210,195 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
+              "const": "ChevronLeft"
             },
             {
               "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
+              "const": "ChevronRight"
             },
             {
               "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
+              "const": "ChevronUp"
             },
             {
               "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
+              "const": "ChevronDown"
             },
             {
               "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
+              "const": "QuestionMarkCircle"
             },
             {
               "type": "string",
-              "const": "User",
-              "default": "User"
+              "const": "User"
             },
             {
               "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
+              "const": "ShoppingCart"
             },
             {
               "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
+              "const": "Bars3"
             },
             {
               "type": "string",
-              "const": "Heart",
-              "default": "Heart"
+              "const": "Heart"
             },
             {
               "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
+              "const": "MagnifyingGlass"
             },
             {
               "type": "string",
-              "const": "XMark",
-              "default": "XMark"
+              "const": "XMark"
             },
             {
               "type": "string",
-              "const": "Plus",
-              "default": "Plus"
+              "const": "Plus"
             },
             {
               "type": "string",
-              "const": "Minus",
-              "default": "Minus"
+              "const": "Minus"
             },
             {
               "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
+              "const": "MapPin"
             },
             {
               "type": "string",
-              "const": "Phone",
-              "default": "Phone"
+              "const": "Phone"
             },
             {
               "type": "string",
-              "const": "Elo",
-              "default": "Elo"
+              "const": "Elo"
             },
             {
               "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
+              "const": "Mastercard"
             },
             {
               "type": "string",
-              "const": "Visa",
-              "default": "Visa"
+              "const": "Visa"
             },
             {
               "type": "string",
-              "const": "Pix",
-              "default": "Pix"
+              "const": "Pix"
             },
             {
               "type": "string",
-              "const": "Logo",
-              "default": "Logo"
+              "const": "Logo"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             },
             {
               "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
+              "const": "FacebookBlack"
             },
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
+              "const": "InstagramBlack"
             },
             {
               "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
+              "const": "Tiktok"
             },
             {
               "type": "string",
-              "const": "Truck",
-              "default": "Truck"
+              "const": "Truck"
             },
             {
               "type": "string",
-              "const": "Discount",
-              "default": "Discount"
+              "const": "Discount"
             },
             {
               "type": "string",
-              "const": "Return",
-              "default": "Return"
+              "const": "Return"
             },
             {
               "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
+              "const": "CreditCard"
             },
             {
               "type": "string",
-              "const": "Deco",
-              "default": "Deco"
+              "const": "Deco"
             },
             {
               "type": "string",
-              "const": "Discord",
-              "default": "Discord"
+              "const": "Discord"
             },
             {
               "type": "string",
-              "const": "Trash",
-              "default": "Trash"
+              "const": "Trash"
             },
             {
               "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
+              "const": "FilterList"
             },
             {
               "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
+              "const": "WhatsApp"
             },
             {
               "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
+              "const": "Linkedin"
             },
             {
               "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
+              "const": "LinkedinBlack"
             },
             {
               "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
+              "const": "YoutubeBlack"
             },
             {
               "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
+              "const": "Brazil"
             },
             {
               "type": "string",
-              "const": "Spain",
-              "default": "Spain"
+              "const": "Spain"
             },
             {
               "type": "string",
-              "const": "Italy",
-              "default": "Italy"
+              "const": "Italy"
             },
             {
               "type": "string",
-              "const": "Chile",
-              "default": "Chile"
+              "const": "Chile"
             },
             {
               "type": "string",
-              "const": "Romania",
-              "default": "Romania"
+              "const": "Romania"
             },
             {
               "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
+              "const": "GreatBritain"
             },
             {
               "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
+              "const": "ArrowRight"
             },
             {
               "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
+              "const": "ArrowRightOrange"
             },
             {
               "type": "string",
-              "const": "Computer",
-              "default": "Computer"
+              "const": "Computer"
             },
             {
               "type": "string",
-              "const": "Seed",
-              "default": "Seed"
+              "const": "Seed"
             },
             {
               "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
+              "const": "ArrowsPointingOut"
             }
           ],
           "type": "string",
@@ -10386,13 +9529,11 @@
               "anyOf": [
                 {
                   "type": "number",
-                  "const": 1,
-                  "default": 1
+                  "const": 1
                 },
                 {
                   "type": "number",
-                  "const": 2,
-                  "default": 2
+                  "const": 2
                 }
               ],
               "type": "number",
@@ -10402,28 +9543,23 @@
               "anyOf": [
                 {
                   "type": "number",
-                  "const": 1,
-                  "default": 1
+                  "const": 1
                 },
                 {
                   "type": "number",
-                  "const": 2,
-                  "default": 2
+                  "const": 2
                 },
                 {
                   "type": "number",
-                  "const": 4,
-                  "default": 4
+                  "const": 4
                 },
                 {
                   "type": "number",
-                  "const": 6,
-                  "default": 6
+                  "const": 6
                 },
                 {
                   "type": "number",
-                  "const": 8,
-                  "default": 8
+                  "const": 8
                 }
               ],
               "type": "number",
@@ -10441,43 +9577,35 @@
               "anyOf": [
                 {
                   "type": "string",
-                  "const": "none",
-                  "default": "none"
+                  "const": "none"
                 },
                 {
                   "type": "string",
-                  "const": "sm",
-                  "default": "sm"
+                  "const": "sm"
                 },
                 {
                   "type": "string",
-                  "const": "md",
-                  "default": "md"
+                  "const": "md"
                 },
                 {
                   "type": "string",
-                  "const": "lg",
-                  "default": "lg"
+                  "const": "lg"
                 },
                 {
                   "type": "string",
-                  "const": "xl",
-                  "default": "xl"
+                  "const": "xl"
                 },
                 {
                   "type": "string",
-                  "const": "2xl",
-                  "default": "2xl"
+                  "const": "2xl"
                 },
                 {
                   "type": "string",
-                  "const": "3xl",
-                  "default": "3xl"
+                  "const": "3xl"
                 },
                 {
                   "type": "string",
-                  "const": "full",
-                  "default": "full"
+                  "const": "full"
                 }
               ],
               "type": "string",
@@ -10487,43 +9615,35 @@
               "anyOf": [
                 {
                   "type": "string",
-                  "const": "none",
-                  "default": "none"
+                  "const": "none"
                 },
                 {
                   "type": "string",
-                  "const": "sm",
-                  "default": "sm"
+                  "const": "sm"
                 },
                 {
                   "type": "string",
-                  "const": "md",
-                  "default": "md"
+                  "const": "md"
                 },
                 {
                   "type": "string",
-                  "const": "lg",
-                  "default": "lg"
+                  "const": "lg"
                 },
                 {
                   "type": "string",
-                  "const": "xl",
-                  "default": "xl"
+                  "const": "xl"
                 },
                 {
                   "type": "string",
-                  "const": "2xl",
-                  "default": "2xl"
+                  "const": "2xl"
                 },
                 {
                   "type": "string",
-                  "const": "3xl",
-                  "default": "3xl"
+                  "const": "3xl"
                 },
                 {
                   "type": "string",
-                  "const": "full",
-                  "default": "full"
+                  "const": "full"
                 }
               ],
               "type": "string",
@@ -11092,10 +10212,7 @@
         "children": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "title": "Children"
         }
@@ -11248,243 +10365,195 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
+              "const": "ChevronLeft"
             },
             {
               "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
+              "const": "ChevronRight"
             },
             {
               "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
+              "const": "ChevronUp"
             },
             {
               "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
+              "const": "ChevronDown"
             },
             {
               "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
+              "const": "QuestionMarkCircle"
             },
             {
               "type": "string",
-              "const": "User",
-              "default": "User"
+              "const": "User"
             },
             {
               "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
+              "const": "ShoppingCart"
             },
             {
               "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
+              "const": "Bars3"
             },
             {
               "type": "string",
-              "const": "Heart",
-              "default": "Heart"
+              "const": "Heart"
             },
             {
               "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
+              "const": "MagnifyingGlass"
             },
             {
               "type": "string",
-              "const": "XMark",
-              "default": "XMark"
+              "const": "XMark"
             },
             {
               "type": "string",
-              "const": "Plus",
-              "default": "Plus"
+              "const": "Plus"
             },
             {
               "type": "string",
-              "const": "Minus",
-              "default": "Minus"
+              "const": "Minus"
             },
             {
               "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
+              "const": "MapPin"
             },
             {
               "type": "string",
-              "const": "Phone",
-              "default": "Phone"
+              "const": "Phone"
             },
             {
               "type": "string",
-              "const": "Elo",
-              "default": "Elo"
+              "const": "Elo"
             },
             {
               "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
+              "const": "Mastercard"
             },
             {
               "type": "string",
-              "const": "Visa",
-              "default": "Visa"
+              "const": "Visa"
             },
             {
               "type": "string",
-              "const": "Pix",
-              "default": "Pix"
+              "const": "Pix"
             },
             {
               "type": "string",
-              "const": "Logo",
-              "default": "Logo"
+              "const": "Logo"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             },
             {
               "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
+              "const": "FacebookBlack"
             },
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
+              "const": "InstagramBlack"
             },
             {
               "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
+              "const": "Tiktok"
             },
             {
               "type": "string",
-              "const": "Truck",
-              "default": "Truck"
+              "const": "Truck"
             },
             {
               "type": "string",
-              "const": "Discount",
-              "default": "Discount"
+              "const": "Discount"
             },
             {
               "type": "string",
-              "const": "Return",
-              "default": "Return"
+              "const": "Return"
             },
             {
               "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
+              "const": "CreditCard"
             },
             {
               "type": "string",
-              "const": "Deco",
-              "default": "Deco"
+              "const": "Deco"
             },
             {
               "type": "string",
-              "const": "Discord",
-              "default": "Discord"
+              "const": "Discord"
             },
             {
               "type": "string",
-              "const": "Trash",
-              "default": "Trash"
+              "const": "Trash"
             },
             {
               "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
+              "const": "FilterList"
             },
             {
               "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
+              "const": "WhatsApp"
             },
             {
               "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
+              "const": "Linkedin"
             },
             {
               "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
+              "const": "LinkedinBlack"
             },
             {
               "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
+              "const": "YoutubeBlack"
             },
             {
               "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
+              "const": "Brazil"
             },
             {
               "type": "string",
-              "const": "Spain",
-              "default": "Spain"
+              "const": "Spain"
             },
             {
               "type": "string",
-              "const": "Italy",
-              "default": "Italy"
+              "const": "Italy"
             },
             {
               "type": "string",
-              "const": "Chile",
-              "default": "Chile"
+              "const": "Chile"
             },
             {
               "type": "string",
-              "const": "Romania",
-              "default": "Romania"
+              "const": "Romania"
             },
             {
               "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
+              "const": "GreatBritain"
             },
             {
               "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
+              "const": "ArrowRight"
             },
             {
               "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
+              "const": "ArrowRightOrange"
             },
             {
               "type": "string",
-              "const": "Computer",
-              "default": "Computer"
+              "const": "Computer"
             },
             {
               "type": "string",
-              "const": "Seed",
-              "default": "Seed"
+              "const": "Seed"
             },
             {
               "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
+              "const": "ArrowsPointingOut"
             }
           ],
           "type": "string",
@@ -12263,243 +11332,195 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
+              "const": "ChevronLeft"
             },
             {
               "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
+              "const": "ChevronRight"
             },
             {
               "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
+              "const": "ChevronUp"
             },
             {
               "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
+              "const": "ChevronDown"
             },
             {
               "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
+              "const": "QuestionMarkCircle"
             },
             {
               "type": "string",
-              "const": "User",
-              "default": "User"
+              "const": "User"
             },
             {
               "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
+              "const": "ShoppingCart"
             },
             {
               "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
+              "const": "Bars3"
             },
             {
               "type": "string",
-              "const": "Heart",
-              "default": "Heart"
+              "const": "Heart"
             },
             {
               "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
+              "const": "MagnifyingGlass"
             },
             {
               "type": "string",
-              "const": "XMark",
-              "default": "XMark"
+              "const": "XMark"
             },
             {
               "type": "string",
-              "const": "Plus",
-              "default": "Plus"
+              "const": "Plus"
             },
             {
               "type": "string",
-              "const": "Minus",
-              "default": "Minus"
+              "const": "Minus"
             },
             {
               "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
+              "const": "MapPin"
             },
             {
               "type": "string",
-              "const": "Phone",
-              "default": "Phone"
+              "const": "Phone"
             },
             {
               "type": "string",
-              "const": "Elo",
-              "default": "Elo"
+              "const": "Elo"
             },
             {
               "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
+              "const": "Mastercard"
             },
             {
               "type": "string",
-              "const": "Visa",
-              "default": "Visa"
+              "const": "Visa"
             },
             {
               "type": "string",
-              "const": "Pix",
-              "default": "Pix"
+              "const": "Pix"
             },
             {
               "type": "string",
-              "const": "Logo",
-              "default": "Logo"
+              "const": "Logo"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             },
             {
               "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
+              "const": "FacebookBlack"
             },
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
+              "const": "InstagramBlack"
             },
             {
               "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
+              "const": "Tiktok"
             },
             {
               "type": "string",
-              "const": "Truck",
-              "default": "Truck"
+              "const": "Truck"
             },
             {
               "type": "string",
-              "const": "Discount",
-              "default": "Discount"
+              "const": "Discount"
             },
             {
               "type": "string",
-              "const": "Return",
-              "default": "Return"
+              "const": "Return"
             },
             {
               "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
+              "const": "CreditCard"
             },
             {
               "type": "string",
-              "const": "Deco",
-              "default": "Deco"
+              "const": "Deco"
             },
             {
               "type": "string",
-              "const": "Discord",
-              "default": "Discord"
+              "const": "Discord"
             },
             {
               "type": "string",
-              "const": "Trash",
-              "default": "Trash"
+              "const": "Trash"
             },
             {
               "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
+              "const": "FilterList"
             },
             {
               "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
+              "const": "WhatsApp"
             },
             {
               "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
+              "const": "Linkedin"
             },
             {
               "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
+              "const": "LinkedinBlack"
             },
             {
               "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
+              "const": "YoutubeBlack"
             },
             {
               "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
+              "const": "Brazil"
             },
             {
               "type": "string",
-              "const": "Spain",
-              "default": "Spain"
+              "const": "Spain"
             },
             {
               "type": "string",
-              "const": "Italy",
-              "default": "Italy"
+              "const": "Italy"
             },
             {
               "type": "string",
-              "const": "Chile",
-              "default": "Chile"
+              "const": "Chile"
             },
             {
               "type": "string",
-              "const": "Romania",
-              "default": "Romania"
+              "const": "Romania"
             },
             {
               "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
+              "const": "GreatBritain"
             },
             {
               "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
+              "const": "ArrowRight"
             },
             {
               "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
+              "const": "ArrowRightOrange"
             },
             {
               "type": "string",
-              "const": "Computer",
-              "default": "Computer"
+              "const": "Computer"
             },
             {
               "type": "string",
-              "const": "Seed",
-              "default": "Seed"
+              "const": "Seed"
             },
             {
               "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
+              "const": "ArrowsPointingOut"
             }
           ],
           "type": "string",
@@ -12568,243 +11589,195 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
+              "const": "ChevronLeft"
             },
             {
               "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
+              "const": "ChevronRight"
             },
             {
               "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
+              "const": "ChevronUp"
             },
             {
               "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
+              "const": "ChevronDown"
             },
             {
               "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
+              "const": "QuestionMarkCircle"
             },
             {
               "type": "string",
-              "const": "User",
-              "default": "User"
+              "const": "User"
             },
             {
               "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
+              "const": "ShoppingCart"
             },
             {
               "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
+              "const": "Bars3"
             },
             {
               "type": "string",
-              "const": "Heart",
-              "default": "Heart"
+              "const": "Heart"
             },
             {
               "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
+              "const": "MagnifyingGlass"
             },
             {
               "type": "string",
-              "const": "XMark",
-              "default": "XMark"
+              "const": "XMark"
             },
             {
               "type": "string",
-              "const": "Plus",
-              "default": "Plus"
+              "const": "Plus"
             },
             {
               "type": "string",
-              "const": "Minus",
-              "default": "Minus"
+              "const": "Minus"
             },
             {
               "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
+              "const": "MapPin"
             },
             {
               "type": "string",
-              "const": "Phone",
-              "default": "Phone"
+              "const": "Phone"
             },
             {
               "type": "string",
-              "const": "Elo",
-              "default": "Elo"
+              "const": "Elo"
             },
             {
               "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
+              "const": "Mastercard"
             },
             {
               "type": "string",
-              "const": "Visa",
-              "default": "Visa"
+              "const": "Visa"
             },
             {
               "type": "string",
-              "const": "Pix",
-              "default": "Pix"
+              "const": "Pix"
             },
             {
               "type": "string",
-              "const": "Logo",
-              "default": "Logo"
+              "const": "Logo"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             },
             {
               "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
+              "const": "FacebookBlack"
             },
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
+              "const": "InstagramBlack"
             },
             {
               "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
+              "const": "Tiktok"
             },
             {
               "type": "string",
-              "const": "Truck",
-              "default": "Truck"
+              "const": "Truck"
             },
             {
               "type": "string",
-              "const": "Discount",
-              "default": "Discount"
+              "const": "Discount"
             },
             {
               "type": "string",
-              "const": "Return",
-              "default": "Return"
+              "const": "Return"
             },
             {
               "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
+              "const": "CreditCard"
             },
             {
               "type": "string",
-              "const": "Deco",
-              "default": "Deco"
+              "const": "Deco"
             },
             {
               "type": "string",
-              "const": "Discord",
-              "default": "Discord"
+              "const": "Discord"
             },
             {
               "type": "string",
-              "const": "Trash",
-              "default": "Trash"
+              "const": "Trash"
             },
             {
               "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
+              "const": "FilterList"
             },
             {
               "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
+              "const": "WhatsApp"
             },
             {
               "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
+              "const": "Linkedin"
             },
             {
               "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
+              "const": "LinkedinBlack"
             },
             {
               "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
+              "const": "YoutubeBlack"
             },
             {
               "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
+              "const": "Brazil"
             },
             {
               "type": "string",
-              "const": "Spain",
-              "default": "Spain"
+              "const": "Spain"
             },
             {
               "type": "string",
-              "const": "Italy",
-              "default": "Italy"
+              "const": "Italy"
             },
             {
               "type": "string",
-              "const": "Chile",
-              "default": "Chile"
+              "const": "Chile"
             },
             {
               "type": "string",
-              "const": "Romania",
-              "default": "Romania"
+              "const": "Romania"
             },
             {
               "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
+              "const": "GreatBritain"
             },
             {
               "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
+              "const": "ArrowRight"
             },
             {
               "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
+              "const": "ArrowRightOrange"
             },
             {
               "type": "string",
-              "const": "Computer",
-              "default": "Computer"
+              "const": "Computer"
             },
             {
               "type": "string",
-              "const": "Seed",
-              "default": "Seed"
+              "const": "Seed"
             },
             {
               "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
+              "const": "ArrowsPointingOut"
             }
           ],
           "type": "string",
@@ -13190,13 +12163,11 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             }
           ],
           "type": "string",
@@ -13288,243 +12259,195 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "ChevronLeft",
-              "default": "ChevronLeft"
+              "const": "ChevronLeft"
             },
             {
               "type": "string",
-              "const": "ChevronRight",
-              "default": "ChevronRight"
+              "const": "ChevronRight"
             },
             {
               "type": "string",
-              "const": "ChevronUp",
-              "default": "ChevronUp"
+              "const": "ChevronUp"
             },
             {
               "type": "string",
-              "const": "ChevronDown",
-              "default": "ChevronDown"
+              "const": "ChevronDown"
             },
             {
               "type": "string",
-              "const": "QuestionMarkCircle",
-              "default": "QuestionMarkCircle"
+              "const": "QuestionMarkCircle"
             },
             {
               "type": "string",
-              "const": "User",
-              "default": "User"
+              "const": "User"
             },
             {
               "type": "string",
-              "const": "ShoppingCart",
-              "default": "ShoppingCart"
+              "const": "ShoppingCart"
             },
             {
               "type": "string",
-              "const": "Bars3",
-              "default": "Bars3"
+              "const": "Bars3"
             },
             {
               "type": "string",
-              "const": "Heart",
-              "default": "Heart"
+              "const": "Heart"
             },
             {
               "type": "string",
-              "const": "MagnifyingGlass",
-              "default": "MagnifyingGlass"
+              "const": "MagnifyingGlass"
             },
             {
               "type": "string",
-              "const": "XMark",
-              "default": "XMark"
+              "const": "XMark"
             },
             {
               "type": "string",
-              "const": "Plus",
-              "default": "Plus"
+              "const": "Plus"
             },
             {
               "type": "string",
-              "const": "Minus",
-              "default": "Minus"
+              "const": "Minus"
             },
             {
               "type": "string",
-              "const": "MapPin",
-              "default": "MapPin"
+              "const": "MapPin"
             },
             {
               "type": "string",
-              "const": "Phone",
-              "default": "Phone"
+              "const": "Phone"
             },
             {
               "type": "string",
-              "const": "Elo",
-              "default": "Elo"
+              "const": "Elo"
             },
             {
               "type": "string",
-              "const": "Mastercard",
-              "default": "Mastercard"
+              "const": "Mastercard"
             },
             {
               "type": "string",
-              "const": "Visa",
-              "default": "Visa"
+              "const": "Visa"
             },
             {
               "type": "string",
-              "const": "Pix",
-              "default": "Pix"
+              "const": "Pix"
             },
             {
               "type": "string",
-              "const": "Logo",
-              "default": "Logo"
+              "const": "Logo"
             },
             {
               "type": "string",
-              "const": "Facebook",
-              "default": "Facebook"
+              "const": "Facebook"
             },
             {
               "type": "string",
-              "const": "FacebookBlack",
-              "default": "FacebookBlack"
+              "const": "FacebookBlack"
             },
             {
               "type": "string",
-              "const": "Instagram",
-              "default": "Instagram"
+              "const": "Instagram"
             },
             {
               "type": "string",
-              "const": "InstagramBlack",
-              "default": "InstagramBlack"
+              "const": "InstagramBlack"
             },
             {
               "type": "string",
-              "const": "Tiktok",
-              "default": "Tiktok"
+              "const": "Tiktok"
             },
             {
               "type": "string",
-              "const": "Truck",
-              "default": "Truck"
+              "const": "Truck"
             },
             {
               "type": "string",
-              "const": "Discount",
-              "default": "Discount"
+              "const": "Discount"
             },
             {
               "type": "string",
-              "const": "Return",
-              "default": "Return"
+              "const": "Return"
             },
             {
               "type": "string",
-              "const": "CreditCard",
-              "default": "CreditCard"
+              "const": "CreditCard"
             },
             {
               "type": "string",
-              "const": "Deco",
-              "default": "Deco"
+              "const": "Deco"
             },
             {
               "type": "string",
-              "const": "Discord",
-              "default": "Discord"
+              "const": "Discord"
             },
             {
               "type": "string",
-              "const": "Trash",
-              "default": "Trash"
+              "const": "Trash"
             },
             {
               "type": "string",
-              "const": "FilterList",
-              "default": "FilterList"
+              "const": "FilterList"
             },
             {
               "type": "string",
-              "const": "WhatsApp",
-              "default": "WhatsApp"
+              "const": "WhatsApp"
             },
             {
               "type": "string",
-              "const": "Linkedin",
-              "default": "Linkedin"
+              "const": "Linkedin"
             },
             {
               "type": "string",
-              "const": "LinkedinBlack",
-              "default": "LinkedinBlack"
+              "const": "LinkedinBlack"
             },
             {
               "type": "string",
-              "const": "YoutubeBlack",
-              "default": "YoutubeBlack"
+              "const": "YoutubeBlack"
             },
             {
               "type": "string",
-              "const": "Brazil",
-              "default": "Brazil"
+              "const": "Brazil"
             },
             {
               "type": "string",
-              "const": "Spain",
-              "default": "Spain"
+              "const": "Spain"
             },
             {
               "type": "string",
-              "const": "Italy",
-              "default": "Italy"
+              "const": "Italy"
             },
             {
               "type": "string",
-              "const": "Chile",
-              "default": "Chile"
+              "const": "Chile"
             },
             {
               "type": "string",
-              "const": "Romania",
-              "default": "Romania"
+              "const": "Romania"
             },
             {
               "type": "string",
-              "const": "GreatBritain",
-              "default": "GreatBritain"
+              "const": "GreatBritain"
             },
             {
               "type": "string",
-              "const": "ArrowRight",
-              "default": "ArrowRight"
+              "const": "ArrowRight"
             },
             {
               "type": "string",
-              "const": "ArrowRightOrange",
-              "default": "ArrowRightOrange"
+              "const": "ArrowRightOrange"
             },
             {
               "type": "string",
-              "const": "Computer",
-              "default": "Computer"
+              "const": "Computer"
             },
             {
               "type": "string",
-              "const": "Seed",
-              "default": "Seed"
+              "const": "Seed"
             },
             {
               "type": "string",
-              "const": "ArrowsPointingOut",
-              "default": "ArrowsPointingOut"
+              "const": "ArrowsPointingOut"
             }
           ],
           "type": "string",
@@ -13571,18 +12494,15 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "front-back",
-              "default": "front-back"
+              "const": "front-back"
             },
             {
               "type": "string",
-              "const": "slider",
-              "default": "slider"
+              "const": "slider"
             },
             {
               "type": "string",
-              "const": "auto",
-              "default": "auto"
+              "const": "auto"
             }
           ],
           "type": "string",
@@ -13685,13 +12605,11 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "aside",
-              "default": "aside"
+              "const": "aside"
             },
             {
               "type": "string",
-              "const": "drawer",
-              "default": "drawer"
+              "const": "drawer"
             }
           ],
           "type": "string",
@@ -14032,25 +12950,10 @@
         "trackingIds": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "description": "google tag manager container id. For more info: https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation .",
           "title": "Tracking Ids"
-        },
-        "googleAnalyticsIds": {
-          "type": "array",
-          "items": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "title": "GA Measurement Ids",
-          "label": "measurement id",
-          "description": "the google analytics property measurement id. For more info: https://support.google.com/analytics/answer/9539598"
         },
         "src": {
           "type": [
@@ -14172,13 +13075,11 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "website",
-              "default": "website"
+              "const": "website"
             },
             {
               "type": "string",
-              "const": "article",
-              "default": "article"
+              "const": "article"
             }
           ],
           "type": "string",
@@ -14252,28 +13153,9 @@
           ],
           "title": "Meta tag description override"
         },
-        "favicon": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "description": "Recommended: 16 x 16 px",
-          "title": "Favicon"
-        },
         "page": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductDetailsPage|null",
           "title": "Page"
-        },
-        "structuredData": {
-          "type": "object",
-          "properties": {
-            "useDataFromSEO": {
-              "type": [
-                "boolean",
-                "null"
-              ],
-              "title": "Use Data From S E O"
-            }
-          },
-          "required": [],
-          "title": "Structured Data"
         }
       },
       "required": [
@@ -14302,19 +13184,14 @@
             "string",
             "null"
           ],
-          "title": "Page Title override"
+          "title": "Page title override"
         },
         "description": {
           "type": [
             "string",
             "null"
           ],
-          "title": "Metatag description override"
-        },
-        "favicon": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "description": "Recommended: 16 x 16 px",
-          "title": "Favicon"
+          "title": "Meta tag description override"
         }
       },
       "required": [
@@ -14334,22 +13211,6 @@
         "slug"
       ],
       "title": "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx@LoaderProps"
-    },
-    "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoQ3Jvbi50cw==@CronProps": {
-      "type": "object",
-      "properties": {
-        "cron": {
-          "type": "string",
-          "format": "cron",
-          "pattern": "^(?:(?:(?:\\*|(?:\\d+(?:-\\d+)?(?:,\\d+(?:-\\d+)?)*)|[A-Z]+)(?:\\/\\d+)?)(?:\\s+|$)){5}$",
-          "title": "Cron"
-        }
-      },
-      "required": [
-        "cron"
-      ],
-      "title": "deco-cx/live/matchers/MatchCron.ts@CronProps",
-      "titleBy": "cron"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
@@ -14372,36 +13233,37 @@
         }
       },
       "required": [],
-      "title": "deco-cx/live/matchers/MatchDate.ts@Props",
-      "titleBy": "start"
+      "title": "deco-cx/live/matchers/MatchDate.ts@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGV2aWNlLnRz@Props": {
       "type": "object",
       "properties": {
-        "mobile": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Mobile"
-        },
-        "tablet": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Tablet"
-        },
-        "desktop": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Desktop"
+        "devices": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "const": "mobile"
+              },
+              {
+                "type": "string",
+                "const": "tablet"
+              },
+              {
+                "type": "string",
+                "const": "desktop"
+              }
+            ],
+            "type": "string"
+          },
+          "title": "Devices"
         }
       },
-      "required": [],
-      "title": "{{#mobile}}Mobile{{/mobile}} {{#tablet}}Tablet{{/tablet}} {{#desktop}}Desktop{{/desktop}}"
+      "required": [
+        "devices"
+      ],
+      "title": "deco-cx/live/matchers/MatchDevice.ts@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRW52aXJvbm1lbnQudHM=@Props": {
       "type": "object",
@@ -14410,13 +13272,11 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "production",
-              "default": "production"
+              "const": "production"
             },
             {
               "type": "string",
-              "const": "development",
-              "default": "development"
+              "const": "development"
             }
           ],
           "type": "string",
@@ -14426,7 +13286,7 @@
       "required": [
         "environment"
       ],
-      "title": "{{{environment}}}"
+      "title": "deco-cx/live/matchers/MatchEnvironment.ts@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoSG9zdC50cw==@Props": {
       "type": "object",
@@ -14447,7 +13307,11 @@
         }
       },
       "required": [],
-      "title": "{{{includes}}} {{{match}}}"
+      "title": "deco-cx/live/matchers/MatchHost.ts@Props"
+    },
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher": {
+      "$ref": "#/root/matchers",
+      "title": "Matcher"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher[]": {
       "type": "array",
@@ -14463,13 +13327,11 @@
           "anyOf": [
             {
               "type": "string",
-              "const": "or",
-              "default": "or"
+              "const": "or"
             },
             {
               "type": "string",
-              "const": "and",
-              "default": "and"
+              "const": "and"
             }
           ],
           "type": "string",
@@ -14484,7 +13346,7 @@
         "op",
         "matchers"
       ],
-      "title": "Combined options with {{{op}}}"
+      "title": "deco-cx/live/matchers/MatchMulti.ts@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoUmFuZG9tLnRz@Props": {
       "type": "object",
@@ -14497,7 +13359,7 @@
       "required": [
         "traffic"
       ],
-      "title": "ABTest {{{percentage traffic}}}"
+      "title": "deco-cx/live/matchers/MatchRandom.ts@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoU2l0ZS50cw==@Props": {
       "type": "object",
@@ -14510,7 +13372,7 @@
       "required": [
         "siteId"
       ],
-      "title": "{{{siteId}}}"
+      "title": "deco-cx/live/matchers/MatchSite.ts@Props"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoVXNlckFnZW50LnRz@Props": {
       "type": "object",
@@ -14531,7 +13393,32 @@
         }
       },
       "required": [],
-      "title": "{{{includes}}} {{{match}}}"
+      "title": "deco-cx/live/matchers/MatchUserAgent.ts@Props"
+    },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override": {
+      "type": "object",
+      "properties": {
+        "use": {
+          "type": "string",
+          "title": "Use"
+        },
+        "insteadOf": {
+          "type": "string",
+          "title": "Instead Of"
+        }
+      },
+      "required": [
+        "use",
+        "insteadOf"
+      ],
+      "title": "Override"
+    },
+    "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override"
+      },
+      "title": "Override[]"
     },
     "ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Audience": {
       "type": "object",
@@ -14550,14 +13437,17 @@
         "routes": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
           "title": "Routes"
+        },
+        "overrides": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override[]",
+          "title": "Overrides"
         }
       },
       "required": [
         "matcher",
         "name"
       ],
-      "title": "deco-cx/live/flags/audience.ts@Audience",
-      "titleBy": "name"
+      "title": "deco-cx/live/flags/audience.ts@Audience"
     },
     "ZGVjby1jeC9saXZlL2ZsYWdzL2V2ZXJ5b25lLnRz@EveryoneConfig": {
       "type": "object",
@@ -14565,77 +13455,14 @@
         "routes": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
           "title": "Routes"
+        },
+        "overrides": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Override[]",
+          "title": "Overrides"
         }
       },
       "required": [],
       "title": "deco-cx/live/flags/everyone.ts@EveryoneConfig"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@FlagObj": {
-      "type": "object",
-      "properties": {
-        "matcher": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher",
-          "title": "Matcher"
-        },
-        "name": {
-          "type": "string",
-          "title": "Name"
-        },
-        "true": {
-          "title": "True"
-        },
-        "false": {
-          "title": "False"
-        }
-      },
-      "required": [
-        "matcher",
-        "name",
-        "true",
-        "false"
-      ],
-      "title": "deco-cx/live/blocks/flag.ts@FlagObj"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Variant+Section[]": {
-      "type": "object",
-      "properties": {
-        "rule": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher",
-          "title": "Condition"
-        },
-        "value": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]",
-          "title": "Content"
-        }
-      },
-      "required": [
-        "rule",
-        "value"
-      ],
-      "title": "{{#beautifySchemaTitle}}{{{rule.__resolveType}}}{{/beautifySchemaTitle}} Variant",
-      "icon": "flag"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Variant+Section[][]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Variant+Section[]"
-      },
-      "title": "Variant+Section[][]"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@MultivariateFlag+Section[]+Section[]": {
-      "type": "object",
-      "properties": {
-        "variants": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Variant+Section[][]",
-          "minItems": 1,
-          "addBehavior": "1",
-          "title": "Variants"
-        }
-      },
-      "required": [
-        "variants"
-      ],
-      "title": "Multivariate"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL2NhbmNlbC50cw==@Props": {
       "type": "object",
@@ -14656,6 +13483,27 @@
         "executionId"
       ],
       "title": "deco-cx/live/actions/workflows/cancel.ts@Props"
+    },
+    "ZGVjby1jeC9kdXJhYmxlL2hhbmRsZXIudHM=@RunRequest": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "title": "Results"
+        },
+        "executionId": {
+          "type": "string",
+          "title": "Execution Id"
+        },
+        "metadata": {
+          "title": "Metadata"
+        }
+      },
+      "required": [
+        "results",
+        "executionId",
+        "metadata"
+      ],
+      "title": "deco-cx/durable/handler.ts@RunRequest"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3NpZ25hbC50cw==@Props": {
       "type": "object",
@@ -14682,31 +13530,51 @@
       ],
       "title": "deco-cx/live/actions/workflows/signal.ts@Props"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowProps": {
-      "title": "WorkflowProps"
-    },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy93b3JrZmxvdy50cw==@WorkflowMetadata": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef": {
       "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2NvbnRleHQudHM=@Metadata"
-        }
-      ],
       "properties": {
-        "defaultInvokeHeaders": {
-          "title": "Default Invoke Headers",
+        "key": {
+          "type": "string",
+          "title": "Key"
+        },
+        "props": {
           "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
+          "title": "Props"
         }
       },
-      "required": [],
-      "title": "WorkflowMetadata"
+      "required": [
+        "key",
+        "props"
+      ],
+      "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@CommonProps": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|ca50b4e15b5ad4151e0537d103e64a3a": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ref": {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy93b3JrZmxvdy50cw==@Workflow",
+              "title": "Ref"
+            }
+          },
+          "required": [
+            "ref"
+          ]
+        }
+      ],
+      "title": "WorkflowRef|ca50b4e15b5ad4151e0537d103e64a3a"
+    },
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
+        "workflow": {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|ca50b4e15b5ad4151e0537d103e64a3a",
+          "title": "Workflow"
+        },
         "id": {
           "type": [
             "string",
@@ -14714,61 +13582,18 @@
           ],
           "title": "Id"
         },
-        "metadata": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy93b3JrZmxvdy50cw==@WorkflowMetadata",
-          "title": "Metadata"
-        }
-      },
-      "required": [],
-      "title": "CommonProps"
-    },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@AnyWorkflow": {
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@CommonProps"
-        }
-      ],
-      "properties": {
         "args": {
-          "title": "Args"
-        },
-        "workflow": {
-          "type": "object",
-          "properties": {
-            "data": {
-              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy93b3JrZmxvdy50cw==@Workflow",
-              "title": "Data"
-            },
-            "__resolveType": {
-              "type": "string",
-              "const": "resolved",
-              "default": "resolved",
-              "title": "__resolve Type"
-            }
+          "type": "array",
+          "items": {
+            "type": "object"
           },
-          "required": [
-            "data",
-            "__resolveType"
-          ],
-          "title": "Workflow"
+          "title": "Args"
         }
       },
       "required": [
         "workflow"
       ],
-      "title": "AnyWorkflow"
-    },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@AnyWorkflow|WorkflowProps": {
-      "anyOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowProps"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@AnyWorkflow"
-        }
-      ],
-      "title": "deco-cx/live/actions/workflows/start.ts@AnyWorkflow|WorkflowProps"
+      "title": "deco-cx/live/actions/workflows/start.ts@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvcGFja3MvdnRleC9hY3Rpb25zL2NhcnQvYWRkSXRlbXMudHM=@Item": {
       "type": "object",
@@ -14825,8 +13650,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "const": "paymentData",
-            "default": "paymentData"
+            "const": "paymentData"
           },
           "title": "Allowed Outdated Data"
         }
@@ -14872,10 +13696,7 @@
         "expectedOrderFormSections": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "title": "Expected Order Form Sections"
         },
@@ -14957,10 +13778,7 @@
         "expectedOrderFormSections": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "title": "Expected Order Form Sections"
         },
@@ -15011,10 +13829,7 @@
         "expectedOrderFormSections": {
           "type": "array",
           "items": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": "string"
           },
           "title": "Expected Order Form Sections"
         },
@@ -15087,8 +13902,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "const": "paymentData",
-            "default": "paymentData"
+            "const": "paymentData"
           },
           "title": "Allowed Outdated Data"
         }
@@ -15533,7 +14347,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3Z0ZXhMZWdhY3lQcm9kdWN0RGV0YWlsc1BhZ2UudHM=": {
-      "title": "VTEX Catalog - Product Details Page (deprecated)",
+      "title": "VTEX product details page - legacy (deprecated)",
       "description": "Works on routes of type /:slug/p",
       "deprecated": true,
       "type": "object",
@@ -15551,7 +14365,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3Z0ZXhMZWdhY3lQcm9kdWN0TGlzdC50cw==": {
-      "title": "VTEX Legacy - Search Products (deprecated)",
+      "title": "VTEX - Search Products - legacy (deprecated)",
       "description": "Useful for shelves and static galleries.",
       "deprecated": true,
       "type": "object",
@@ -15574,7 +14388,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3Z0ZXhMZWdhY3lQcm9kdWN0TGlzdGluZ1BhZ2UudHM=": {
-      "title": "VTEX Catalog - Product Listing Page (deprecated)",
+      "title": "VTEX Legacy - Product Listing page",
       "description": "Useful for category, search, brand and collection pages.",
       "deprecated": true,
       "type": "object",
@@ -15597,7 +14411,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3Z0ZXhMZWdhY3lSZWxhdGVkUHJvZHVjdHNMb2FkZXIudHM=": {
-      "title": "VTEX Catalog - Related Products (deprecated)",
+      "title": "VTEX Legacy - Related Products (deprecated)",
       "description": "Works on routes of type /:slug/p",
       "deprecated": true,
       "type": "object",
@@ -15620,7 +14434,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3Z0ZXhOYXZiYXIudHM=": {
-      "title": "Navigation Bar",
+      "title": "deco-sites/std/functions/vtexNavbar.ts",
       "deprecated": true,
       "type": "object",
       "allOf": [
@@ -15642,7 +14456,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3Z0ZXhQcm9kdWN0RGV0YWlsc1BhZ2UudHM=": {
-      "title": "VTEX Intelligent Search - Product Details Page (deprecated)",
+      "title": "VTEX Intelligent Search - Product Details page",
       "description": "For routes of type /:slug/p",
       "deprecated": true,
       "type": "object",
@@ -15660,7 +14474,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3Z0ZXhQcm9kdWN0TGlzdC50cw==": {
-      "title": "VTEX Intelligent Search - Search Products (deprecated)",
+      "title": "VTEX Intelligent Search - Search Products",
       "description": "Use it in Shelves and static Galleries.",
       "deprecated": true,
       "type": "object",
@@ -15683,7 +14497,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3Z0ZXhQcm9kdWN0TGlzdGluZ1BhZ2UudHM=": {
-      "title": "VTEX Intelligent Search - Product Listing page (deprecated)",
+      "title": "VTEX Intelligent Search - Product Listing page",
       "description": "Useful for category, search, brand and collection pages.",
       "deprecated": true,
       "type": "object",
@@ -15706,7 +14520,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3Z0ZXhTdWdnZXN0aW9ucy50cw==": {
-      "title": "VTEX Intelligent Search - Search Suggestions (deprecated)",
+      "title": "VTEX search suggestions - Intelligent Search (deprecated)",
       "deprecated": true,
       "type": "object",
       "allOf": [
@@ -15747,27 +14561,6 @@
             "deco-sites/std/functions/vtexWishlist.ts"
           ],
           "default": "deco-sites/std/functions/vtexWishlist.ts"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9zdGQvYWNjb3VudHMvbnV2ZW1TaG9wLnRz": {
-      "title": "deco-sites/std/accounts/nuvemShop.ts",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvbnV2ZW1TaG9wL3R5cGVzLnRz@Account"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/std/accounts/nuvemShop.ts"
-          ],
-          "default": "deco-sites/std/accounts/nuvemShop.ts"
         }
       }
     },
@@ -15818,7 +14611,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvcGFja3Mvdm5kYS92bmRhQWNjb3VudC50cw==@Account"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2Uvdm5kYS90eXBlcy50cw==@ConfigVNDA"
         }
       ],
       "required": [
@@ -15942,91 +14735,6 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdERldGFpbHNQYWdlLnRz": {
-      "title": "NuvemShop - PDP",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdERldGFpbHNQYWdlLnRz@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts"
-          ],
-          "default": "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdExpc3QudHM=": {
-      "title": "NuvemShop - Search Products",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdExpc3QudHM=@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts"
-          ],
-          "default": "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdExpc3RpbmdQYWdlLnRz": {
-      "title": "NuvemShop - Product Listing page",
-      "description": "Useful for category, search, brand and collection pages.",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdExpc3RpbmdQYWdlLnRz@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts"
-          ],
-          "default": "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts"
-        }
-      }
-    },
-    "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92bmRhL3Byb3h5LnRz": {
-      "title": "VNDA Proxy Routes",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92bmRhL3Byb3h5LnRz@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/std/loaders/vnda/proxy.ts"
-          ],
-          "default": "deco-sites/std/loaders/vnda/proxy.ts"
-        }
-      }
-    },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L2NhcnQudHM=": {
       "title": "deco-sites/std/loaders/vtex/cart.ts",
       "docs": "https://developers.vtex.com/docs/api-reference/checkout-api#get-/api/checkout/pub/orderForm",
@@ -16045,7 +14753,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L2ludGVsbGlnZW50U2VhcmNoL3Byb2R1Y3REZXRhaWxzUGFnZS50cw==": {
-      "title": "VTEX Intelligent Search - Product Details Page",
+      "title": "VTEX product details page - Intelligent Search",
       "description": "Works on routes of type /:slug/p",
       "type": "object",
       "allOf": [
@@ -16067,7 +14775,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L2ludGVsbGlnZW50U2VhcmNoL3Byb2R1Y3RMaXN0LnRz": {
-      "title": "VTEX Intelligent Search - Search Products",
+      "title": "VTEX product list - Intelligent Search",
       "description": "Useful for shelves and galleries.",
       "type": "object",
       "allOf": [
@@ -16111,7 +14819,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L2ludGVsbGlnZW50U2VhcmNoL3N1Z2dlc3Rpb25zLnRz": {
-      "title": "VTEX Intelligent Search - Search Suggestions",
+      "title": "VTEX search suggestions - Intelligent Search",
       "type": "object",
       "allOf": [
         {
@@ -16132,7 +14840,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L2xlZ2FjeS9wcm9kdWN0RGV0YWlsc1BhZ2UudHM=": {
-      "title": "VTEX Catalog - Product Details Page",
+      "title": "VTEX Legacy - Product Details page",
       "description": "For routes of type /:slug/p",
       "type": "object",
       "allOf": [
@@ -16154,7 +14862,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L2xlZ2FjeS9wcm9kdWN0TGlzdC50cw==": {
-      "title": "VTEX Catalog - Search Products",
+      "title": "VTEX Legacy - Search Products",
       "description": "Use it in Shelves and static Galleries.",
       "type": "object",
       "allOf": [
@@ -16176,7 +14884,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L2xlZ2FjeS9wcm9kdWN0TGlzdGluZ1BhZ2UudHM=": {
-      "title": "VTEX Catalog - Product Listing Page",
+      "title": "VTEX product listing page - Portal",
       "description": "Returns data ready for search pages like category,brand pages",
       "type": "object",
       "allOf": [
@@ -16198,7 +14906,7 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L2xlZ2FjeS9yZWxhdGVkUHJvZHVjdHNMb2FkZXIudHM=": {
-      "title": "VTEX Related Products - Catalog",
+      "title": "VTEX related products - Portal",
       "description": "Works on routes of type /:slug/p",
       "type": "object",
       "allOf": [
@@ -16243,11 +14951,6 @@
     "ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L3Byb3h5LnRz": {
       "title": "VTEX Proxy Routes",
       "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L3Byb3h5LnRz@Props"
-        }
-      ],
       "required": [
         "__resolveType"
       ],
@@ -16777,24 +15480,8 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGQvaGFuZGxlcnMvdnRleC9zaXRlbWFwLnRz": {
-      "title": "Sitemap Proxy",
-      "type": "object",
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/std/handlers/vtex/sitemap.ts"
-          ],
-          "default": "deco-sites/std/handlers/vtex/sitemap.ts"
-        }
-      }
-    },
     "JGxpdmUvcGFnZXMvTGl2ZVBhZ2UudHN4": {
-      "title": "Page",
+      "title": "$live/pages/LivePage.tsx",
       "type": "object",
       "allOf": [
         {
@@ -16811,43 +15498,6 @@
             "$live/pages/LivePage.tsx"
           ],
           "default": "$live/pages/LivePage.tsx"
-        }
-      }
-    },
-    "JGxpdmUvc2VjdGlvbnMvQ29uZGl0aW9uYWxfQmV0YS50c3g=": {
-      "title": "$live/sections/Conditional_Beta.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL3V0aWxzL2NvbmRpdGlvbmFscy50cw==@Props+Section[]"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "$live/sections/Conditional_Beta.tsx"
-          ],
-          "default": "$live/sections/Conditional_Beta.tsx"
-        }
-      }
-    },
-    "JGxpdmUvc2VjdGlvbnMvRW1wdHlTZWN0aW9uLnRzeA==": {
-      "title": "$live/sections/EmptySection.tsx",
-      "type": "object",
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "$live/sections/EmptySection.tsx"
-          ],
-          "default": "$live/sections/EmptySection.tsx"
         }
       }
     },
@@ -17980,27 +16630,6 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvY29uZmlnTnV2ZW1TaG9wLnRzeA==": {
-      "title": "deco-sites/std/sections/configNuvemShop.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvbnV2ZW1TaG9wL3R5cGVzLnRz@Account"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/std/sections/configNuvemShop.tsx"
-          ],
-          "default": "deco-sites/std/sections/configNuvemShop.tsx"
-        }
-      }
-    },
     "ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvY29uZmlnT0NDLmdsb2JhbC50c3g=": {
       "title": "deco-sites/std/sections/configOCC.global.tsx",
       "type": "object",
@@ -18040,6 +16669,27 @@
             "deco-sites/std/sections/configShopify.global.tsx"
           ],
           "default": "deco-sites/std/sections/configShopify.global.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvY29uZmlnVk5EQS5nbG9iYWwudHN4": {
+      "title": "deco-sites/std/sections/configVNDA.global.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2Uvdm5kYS90eXBlcy50cw==@ConfigVNDA"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/std/sections/configVNDA.global.tsx"
+          ],
+          "default": "deco-sites/std/sections/configVNDA.global.tsx"
         }
       }
     },
@@ -18170,7 +16820,7 @@
       }
     },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
-      "title": "Always",
+      "title": "$live/matchers/MatchAlways.ts",
       "type": "object",
       "required": [
         "__resolveType"
@@ -18185,30 +16835,8 @@
         }
       }
     },
-    "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hDcm9uLnRz": {
-      "title": "Cron Matcher",
-      "description": "Use cron, at minute precision, to declare date and hour ranges",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoQ3Jvbi50cw==@CronProps"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "$live/matchers/MatchCron.ts"
-          ],
-          "default": "$live/matchers/MatchCron.ts"
-        }
-      }
-    },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hEYXRlLnRz": {
-      "title": "Date Matcher",
+      "title": "$live/matchers/MatchDate.ts",
       "type": "object",
       "allOf": [
         {
@@ -18251,7 +16879,7 @@
       }
     },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hFbnZpcm9ubWVudC50cw==": {
-      "title": "Environment Matcher",
+      "title": "$live/matchers/MatchEnvironment.ts",
       "type": "object",
       "allOf": [
         {
@@ -18272,7 +16900,7 @@
       }
     },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hIb3N0LnRz": {
-      "title": "Host Matcher",
+      "title": "$live/matchers/MatchHost.ts",
       "type": "object",
       "allOf": [
         {
@@ -18293,7 +16921,7 @@
       }
     },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hNdWx0aS50cw==": {
-      "title": "OR & AND Matcher",
+      "title": "$live/matchers/MatchMulti.ts",
       "type": "object",
       "allOf": [
         {
@@ -18314,7 +16942,7 @@
       }
     },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hSYW5kb20udHM=": {
-      "title": "Random Matcher",
+      "title": "$live/matchers/MatchRandom.ts",
       "type": "object",
       "allOf": [
         {
@@ -18335,7 +16963,7 @@
       }
     },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hTaXRlLnRz": {
-      "title": "Site Matcher",
+      "title": "$live/matchers/MatchSite.ts",
       "type": "object",
       "allOf": [
         {
@@ -18356,7 +16984,7 @@
       }
     },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hVc2VyQWdlbnQudHM=": {
-      "title": "User Agent Matcher",
+      "title": "$live/matchers/MatchUserAgent.ts",
       "type": "object",
       "allOf": [
         {
@@ -18420,48 +17048,6 @@
         }
       }
     },
-    "JGxpdmUvZmxhZ3MvZmxhZy50cw==": {
-      "title": "Flag",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@FlagObj"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "$live/flags/flag.ts"
-          ],
-          "default": "$live/flags/flag.ts"
-        }
-      }
-    },
-    "JGxpdmUvZmxhZ3MvbXVsdGl2YXJpYXRlLnRz": {
-      "title": "Variant",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@MultivariateFlag+Section[]+Section[]"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "$live/flags/multivariate.ts"
-          ],
-          "default": "$live/flags/multivariate.ts"
-        }
-      }
-    },
     "JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvY2FuY2VsLnRz": {
       "title": "$live/actions/workflows/cancel.ts",
       "description": "Cancels the workflow execution, you can, optionally, add a reason of the cancellation.",
@@ -18481,6 +17067,28 @@
             "$live/actions/workflows/cancel.ts"
           ],
           "default": "$live/actions/workflows/cancel.ts"
+        }
+      }
+    },
+    "JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvcnVuLnRz": {
+      "title": "$live/actions/workflows/run.ts",
+      "description": "Proceed the workflow execution based on the current state of the workflow.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9kdXJhYmxlL2hhbmRsZXIudHM=@RunRequest"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "$live/actions/workflows/run.ts"
+          ],
+          "default": "$live/actions/workflows/run.ts"
         }
       }
     },
@@ -18512,7 +17120,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@AnyWorkflow|WorkflowProps"
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props"
         }
       ],
       "required": [
@@ -18963,9 +17571,6 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvYWNjb3VudHMvbnV2ZW1TaG9wLnRz"
-        },
-        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvYWNjb3VudHMvb2NjLnRz"
         },
         {
@@ -18996,18 +17601,6 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvbG9hZGVycy93b3JrZmxvd3MvZ2V0LnRz"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdERldGFpbHNQYWdlLnRz"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdExpc3QudHM="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy9udXZlbVNob3AvbnV2ZW1TaG9wUHJvZHVjdExpc3RpbmdQYWdlLnRz"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92bmRhL3Byb3h5LnRz"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvbG9hZGVycy92dGV4L2NhcnQudHM="
@@ -19142,9 +17735,6 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvaGFuZGxlcnMvd29ya2Zsb3dSdW5uZXIudHM="
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvaGFuZGxlcnMvdnRleC9zaXRlbWFwLnRz"
         }
       ]
     },
@@ -19164,12 +17754,6 @@
       "anyOf": [
         {
           "$ref": "#/definitions/Resolvable"
-        },
-        {
-          "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvQ29uZGl0aW9uYWxfQmV0YS50c3g="
-        },
-        {
-          "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvRW1wdHlTZWN0aW9uLnRzeA=="
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvUGFnZUluY2x1ZGUudHN4"
@@ -19334,13 +17918,13 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvY29uZmlnQnV0dGVyQ01TLmdsb2JhbC50c3g="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvY29uZmlnTnV2ZW1TaG9wLnRzeA=="
-        },
-        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvY29uZmlnT0NDLmdsb2JhbC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvY29uZmlnU2hvcGlmeS5nbG9iYWwudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvY29uZmlnVk5EQS5nbG9iYWwudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvY29uZmlnVlRFWC5nbG9iYWwudHN4"
@@ -19370,9 +17954,6 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM="
-        },
-        {
-          "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hDcm9uLnRz"
         },
         {
           "$ref": "#/definitions/JGxpdmUvbWF0Y2hlcnMvTWF0Y2hEYXRlLnRz"
@@ -19411,12 +17992,6 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvZmxhZ3MvZXZlcnlvbmUudHM="
-        },
-        {
-          "$ref": "#/definitions/JGxpdmUvZmxhZ3MvZmxhZy50cw=="
-        },
-        {
-          "$ref": "#/definitions/JGxpdmUvZmxhZ3MvbXVsdGl2YXJpYXRlLnRz"
         }
       ]
     },
@@ -19428,6 +18003,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvY2FuY2VsLnRz"
+        },
+        {
+          "$ref": "#/definitions/JGxpdmUvYWN0aW9ucy93b3JrZmxvd3MvcnVuLnRz"
         },
         {
           "$ref": "#/definitions/JGxpdmUvYWN0aW9ucy93b3JrZmxvd3Mvc2lnbmFsLnRz"
@@ -19494,8 +18072,7 @@
       "required": [
         "./routes/_middleware.ts",
         "./routes/[...catchall].tsx",
-        "./routes/index.tsx",
-        "./routes/live/previews/index.tsx"
+        "./routes/index.tsx"
       ],
       "properties": {
         "./routes/_middleware.ts": {
@@ -19516,13 +18093,6 @@
           "anyOf": [
             {
               "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler"
-            }
-          ]
-        },
-        "./routes/live/previews/index.tsx": {
-          "anyOf": [
-            {
-              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page"
             }
           ]
         }
