@@ -1,8 +1,6 @@
 import Searchbar from "$store/islands/HeaderSearchbar.tsx";
 import Buttons from "$store/islands/HeaderButton.tsx";
-import Image from "deco-sites/std/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
-"../../static/Logo-header.png";
 import type { INavItem } from "./NavItem.tsx";
 import type { Logo } from "./Header.tsx";
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
@@ -15,10 +13,8 @@ function Navbar({ items, logo, searchbar }: {
   return (
     <>
       <div class="
-      lg:w-[70rem]
-      
-      lg:container
-      md:container-fluid
+      lg:w-[69rem]
+      md:w-full
 
       md:flex
       xs:block
@@ -29,30 +25,33 @@ function Navbar({ items, logo, searchbar }: {
       relative
       justify-between
     ">
-        <img
-          class="xs:hidden md:block py-[4px]"
-          src={logo.desktop}
-          alt={logo.alt}
-        />
+        <a href="/">  
+          <img
+            class="xs:hidden md:block p-[4px] md:ml-4 lg:ml-0 max-h-[58px] "
+            src={logo.desktop}
+            alt={logo.alt}
+          />
 
-        <img
-          class="md:hidden w-[120px] px-[4px] py-[4px]"
-          src={logo.mobile}
-          alt={logo.alt}
-        />
+          <img
+            class="md:hidden ml-2 max-w-[120px] px-[4px] py-[4px]"
+            src={logo.mobile}
+            alt={logo.alt}
+          />
+        </a>
 
-        <div class="pr-4 md:flex xs:hidden absolute lg:right-0 md:right-4 top-7">
+        <div class="pr-4 md:flex xs:hidden absolute lg:right-2 md:right-10 top-7">
           {items.map((item, index) => (
             <NavItem item={{ ...item, isMobile: false, itemIndex: index }} />
           ))}
         </div>
 
         <span class="
-            lg:right-[-3rem]
-            md:right-[0rem]
+            lg:right-[-1rem]
+            md:right-[1rem]
             xs:right-2
 
-            top-2
+            md:top-3
+            xs:top-2
 
             w-[50px]
             h-[50px]

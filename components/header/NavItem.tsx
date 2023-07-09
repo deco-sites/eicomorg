@@ -48,7 +48,7 @@ function NavItem({ item }: { item: INavItem }) {
   };
 
   return (
-    <div class="flex mr-6 cursor-pointer h-[100%] md:relative">
+    <div class="flex lg:mr-8 md:mr-3 xs:mr-4 cursor-pointer h-[100%] md:relative">
       <div class="m-auto flex">
         <a
           href={!isMobile ? href : "#"}
