@@ -25,7 +25,7 @@ function Navbar({ items, logo, searchbar }: {
       relative
       justify-between
     ">
-        <a href="/">  
+        <a href="/">
           <img
             class="xs:hidden md:block p-[4px] md:ml-4 lg:ml-0 max-h-[58px] "
             src={logo.desktop}
