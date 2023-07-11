@@ -40,7 +40,7 @@ function Policy({ policyData }: {
             </div>
           </label>
           <div class="w-full h-full">
-            <iframe src={href} class="w-full h-full p-0" />
+            <iframe src={href} class="w-full h-full" />
           </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ function Alert({ alert }: Props) {
           </a>
         </div>
         <button
-          class="absolute right-1 xs:p-[6px] md:py-[6px] md:px-[10px]"
+          class="absolute right-1 xs:p-[6px] md:py-[6px] md:px-[10px] opacity-80"
           onClick={handleClick}
         >
           <Image

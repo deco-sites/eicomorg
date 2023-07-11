@@ -93,9 +93,11 @@ function Courses(
                     </div>
                   </a>
                   <div class="pt-[10px] text-[22px] font-semibold leading-[28px] mt-5 mb-[10px] lefont-avenir-next-itpro font-sans">
-                    <h3 dangerouslySetInnerHTML={{
-                          __html: executiveProgramme.title,
-                        }}>
+                    <h3
+                      dangerouslySetInnerHTML={{
+                        __html: executiveProgramme.title,
+                      }}
+                    >
                     </h3>
                   </div>
                   <div class="h-[60px] max-h-[60px] font-gravity font-sans text-[#262628] mt-0 mb-[10px] text-[15px] leading-[20px] overflow-hidden">
