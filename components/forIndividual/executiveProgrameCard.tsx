@@ -8,7 +8,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 
 export interface LabelProps {
   text: string;
-  icon?: AvailableIcons;
+  icon?: LiveImage;
 }
 
 export interface topTextProps {
@@ -44,62 +44,61 @@ function Courses(
     <>
       <div class="pt-[120px] relative pb-0">
         <div class="z-20 bg-white pt-[1px] sticky top-[68px] text-center text-3xl leading-[34px] my-5 uppercase block font-bold font-AvenirNextLTPro">
-            <h4 dangerouslySetInnerHTML={{ __html: title }} class=""></h4>
+          <h4 dangerouslySetInnerHTML={{ __html: title }} class=""></h4>
         </div>
         <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
           <div class="max-w-[560px] my-10 mx-auto"></div>
         </div>
         <div class="bg-gray-100 pb-20">
-          <div class="h-24 pt-10"></div>
-          <div class="md:max-w-[840px] lg:max-w-[1200px] relative pr-0 z-auto mx-auto">
+          <div class="h-[100px] pt-10"></div>
+          <div class="md:max-w-[840px] lg:max-w-[1120px] relative pr-0 z-auto mx-auto">
             <div class="max-w-[560px] my-10 mx-auto pb-0 md:text-2xl md:leading-[30px] text-center">
               <span dangerouslySetInnerHTML={{ __html: topText.text }}></span>
             </div>
-            <div class="border-1 bg-white border-solid border-gray-300 rounded-md mt-10 mb-16 xs:mx-3 lg:mx-0 p-0 flex xs:flex-col md:flex-row">
+            <div class="border-1 bg-white border-solid border-gray-300 rounded-md mt-10 mb-16 xs:mx-3 lg:mx-0 p-0 flex xs:flex-col md:flex-row opacity-100 transform translate-x-0 translate-y-0 translate-z-0 scale-100 rotate-x-0 rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d">
               <div
                 style={{
                   backgroundImage: `url(${executiveProgramme.image})`,
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
-                  backgroundPosition: "0%",
-                  zIndex: 0,
+                  backgroundPosition: "50% 30%",
                 }}
-                class={`xs:w-full xs:h-[140px] md:w-[390px] md:h-[300px] lg:w-[769px] lg:h-[329px] max-w-[100%] max-h-[100%] bg-center bg-no-repeat bg-cover rounded-tl-md rounded-bl-md mt-0`}
+                class={`xs:w-full xs:h-[140px] md:h-auto md:w-[390px] lg:w-[55%] rounded-tl rounded-bl mt-0`}
               >
               </div>
               <div class="md:w-[45%] block">
-                <div class="bg-white rounded-tr-md rounded-br-md  xs:pt-3 lg:pt-8 pr-6 md:pb-2 xs:pb-2 lg:pb-8 pl-8 ">
+                <div class="w-0 h-1 font-[#262628] bg-[#f26f21] block"></div>
+                <div class="bg-white rounded-tr-md rounded-br-md  xs:pt-3 lg:py-[30px] pr-[20px] md:pb-2 xs:pb-2 pl-[30px]">
                   <a
                     href={executiveProgramme.labelUrl}
                     class="cursor-pointer flex max-w-full text-xs items-center"
                   >
-                    <div class="w-28 bg-[#144576] mr-1 px-2 py-2 flex items-center justify-center text-white rounded-2xl">
-                      {executiveProgramme.label1.icon && (
-                        <Icon
-                          id={executiveProgramme.label1.icon}
-                          width={16}
-                          height={16}
-                          strokeWidth={2}
-                          class="mr-1"
-                        />
-                      )}
-                      {executiveProgramme.label1.text}
-                    </div>
-                    <div class="bg-[#144576] px-4 py-2 text-white  rounded-2xl">
-                      {executiveProgramme.label2.text}
+                    <div class="flex">
+                      <div class="bg-[#144576] text-white mr-[5px] h-[26px] py-[-4px] px-[10px] flex bottom-auto right-auto left-0 top-0 rounded-2xl">
+                        {executiveProgramme.label1.icon && (
+                          <Image
+                            src={executiveProgramme.label1.icon}
+                            width={16}
+                            height={16}
+                            class="mr-1 mt-[6px] h-[16px] w-[16px]"
+                          />
+                        )}
+                        <div class="text-white font-semibold font-gravity font-sans uppercase tracking-wider self-center text-[9px] leading-[8px] inline-block">
+                          {executiveProgramme.label1.text}
+                        </div>
+                      </div>
+                      <div class="bg-[#144576] px-4 py-2 text-white font-semibold font-gravity font-sans uppercase tracking-wider self-center text-[9px] leading-[8px] inline-block rounded-2xl">
+                        {executiveProgramme.label2.text}
+                      </div>
                     </div>
                   </a>
-                  <div class="md:pt-1 lg:pt-6 mt-3 mb-1 lg:text-3xl md:text-lg lg:overflow-hidden font-semibold">
-                    <h3>
-                      <span
-                        dangerouslySetInnerHTML={{
+                  <div class="pt-[10px] text-[22px] font-semibold leading-[28px] mt-5 mb-[10px] lefont-avenir-next-itpro font-sans">
+                    <h3 dangerouslySetInnerHTML={{
                           __html: executiveProgramme.title,
-                        }}
-                      >
-                      </span>
+                        }}>
                     </h3>
                   </div>
-                  <div class="h-14 max-h-16  text-gray-700 mt-0 xs:mb-8 md:mb-14 lg:mb-12 lg:overflow-hidden md:text-base lg:text-xl">
+                  <div class="h-[60px] max-h-[60px] font-gravity font-sans text-[#262628] mt-0 mb-[10px] text-[15px] leading-[20px] overflow-hidden">
                     <p>
                       <span
                         dangerouslySetInnerHTML={{
@@ -111,8 +110,7 @@ function Courses(
                   </div>
                   <a
                     href={executiveProgramme.buttonUrl}
-                    class="btn mx-auto md:mt-0 xs:mt-6 top-4 tracking-tight text-white cursor-pointer border-2 border-none rounded-md 
-                              md:px-4 md:text-base lg:px-8 lg:py-2 lg:text-lg xs:text-lg lg:w-[350px] md:w-[127px] xs:w-full"
+                    class="tracking-wider cursor-pointer border-2 border-solid border-orange-500 rounded-md py-[7px] px-[16px] mx-auto w-auto text-white uppercase font-gravity font-sans font-semibold"
                     style={{ backgroundColor: executiveProgramme.buttonColor }}
                   >
                     {executiveProgramme.buttonText}
@@ -123,7 +121,6 @@ function Courses(
           </div>
         </div>
       </div>
-
     </>
   );
 }
