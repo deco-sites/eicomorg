@@ -25,17 +25,21 @@ function FacultyCard({ facultyInfo, index }: {
     <>
       <label htmlFor={stringIndex}>
         <div class="lg:w-64 lg:h-52 md:h-[335px] md:w-[335px] float-left mx-[10px] mb-5 group">
-          <div class="cursor-pointer bg-white border border-gray-300 rounded-md ml-0 mr-0 p-0">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={256}
-              height={200}
-              class="bg-center bg-no-repeat bg-cover borde border-tl-[3px] border-tr-[3px] md:w-[500] w-full"
-            />
+          <div class="cursor-pointer bg-white border border-gray-300 rounded-md xs:ml-4 md:ml-0 md:mr-0 p-0"
+          >
+          <div
+            style={{
+              backgroundImage: `url(${image.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "50%",
+              overflow: "hidden",
+            }}
+            class="border border-tl-[3px] border-tr-[3px] xs:w-[350px] md:w-[333px] lg:w-[256px] h-[200px]"
+              ></div>
             <div class="bg-[#f26f21] w-0 h-1 transition-all duration-1000 group-hover:w-full">
             </div>
-            <div class="h-[150px] text-left py-2 pr-3 pl-4">
+            <div class="xs:h-[110px] md:h-[150px] text-left py-2 pr-3 pl-4">
               <div class="font-bold text-[#262628] font-AvenirNextLTPro text-[18px] my-[20px] mb-[8px]">
                 <span dangerouslySetInnerHTML={{ __html: name }}></span>
               </div>

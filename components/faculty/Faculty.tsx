@@ -40,7 +40,7 @@ function Faculty(
       <div className="flex justify-center lg:py-[100px] xs:py-8">
         <div className="z-auto max-w-[1120px] flex-1 pr-0 relative">
           <FacultyTopPart facultyTopPart={facultyTopPart} />
-          <div className="text-left lg:flex-row xs:flex-col mt-8 md:flex-row justify-center md:ml-20 lg:ml-0">
+          <div className="md:text-left xs:text-center lg:flex-row xs:flex-col mt-8 md:flex-row justify-center md:ml-20 lg:ml-0">
             {facultyMembers.map((facultyInfo, index) => (
               <FacultyCard facultyInfo={facultyInfo} index={index} />
             ))}
