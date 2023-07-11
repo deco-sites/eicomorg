@@ -11,8 +11,14 @@ export interface ContentBox {
 }
 
 export interface ContainerImage {
-  desktop: LiveImage;
-  mobile: LiveImage;
+  desktop: {
+   src: LiveImage;
+   alt: string
+  }
+  mobile: {
+    src: LiveImage;
+    alt: string
+   }
 }
 
 export interface Props {
@@ -46,7 +52,7 @@ function HomeWhyEicomSection(
           {/* DESKTOP VERSION */}
           <div
             style={{
-              backgroundImage: `url(${image.desktop})`,
+              backgroundImage: `url(${image.desktop.src})`,
             }}
             class={`
             absolute
@@ -76,7 +82,7 @@ function HomeWhyEicomSection(
           {/* MOBILE VERSION */}
           <div
             style={{
-              backgroundImage: `url(${image.mobile})`,
+              backgroundImage: `url(${image.mobile.src})`,
             }}
             class={`
               relative

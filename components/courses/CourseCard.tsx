@@ -73,7 +73,6 @@ function CourseCard(
               height={arraySize <= 3 ? 260 : 203}
             />
           </div>
-          <div class="bg-[#f26f21] block h-1 w-0"></div>
         </div>
         <div id="text-part" class="flex flex-col justify-around py-3 px-5">
           <h2 class="text-lg font-bold text-[#262628] mt-5 mb-3">
