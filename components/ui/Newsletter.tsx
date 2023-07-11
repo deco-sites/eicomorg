@@ -8,7 +8,9 @@ export interface Props {
   buttonText: HTML;
 }
 
-function Newsletter({ title, content, placeholderName, placeholderEmail, buttonText }: Props) {
+function Newsletter(
+  { title, content, placeholderName, placeholderEmail, buttonText }: Props,
+) {
   return (
     <div class="container-fluid bg-[#262628]">
       <div class="
