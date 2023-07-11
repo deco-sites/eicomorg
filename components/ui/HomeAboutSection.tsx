@@ -42,7 +42,7 @@ function ActionLinkComponent({ actionLink }: { actionLink: ActionLink }) {
         md:pr-[26px]
         md:hover:pr-[26px]
 
-        xs:mr-10
+        xs:mr-3
         xs:pr-[30px]
         xs:text-[14px]
 
@@ -63,7 +63,7 @@ function HomeAboutSection(
   return (
     <div
       ref={elementRef as Ref<HTMLDivElement>}
-      class="container-fluid bg-gray-lines-texture bg-contain bg-no-repeat bg-[100%] h-[760px] lg:py-[100px]"
+      class="container-fluid bg-gray-lines-texture bg-contain bg-no-repeat bg-[100%] xs:h-[700px] md:h-[760px] lg:py-[100px]"
     >
       <div class="lg:w-[70rem] relative m-auto block">
         <div

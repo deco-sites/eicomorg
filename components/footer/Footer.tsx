@@ -115,7 +115,7 @@ function Footer({ logo, infos = [], policies = [], icons = [] }: Props) {
             <div class=" xs:h-[100px] md:h-[120px] flex flex-col xs:justify-center  md:justify-between xs:w-full md:w-1/4 float-left px-3 relative">
               <ul class="pl-0 list-none mb-3 mt-0 block" role="list">
                 {policies.map((policyData, index) => (
-                  <Policy policyData={policyData} index={index} />
+                  <Policy policyData={policyData} />
                 ))}
               </ul>
             </div>

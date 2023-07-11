@@ -3,9 +3,12 @@ import type { HTML } from "deco-sites/std/components/types.ts";
 export interface Props {
   title: HTML;
   content: HTML;
+  placeholderName: string;
+  placeholderEmail: string;
+  buttonText: HTML;
 }
 
-function Newsletter({ title, content }: Props) {
+function Newsletter({ title, content, placeholderName, placeholderEmail, buttonText }: Props) {
   return (
     <div class="container-fluid bg-[#262628]">
       <div class="
@@ -51,21 +54,23 @@ function Newsletter({ title, content }: Props) {
             <span class="font-bold">Name</span>
             <input
               class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]"
-              placeholder="Type your name"
+              placeholder={placeholderName}
               type="text"
+              required
             />
           </div>
           <div class="my-5">
             <span class="font-bold">Email*</span>
             <input
               class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]"
-              placeholder="your@email.com"
+              placeholder={placeholderEmail}
               type="email"
+              required
             />
           </div>
 
           <button class="uppercase bg-[#f26f21] text-white rounded-sm text-[14px] cursor-pointer p-2">
-            subscribe
+            <span dangerouslySetInnerHTML={{ __html: buttonText }}></span>
           </button>
         </div>
       </div>

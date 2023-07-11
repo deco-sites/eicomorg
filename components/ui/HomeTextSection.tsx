@@ -16,7 +16,7 @@ function HomeTextSection(
       >
         {title}
       </span>
-      <div class="md:w-[560px] xs:w-[420px] m-auto">
+      <div class="md:w-[560px] xs:w-[370px] m-auto">
         <span
           style={{ color: "#696969" }}
           class="xs:text-[14px] xs:leading-[22px] md:text-[16px]"

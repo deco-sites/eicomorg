@@ -1,5 +1,6 @@
 import type { HTML } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
+import { useId } from "preact/hooks";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface PoliciesProps {
@@ -8,15 +9,14 @@ export interface PoliciesProps {
   closeButton: LiveImage;
 }
 
-function Policy({ policyData, index }: {
+function Policy({ policyData }: {
   policyData: PoliciesProps;
-  index: number;
 }) {
   const { label, href, closeButton } = policyData;
-  const policyIndex = String(index);
+  const id = useId();
   return (
     <>
-      <label htmlFor={policyIndex}>
+      <label htmlFor={id}>
         <li class="pb-1 text-base">
           <div class="w-embed w-iframe w-script">
             <span dangerouslySetInnerHTML={{ __html: label }}></span>
@@ -24,11 +24,11 @@ function Policy({ policyData, index }: {
         </li>
       </label>
 
-      <input type="checkbox" id={policyIndex} className="modal-toggle" />
-      <div className="modal">
+      <input type="checkbox" id={id} className="modal-toggle" />
+      <div className="modal z-[9999]">
         <div className="modal-box max-w-[900px] h-[520px] bg-white rounded-md mx-auto shadow-md">
           <label
-            htmlFor={policyIndex}
+            htmlFor={id}
             class="h-4 float-right cursor-pointer left-6 bottom-6 relative"
           >
             <div
