@@ -114,7 +114,6 @@
               "deco-sites/eicomorg/sections/Features.tsx",
               "deco-sites/eicomorg/sections/Footer.tsx",
               "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx",
-              "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx",
               "deco-sites/eicomorg/sections/Graphics.tsx",
               "deco-sites/eicomorg/sections/GreatExperienceSection.tsx",
               "deco-sites/eicomorg/sections/Header.tsx",
@@ -11873,6 +11872,10 @@
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@Props": {
       "type": "object",
       "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
         "topText": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps",
           "title": "Top Text"
@@ -11883,23 +11886,11 @@
         }
       },
       "required": [
+        "title",
         "topText",
         "executiveProgramme"
       ],
       "title": "deco-sites/eicomorg/components/forIndividual/executiveProgrameCard.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0ZvckluZGl2aWR1YWxzVGV4dFNlY3Rpb24udHN4@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        }
-      },
-      "required": [
-        "title"
-      ],
-      "title": "deco-sites/eicomorg/components/ui/ForIndividualsTextSection.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL0dyYXBoaWNzLnRzeA==@topPartText": {
       "type": "object",
@@ -16127,27 +16118,6 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Gb3JJbmRpdmlkdWFsc1RleHRTZWN0aW9uLnRzeA==": {
-      "title": "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0ZvckluZGl2aWR1YWxzVGV4dFNlY3Rpb24udHN4@Props"
-        }
-      ],
-      "required": [
-        "__resolveType"
-      ],
-      "properties": {
-        "__resolveType": {
-          "type": "string",
-          "enum": [
-            "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx"
-          ],
-          "default": "deco-sites/eicomorg/sections/ForIndividualsTextSection.tsx"
-        }
-      }
-    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmFwaGljcy50c3g=": {
       "title": "deco-sites/eicomorg/sections/Graphics.tsx",
       "type": "object",
@@ -17881,9 +17851,6 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9mb3JJbmRpdmlkdWFsc0V4ZWN1dGVQcm9ncmFtZUNhcmQudHN4"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Gb3JJbmRpdmlkdWFsc1RleHRTZWN0aW9uLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmFwaGljcy50c3g="
