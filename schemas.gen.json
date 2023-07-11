@@ -12503,11 +12503,26 @@
         "content": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Content"
+        },
+        "placeholderName": {
+          "type": "string",
+          "title": "Placeholder Name"
+        },
+        "placeholderEmail": {
+          "type": "string",
+          "title": "Placeholder Email"
+        },
+        "buttonText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Button Text"
         }
       },
       "required": [
         "title",
-        "content"
+        "content",
+        "placeholderName",
+        "placeholderEmail",
+        "buttonText"
       ],
       "title": "deco-sites/eicomorg/components/ui/Newsletter.tsx@Props"
     },

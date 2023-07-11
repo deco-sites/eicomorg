@@ -9,11 +9,11 @@ export interface PoliciesProps {
   closeButton: LiveImage;
 }
 
-function Policy({ policyData}: {
+function Policy({ policyData }: {
   policyData: PoliciesProps;
 }) {
   const { label, href, closeButton } = policyData;
-  const id = useId()
+  const id = useId();
   return (
     <>
       <label htmlFor={id}>

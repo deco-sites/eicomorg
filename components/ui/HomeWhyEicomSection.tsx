@@ -12,13 +12,13 @@ export interface ContentBox {
 
 export interface ContainerImage {
   desktop: {
-   src: LiveImage;
-   alt: string
-  }
+    src: LiveImage;
+    alt: string;
+  };
   mobile: {
     src: LiveImage;
-    alt: string
-   }
+    alt: string;
+  };
 }
 
 export interface Props {
