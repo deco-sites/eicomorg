@@ -38,7 +38,7 @@ function SectionBlock({ block, index, isShown }: SectionBlockProps) {
     <div
       style={{ animationDelay: `${index * 120}ms` }}
       class={`
-        xs:px-6 xs:my-10 xs:first-of-type:my-0
+        xs:px-6 xs:my-10 md:my-0 xs:first-of-type:my-0
         opacity-0
         md:w-1/3
         ${isShown ? "animate-slide-bottom" : ""}

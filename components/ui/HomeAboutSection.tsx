@@ -63,7 +63,7 @@ function HomeAboutSection(
   return (
     <div
       ref={elementRef as Ref<HTMLDivElement>}
-      class="container-fluid bg-gray-lines-texture bg-contain bg-no-repeat bg-[100%] xs:h-[700px] md:h-[760px] lg:py-[100px]"
+      class="container-fluid bg-gray-lines-texture bg-contain bg-no-repeat bg-[100%] xs:h-[640px] md:h-[760px] lg:py-[100px]"
     >
       <div class="lg:w-[70rem] relative m-auto block">
         <div
@@ -104,7 +104,7 @@ function HomeAboutSection(
 
             md:w-[500px]
             md:h-[300px]
-            md:top-[31.5rem]
+            md:top-[28.5rem]
 
             xs:w-[100%]
             xs:h-[200px]
