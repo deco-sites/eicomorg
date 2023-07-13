@@ -61,25 +61,31 @@ function CourseCard(
         href={href}
         rel="noopener"
         class="cursor-pointer bg-white border border-gray-300 rounded-md
-      flex flex-col justify-between items-stretch transition-all duration-200 relative max-w-full"
+      flex flex-col md:max-w-[400px] justify-between items-stretch transition-all duration-200 relative lg:max-w-full"
       >
-        <div class="bg-transparent border border-gray-300 rounded-md p-0 shadow-sm">
-          <div>
-            <Image
-              class="text-gray-700 rounded-t-md transition-border duration-200"
-              src={image.src}
-              alt={image.alt}
-              width={arraySize <= 3 ? 460 : 360}
-              height={arraySize <= 3 ? 260 : 203}
-            />
+        <div class="bg-transparent border-none border-gray-300 rounded-md p-0 shadow-sm group">
+          <div
+            style={{
+              backgroundImage: `url(${image.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "0 0",
+            }}
+            class={`h-[180px] rounded-t-lg transition duration-200`}
+          >
+          </div>
+          <div class="bg-[#f26f21] w-0 h-1 border-none transition-all duration-1000 lg:group-hover:w-full">
           </div>
         </div>
-        <div id="text-part" class="flex flex-col justify-around py-3 px-5">
-          <h2 class="text-lg font-bold text-[#262628] mt-5 mb-3">
+        <div
+          id="text-part"
+          class="flex flex-col justify-around py-[10px] px-5 h-[250px]"
+        >
+          <h2 class="text-[18px] leading-[24px] uppercase font-AvenirNextLTPro font-bold text-[#262628] mt-5 mb-[10px]">
             <span dangerouslySetInnerHTML={{ __html: title }}></span>
             <br />
           </h2>
-          <p class="h-auto mt-0 mb-3 text-base leading-5 overflow-hidden">
+          <p class="h-auto mt-0 mb-[10px] font-Gravity text-[15px] leading-[20px] text-left overflow-hidden">
             <span dangerouslySetInnerHTML={{ __html: subtitle }}></span>
           </p>
           <div class="justify-start items-center pt-0 pb-2 flex">
@@ -89,21 +95,25 @@ function CourseCard(
                 width={24}
                 height={24}
                 strokeWidth={2}
-                class="mr-3 max-w-full align-middle inline-block"
+                class="mr-[10px] max-w-full w-[24px] h-[24px] align-middle inline-block"
               />
             )}
-            {footerText && <p class="text-sm text-left">{footerText}</p>}
+            {footerText && (
+              <p class="text-[13px] pr-1 font-Gravity leading-[16px] my-0 text-left">
+                {footerText}
+              </p>
+            )}
           </div>
           {label && labelColor && (
             <div
               className={`z-auto rounded-2xl px-4 pb-[2px] absolute left-[6%] ${
                 arraySize <= 3
-                  ? " xs:top-[40%] md:top-[30%]  lg:top-[40%] xl:top-[45%]"
-                  : "xs:top-[39%] lg:top-[30%] md:top-[25%] xl:top-[45%]"
+                  ? " xs:top-[40%] md:top-[41%]  lg:top-[40%] xl:top-[45%]"
+                  : "xs:top-[39%] lg:top-[40%] md:top-[40%] xl:top-[45%]"
               }`}
               style={{ backgroundColor: labelColor }}
             >
-              <div class="text-white tracking-wider uppercase self-center font-gravity text-xs leading-4 inline-block">
+              <div class="text-white tracking-[.5px] uppercase self-center font-Gravity text-[9px] leading-[8px] inline-block">
                 {label}
               </div>
             </div>

@@ -43,14 +43,14 @@ function AlumniCard({ alumniInfo }: {
             />
           </div>
           <div class="flex flex-col items-start py-3 pl-5 w-52">
-            <p class="text-gray-600 uppercase mb-0 font-gravity font-bold text-base leading-5 text-left">
+            <p class="text-gray-600 uppercase mb-0 font-Gravity font-bold text-base leading-5 text-left">
               {name}
             </p>
-            <p class="text-gray-600 mb-0 font-gravity text-sm leading-4">
+            <p class="text-gray-600 mb-0 font-Gravity text-sm leading-4">
               {position}
             </p>
             {graduation && (
-              <p class="text-gray-600 mb-0 italic font-gravity text-xs leading-4">
+              <p class="text-gray-600 mb-0 italic font-Gravity text-xs leading-4">
                 {graduation}
               </p>
             )}

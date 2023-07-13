@@ -71,6 +71,7 @@ export default {
       },
       fontFamily: {
         "AvenirNextLTPro": ["AvenirNextLTPro"],
+        "Gravity": ["Gravity", "sans-serif"],
       },
       screens: {
         "xs": "320px",
