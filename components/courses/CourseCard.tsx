@@ -64,19 +64,23 @@ function CourseCard(
       flex flex-col md:max-w-[400px] justify-between items-stretch transition-all duration-200 relative lg:max-w-full"
       >
         <div class="bg-transparent border-none border-gray-300 rounded-md p-0 shadow-sm group">
-            <div
-                style={{
-                  backgroundImage: `url(${image.src})`,
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                  backgroundPosition: "0 0",
-                }}
-                class={`h-[180px] rounded-t-lg transition duration-200`}
-              >
-            </div>
-            <div class="bg-[#f26f21] w-0 h-1 border-none transition-all duration-1000 lg:group-hover:w-full"></div>
+          <div
+            style={{
+              backgroundImage: `url(${image.src})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              backgroundPosition: "0 0",
+            }}
+            class={`h-[180px] rounded-t-lg transition duration-200`}
+          >
+          </div>
+          <div class="bg-[#f26f21] w-0 h-1 border-none transition-all duration-1000 lg:group-hover:w-full">
+          </div>
         </div>
-        <div id="text-part" class="flex flex-col justify-around py-[10px] px-5 h-[250px]">
+        <div
+          id="text-part"
+          class="flex flex-col justify-around py-[10px] px-5 h-[250px]"
+        >
           <h2 class="text-[18px] leading-[24px] uppercase font-AvenirNextLTPro font-bold text-[#262628] mt-5 mb-[10px]">
             <span dangerouslySetInnerHTML={{ __html: title }}></span>
             <br />
@@ -94,7 +98,11 @@ function CourseCard(
                 class="mr-[10px] max-w-full w-[24px] h-[24px] align-middle inline-block"
               />
             )}
-            {footerText && <p class="text-[13px] pr-1 font-Gravity leading-[16px] my-0 text-left">{footerText}</p>}
+            {footerText && (
+              <p class="text-[13px] pr-1 font-Gravity leading-[16px] my-0 text-left">
+                {footerText}
+              </p>
+            )}
           </div>
           {label && labelColor && (
             <div
