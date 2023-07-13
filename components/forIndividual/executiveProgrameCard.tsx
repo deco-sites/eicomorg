@@ -83,11 +83,11 @@ function Courses(
                             class="mr-1 mt-[6px] h-[16px] w-[16px]"
                           />
                         )}
-                        <div class="text-white font-semibold font-gravity font-sans uppercase tracking-wider self-center text-[9px] leading-[8px] inline-block">
+                        <div class="text-white font-semibold font-Gravity uppercase tracking-wider self-center text-[9px] leading-[8px] inline-block">
                           {executiveProgramme.label1.text}
                         </div>
                       </div>
-                      <div class="bg-[#144576] px-4 py-2 text-white font-semibold font-gravity font-sans uppercase tracking-wider self-center text-[9px] leading-[8px] inline-block rounded-2xl">
+                      <div class="bg-[#144576] px-4 py-2 text-white font-semibold font-Gravity uppercase tracking-wider self-center text-[9px] leading-[8px] inline-block rounded-2xl">
                         {executiveProgramme.label2.text}
                       </div>
                     </div>
@@ -100,7 +100,7 @@ function Courses(
                     >
                     </h3>
                   </div>
-                  <div class="h-[60px] max-h-[60px] font-gravity font-sans text-[#262628] mt-0 mb-[10px] text-[15px] leading-[20px] overflow-hidden">
+                  <div class="h-[60px] max-h-[60px] font-Gravity text-[#262628] mt-0 mb-[10px] text-[15px] leading-[20px] overflow-hidden">
                     <p>
                       <span
                         dangerouslySetInnerHTML={{
@@ -112,7 +112,7 @@ function Courses(
                   </div>
                   <a
                     href={executiveProgramme.buttonUrl}
-                    class="tracking-wider cursor-pointer border-2 border-solid border-orange-500 rounded-md py-[7px] px-[16px] mx-auto w-auto text-white uppercase font-gravity font-sans font-semibold"
+                    class="tracking-wider cursor-pointer border-2 border-solid border-orange-500 rounded-md py-[7px] px-[16px] mx-auto w-auto text-white uppercase font-Gravity font-semibold"
                     style={{ backgroundColor: executiveProgramme.buttonColor }}
                   >
                     {executiveProgramme.buttonText}

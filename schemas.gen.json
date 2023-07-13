@@ -10605,13 +10605,23 @@
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZXMvQ291cnNlcy50c3g=@Props": {
       "type": "object",
       "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "description": "Maximum of 4 courses",
+          "title": "Title"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        },
         "courses": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZXMvQ291cnNlcy50c3g=@CourseInfo[]",
-          "description": "Maximum of 4 courses",
           "title": "Courses"
         }
       },
       "required": [
+        "title",
+        "content",
         "courses"
       ],
       "title": "deco-sites/eicomorg/components/courses/Courses.tsx@Props"
