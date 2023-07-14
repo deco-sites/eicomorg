@@ -26,7 +26,7 @@ export interface Props {
 function WaitingList(
   { leftText, form }: Props,
 ) {
-  return (
+  return (  
     <>
       <div class="xs:py-10 xs:px-3 md:py-14 md:px-5 lg:px-0 lg:py-24 bg-gray-100 xs:h-[700px] md:h-[600px]">
         <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
