@@ -69,7 +69,8 @@ function BannerExecutiveProgram(
         </span>
       </div>
 
-      <div class="w-full xs:hidden md:flex p-2 bg-[#252527]">
+      {
+        /* <div class="w-full xs:hidden md:flex p-2 bg-[#252527]">
         <div class="flex relative lg:top-3 md:top-0 text-[#fefefe] font-bold lg:ml-[10%] xl:ml-[25%] lg:text-[16px] md:text-[14px]">
           <div class="flex lg:w-auto md:w-[10rem]">
             <Icon
@@ -108,7 +109,8 @@ function BannerExecutiveProgram(
             {applyButton.text}
           </a>
         </div>
-      </div>
+      </div> */
+      }
     </div>
   );
 }

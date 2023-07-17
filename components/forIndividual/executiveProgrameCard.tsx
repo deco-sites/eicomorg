@@ -33,7 +33,7 @@ export interface Props {
   executiveProgramme: CardInfo;
 }
 
-function Courses(
+function ExecutiveProgrammeCard(
   {
     title,
     topText,
@@ -127,4 +127,4 @@ function Courses(
   );
 }
 
-export default Courses;
+export default ExecutiveProgrammeCard;
