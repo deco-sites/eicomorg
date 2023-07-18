@@ -3,13 +3,13 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 
 export interface topPartText {
-  title: string;
+  title: HTML;
   content: HTML;
 }
 
 export interface graphicImage {
   graphic: LiveImage;
-  title: string;
+  title: HTML;
 }
 
 export interface Props {
@@ -22,49 +22,48 @@ function Graphics(
   { topText, graphic1, graphic2 }: Props,
 ) {
   return (
-    <div class="container-fluid text-center py-[100px] xs:mb-[700px] md:mb-[800px] lg:mb-[450px] ">
-      <div>
-        <span
-          class="block uppercase text-[28px] mb-[40px] "
-          style={{ color: "#f26f21", fontWeight: "bold" }}
-        >
-          {topText.title}
-        </span>
-        <div class="md:w-[560px] xs:w-[380px] m-auto mb-14">
-          <span
-            style={{ color: "#696969" }}
-            dangerouslySetInnerHTML={{ __html: topText.content }}
-          >
-          </span>
+    <div class="container-fluid text-center lg:py-[100px] md:py-[60px] xs:mb-[800px] md:mb-[860px] xs:px-5 lg:px-0 lg:mb-[450px] ">
+      <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
+        <div class="block my-[20px] font-[28px] font-AvenirNextLTPro leading-[34px] text-center">
+          <span dangerouslySetInnerHTML={{ __html: topText.title }}></span>
         </div>
-      </div>
-      <div class="mx-3 px-[-10px]">
-        <div class="lg:w-1/2 xs:w-full float-left min-h-1 relative">
-          <div class="text-gray-900 uppercase text-lg font-bold leading-6 mt-5">
-            {graphic1.title}
+        <div class="text-center">
+          <div class="text-[16px] mx-auto mb-[60px] font-Gravity text-center max-w-[710px]">
+            <span
+              style={{ color: "#696969" }}
+              dangerouslySetInnerHTML={{ __html: topText.content }}
+            >
+            </span>
           </div>
-          <div>
-            <Image
-              src={graphic1.graphic}
-              alt={graphic1.title}
-              width={433}
-              height={360}
-              class="lg:h-[360px]  mx-auto max-w-full inline-block align-middle"
-            />
-          </div>
-        </div>
-        <div class="lg:w-1/2 xs:w-full float-left min-h-1 px-3 relative">
-          <div class="text-gray-900 uppercase text-lg font-bold leading-6 mt-5">
-            {graphic2.title}
-          </div>
-          <div>
-            <Image
-              src={graphic2.graphic}
-              alt={graphic2.title}
-              width={433}
-              height={360}
-              class="lg:h-[360px]  mx-auto max-w-full inline-block align-middle"
-            />
+          <div class="mx-[-10px]">
+            <div class="lg:w-1/2 xs:w-full float-left min-h-1 relative px-[10px]">
+              <div class="text-[18px] leading-[24px] lg:mb-[10px] font-AvenirNextLTPro">
+                <h3 dangerouslySetInnerHTML={{ __html: graphic1.title }}></h3>
+              </div>
+              <div>
+                <Image
+                  src={graphic1.graphic}
+                  alt={graphic1.title}
+                  width={550}
+                  height={330}
+                  class="lg:h-[330px] mt-[40px] xs:mb-[60px] lg:mb-0 max-w-full mx-auto inline-block align-middle"
+                />
+              </div>
+            </div>
+            <div class="lg:w-1/2 xs:w-full float-left min-h-1 relative px-[10px]">
+              <div class="text-[18px] leading-[24px] mb-[10px] font-AvenirNextLTPro">
+              <h3 dangerouslySetInnerHTML={{ __html: graphic2.title }}></h3>
+              </div>
+              <div>
+                <Image
+                  src={graphic2.graphic}
+                  alt={graphic2.title}
+                  width={550}
+                  height={370}
+                  class="lg:h-auto max-w-full mx-auto inline-block align-middle"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
