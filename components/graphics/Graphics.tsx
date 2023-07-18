@@ -52,7 +52,7 @@ function Graphics(
             </div>
             <div class="lg:w-1/2 xs:w-full float-left min-h-1 relative px-[10px]">
               <div class="text-[18px] leading-[24px] mb-[10px] font-AvenirNextLTPro">
-              <h3 dangerouslySetInnerHTML={{ __html: graphic2.title }}></h3>
+                <h3 dangerouslySetInnerHTML={{ __html: graphic2.title }}></h3>
               </div>
               <div>
                 <Image

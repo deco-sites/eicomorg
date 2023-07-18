@@ -84,9 +84,9 @@ function DetailsSection(
             </div>
           </div>
 
-          <div class="lg:min-w-[560px] md:min-w-[60%] xs:w-[96%] xs:m-auto xl:ml-[160px] md:ml-[20px] lg:ml-[60px]">
+          <div class="lg:min-w-[560px] md:min-w-[60%] xs:w-[96%] xs:m-auto xl:ml-[160px] md:ml-[20px] lg:ml-[160px] justify-end">
             <span
-              class="text-[#f26f21] md:text-[30px] xs:text-[24px] xs:mt-2 xs:p-4 md:mt-0 font-AvenirNextLTPro mb-5 block uppercase text-left"
+              class="text-[#f26f21] md:text-[30px] xs:text-[24px] xs:mt-2 xs:p-4 lg:pl-0 lg:pb-0 md:mt-0 font-AvenirNextLTPro mb-5 block uppercase text-left leading-[34px]"
               dangerouslySetInnerHTML={{ __html: title }}
             />
 
