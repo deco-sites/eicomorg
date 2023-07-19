@@ -9,6 +9,7 @@ export interface CourseCard {
   image: {
     src: LiveImage;
     alt: string;
+    positionStyle: string
   };
   title: HTML;
   subtitle: HTML;
@@ -47,9 +48,10 @@ function CourseCard(
     <div
       ref={elementRef as Ref<HTMLDivElement>}
       className={`
+        hover:shadow-[1px_1px_10px_rgba(0,0,0,0.2)]
         opacity-100 transform translate-x-0 translate-y-0 translate-z-0 
         scale-100 rotate-x-0 rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d 
-        md:px-3 xs:p-5 flex flex-row justify-between relative ${
+        md:px-3 xs:py-[10px] xs:px-7 flex flex-row justify-between relative ${
         arraySize <= 3 ? "md:w-96" : "lg:w-96"
       }
         xs:w-full
@@ -69,7 +71,7 @@ function CourseCard(
               backgroundImage: `url(${image.src})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              backgroundPosition: "0 0",
+              backgroundPosition: image.positionStyle,
             }}
             class={`h-[180px] rounded-t-lg transition duration-200`}
           >
@@ -79,7 +81,7 @@ function CourseCard(
         </div>
         <div
           id="text-part"
-          class="flex flex-col justify-around py-[10px] px-5 h-[250px]"
+          class="flex flex-col justify-around py-[10px] px-5 xs:h-auto md:h-[250px]"
         >
           <h2 class="text-[18px] leading-[24px] uppercase font-AvenirNextLTPro font-bold text-[#262628] mt-5 mb-[10px]">
             <span dangerouslySetInnerHTML={{ __html: title }}></span>
