@@ -6950,11 +6950,16 @@
             "alt": {
               "type": "string",
               "title": "Alt"
+            },
+            "positionStyle": {
+              "type": "string",
+              "title": "Position Style"
             }
           },
           "required": [
             "src",
-            "alt"
+            "alt",
+            "positionStyle"
           ],
           "title": "Image"
         },
@@ -10347,11 +10352,16 @@
             "alt": {
               "type": "string",
               "title": "Alt"
+            },
+            "positionStyle": {
+              "type": "string",
+              "title": "Position Style"
             }
           },
           "required": [
             "src",
-            "alt"
+            "alt",
+            "positionStyle"
           ],
           "title": "Image"
         },
