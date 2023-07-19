@@ -42,11 +42,9 @@ function GlobalTags() {
             font-display: swap;
             src: url(${asset("/fonts/AvenirNextLTPro-Bold.woff2")})
           })    
-        `
+        `,
         }}
       />
-
-
 
       <style
         dangerouslySetInnerHTML={{
@@ -56,7 +54,7 @@ function GlobalTags() {
             font-family: 'Gravity';
             src: url(${asset("/fonts/Gravity-Regular.woff2")});
           })   
-        `
+        `,
         }}
       />
     </Head>
