@@ -7,7 +7,7 @@ export interface CourseInfo {
   image: {
     src: Image;
     alt: string;
-    positionStyle: string
+    positionStyle: string;
   };
   title: HTML;
   subtitle: HTML;

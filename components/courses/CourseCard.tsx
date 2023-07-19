@@ -48,7 +48,6 @@ function CourseCard(
     <div
       ref={elementRef as Ref<HTMLDivElement>}
       className={`
-        hover:shadow-[1px_1px_10px_rgba(0,0,0,0.2)]
         opacity-100 transform translate-x-0 translate-y-0 translate-z-0 
         scale-100 rotate-x-0 rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d 
         md:px-3 xs:py-[10px] xs:px-7 flex flex-row justify-between relative ${
@@ -63,6 +62,7 @@ function CourseCard(
         href={href}
         rel="noopener"
         class="cursor-pointer bg-white border border-gray-300 rounded-md
+        hover:shadow-[1px_1px_10px_rgba(0,0,0,0.2)]
       flex flex-col md:max-w-[400px] justify-between items-stretch transition-all duration-200 relative lg:max-w-full"
       >
         <div class="bg-transparent border-none border-gray-300 rounded-md p-0 shadow-sm group">
