@@ -9,7 +9,7 @@ export interface CourseCard {
   image: {
     src: LiveImage;
     alt: string;
-    positionStyle: string
+    positionStyle: string;
   };
   title: HTML;
   subtitle: HTML;
@@ -47,6 +47,7 @@ function CourseCard(
   return (
     <div
       ref={elementRef as Ref<HTMLDivElement>}
+      style={{ animationDelay: `${index * 120}ms` }}
       className={`
         opacity-100 transform translate-x-0 translate-y-0 translate-z-0 
         scale-100 rotate-x-0 rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d 
