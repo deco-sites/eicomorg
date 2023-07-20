@@ -17,7 +17,7 @@ function CourseInfoDetail({ course }: {
   course: courseInfoProps;
 }) {
   const { title, label, children = [], itemIndex, isMobile } = course;
-  const [showDetails, setShowDetails] = useState(false)
+  const [showDetails, setShowDetails] = useState(false);
   const { displayNavbarMenu } = useUI();
 
   const toggleExpand = () => {
@@ -27,21 +27,22 @@ function CourseInfoDetail({ course }: {
   return (
     <>
       <div class="pb-3 bg-[#262628]">
-        <div onClick= {toggleExpand} className={`border-orange-500 cursor-pointer border rounded-md p-[10px] flex relative justify-between 
-        ${showDetails ? 'bg-[#969696]/10' : '' }`}>
+        <div
+          onClick={toggleExpand}
+          className={`border-orange-500 cursor-pointer border rounded-md p-[10px] flex relative justify-between 
+        ${showDetails ? "bg-[#969696]/10" : ""}`}
+        >
           <div class="cursor-pointer mb-0 font-Gravity xs:text-[14px] xs:leading-[22px] md:text-[16px] text-left  md:leading-6 mt-0 text-[#f3f3f3]">
             <p>{title}</p>
           </div>
           <div class="text-white h-[14px] w-[14px] mr-3 mt-1">
             <Icon
-                id={(showDetails)
-                  ? "ChevronUp"
-                  : "ChevronDown"}
-                width={20}
-                height={20}
-                strokeWidth={2}
-                class=" text-white"
-              />
+              id={(showDetails) ? "ChevronUp" : "ChevronDown"}
+              width={20}
+              height={20}
+              strokeWidth={2}
+              class=" text-white"
+            />
           </div>
         </div>
         {showDetails && (

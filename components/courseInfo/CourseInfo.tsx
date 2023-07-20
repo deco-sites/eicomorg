@@ -58,7 +58,8 @@ function CourseInfo(
           <div class="max-w-[720px]">
             <div class="text-left uppercase my-5 font-AvenirNextLTPro text-[30px] leading-[34px] block">
               <h2
-              dangerouslySetInnerHTML={{ __html: topText.title }}>
+                dangerouslySetInnerHTML={{ __html: topText.title }}
+              >
               </h2>
             </div>
             {topText.content && (
@@ -72,7 +73,9 @@ function CourseInfo(
             )}
             <div class="mt-5">
               {courseInfoDetails.map((course, index) => (
-                <CourseInfoDetail course={{ ...course, isMobile: false, itemIndex: index }}  />
+                <CourseInfoDetail
+                  course={{ ...course, isMobile: false, itemIndex: index }}
+                />
               ))}
             </div>
           </div>
