@@ -53,7 +53,7 @@ function NavItem({ item }: { item: INavItem }) {
         <a
           href={!isMobile ? href : "#"}
           class="
-            lg:text-[13px]
+            lg:text-[12px]
             md:text-[12px]
             xs:text-[10px]
 
@@ -64,6 +64,9 @@ function NavItem({ item }: { item: INavItem }) {
             md:hover:underline
             text-[#696969]
             font-medium
+
+            font-Gravity
+            tracking-[-.5px]
           "
         >
           {!isMobile ? label : lastLabelWord}

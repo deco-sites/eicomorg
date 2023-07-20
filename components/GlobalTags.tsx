@@ -41,8 +41,20 @@ function GlobalTags() {
             font-weight: 600;
             font-display: swap;
             src: url(${asset("/fonts/AvenirNextLTPro-Bold.woff2")})
+          })    
+        `,
+        }}
+      />
+
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+          /* Gravity-Regular */
+          @font-face {
+            font-family: 'Gravity';
+            src: url(${asset("/fonts/Gravity-Regular.woff2")});
           })   
-      `,
+        `,
         }}
       />
     </Head>
