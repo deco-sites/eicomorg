@@ -1,1 +1,1 @@
-export { default } from "$store/components/courseInfo/CourseInfo.tsx";
+export { default } from "$store/islands/CourseInfo.tsx";
