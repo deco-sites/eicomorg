@@ -20,12 +20,12 @@ function TestimonialComponent(
 ) {
   return (
     <div
-      class={`pt-[20px] pr-[30px] pb-[10px] pl-[30px] bg-[length:20px] bg-[20px_20px] bg-no-repeat bg-[url(/icons/Quotation-Marks-Left.svg)] relative border border-[#dfdfdf] col-span-1 md:mb-0 xs:mb-3 ${
+      class={`pt-[15px] pr-[25px] pb-[10px] pl-[30px] bg-[length:20px] bg-[20px_20px] bg-no-repeat bg-[url(/icons/Quotation-Marks-Left.svg)] relative border border-[#dfdfdf] col-span-1 md:mb-0 xs:mb-3 font-Gravity ${
         index % 2 ? "row-span-1" : "row-span-2"
       }`}
     >
       <div
-        class="bg-[length:20px] bg-[100%_95%] bg-no-repeat bg-[url(/icons/Quotation-Marks-Right.svg)] py-[30px] border-b border-b-[#eaeaea]"
+        class="bg-[length:20px] bg-[100%_95%] bg-no-repeat bg-[url(/icons/Quotation-Marks-Right.svg)] py-[30px] border-b border-b-[#eaeaea] leading-[1.6rem]"
         dangerouslySetInnerHTML={{ __html: testimonial.content }}
       />
 
@@ -43,9 +43,9 @@ function TestimonialsSection(
   { title, testimonials }: Props,
 ) {
   return (
-    <div class="md:container xs:container-fluid md:max-w-[1120px] xs:w-full p-4">
+    <div class="md:container xs:container-fluid md:max-w-[1120px] xs:w-full p-4 py-[100px]">
       <div
-        class="text-center richtext py-4"
+        class="text-center richtext py-4 pb-[40px]"
         dangerouslySetInnerHTML={{ __html: title }}
       />
 
