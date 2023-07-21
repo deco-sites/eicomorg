@@ -11800,7 +11800,7 @@
           "title": "Image"
         },
         "npsGrade": {
-          "type": "string",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Nps Grade"
         },
         "npsBackGroundColor": {
