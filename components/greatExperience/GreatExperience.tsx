@@ -3,7 +3,6 @@ import type { HTML } from "deco-sites/std/components/types.ts";
 import { Ref } from "preact/hooks";
 import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
-
 export interface Props {
   image: {
     src: LiveImage;
@@ -31,8 +30,9 @@ function GreatExperience(
   return (
     <>
       <div
-      ref={elementRef as Ref<HTMLDivElement>} 
-      class="lg:pt-[140px] lg:pb-[180px] md:mb-10 md:pb-0 md:pt-10 xs:mb-[20px] lg:mb-[400px]">
+        ref={elementRef as Ref<HTMLDivElement>}
+        class="lg:pt-[140px] lg:pb-[180px] md:mb-10 md:pb-0 md:pt-10 xs:mb-[20px] lg:mb-[400px]"
+      >
         <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
           <div class="ml-[-10px]">
             <div class="xs:w-full md:w-full md:left-auto md:right-auto lg:w-1/2 float-left px-[10px] relative">
@@ -47,7 +47,11 @@ function GreatExperience(
               >
               </div>
             </div>
-            <div class={`xs:w-full xs:left-auto xs:right-auto lg:w-1/2 float-left px-[10px] relative  ${isShown ? "animate-slide-left lg:z-[-20]" : ""}` }>
+            <div
+              class={`xs:w-full xs:left-auto xs:right-auto lg:w-1/2 float-left px-[10px] relative  ${
+                isShown ? "animate-slide-left lg:z-[-20]" : ""
+              }`}
+            >
               <div
                 class="z-10 xs:p-5 md:pt-10 md:px-10 md:pb-5 lg:z-[-10] lg: lg:pl-[120px] lg:pr-[60px] xs:relative lg:w-[630px] lg:h-[400px] lg:absolute lg:top-[-50px] lg:left-[-80px] md:left-auto xs:w-full xs:h-auto relative xs:top-0 lg:pt-[70px]"
                 style={{ backgroundColor: npsBackGroundColor }}
