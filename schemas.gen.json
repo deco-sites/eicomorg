@@ -66,6 +66,7 @@
               "./islands/CourseInfo.tsx",
               "./islands/DetailsSection.tsx",
               "./islands/Footer.tsx",
+              "./islands/GreatExperience.tsx",
               "./islands/Header.tsx",
               "./islands/HeaderButton.tsx",
               "./islands/HeaderModals.tsx",
@@ -8022,6 +8023,58 @@
       ],
       "title": "deco-sites/eicomorg/components/footer/Footer.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyZWF0RXhwZXJpZW5jZS9HcmVhdEV4cGVyaWVuY2UudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        },
+        "npsGrade": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Nps Grade"
+        },
+        "npsBackGroundColor": {
+          "type": "string",
+          "title": "Nps Back Ground Color"
+        },
+        "npsText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Nps Text"
+        },
+        "bottomBoxTitle": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Box Title"
+        },
+        "bottomBoxText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Box Text"
+        }
+      },
+      "required": [
+        "image",
+        "npsGrade",
+        "npsBackGroundColor",
+        "npsText",
+        "bottomBoxTitle",
+        "bottomBoxText"
+      ],
+      "title": "deco-sites/eicomorg/components/greatExperience/GreatExperience.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2hlYWRlci9IZWFkZXIudHN4@Logo": {
       "type": "object",
       "properties": {
@@ -11778,58 +11831,6 @@
       ],
       "title": "deco-sites/eicomorg/components/graphics/Graphics.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyZWF0RXhwZXJpZW5jZS9HcmVhdEV4cGVyaWVuY2UudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "image": {
-          "type": "object",
-          "properties": {
-            "src": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-              "title": "Src"
-            },
-            "alt": {
-              "type": "string",
-              "title": "Alt"
-            }
-          },
-          "required": [
-            "src",
-            "alt"
-          ],
-          "title": "Image"
-        },
-        "npsGrade": {
-          "type": "string",
-          "title": "Nps Grade"
-        },
-        "npsBackGroundColor": {
-          "type": "string",
-          "title": "Nps Back Ground Color"
-        },
-        "npsText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Nps Text"
-        },
-        "bottomBoxTitle": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Bottom Box Title"
-        },
-        "bottomBoxText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Bottom Box Text"
-        }
-      },
-      "required": [
-        "image",
-        "npsGrade",
-        "npsBackGroundColor",
-        "npsText",
-        "bottomBoxTitle",
-        "bottomBoxText"
-      ],
-      "title": "deco-sites/eicomorg/components/greatExperience/GreatExperience.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hpZ2hsaWdodHMudHN4@Highlight": {
       "type": "object",
       "properties": {
@@ -14978,6 +14979,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0dyZWF0RXhwZXJpZW5jZS50c3g=": {
+      "title": "./islands/GreatExperience.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyZWF0RXhwZXJpZW5jZS9HcmVhdEV4cGVyaWVuY2UudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/GreatExperience.tsx"
+          ],
+          "default": "./islands/GreatExperience.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0hlYWRlci50c3g=": {
       "title": "./islands/Header.tsx",
       "type": "object",
@@ -17531,6 +17553,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Zvb3Rlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0dyZWF0RXhwZXJpZW5jZS50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
