@@ -1,1 +1,1 @@
-export { default } from "$store/components/greatExperience/GreatExperience.tsx";
+export { default } from "$store/islands/GreatExperience.tsx";
