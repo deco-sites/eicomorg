@@ -40,7 +40,13 @@ function Policy({ policyData }: {
             </div>
           </label>
 
-          <iframe src={href} class="absolute w-full h-full top-0 left-0 overflow-hidden" frameBorder={0} cellSpacing={0} scrolling={'no'} />
+          <iframe
+            src={href}
+            class="absolute w-full h-full top-0 left-0 overflow-hidden"
+            frameBorder={0}
+            cellSpacing={0}
+            scrolling={"no"}
+          />
         </div>
       </div>
     </>
