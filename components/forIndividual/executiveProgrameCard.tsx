@@ -40,12 +40,14 @@ function ExecutiveProgrammeCard(
     executiveProgramme,
   }: Props,
 ) {
-   const [elementRef, isShown] = useScrollShow();
-
+  const [elementRef, isShown] = useScrollShow();
 
   return (
     <>
-      <div  ref={elementRef as Ref<HTMLDivElement>} class="pt-[120px] relative pb-0">
+      <div
+        ref={elementRef as Ref<HTMLDivElement>}
+        class="pt-[120px] relative pb-0"
+      >
         <div class="z-20 bg-white pt-[1px] sticky top-[68px] text-center text-3xl leading-[34px] my-5 uppercase block font-bold font-AvenirNextLTPro">
           <h4 dangerouslySetInnerHTML={{ __html: title }} class=""></h4>
         </div>
@@ -58,8 +60,12 @@ function ExecutiveProgrammeCard(
             <div class="max-w-[560px] my-10 mx-auto pb-0 md:text-2xl md:leading-[30px] text-center">
               <span dangerouslySetInnerHTML={{ __html: topText.text }}></span>
             </div>
-            <div class={`border-1 bg-white border-solid border-gray-300 rounded-md mt-10 mb-16 xs:mx-3 lg:mx-0 p-0 flex xs:flex-col md:flex-row opacity-100 transform translate-x-0 translate-y-0 translate-z-0 scale-100 rotate-x-0 
-            rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d  hover:shadow-[1px_1px_10px_rgba(0,0,0,0.2)] ${ isShown ? "animate-slide-right" : ""}` }>
+            <div
+              class={`border-1 bg-white border-solid border-gray-300 rounded-md mt-10 mb-16 xs:mx-3 lg:mx-0 p-0 flex xs:flex-col md:flex-row opacity-100 transform translate-x-0 translate-y-0 translate-z-0 scale-100 rotate-x-0 
+            rotate-y-0 rotate-z-0 skew-x-0 skew-y-0 transform-style-preserve-3d  hover:shadow-[1px_1px_10px_rgba(0,0,0,0.2)] ${
+                isShown ? "animate-slide-right" : ""
+              }`}
+            >
               <div
                 style={{
                   backgroundImage: `url(${executiveProgramme.image})`,
