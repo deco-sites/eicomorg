@@ -9,23 +9,24 @@ import * as $$$$1 from "./routes/styles.css.ts";
 import * as $$$$$0 from "./islands/OutOfStock.tsx";
 import * as $$$$$1 from "./islands/HeaderSearchbar.tsx";
 import * as $$$$$2 from "./islands/GreatExperience.tsx";
-import * as $$$$$3 from "./islands/CourseCard.tsx";
-import * as $$$$$4 from "./islands/HomeAboutSection.tsx";
-import * as $$$$$5 from "./islands/HeaderModals.tsx";
-import * as $$$$$6 from "./islands/HomeWhyEicomSection.tsx";
-import * as $$$$$7 from "./islands/Footer.tsx";
-import * as $$$$$8 from "./islands/SearchControls.tsx";
-import * as $$$$$9 from "./islands/Header.tsx";
-import * as $$$$$10 from "./islands/DetailsSection.tsx";
-import * as $$$$$11 from "./islands/ProductImageZoom.tsx";
-import * as $$$$$12 from "./islands/SliderJS.tsx";
-import * as $$$$$13 from "./islands/Alerts.tsx";
-import * as $$$$$14 from "./islands/CourseInfo.tsx";
-import * as $$$$$15 from "./islands/WishlistButton.tsx";
-import * as $$$$$16 from "./islands/HeaderButton.tsx";
-import * as $$$$$17 from "./islands/ShippingSimulation.tsx";
-import * as $$$$$18 from "./islands/AddToCartButton.tsx";
-import * as $$$$$19 from "./islands/HomeWhyEicomBlocksSection.tsx";
+import * as $$$$$3 from "./islands/executiveProgrameCard.tsx";
+import * as $$$$$4 from "./islands/CourseCard.tsx";
+import * as $$$$$5 from "./islands/HomeAboutSection.tsx";
+import * as $$$$$6 from "./islands/HeaderModals.tsx";
+import * as $$$$$7 from "./islands/HomeWhyEicomSection.tsx";
+import * as $$$$$8 from "./islands/Footer.tsx";
+import * as $$$$$9 from "./islands/SearchControls.tsx";
+import * as $$$$$10 from "./islands/Header.tsx";
+import * as $$$$$11 from "./islands/DetailsSection.tsx";
+import * as $$$$$12 from "./islands/ProductImageZoom.tsx";
+import * as $$$$$13 from "./islands/SliderJS.tsx";
+import * as $$$$$14 from "./islands/Alerts.tsx";
+import * as $$$$$15 from "./islands/CourseInfo.tsx";
+import * as $$$$$16 from "./islands/WishlistButton.tsx";
+import * as $$$$$17 from "./islands/HeaderButton.tsx";
+import * as $$$$$18 from "./islands/ShippingSimulation.tsx";
+import * as $$$$$19 from "./islands/AddToCartButton.tsx";
+import * as $$$$$20 from "./islands/HomeWhyEicomBlocksSection.tsx";
 import * as $$$$$$$$0 from "./sections/ProductShelf.tsx";
 import * as $$$$$$$$1 from "./sections/Bonus.tsx";
 import * as $$$$$$$$2 from "./sections/ExecutiveProgrammeWarning.tsx";
@@ -203,26 +204,27 @@ const manifest = {
     "./routes/styles.css.ts": $$$$1,
   },
   "islands": {
-    "./islands/AddToCartButton.tsx": $$$$$18,
-    "./islands/Alerts.tsx": $$$$$13,
-    "./islands/CourseCard.tsx": $$$$$3,
-    "./islands/CourseInfo.tsx": $$$$$14,
-    "./islands/DetailsSection.tsx": $$$$$10,
-    "./islands/Footer.tsx": $$$$$7,
+    "./islands/AddToCartButton.tsx": $$$$$19,
+    "./islands/Alerts.tsx": $$$$$14,
+    "./islands/CourseCard.tsx": $$$$$4,
+    "./islands/CourseInfo.tsx": $$$$$15,
+    "./islands/DetailsSection.tsx": $$$$$11,
+    "./islands/executiveProgrameCard.tsx": $$$$$3,
+    "./islands/Footer.tsx": $$$$$8,
     "./islands/GreatExperience.tsx": $$$$$2,
-    "./islands/Header.tsx": $$$$$9,
-    "./islands/HeaderButton.tsx": $$$$$16,
-    "./islands/HeaderModals.tsx": $$$$$5,
+    "./islands/Header.tsx": $$$$$10,
+    "./islands/HeaderButton.tsx": $$$$$17,
+    "./islands/HeaderModals.tsx": $$$$$6,
     "./islands/HeaderSearchbar.tsx": $$$$$1,
-    "./islands/HomeAboutSection.tsx": $$$$$4,
-    "./islands/HomeWhyEicomBlocksSection.tsx": $$$$$19,
-    "./islands/HomeWhyEicomSection.tsx": $$$$$6,
+    "./islands/HomeAboutSection.tsx": $$$$$5,
+    "./islands/HomeWhyEicomBlocksSection.tsx": $$$$$20,
+    "./islands/HomeWhyEicomSection.tsx": $$$$$7,
     "./islands/OutOfStock.tsx": $$$$$0,
-    "./islands/ProductImageZoom.tsx": $$$$$11,
-    "./islands/SearchControls.tsx": $$$$$8,
-    "./islands/ShippingSimulation.tsx": $$$$$17,
-    "./islands/SliderJS.tsx": $$$$$12,
-    "./islands/WishlistButton.tsx": $$$$$15,
+    "./islands/ProductImageZoom.tsx": $$$$$12,
+    "./islands/SearchControls.tsx": $$$$$9,
+    "./islands/ShippingSimulation.tsx": $$$$$18,
+    "./islands/SliderJS.tsx": $$$$$13,
+    "./islands/WishlistButton.tsx": $$$$$16,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,

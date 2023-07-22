@@ -39,14 +39,14 @@ function Brochure(
           backgroundSize: "auto 500px",
           backgroundPosition: "0 0",
         }}
-        class="py-24"
+        class="py-[100px]"
       >
         <div class="max-w-[1120px] mx-auto">
           <div class="text-center mt-14 py-0">
-            <h2 class="text-center my-5 block text-3xl">
+            <h2 class="text-center my-5 block text-[28px] leading-[34px] font-AvenirNextLTPro">
               <span dangerouslySetInnerHTML={{ __html: topText.title }}></span>
             </h2>
-            <p class="text-center md:text-base font-normal mb-3">
+            <p class="text-center md:text-base leading-[1.6rem] font-normal mb-3">
               <span dangerouslySetInnerHTML={{ __html: topText.text }}></span>
             </p>
             <div class="max-w-[700px] mx-auto">

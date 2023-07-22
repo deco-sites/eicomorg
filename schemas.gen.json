@@ -65,6 +65,7 @@
               "./islands/CourseCard.tsx",
               "./islands/CourseInfo.tsx",
               "./islands/DetailsSection.tsx",
+              "./islands/executiveProgrameCard.tsx",
               "./islands/Footer.tsx",
               "./islands/GreatExperience.tsx",
               "./islands/Header.tsx",
@@ -7669,6 +7670,112 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/DetailsSection.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "topTextProps"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "icon": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Icon"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "LabelProps"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@CardInfo": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "label1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps",
+          "title": "Label1"
+        },
+        "label2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps",
+          "title": "Label2"
+        },
+        "labelUrl": {
+          "type": "string",
+          "title": "Label Url"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        },
+        "buttonColor": {
+          "type": "string",
+          "title": "Button Color"
+        },
+        "buttonUrl": {
+          "type": "string",
+          "title": "Button Url"
+        }
+      },
+      "required": [
+        "image",
+        "label1",
+        "label2",
+        "labelUrl",
+        "title",
+        "text",
+        "buttonText",
+        "buttonColor",
+        "buttonUrl"
+      ],
+      "title": "CardInfo"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps",
+          "title": "Top Text"
+        },
+        "executiveProgramme": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@CardInfo",
+          "title": "Executive Programme"
+        }
+      },
+      "required": [
+        "title",
+        "topText",
+        "executiveProgramme"
+      ],
+      "title": "deco-sites/eicomorg/components/forIndividual/executiveProgrameCard.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Zvb3Rlci9Gb290ZXIudHN4@Logo": {
       "type": "object",
       "properties": {
@@ -11666,112 +11773,6 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/Features.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps": {
-      "type": "object",
-      "properties": {
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        }
-      },
-      "required": [
-        "text"
-      ],
-      "title": "topTextProps"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps": {
-      "type": "object",
-      "properties": {
-        "text": {
-          "type": "string",
-          "title": "Text"
-        },
-        "icon": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Icon"
-        }
-      },
-      "required": [
-        "text"
-      ],
-      "title": "LabelProps"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@CardInfo": {
-      "type": "object",
-      "properties": {
-        "image": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Image"
-        },
-        "label1": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps",
-          "title": "Label1"
-        },
-        "label2": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps",
-          "title": "Label2"
-        },
-        "labelUrl": {
-          "type": "string",
-          "title": "Label Url"
-        },
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        },
-        "buttonText": {
-          "type": "string",
-          "title": "Button Text"
-        },
-        "buttonColor": {
-          "type": "string",
-          "title": "Button Color"
-        },
-        "buttonUrl": {
-          "type": "string",
-          "title": "Button Url"
-        }
-      },
-      "required": [
-        "image",
-        "label1",
-        "label2",
-        "labelUrl",
-        "title",
-        "text",
-        "buttonText",
-        "buttonColor",
-        "buttonUrl"
-      ],
-      "title": "CardInfo"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "topText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps",
-          "title": "Top Text"
-        },
-        "executiveProgramme": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@CardInfo",
-          "title": "Executive Programme"
-        }
-      },
-      "required": [
-        "title",
-        "topText",
-        "executiveProgramme"
-      ],
-      "title": "deco-sites/eicomorg/components/forIndividual/executiveProgrameCard.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL0dyYXBoaWNzLnRzeA==@topPartText": {
       "type": "object",
       "properties": {
@@ -12323,13 +12324,21 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Content"
         },
-        "placeholderName": {
+        "firstInput": {
           "type": "string",
-          "title": "Placeholder Name"
+          "title": "First Input"
         },
-        "placeholderEmail": {
+        "secondInput": {
           "type": "string",
-          "title": "Placeholder Email"
+          "title": "Second Input"
+        },
+        "placeholderFirstInput": {
+          "type": "string",
+          "title": "Placeholder First Input"
+        },
+        "placeholderSecondInput": {
+          "type": "string",
+          "title": "Placeholder Second Input"
         },
         "buttonText": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
@@ -12339,8 +12348,10 @@
       "required": [
         "title",
         "content",
-        "placeholderName",
-        "placeholderEmail",
+        "firstInput",
+        "secondInput",
+        "placeholderFirstInput",
+        "placeholderSecondInput",
         "buttonText"
       ],
       "title": "deco-sites/eicomorg/components/ui/Newsletter.tsx@Props"
@@ -14958,6 +14969,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL2V4ZWN1dGl2ZVByb2dyYW1lQ2FyZC50c3g=": {
+      "title": "./islands/executiveProgrameCard.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/executiveProgrameCard.tsx"
+          ],
+          "default": "./islands/executiveProgrameCard.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0Zvb3Rlci50c3g=": {
       "title": "./islands/Footer.tsx",
       "type": "object",
@@ -17550,6 +17582,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0RldGFpbHNTZWN0aW9uLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL2V4ZWN1dGl2ZVByb2dyYW1lQ2FyZC50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Zvb3Rlci50c3g="
