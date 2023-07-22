@@ -3,13 +3,15 @@ import type { HTML } from "deco-sites/std/components/types.ts";
 export interface Props {
   title: HTML;
   content: HTML;
-  placeholderName: string;
-  placeholderEmail: string;
+  firstInput: string;
+  secondInput: string
+  placeholderFirstInput: string;
+  placeholderSecondInput: string;
   buttonText: HTML;
 }
 
 function Newsletter(
-  { title, content, placeholderName, placeholderEmail, buttonText }: Props,
+  { title, content, firstInput, secondInput, placeholderFirstInput, placeholderSecondInput, buttonText }: Props,
 ) {
   return (
     <div class="container-fluid bg-[#262628]">
@@ -35,7 +37,7 @@ function Newsletter(
           >
           </h2>
           <div
-            class="my-4 [&>p>a]:text-[#f26f21] text-[14px]"
+            class="my-4 [&>p>a]:text-[#f26f21] font:semibold text-[16px]"
             dangerouslySetInnerHTML={{ __html: content }}
           >
           </div>
@@ -53,19 +55,19 @@ function Newsletter(
           xs:m-auto
         ">
           <div>
-            <span class="font-bold">Name</span>
+            <span class="font-bold">{firstInput}</span>
             <input
               class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]"
-              placeholder={placeholderName}
+              placeholder={placeholderFirstInput}
               type="text"
               required
             />
           </div>
           <div class="my-5">
-            <span class="font-bold">Email*</span>
+            <span class="font-bold">{secondInput}*</span>
             <input
               class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]"
-              placeholder={placeholderEmail}
+              placeholder={placeholderSecondInput}
               type="email"
               required
             />

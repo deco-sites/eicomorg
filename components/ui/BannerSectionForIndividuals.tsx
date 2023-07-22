@@ -52,12 +52,12 @@ function BannerSectionForIndividuals(
         <div class="lg:mx-8 xl:mx-36 lg:my-16 w-full my-64 mb-0">
           <div
             class="
-            lg:w-[820px]
-            lg:h-[330px]
-            lg:leading-[68px]
+            lg:w-[660px]
+            lg:h-[300px]
+            lg:leading-[56px]
             lg:px-12
             lg:py-6 
-            lg:text-[55px]
+            lg:text-[44px]
             
             md:text-[48px]
             md:leading-[60px]
