@@ -45,11 +45,11 @@ function BannerSectionForIndividuals(
 
   return (
     <div
-      class="container-fluid top-[65px] grid relative px-4 lg:h-[680px] box-border"
+      class="container-fluid top-[65px] grid relative px-4 md:h-[700px] lg:h-[680px] box-border"
       style={{ backgroundColor: "#f3f3f3" }}
     >
-      <div class="z-[1] h-[640px] max-w-[1120px] box-border relative">
-        <div class="lg:ml-[60px] h-[680px] flex flex-col justify-between pt-[60px] pb-[40px] relative items-start box-border">     
+      <div class="z-[1] md:h-auto lg:h-[640px] md:px-5 lg:px-0 md:pb-5 lg:pb-0 max-w-[1120px] box-border relative">
+        <div class="lg:ml-[60px] h-[680px] flex flex-col justify-between md:pt-0 lg:pt-[60px] md:pb-0 lg:pb-[40px] relative items-start box-border">
           <div
             class="z-10 bg-[#FFFFFF] flex flex-col justify-center items-start
 
@@ -59,7 +59,9 @@ function BannerSectionForIndividuals(
             lg:px-[40px]
             lg:pt-5
             lg:pb-[10px] 
-            lg:text-[44px]          
+            lg:text-[40px]
+            md:text-[44px] 
+            md:leading-[54px]     
 
             md:px-4 
             md:py-4
@@ -70,9 +72,12 @@ function BannerSectionForIndividuals(
             xs:px-8"
             style={titleContainer}
           >
-
-            <h1 class="font-bold my-5 font-AvenirNextLTPro md:text-[48px] md:leading-[54px]"
-            style={{letterSpacing: ".1px"}}>{title}</h1>
+            <h1
+              class="font-bold my-5 font-AvenirNextLTPro"
+              style={{ letterSpacing: ".1px" }}
+            >
+              {title}
+            </h1>
           </div>
 
           <div class="
@@ -84,21 +89,21 @@ function BannerSectionForIndividuals(
 
           ">
             <div class="mb-5 font-Gravity text-[16px] text-left leading-[1.6rem] mt-0">
-            <span
-              class=""
-              dangerouslySetInnerHTML={{ __html: actionLinksContainer.title }}
-            >
-            </span>
+              <span
+                class=""
+                dangerouslySetInnerHTML={{ __html: actionLinksContainer.title }}
+              >
+              </span>
             </div>
             <a
-              class="w-fit cursor-pointer pl-0 block bold my-4 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
+              class="w-fit cursor-pointer pl-0 block bold my-[9px] font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] text-[14px] font-AvenirNextLTPro"
               style={actionLinkBtn}
               href={actionLinksContainer.firstButton.href}
             >
               {actionLinksContainer.firstButton.text}
             </a>
             <a
-              class="w-fit cursor-pointer pl-0 block bold my-4 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
+              class="w-fit cursor-pointer pl-0 block bold my-[9px] font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] text-[14px] font-AvenirNextLTPro"
               style={actionLinkBtn}
               href={actionLinksContainer.secondButton.href}
             >
@@ -127,7 +132,7 @@ function BannerSectionForIndividuals(
           backgroundPosition: "80%",
           zIndex: 0,
         }}
-        class={`lg:hidden w-full h-[300px] absolute top-0 right-0`}
+        class={`md:hidden w-full h-[300px] absolute top-0 right-0`}
       >
       </div>
     </div>
