@@ -4,14 +4,22 @@ export interface Props {
   title: HTML;
   content: HTML;
   firstInput: string;
-  secondInput: string
+  secondInput: string;
   placeholderFirstInput: string;
   placeholderSecondInput: string;
   buttonText: HTML;
 }
 
 function Newsletter(
-  { title, content, firstInput, secondInput, placeholderFirstInput, placeholderSecondInput, buttonText }: Props,
+  {
+    title,
+    content,
+    firstInput,
+    secondInput,
+    placeholderFirstInput,
+    placeholderSecondInput,
+    buttonText,
+  }: Props,
 ) {
   return (
     <div class="container-fluid bg-[#262628]">
