@@ -3,6 +3,8 @@ import type {
   HTML,
   Image as LiveImage,
 } from "deco-sites/std/components/types.ts";
+import { Ref } from "preact/hooks";
+import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface ActionLink {
   text: string;
@@ -42,13 +44,16 @@ function BannerSectionForIndividuals(
     backgroundSize: "20px",
     backgroundPosition: "100%",
   };
+  const [elementRef, isShown] = useScrollShow();
 
   return (
+    
     <div
+      ref={elementRef as Ref<HTMLDivElement>}
       class="container-fluid top-[65px] grid relative px-4 md:h-[700px] lg:h-[680px] box-border"
       style={{ backgroundColor: "#f3f3f3" }}
     >
-      <div class="z-[1] md:h-auto lg:h-[640px] xs:px-0 md:px-5 lg:px-0 md:pb-5 lg:pb-0 max-w-[1120px] box-border relative">
+      <div class="z-[1]  md:h-auto lg:h-[640px] xs:px-0 md:px-5 lg:px-0 md:pb-5 lg:pb-0 max-w-[1120px] box-border relative">
         <div class="lg:ml-[60px] h-[680px] flex flex-col md:justify-between md:pt-0 lg:pt-[60px] md:pb-0 lg:pb-[40px] relative items-start box-border">
           <div
             class="z-10 bg-[#FFFFFF] flex flex-col justify-center items-start
@@ -122,7 +127,9 @@ function BannerSectionForIndividuals(
           backgroundPosition: "0%",
           zIndex: 0,
         }}
-        class={`hidden lg:block w-[76%] max-w-none xl:bg-[80%] lg:bg-[-45%_100%] h-[680px] absolute top-auto bottom-0 right-0`}
+        class={`hidden lg:block w-[76%] max-w-none xl:bg-[80%] lg:bg-[-45%_100%] h-[680px] absolute top-auto bottom-0 right-0
+        
+      ${isShown ? "animate-slide-left" : ""}`}
       >
       </div>
 

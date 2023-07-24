@@ -1,1 +1,1 @@
-export { default } from "$store/components/ui/BannerSectionForIndividuals.tsx";
+export { default } from "$store/islands/BannerSectionForIndividuals.tsx";
