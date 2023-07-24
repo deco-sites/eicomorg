@@ -47,7 +47,6 @@ function BannerSectionForIndividuals(
   const [elementRef, isShown] = useScrollShow();
 
   return (
-    
     <div
       ref={elementRef as Ref<HTMLDivElement>}
       class="container-fluid top-[65px] grid relative px-4 md:h-[700px] lg:h-[680px] box-border"
