@@ -101,6 +101,7 @@
               "deco-sites/eicomorg/sections/BannerPLP.tsx",
               "deco-sites/eicomorg/sections/BannerSection.tsx",
               "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx",
+              "deco-sites/eicomorg/sections/Bar.tsx",
               "deco-sites/eicomorg/sections/Bonus.tsx",
               "deco-sites/eicomorg/sections/Brochure.tsx",
               "deco-sites/eicomorg/sections/Carousel.tsx",
@@ -10247,6 +10248,19 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/BannerSection.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhci9CYXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        }
+      },
+      "required": [
+        "image"
+      ],
+      "title": "deco-sites/eicomorg/components/bar/Bar.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2JvbnVzL0JvbnVzLnRzeA==@BonusCardProps": {
       "type": "object",
       "properties": {
@@ -11074,7 +11088,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@58bff7bca803e7a20040f497e54bbe67&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -11090,7 +11104,7 @@
           "required": []
         }
       ],
-      "title": "059c94444960270fb25f4ccb03e57ec3&Colors"
+      "title": "58bff7bca803e7a20040f497e54bbe67&Colors"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -11193,7 +11207,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@58bff7bca803e7a20040f497e54bbe67&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -15690,6 +15704,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYXIudHN4": {
+      "title": "deco-sites/eicomorg/sections/Bar.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhci9CYXIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/Bar.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/Bar.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Cb251cy50c3g=": {
       "title": "deco-sites/eicomorg/sections/Bonus.tsx",
       "type": "object",
@@ -17736,6 +17771,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJTZWN0aW9uRm9ySW5kaXZpZHVhbHMudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYXIudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Cb251cy50c3g="
