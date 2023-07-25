@@ -39,7 +39,7 @@ function Alert({ alert }: Props) {
             className="md:mt-0 block cursor-pointer md:w-full text-center m-auto text-[#f3f3f3] xs:w-11/12"
           >
             <span
-              class="md:leading-[30px] md:text-center xs:leading-[13px] md:text-[13px] xs:text-[11px] break-words"
+              class="md:leading-[30px] md:text-center xs:leading-[13px] md:text-[13px] xs:text-[11px] break-words font-Gravity"
               dangerouslySetInnerHTML={{ __html: text }}
             >
             </span>
