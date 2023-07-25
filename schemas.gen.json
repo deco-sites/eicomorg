@@ -62,9 +62,13 @@
               "deco-sites/std/loaders/vtex/wishlist.ts",
               "./islands/AddToCartButton.tsx",
               "./islands/Alerts.tsx",
+              "./islands/BannerSectionForIndividuals.tsx",
               "./islands/CourseCard.tsx",
+              "./islands/CourseInfo.tsx",
               "./islands/DetailsSection.tsx",
+              "./islands/executiveProgrameCard.tsx",
               "./islands/Footer.tsx",
+              "./islands/GreatExperience.tsx",
               "./islands/Header.tsx",
               "./islands/HeaderButton.tsx",
               "./islands/HeaderModals.tsx",
@@ -97,6 +101,7 @@
               "deco-sites/eicomorg/sections/BannerPLP.tsx",
               "deco-sites/eicomorg/sections/BannerSection.tsx",
               "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx",
+              "deco-sites/eicomorg/sections/Bar.tsx",
               "deco-sites/eicomorg/sections/Bonus.tsx",
               "deco-sites/eicomorg/sections/Brochure.tsx",
               "deco-sites/eicomorg/sections/Carousel.tsx",
@@ -6937,6 +6942,88 @@
       ],
       "title": "deco-sites/eicomorg/components/header/Alert.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@BannerBackgroundImage": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile"
+      ],
+      "title": "BannerBackgroundImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@ActionLink": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "text",
+        "href"
+      ],
+      "title": "ActionLink"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@ActionLinksContainer": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "firstButton": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@ActionLink",
+          "title": "First Button"
+        },
+        "secondButton": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@ActionLink",
+          "title": "Second Button"
+        }
+      },
+      "required": [
+        "title",
+        "firstButton",
+        "secondButton"
+      ],
+      "title": "ActionLinksContainer"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@BannerBackgroundImage",
+          "title": "Background Image"
+        },
+        "actionLinksContainer": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@ActionLinksContainer",
+          "title": "Action Links Container"
+        }
+      },
+      "required": [
+        "title",
+        "backgroundImage",
+        "actionLinksContainer"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/BannerSectionForIndividuals.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZXMvQ291cnNlQ2FyZC50c3g=@CourseCard": {
       "type": "object",
       "properties": {
@@ -7202,6 +7289,151 @@
         "href"
       ],
       "title": "CourseCard"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@topPartText": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "topPartText"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@backGroundInfo": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile"
+        },
+        "color": {
+          "type": "string",
+          "title": "Color"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile",
+        "color"
+      ],
+      "title": "backGroundInfo"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Children"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "Children"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children"
+      },
+      "title": "Children[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "label": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Label"
+        },
+        "children": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children[]",
+          "title": "Children"
+        }
+      },
+      "required": [
+        "title",
+        "children"
+      ],
+      "title": "courseInfo"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo"
+      },
+      "title": "courseInfo[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Button": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "title": "Background Color"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        }
+      },
+      "required": [
+        "text",
+        "backgroundColor",
+        "url"
+      ],
+      "title": "Button"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@topPartText",
+          "title": "Top Text"
+        },
+        "backgroundInfo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@backGroundInfo",
+          "title": "Background Info"
+        },
+        "courseInfoDetails": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo[]",
+          "title": "Course Info Details"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Button",
+          "title": "Button"
+        }
+      },
+      "required": [
+        "topText",
+        "backgroundInfo"
+      ],
+      "title": "deco-sites/eicomorg/components/courseInfo/CourseInfo.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0RldGFpbHNTZWN0aW9uLnRzeA==@ImageFooter": {
       "type": "object",
@@ -7521,6 +7753,112 @@
         "joinCard"
       ],
       "title": "deco-sites/eicomorg/components/ui/DetailsSection.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "topTextProps"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "icon": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Icon"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "LabelProps"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@CardInfo": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "label1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps",
+          "title": "Label1"
+        },
+        "label2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps",
+          "title": "Label2"
+        },
+        "labelUrl": {
+          "type": "string",
+          "title": "Label Url"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        },
+        "buttonColor": {
+          "type": "string",
+          "title": "Button Color"
+        },
+        "buttonUrl": {
+          "type": "string",
+          "title": "Button Url"
+        }
+      },
+      "required": [
+        "image",
+        "label1",
+        "label2",
+        "labelUrl",
+        "title",
+        "text",
+        "buttonText",
+        "buttonColor",
+        "buttonUrl"
+      ],
+      "title": "CardInfo"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps",
+          "title": "Top Text"
+        },
+        "executiveProgramme": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@CardInfo",
+          "title": "Executive Programme"
+        }
+      },
+      "required": [
+        "title",
+        "topText",
+        "executiveProgramme"
+      ],
+      "title": "deco-sites/eicomorg/components/forIndividual/executiveProgrameCard.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Zvb3Rlci9Gb290ZXIudHN4@Logo": {
       "type": "object",
@@ -7875,6 +8213,58 @@
         "icons"
       ],
       "title": "deco-sites/eicomorg/components/footer/Footer.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyZWF0RXhwZXJpZW5jZS9HcmVhdEV4cGVyaWVuY2UudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        },
+        "npsGrade": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Nps Grade"
+        },
+        "npsBackGroundColor": {
+          "type": "string",
+          "title": "Nps Back Ground Color"
+        },
+        "npsText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Nps Text"
+        },
+        "bottomBoxTitle": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Box Title"
+        },
+        "bottomBoxText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Box Text"
+        }
+      },
+      "required": [
+        "image",
+        "npsGrade",
+        "npsBackGroundColor",
+        "npsText",
+        "bottomBoxTitle",
+        "bottomBoxText"
+      ],
+      "title": "deco-sites/eicomorg/components/greatExperience/GreatExperience.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2hlYWRlci9IZWFkZXIudHN4@Logo": {
       "type": "object",
@@ -9858,87 +10248,18 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/BannerSection.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@BannerBackgroundImage": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhci9CYXIudHN4@Props": {
       "type": "object",
       "properties": {
-        "desktop": {
+        "image": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Desktop"
-        },
-        "mobile": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Mobile"
+          "title": "Image"
         }
       },
       "required": [
-        "desktop",
-        "mobile"
+        "image"
       ],
-      "title": "BannerBackgroundImage"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@ActionLink": {
-      "type": "object",
-      "properties": {
-        "text": {
-          "type": "string",
-          "title": "Text"
-        },
-        "href": {
-          "type": "string",
-          "title": "Href"
-        }
-      },
-      "required": [
-        "text",
-        "href"
-      ],
-      "title": "ActionLink"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@ActionLinksContainer": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "firstButton": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@ActionLink",
-          "title": "First Button"
-        },
-        "secondButton": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@ActionLink",
-          "title": "Second Button"
-        }
-      },
-      "required": [
-        "title",
-        "firstButton",
-        "secondButton"
-      ],
-      "title": "ActionLinksContainer"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "backgroundImage": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@BannerBackgroundImage",
-          "title": "Background Image"
-        },
-        "actionLinksContainer": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@ActionLinksContainer",
-          "title": "Action Links Container"
-        }
-      },
-      "required": [
-        "title",
-        "backgroundImage",
-        "actionLinksContainer"
-      ],
-      "title": "deco-sites/eicomorg/components/ui/BannerSectionForIndividuals.tsx@Props"
+      "title": "deco-sites/eicomorg/components/bar/Bar.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2JvbnVzL0JvbnVzLnRzeA==@BonusCardProps": {
       "type": "object",
@@ -10193,151 +10514,6 @@
       },
       "required": [],
       "title": "deco-sites/eicomorg/components/ui/BannerCarousel.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@topPartText": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "content": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Content"
-        }
-      },
-      "required": [
-        "title"
-      ],
-      "title": "topPartText"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@backGroundInfo": {
-      "type": "object",
-      "properties": {
-        "desktop": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Desktop"
-        },
-        "mobile": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Mobile"
-        },
-        "color": {
-          "type": "string",
-          "title": "Color"
-        }
-      },
-      "required": [
-        "desktop",
-        "mobile",
-        "color"
-      ],
-      "title": "backGroundInfo"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "children": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Children"
-        }
-      },
-      "required": [
-        "title"
-      ],
-      "title": "Children"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children"
-      },
-      "title": "Children[]"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string",
-          "title": "Title"
-        },
-        "label": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Label"
-        },
-        "children": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Children[]",
-          "title": "Children"
-        }
-      },
-      "required": [
-        "title",
-        "children"
-      ],
-      "title": "courseInfo"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo"
-      },
-      "title": "courseInfo[]"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Button": {
-      "type": "object",
-      "properties": {
-        "text": {
-          "type": "string",
-          "title": "Text"
-        },
-        "backgroundColor": {
-          "type": "string",
-          "title": "Background Color"
-        },
-        "url": {
-          "type": "string",
-          "title": "Url"
-        }
-      },
-      "required": [
-        "text",
-        "backgroundColor",
-        "url"
-      ],
-      "title": "Button"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "topText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@topPartText",
-          "title": "Top Text"
-        },
-        "backgroundInfo": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@backGroundInfo",
-          "title": "Background Info"
-        },
-        "courseInfoDetails": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@courseInfo[]",
-          "title": "Course Info Details"
-        },
-        "button": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Button",
-          "title": "Button"
-        }
-      },
-      "required": [
-        "topText",
-        "backgroundInfo"
-      ],
-      "title": "deco-sites/eicomorg/components/courseInfo/CourseInfo.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZXMvQ291cnNlcy50c3g=@CourseInfo": {
       "type": "object",
@@ -11612,112 +11788,6 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/Features.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps": {
-      "type": "object",
-      "properties": {
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        }
-      },
-      "required": [
-        "text"
-      ],
-      "title": "topTextProps"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps": {
-      "type": "object",
-      "properties": {
-        "text": {
-          "type": "string",
-          "title": "Text"
-        },
-        "icon": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Icon"
-        }
-      },
-      "required": [
-        "text"
-      ],
-      "title": "LabelProps"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@CardInfo": {
-      "type": "object",
-      "properties": {
-        "image": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Image"
-        },
-        "label1": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps",
-          "title": "Label1"
-        },
-        "label2": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@LabelProps",
-          "title": "Label2"
-        },
-        "labelUrl": {
-          "type": "string",
-          "title": "Label Url"
-        },
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        },
-        "buttonText": {
-          "type": "string",
-          "title": "Button Text"
-        },
-        "buttonColor": {
-          "type": "string",
-          "title": "Button Color"
-        },
-        "buttonUrl": {
-          "type": "string",
-          "title": "Button Url"
-        }
-      },
-      "required": [
-        "image",
-        "label1",
-        "label2",
-        "labelUrl",
-        "title",
-        "text",
-        "buttonText",
-        "buttonColor",
-        "buttonUrl"
-      ],
-      "title": "CardInfo"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "topText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps",
-          "title": "Top Text"
-        },
-        "executiveProgramme": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@CardInfo",
-          "title": "Executive Programme"
-        }
-      },
-      "required": [
-        "title",
-        "topText",
-        "executiveProgramme"
-      ],
-      "title": "deco-sites/eicomorg/components/forIndividual/executiveProgrameCard.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyYXBoaWNzL0dyYXBoaWNzLnRzeA==@topPartText": {
       "type": "object",
       "properties": {
@@ -11776,58 +11846,6 @@
         "graphic2"
       ],
       "title": "deco-sites/eicomorg/components/graphics/Graphics.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyZWF0RXhwZXJpZW5jZS9HcmVhdEV4cGVyaWVuY2UudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "image": {
-          "type": "object",
-          "properties": {
-            "src": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-              "title": "Src"
-            },
-            "alt": {
-              "type": "string",
-              "title": "Alt"
-            }
-          },
-          "required": [
-            "src",
-            "alt"
-          ],
-          "title": "Image"
-        },
-        "npsGrade": {
-          "type": "string",
-          "title": "Nps Grade"
-        },
-        "npsBackGroundColor": {
-          "type": "string",
-          "title": "Nps Back Ground Color"
-        },
-        "npsText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Nps Text"
-        },
-        "bottomBoxTitle": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Bottom Box Title"
-        },
-        "bottomBoxText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Bottom Box Text"
-        }
-      },
-      "required": [
-        "image",
-        "npsGrade",
-        "npsBackGroundColor",
-        "npsText",
-        "bottomBoxTitle",
-        "bottomBoxText"
-      ],
-      "title": "deco-sites/eicomorg/components/greatExperience/GreatExperience.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0hpZ2hsaWdodHMudHN4@Highlight": {
       "type": "object",
@@ -12321,13 +12339,21 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Content"
         },
-        "placeholderName": {
+        "firstInput": {
           "type": "string",
-          "title": "Placeholder Name"
+          "title": "First Input"
         },
-        "placeholderEmail": {
+        "secondInput": {
           "type": "string",
-          "title": "Placeholder Email"
+          "title": "Second Input"
+        },
+        "placeholderFirstInput": {
+          "type": "string",
+          "title": "Placeholder First Input"
+        },
+        "placeholderSecondInput": {
+          "type": "string",
+          "title": "Placeholder Second Input"
         },
         "buttonText": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
@@ -12337,8 +12363,10 @@
       "required": [
         "title",
         "content",
-        "placeholderName",
-        "placeholderEmail",
+        "firstInput",
+        "secondInput",
+        "placeholderFirstInput",
+        "placeholderSecondInput",
         "buttonText"
       ],
       "title": "deco-sites/eicomorg/components/ui/Newsletter.tsx@Props"
@@ -14898,6 +14926,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=": {
+      "title": "./islands/BannerSectionForIndividuals.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/BannerSectionForIndividuals.tsx"
+          ],
+          "default": "./islands/BannerSectionForIndividuals.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0NvdXJzZUNhcmQudHN4": {
       "title": "./islands/CourseCard.tsx",
       "type": "object",
@@ -14911,6 +14960,27 @@
             "./islands/CourseCard.tsx"
           ],
           "default": "./islands/CourseCard.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL0NvdXJzZUluZm8udHN4": {
+      "title": "./islands/CourseInfo.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZUluZm8vQ291cnNlSW5mby50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/CourseInfo.tsx"
+          ],
+          "default": "./islands/CourseInfo.tsx"
         }
       }
     },
@@ -14935,6 +15005,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL2V4ZWN1dGl2ZVByb2dyYW1lQ2FyZC50c3g=": {
+      "title": "./islands/executiveProgrameCard.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/executiveProgrameCard.tsx"
+          ],
+          "default": "./islands/executiveProgrameCard.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0Zvb3Rlci50c3g=": {
       "title": "./islands/Footer.tsx",
       "type": "object",
@@ -14953,6 +15044,27 @@
             "./islands/Footer.tsx"
           ],
           "default": "./islands/Footer.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL0dyZWF0RXhwZXJpZW5jZS50c3g=": {
+      "title": "./islands/GreatExperience.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyZWF0RXhwZXJpZW5jZS9HcmVhdEV4cGVyaWVuY2UudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/GreatExperience.tsx"
+          ],
+          "default": "./islands/GreatExperience.tsx"
         }
       }
     },
@@ -15589,6 +15701,27 @@
             "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYXIudHN4": {
+      "title": "deco-sites/eicomorg/sections/Bar.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhci9CYXIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/Bar.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/Bar.tsx"
         }
       }
     },
@@ -17499,13 +17632,25 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0FsZXJ0cy50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0NvdXJzZUNhcmQudHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0NvdXJzZUluZm8udHN4"
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0RldGFpbHNTZWN0aW9uLnRzeA=="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL2V4ZWN1dGl2ZVByb2dyYW1lQ2FyZC50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Zvb3Rlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0dyZWF0RXhwZXJpZW5jZS50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
@@ -17626,6 +17771,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJTZWN0aW9uRm9ySW5kaXZpZHVhbHMudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYXIudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Cb251cy50c3g="

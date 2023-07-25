@@ -1,1 +1,1 @@
-export { default } from "$store/components/forIndividual/executiveProgrameCard.tsx";
+export { default } from "$store/islands/executiveProgrameCard.tsx";

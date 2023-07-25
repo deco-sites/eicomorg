@@ -3,7 +3,7 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import CourseInfoDetail from "./CourseInfoDetail.tsx";
 
 export interface topPartText {
-  title: string;
+  title: HTML;
   content?: HTML;
 }
 
@@ -54,11 +54,14 @@ function CourseInfo(
         }}
         class={`py-[100px] xs:hidden md:block`}
       >
-        <div class="max-w-[1120px] mx-auto pr-0 relative">
+        <div class="max-w-[1120px] md:mx-4 lg:mx-auto pr-0 relative">
           <div class="max-w-[720px]">
-            <h2 class="text-orange-500 text-left uppercase my-5 font-bold text-3xl leading-9 block">
-              {topText.title}
-            </h2>
+            <div class="text-left uppercase my-5 font-AvenirNextLTPro text-[30px] leading-[34px] block">
+              <h2
+                dangerouslySetInnerHTML={{ __html: topText.title }}
+              >
+              </h2>
+            </div>
             {topText.content && (
               <p class="mb-5">
                 <span
@@ -69,8 +72,10 @@ function CourseInfo(
               </p>
             )}
             <div class="mt-5">
-              {courseInfoDetails.map((course) => (
-                <CourseInfoDetail course={course} />
+              {courseInfoDetails.map((course, index) => (
+                <CourseInfoDetail
+                  course={{ ...course, isMobile: false, itemIndex: index }}
+                />
               ))}
             </div>
           </div>
@@ -95,11 +100,12 @@ function CourseInfo(
       >
         <div class="max-w-[1120px] mx-auto pr-0 relative">
           <div class="max-w-[720px]">
-            <h2 class="text-orange-500 text-left uppercase my-5 font-bold text-3xl leading-9 block">
-              {topText.title}
-            </h2>
+            <div class="font-AvenirNextLTPro text-[24px] text-left uppercase mb-5 mt-[10px] font-bold leading-[32px] block">
+              <h2 dangerouslySetInnerHTML={{ __html: topText.title }}>
+              </h2>
+            </div>
             {topText.content && (
-              <p class="mb-5">
+              <p class="mb-5 text-[14px] leading-[22px] text-left font-Gravity">
                 <span
                   style={{ color: "#f3f3f3" }}
                   dangerouslySetInnerHTML={{ __html: topText.content }}

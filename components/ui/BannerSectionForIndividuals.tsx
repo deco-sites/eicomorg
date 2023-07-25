@@ -3,6 +3,8 @@ import type {
   HTML,
   Image as LiveImage,
 } from "deco-sites/std/components/types.ts";
+import { Ref } from "preact/hooks";
+import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface ActionLink {
   text: string;
@@ -42,81 +44,91 @@ function BannerSectionForIndividuals(
     backgroundSize: "20px",
     backgroundPosition: "100%",
   };
+  const [elementRef, isShown] = useScrollShow();
 
   return (
     <div
-      class="container-fluid top-[65px] grid relative px-4 lg:h-[720px]"
+      ref={elementRef as Ref<HTMLDivElement>}
+      class="container-fluid top-[65px] grid relative px-4 md:h-[700px] lg:h-[680px] box-border"
       style={{ backgroundColor: "#f3f3f3" }}
     >
-      <div class="lg:w-1/3 lg:ml-6 lg:mx-0 xl:mx-56 sm:w-auto z-[1]">
-        <div class="lg:mx-8 xl:mx-36 lg:my-16 w-full my-64 mb-0">
+      <div class="z-[1]  md:h-auto lg:h-[640px] xs:px-0 md:px-5 lg:px-0 md:pb-5 lg:pb-0 max-w-[1120px] box-border relative">
+        <div class="lg:ml-[60px] h-[680px] flex flex-col md:justify-between md:pt-0 lg:pt-[60px] md:pb-0 lg:pb-[40px] relative items-start box-border">
           <div
-            class="
-            lg:w-[820px]
-            lg:h-[330px]
-            lg:leading-[68px]
-            lg:px-12
-            lg:py-6 
-            lg:text-[55px]
-            
-            md:text-[48px]
-            md:leading-[60px]
+            class="z-10 bg-[#FFFFFF] flex flex-col justify-center items-start
+
+            lg:w-[660px]
+            lg:h-[300px]
+            lg:leading-[56px]
+            lg:px-[40px]
+            lg:pt-5
+            lg:pb-[10px] 
+            lg:text-[40px]
+            md:text-[44px] 
+            md:leading-[54px]     
+
             md:px-4 
             md:py-4
 
             xs:leading-[38px]
             xs:text-[32px]
             xs:py-8
-            xs:px-8
-
-            w-full
-            h-auto
-
-            font-bold
-            font-AvenirNextLTPro"
+            xs:px-8"
             style={titleContainer}
           >
-            {title}
+            <h1
+              class="font-bold my-5 font-AvenirNextLTPro"
+              style={{ letterSpacing: ".1px" }}
+            >
+              {title}
+            </h1>
+          </div>
+
+          <div class="
+            lg:w-[460px]
+            md:pt-5
+            xs:pt-[10px]
+            flex-col flex
+            xs:pl-[10px]
+            lg:pl-10
+            static
+
+          ">
+            <div class="mb-5 font-Gravity xs:text-[14px] md:text-[16px] text-left leading-[1.6rem] mt-0">
+              <span
+                class=""
+                dangerouslySetInnerHTML={{ __html: actionLinksContainer.title }}
+              >
+              </span>
+            </div>
+            <a
+              class="w-fit cursor-pointer pl-0 block bold my-[9px] font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] text-[14px] font-AvenirNextLTPro"
+              style={actionLinkBtn}
+              href={actionLinksContainer.firstButton.href}
+            >
+              {actionLinksContainer.firstButton.text}
+            </a>
+            <a
+              class="w-fit cursor-pointer pl-0 block bold my-[9px] font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] text-[14px] font-AvenirNextLTPro"
+              style={actionLinkBtn}
+              href={actionLinksContainer.secondButton.href}
+            >
+              {actionLinksContainer.secondButton.text}
+            </a>
           </div>
         </div>
-
-        <div class="
-          lg:w-[460px]
-          lg:mx-20
-          xl:mx-44
-          lg:mt-[-50px]
-          py-2
-        ">
-          <span
-            class="text-[18px]"
-            dangerouslySetInnerHTML={{ __html: actionLinksContainer.title }}
-          >
-          </span>
-          <a
-            class="w-fit block bold my-4 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
-            style={actionLinkBtn}
-            href={actionLinksContainer.firstButton.href}
-          >
-            {actionLinksContainer.firstButton.text}
-          </a>
-          <a
-            class="w-fit block bold my-2 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
-            style={actionLinkBtn}
-            href={actionLinksContainer.secondButton.href}
-          >
-            {actionLinksContainer.secondButton.text}
-          </a>
-        </div>
       </div>
-
       <div
         style={{
           backgroundImage: `url(${backgroundImage.desktop})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
+          backgroundPosition: "0%",
           zIndex: 0,
         }}
-        class={`hidden lg:block w-5/6 xl:bg-[80%] lg:bg-[-45%_100%] h-full absolute top-0 right-0`}
+        class={`hidden lg:block w-[76%] max-w-none xl:bg-[80%] lg:bg-[-45%_100%] h-[680px] absolute top-auto bottom-0 right-0
+        
+      ${isShown ? "animate-slide-left" : ""}`}
       >
       </div>
 
@@ -128,7 +140,7 @@ function BannerSectionForIndividuals(
           backgroundPosition: "80%",
           zIndex: 0,
         }}
-        class={`lg:hidden w-full h-[300px] absolute top-0 right-0`}
+        class={`xs:hidden w-full h-[300px] absolute top-0 right-0`}
       >
       </div>
     </div>

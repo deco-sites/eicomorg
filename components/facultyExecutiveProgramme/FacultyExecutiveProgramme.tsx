@@ -27,7 +27,7 @@ function FacultyExecutiveProgramme(
   { facultyTopPart, facultyMembers = [] }: Props,
 ) {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center pt-[80px] pb-10">
       <div className="z-auto max-w-[1120px] flex-1 pr-0 relative">
         <FacultyExecutiveProgrammeTopPart facultyTopPart={facultyTopPart} />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 justify-center md:ml-20 lg:ml-0">
