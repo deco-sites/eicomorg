@@ -78,7 +78,7 @@ function ExecutiveProgrammeCard(
               </div>
               <div class="md:w-[45%] block">
                 <div class="w-0 h-1 font-[#262628] bg-[#f26f21] block"></div>
-                <div class="bg-white rounded-tr-md rounded-br-md  xs:pt-3 lg:py-[30px] pr-[20px] md:pb-2 xs:pb-2 pl-[30px]">
+                <div class="bg-white rounded-tr-md rounded-br-md  xs:pt-3 lg:py-[30px] pr-[20px] md:pb-2 xs:pb-6 pl-[30px]">
                   <a
                     href={executiveProgramme.labelUrl}
                     class="cursor-pointer flex max-w-full text-xs items-center"

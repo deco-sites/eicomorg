@@ -19,11 +19,11 @@ export interface CourseInfo {
 }
 
 export interface Props {
+  title: HTML;
+  content: HTML;
   /**
    * @description Maximum of 4 courses
    */
-  title: HTML;
-  content: HTML;
   courses: CourseInfo[];
 }
 
