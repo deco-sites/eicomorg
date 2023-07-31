@@ -47,11 +47,11 @@ function BannerExecutiveProgram(
           {title}
         </span>
         <div class="text-right lg:w-[450px] lg:left-[110px] md:left-[115px] md:relative">
-        <span
-          class="lg:text-[22px] md:leading-[30px] xs:leading-[24px] block md:w-[450px] font-Gravity text-right my-3 xs:w-[20rem] xs:text-[16px]"
-          dangerouslySetInnerHTML={{ __html: subtitle }}
-        >
-        </span>
+          <span
+            class="lg:text-[22px] md:leading-[30px] xs:leading-[24px] block md:w-[450px] font-Gravity text-right my-3 xs:w-[20rem] xs:text-[16px]"
+            dangerouslySetInnerHTML={{ __html: subtitle }}
+          >
+          </span>
         </div>
       </div>
     </div>

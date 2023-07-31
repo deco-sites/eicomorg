@@ -6,13 +6,12 @@ export interface Props {
   firstInput: string;
   firstInputId: string;
   placeholderFirstInput: string;
-  firstInputRequired?: boolean,
+  firstInputRequired?: boolean;
   secondInput: string;
   secondInputId: string;
   placeholderSecondInput: string;
-  secondInputRequired?: boolean,
+  secondInputRequired?: boolean;
   buttonText: HTML;
-
 }
 
 function Newsletter(
@@ -48,28 +47,49 @@ function Newsletter(
           </div>
           <div class="xs:w-full md:w-1/2 float-left relative md:px-[10px]">
             <div class="">
-              <form action="" class="max-w-full relative text-left mt-[25px] mx-auto mb-0 p-5 box-border text-[14px] leading-[1.6rem]">
-                  <div class="font-Roboto w-full relative mb-[10px] max-w-full ">
-                      <label htmlFor={firstInputId} class="text-[#f3f3f3] font-bold mb-[5px] block text-[14px]">
-                        {firstInput}{firstInputRequired ? '*' : ''}
-                      </label>
-                      <div class="relative text-[14px] ">
-                          <input type="text" id={firstInputId} required={firstInputRequired} placeholder={placeholderFirstInput}
-                          class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 h-[30px] border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]"/>
-                      </div>
+              <form
+                action=""
+                class="max-w-full relative text-left mt-[25px] mx-auto mb-0 p-5 box-border text-[14px] leading-[1.6rem]"
+              >
+                <div class="font-Roboto w-full relative mb-[10px] max-w-full ">
+                  <label
+                    htmlFor={firstInputId}
+                    class="text-[#f3f3f3] font-bold mb-[5px] block text-[14px]"
+                  >
+                    {firstInput}
+                    {firstInputRequired ? "*" : ""}
+                  </label>
+                  <div class="relative text-[14px] ">
+                    <input
+                      type="text"
+                      id={firstInputId}
+                      required={firstInputRequired}
+                      placeholder={placeholderFirstInput}
+                      class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 h-[30px] border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]"
+                    />
                   </div>
-                  <div class="font-Roboto w-full relative mb-[10px] max-w-full">
-                      <label htmlFor={secondInputId} required={secondInputRequired} class="font-bold mb-[5px] text-[#f3f3f3] block text-[14px]">
-                        {secondInput}*
-                      </label>
-                      <div class="relative text-[14px] ">
-                          <input type="text" id={secondInputId} placeholder={placeholderSecondInput} required={secondInputRequired}
-                          class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 h-[30px] border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]"/>
-                      </div>
+                </div>
+                <div class="font-Roboto w-full relative mb-[10px] max-w-full">
+                  <label
+                    htmlFor={secondInputId}
+                    required={secondInputRequired}
+                    class="font-bold mb-[5px] text-[#f3f3f3] block text-[14px]"
+                  >
+                    {secondInput}*
+                  </label>
+                  <div class="relative text-[14px] ">
+                    <input
+                      type="text"
+                      id={secondInputId}
+                      placeholder={placeholderSecondInput}
+                      required={secondInputRequired}
+                      class="block w-[100%] my-1 rounded-sm bg-[#343e47] outline-none p-1 h-[30px] border-[#979797] border-[1px] text-[14px] placeholder:text-[#6d6d6d]"
+                    />
                   </div>
-                  <button class="uppercase bg-[#f26f21] text-white rounded-sm md:text-[14px] xs:text-[1.5em] cursor-pointer p-2">
-                    <span dangerouslySetInnerHTML={{ __html: buttonText }}></span>
-                  </button>
+                </div>
+                <button class="uppercase bg-[#f26f21] text-white rounded-sm md:text-[14px] xs:text-[1.5em] cursor-pointer p-2">
+                  <span dangerouslySetInnerHTML={{ __html: buttonText }}></span>
+                </button>
               </form>
             </div>
           </div>
