@@ -46,9 +46,9 @@ function ExecutiveProgrammeCard(
     <>
       <div
         ref={elementRef as Ref<HTMLDivElement>}
-        class="pt-[120px] relative pb-0"
+        class="md:pt-[100px] xs:pt-[70px] relative pb-0"
       >
-        <div class="z-20 bg-white pt-[1px] sticky top-[68px] text-center text-3xl leading-[34px] my-5 uppercase block font-bold font-AvenirNextLTPro">
+        <div class="z-20 bg-white md:pt-5 xs:pt-[50px] sticky top-[68px] text-center text-3xl leading-[34px] my-5 uppercase block font-bold font-AvenirNextLTPro">
           <h4 dangerouslySetInnerHTML={{ __html: title }} class=""></h4>
         </div>
         <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
