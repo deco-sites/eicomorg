@@ -39,14 +39,14 @@ function AlumniCard(
     2: "lg:row-span-3 lg:col-start-3 lg:row-start-1",
     3: "lg:row-span-3 lg:col-start-3 lg:row-start-4",
     4: "lg:row-span-2 lg:col-start-2 lg:row-start-5",
-    5: "lg:row-span-3 lg:col-start-1 lg:row-start-4 lg:bg-red-400",
+    5: "lg:row-span-3 lg:col-start-1 lg:row-start-4",
   };
 
   return (
     <div
       class={`border border-solid bg-white border-[#dfdfdf] w-full mx-auto pt-[20px] px-[30px] pb-[10px] relative ${
         gridPositions[index]
-      } xs:col-span-3 xs:w-[97%]`}
+      } md:w-auto lg:col-span-1 xs:col-span-3 xs:w-[97%]`}
     >
       <div class="items-center flex justify-start">
         <Icon
