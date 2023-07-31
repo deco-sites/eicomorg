@@ -39,14 +39,14 @@ function Navbar({ items, logo, searchbar }: {
           />
         </a>
 
-        <div class="pr-4 md:flex xs:hidden absolute lg:right-2 md:right-10 top-7">
+        <div class="pr-4 md:flex xs:hidden absolute lg:right-2 md:right-10 top-3">
           {items.map((item, index) => (
-            <NavItem item={{ ...item, isMobile: false, itemIndex: index }} />
+           <div class="border-r border-[#f3f3f3] py-4 px-[1.25rem] m-0"><NavItem  item={{ ...item, isMobile: false, itemIndex: index }} /></div>
           ))}
         </div>
 
         <span class="
-            lg:right-[-1rem]
+            lg:right-[-2rem]
             md:right-[1rem]
             xs:right-2
 

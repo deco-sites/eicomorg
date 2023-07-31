@@ -4,28 +4,28 @@
 
 import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
-import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$1 from "./routes/styles.css.ts";
-import * as $$$$$0 from "./islands/OutOfStock.tsx";
-import * as $$$$$1 from "./islands/HeaderSearchbar.tsx";
-import * as $$$$$2 from "./islands/GreatExperience.tsx";
-import * as $$$$$3 from "./islands/executiveProgrameCard.tsx";
-import * as $$$$$4 from "./islands/CourseCard.tsx";
-import * as $$$$$5 from "./islands/HomeAboutSection.tsx";
-import * as $$$$$6 from "./islands/HeaderModals.tsx";
-import * as $$$$$7 from "./islands/HomeWhyEicomSection.tsx";
+import * as $$$$0 from "./routes/styles.css.ts";
+import * as $$$$1 from "./routes/_app.tsx";
+import * as $$$$$0 from "./islands/AddToCartButton.tsx";
+import * as $$$$$1 from "./islands/Alerts.tsx";
+import * as $$$$$2 from "./islands/BannerSectionForIndividuals.tsx";
+import * as $$$$$3 from "./islands/CourseCard.tsx";
+import * as $$$$$4 from "./islands/CourseInfo.tsx";
+import * as $$$$$5 from "./islands/CoursesForIndividuals.tsx";
+import * as $$$$$6 from "./islands/DetailsSection.tsx";
+import * as $$$$$7 from "./islands/executiveProgrameCard.tsx";
 import * as $$$$$8 from "./islands/Footer.tsx";
-import * as $$$$$9 from "./islands/BannerSectionForIndividuals.tsx";
-import * as $$$$$10 from "./islands/SearchControls.tsx";
-import * as $$$$$11 from "./islands/Header.tsx";
-import * as $$$$$12 from "./islands/DetailsSection.tsx";
-import * as $$$$$13 from "./islands/ProductImageZoom.tsx";
-import * as $$$$$14 from "./islands/SliderJS.tsx";
-import * as $$$$$15 from "./islands/Alerts.tsx";
-import * as $$$$$16 from "./islands/CourseInfo.tsx";
-import * as $$$$$17 from "./islands/WishlistButton.tsx";
-import * as $$$$$18 from "./islands/CoursesForIndividuals.tsx";
-import * as $$$$$19 from "./islands/HeaderButton.tsx";
+import * as $$$$$9 from "./islands/GreatExperience.tsx";
+import * as $$$$$10 from "./islands/Header.tsx";
+import * as $$$$$11 from "./islands/HeaderButton.tsx";
+import * as $$$$$12 from "./islands/HeaderModals.tsx";
+import * as $$$$$13 from "./islands/HeaderSearchbar.tsx";
+import * as $$$$$14 from "./islands/HomeAboutSection.tsx";
+import * as $$$$$15 from "./islands/HomeWhyEicomBlocksSection.tsx";
+import * as $$$$$16 from "./islands/HomeWhyEicomSection.tsx";
+import * as $$$$$17 from "./islands/OutOfStock.tsx";
+import * as $$$$$18 from "./islands/ProductImageZoom.tsx";
+import * as $$$$$19 from "./islands/SearchControls.tsx";
 import * as $$$$$20 from "./islands/ShippingSimulation.tsx";
 import * as $$$$$21 from "./islands/AddToCartButton.tsx";
 import * as $$$$$22 from "./islands/HomeWhyEicomBlocksSection.tsx";
@@ -193,7 +193,7 @@ import * as i2$$$$$19 from "deco-sites/std/actions/vtex/wishlist/removeItem.ts";
 
 const manifest = {
   "routes": {
-    "./routes/_app.tsx": $$$$0,
+    "./routes/_app.tsx": $$$$1,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/[...catchall].tsx": $live_catchall,
     "./routes/index.tsx": $live_catchall,
@@ -205,32 +205,32 @@ const manifest = {
     "./routes/live/previews/[...block].tsx": $live_previews,
     "./routes/live/release.ts": $live_release,
     "./routes/live/workbench.ts": $live_workbench,
-    "./routes/styles.css.ts": $$$$1,
+    "./routes/styles.css.ts": $$$$0,
   },
   "islands": {
-    "./islands/AddToCartButton.tsx": $$$$$21,
-    "./islands/Alerts.tsx": $$$$$15,
-    "./islands/BannerSectionForIndividuals.tsx": $$$$$9,
-    "./islands/CourseCard.tsx": $$$$$4,
-    "./islands/CourseInfo.tsx": $$$$$16,
-    "./islands/CoursesForIndividuals.tsx": $$$$$18,
-    "./islands/DetailsSection.tsx": $$$$$12,
-    "./islands/executiveProgrameCard.tsx": $$$$$3,
+    "./islands/AddToCartButton.tsx": $$$$$0,
+    "./islands/Alerts.tsx": $$$$$1,
+    "./islands/BannerSectionForIndividuals.tsx": $$$$$2,
+    "./islands/CourseCard.tsx": $$$$$3,
+    "./islands/CourseInfo.tsx": $$$$$4,
+    "./islands/CoursesForIndividuals.tsx": $$$$$5,
+    "./islands/DetailsSection.tsx": $$$$$6,
+    "./islands/executiveProgrameCard.tsx": $$$$$7,
     "./islands/Footer.tsx": $$$$$8,
-    "./islands/GreatExperience.tsx": $$$$$2,
-    "./islands/Header.tsx": $$$$$11,
-    "./islands/HeaderButton.tsx": $$$$$19,
-    "./islands/HeaderModals.tsx": $$$$$6,
-    "./islands/HeaderSearchbar.tsx": $$$$$1,
-    "./islands/HomeAboutSection.tsx": $$$$$5,
-    "./islands/HomeWhyEicomBlocksSection.tsx": $$$$$22,
-    "./islands/HomeWhyEicomSection.tsx": $$$$$7,
-    "./islands/OutOfStock.tsx": $$$$$0,
-    "./islands/ProductImageZoom.tsx": $$$$$13,
-    "./islands/SearchControls.tsx": $$$$$10,
+    "./islands/GreatExperience.tsx": $$$$$9,
+    "./islands/Header.tsx": $$$$$10,
+    "./islands/HeaderButton.tsx": $$$$$11,
+    "./islands/HeaderModals.tsx": $$$$$12,
+    "./islands/HeaderSearchbar.tsx": $$$$$13,
+    "./islands/HomeAboutSection.tsx": $$$$$14,
+    "./islands/HomeWhyEicomBlocksSection.tsx": $$$$$15,
+    "./islands/HomeWhyEicomSection.tsx": $$$$$16,
+    "./islands/OutOfStock.tsx": $$$$$17,
+    "./islands/ProductImageZoom.tsx": $$$$$18,
+    "./islands/SearchControls.tsx": $$$$$19,
     "./islands/ShippingSimulation.tsx": $$$$$20,
-    "./islands/SliderJS.tsx": $$$$$14,
-    "./islands/WishlistButton.tsx": $$$$$17,
+    "./islands/SliderJS.tsx": $$$$$21,
+    "./islands/WishlistButton.tsx": $$$$$22,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,
