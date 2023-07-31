@@ -14,7 +14,7 @@ export interface Props {
   buttonText: HTML;
 }
 
-function Newsletter(
+function BecomeASponsor(
   {
     title,
     content,
@@ -30,17 +30,17 @@ function Newsletter(
   }: Props,
 ) {
   return (
-    <div class="bg-[#262628] pt-[10px] lg:px-0 xs:px-[10px] md:h-[300px] xs:h-[550px] pb-[40px] box-border">
+    <div class="bg-[#262628] pt-[10px] lg:px-0 xs:px-[10px] md:h-[300px] xs:h-[500px] pb-[40px] box-border">
       <div class="mx-auto z-auto pr-0 relative lg:max-w-[1120px] xs:px-0">
         <div class="md:mx-[-10px]">
           <div class="xs:w-full md:w-1/2 pt-[40px] float-left md:px-[10px] relative">
             <h2
-              class="font-AvenirNextLTPro leading-[36px] font-bold text-[28px] my-[10px] text-[#f3f3f3]"
+              class="font-AvenirNextLTPro font-bold text-[28px] my-[10px] text-[#f3f3f3]"
               dangerouslySetInnerHTML={{ __html: title }}
             >
             </h2>
             <div
-              class="text-[#f3f3f3] text-left mb-[10px] md:leading-[16px] xs:leading-[22px] font-Gravity xs:text-[14px] md:text-[14px]"
+              class="text-[#f3f3f3] text-left mb-[10px] md:leading-[1.6rem] xs:leading-[22px] font-Gravity xs:text-[14px] md:text-[16px]"
               dangerouslySetInnerHTML={{ __html: content }}
             >
             </div>
@@ -99,4 +99,4 @@ function Newsletter(
   );
 }
 
-export default Newsletter;
+export default BecomeASponsor;
