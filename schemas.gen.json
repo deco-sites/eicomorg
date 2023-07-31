@@ -9291,25 +9291,7 @@
       ],
       "title": "deco-cx/live/sections/UseSlot.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniTopPartProps": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        }
-      },
-      "required": [
-        "title",
-        "text"
-      ],
-      "title": "AlumniTopPartProps"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@Card": {
       "type": "object",
       "properties": {
         "name": {
@@ -9527,7 +9509,6 @@
         },
         "text": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "description": "To make a part of the text bold add the <b> before and after the desired part. Only one part per text",
           "title": "Text"
         },
         "avatar": {
@@ -9556,48 +9537,35 @@
         "text",
         "avatar"
       ],
-      "title": "AlumniCardProps"
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@Card[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@Card"
+      },
+      "title": "Card[]"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@Props": {
       "type": "object",
       "properties": {
-        "alumniTopPart": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniTopPartProps",
-          "title": "Alumni Top Part"
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
         },
-        "alumni1": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
-          "title": "Alumni1"
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
         },
-        "alumni2": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
-          "title": "Alumni2"
-        },
-        "alumni3": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
-          "title": "Alumni3"
-        },
-        "alumni4": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
-          "title": "Alumni4"
-        },
-        "alumni5": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
-          "title": "Alumni5"
-        },
-        "alumni6": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@AlumniCardProps",
-          "title": "Alumni6"
+        "cards": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2FsdW1uaS9BbHVtbmkudHN4@Card[]",
+          "title": "Cards"
         }
       },
       "required": [
-        "alumniTopPart",
-        "alumni1",
-        "alumni2",
-        "alumni3",
-        "alumni4",
-        "alumni5",
-        "alumni6"
+        "title",
+        "content",
+        "cards"
       ],
       "title": "deco-sites/eicomorg/components/alumni/Alumni.tsx@Props"
     },
@@ -10922,7 +10890,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@58bff7bca803e7a20040f497e54bbe67&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@9acf53fb852f538c689c2e8537ee6758&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -10938,7 +10906,7 @@
           "required": []
         }
       ],
-      "title": "58bff7bca803e7a20040f497e54bbe67&Colors"
+      "title": "9acf53fb852f538c689c2e8537ee6758&Colors"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -11041,7 +11009,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@58bff7bca803e7a20040f497e54bbe67&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@9acf53fb852f538c689c2e8537ee6758&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
