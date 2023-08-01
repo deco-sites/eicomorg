@@ -42,7 +42,7 @@ function WhoIsForDigitalCommerceExpert(
           backgroundPosition: "120% 0",
           backgroundAttachment: "scroll,",
         }}
-        class="xs:p-5 md:py-16 md:px-5 lg:px-0 lg:py-24 xs:h-[500px] md:h-[600px] bg-gray-100"
+        class="xs:pt-10 xs:px-[10px] md:py-16 md:px-5 lg:px-0 lg:py-24 xs:h-[600px] bg-gray-100"
       >
         <div class="z-auto max-w-[1120px] pr-0 mx-auto relative">
           <div class="mx-[-10px]">
@@ -58,10 +58,11 @@ function WhoIsForDigitalCommerceExpert(
               </div>
             </div>
             <div class="md:w-1/2 xs:w-full float-left md:px-3 relative">
-              <div class={`bg-white border-0 border-solid border-gray-300
+              <div
+                class={`bg-white border-0 border-solid border-gray-300
                         rounded-md xs:pt-5 xs:pl-5 xs:pr-3 md:p-10 absolute md:top-[60px] bottom-auto md:left-[-68px] shadow-[4px_4px_7px_rgba(38,38,40,0.1)]
-                        ${isShown ? "animate-slide-left" : ""}`
-                      }>
+                        ${isShown ? "md:animate-slide-left" : ""}`}
+              >
                 <h2 class="md:my-5 block xs:text-2xl md:text-3xl xs:mt-3text-left font-bold font-AvenirNextLTPro">
                   <span dangerouslySetInnerHTML={{ __html: title }}></span>
                 </h2>
