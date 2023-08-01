@@ -68,6 +68,7 @@
               "./islands/CoursesForIndividuals.tsx",
               "./islands/DetailsSection.tsx",
               "./islands/executiveProgrameCard.tsx",
+              "./islands/FAQ.tsx",
               "./islands/Footer.tsx",
               "./islands/GreatExperience.tsx",
               "./islands/Header.tsx",
@@ -77,6 +78,7 @@
               "./islands/HomeAboutSection.tsx",
               "./islands/HomeWhyEicomBlocksSection.tsx",
               "./islands/HomeWhyEicomSection.tsx",
+              "./islands/MoreAboutEicomDCE.tsx",
               "./islands/OutOfStock.tsx",
               "./islands/ProductImageZoom.tsx",
               "./islands/SearchControls.tsx",
@@ -7941,6 +7943,49 @@
       ],
       "title": "deco-sites/eicomorg/components/forIndividual/executiveProgrameCard.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Question"
+        },
+        "answer": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Answer"
+        }
+      },
+      "required": [
+        "question",
+        "answer"
+      ],
+      "title": "Questions"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions"
+      },
+      "title": "Questions[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "questions": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]",
+          "title": "Questions"
+        }
+      },
+      "required": [
+        "title",
+        "questions"
+      ],
+      "title": "deco-sites/eicomorg/components/faq/FAQ.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Zvb3Rlci9Gb290ZXIudHN4@Logo": {
       "type": "object",
       "properties": {
@@ -8946,6 +8991,248 @@
         "contentBox"
       ],
       "title": "deco-sites/eicomorg/components/ui/HomeWhyEicomSection.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL21vcmVBYm91dEVpY29tRENFL01vcmVBYm91dEVpY29tRENFLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Image"
+        },
+        "mobileLogo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile Logo"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "linkText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Link Text"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "icon": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ChevronLeft"
+            },
+            {
+              "type": "string",
+              "const": "ChevronRight"
+            },
+            {
+              "type": "string",
+              "const": "ChevronUp"
+            },
+            {
+              "type": "string",
+              "const": "ChevronDown"
+            },
+            {
+              "type": "string",
+              "const": "QuestionMarkCircle"
+            },
+            {
+              "type": "string",
+              "const": "User"
+            },
+            {
+              "type": "string",
+              "const": "ShoppingCart"
+            },
+            {
+              "type": "string",
+              "const": "Bars3"
+            },
+            {
+              "type": "string",
+              "const": "Heart"
+            },
+            {
+              "type": "string",
+              "const": "MagnifyingGlass"
+            },
+            {
+              "type": "string",
+              "const": "XMark"
+            },
+            {
+              "type": "string",
+              "const": "Plus"
+            },
+            {
+              "type": "string",
+              "const": "Minus"
+            },
+            {
+              "type": "string",
+              "const": "MapPin"
+            },
+            {
+              "type": "string",
+              "const": "Phone"
+            },
+            {
+              "type": "string",
+              "const": "Elo"
+            },
+            {
+              "type": "string",
+              "const": "Mastercard"
+            },
+            {
+              "type": "string",
+              "const": "Visa"
+            },
+            {
+              "type": "string",
+              "const": "Pix"
+            },
+            {
+              "type": "string",
+              "const": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "FacebookBlack"
+            },
+            {
+              "type": "string",
+              "const": "Instagram"
+            },
+            {
+              "type": "string",
+              "const": "InstagramBlack"
+            },
+            {
+              "type": "string",
+              "const": "Tiktok"
+            },
+            {
+              "type": "string",
+              "const": "Truck"
+            },
+            {
+              "type": "string",
+              "const": "Discount"
+            },
+            {
+              "type": "string",
+              "const": "Return"
+            },
+            {
+              "type": "string",
+              "const": "CreditCard"
+            },
+            {
+              "type": "string",
+              "const": "Deco"
+            },
+            {
+              "type": "string",
+              "const": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "Trash"
+            },
+            {
+              "type": "string",
+              "const": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "Linkedin"
+            },
+            {
+              "type": "string",
+              "const": "LinkedinBlack"
+            },
+            {
+              "type": "string",
+              "const": "YoutubeBlack"
+            },
+            {
+              "type": "string",
+              "const": "Brazil"
+            },
+            {
+              "type": "string",
+              "const": "Spain"
+            },
+            {
+              "type": "string",
+              "const": "Italy"
+            },
+            {
+              "type": "string",
+              "const": "Chile"
+            },
+            {
+              "type": "string",
+              "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "GreatBritain"
+            },
+            {
+              "type": "string",
+              "const": "ArrowRight"
+            },
+            {
+              "type": "string",
+              "const": "ArrowRightOrange"
+            },
+            {
+              "type": "string",
+              "const": "Computer"
+            },
+            {
+              "type": "string",
+              "const": "Seed"
+            },
+            {
+              "type": "string",
+              "const": "ArrowsPointingOut"
+            }
+          ],
+          "type": "string",
+          "title": "Icon"
+        },
+        "arrow": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Arrow"
+        }
+      },
+      "required": [
+        "backgroundImage",
+        "mobileLogo",
+        "title",
+        "text",
+        "linkText",
+        "href",
+        "icon",
+        "arrow"
+      ],
+      "title": "deco-sites/eicomorg/components/moreAboutEicomDCE/MoreAboutEicomDCE.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvcGFja3MvdnRleC90eXBlcy50cw==@SKU": {
       "type": "object",
@@ -11361,49 +11648,6 @@
       ],
       "title": "deco-sites/eicomorg/components/facultyExecutiveProgramme/FacultyExecutiveProgramme.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions": {
-      "type": "object",
-      "properties": {
-        "question": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Question"
-        },
-        "answer": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Answer"
-        }
-      },
-      "required": [
-        "question",
-        "answer"
-      ],
-      "title": "Questions"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions"
-      },
-      "title": "Questions[]"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "questions": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]",
-          "title": "Questions"
-        }
-      },
-      "required": [
-        "title",
-        "questions"
-      ],
-      "title": "deco-sites/eicomorg/components/faq/FAQ.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0ZlYXR1cmVzLnRzeA==@Feature": {
       "type": "object",
       "properties": {
@@ -11946,243 +12190,6 @@
       },
       "required": [],
       "title": "deco-sites/eicomorg/components/ui/LinkTree.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL21vcmVBYm91dEVpY29tRENFL01vcmVBYm91dEVpY29tRENFLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "backgroundImage": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Background Image"
-        },
-        "mobileLogo": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Mobile Logo"
-        },
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        },
-        "linkText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Link Text"
-        },
-        "href": {
-          "type": "string",
-          "title": "Href"
-        },
-        "icon": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "ChevronLeft"
-            },
-            {
-              "type": "string",
-              "const": "ChevronRight"
-            },
-            {
-              "type": "string",
-              "const": "ChevronUp"
-            },
-            {
-              "type": "string",
-              "const": "ChevronDown"
-            },
-            {
-              "type": "string",
-              "const": "QuestionMarkCircle"
-            },
-            {
-              "type": "string",
-              "const": "User"
-            },
-            {
-              "type": "string",
-              "const": "ShoppingCart"
-            },
-            {
-              "type": "string",
-              "const": "Bars3"
-            },
-            {
-              "type": "string",
-              "const": "Heart"
-            },
-            {
-              "type": "string",
-              "const": "MagnifyingGlass"
-            },
-            {
-              "type": "string",
-              "const": "XMark"
-            },
-            {
-              "type": "string",
-              "const": "Plus"
-            },
-            {
-              "type": "string",
-              "const": "Minus"
-            },
-            {
-              "type": "string",
-              "const": "MapPin"
-            },
-            {
-              "type": "string",
-              "const": "Phone"
-            },
-            {
-              "type": "string",
-              "const": "Elo"
-            },
-            {
-              "type": "string",
-              "const": "Mastercard"
-            },
-            {
-              "type": "string",
-              "const": "Visa"
-            },
-            {
-              "type": "string",
-              "const": "Pix"
-            },
-            {
-              "type": "string",
-              "const": "Logo"
-            },
-            {
-              "type": "string",
-              "const": "Facebook"
-            },
-            {
-              "type": "string",
-              "const": "FacebookBlack"
-            },
-            {
-              "type": "string",
-              "const": "Instagram"
-            },
-            {
-              "type": "string",
-              "const": "InstagramBlack"
-            },
-            {
-              "type": "string",
-              "const": "Tiktok"
-            },
-            {
-              "type": "string",
-              "const": "Truck"
-            },
-            {
-              "type": "string",
-              "const": "Discount"
-            },
-            {
-              "type": "string",
-              "const": "Return"
-            },
-            {
-              "type": "string",
-              "const": "CreditCard"
-            },
-            {
-              "type": "string",
-              "const": "Deco"
-            },
-            {
-              "type": "string",
-              "const": "Discord"
-            },
-            {
-              "type": "string",
-              "const": "Trash"
-            },
-            {
-              "type": "string",
-              "const": "FilterList"
-            },
-            {
-              "type": "string",
-              "const": "WhatsApp"
-            },
-            {
-              "type": "string",
-              "const": "Linkedin"
-            },
-            {
-              "type": "string",
-              "const": "LinkedinBlack"
-            },
-            {
-              "type": "string",
-              "const": "YoutubeBlack"
-            },
-            {
-              "type": "string",
-              "const": "Brazil"
-            },
-            {
-              "type": "string",
-              "const": "Spain"
-            },
-            {
-              "type": "string",
-              "const": "Italy"
-            },
-            {
-              "type": "string",
-              "const": "Chile"
-            },
-            {
-              "type": "string",
-              "const": "Romania"
-            },
-            {
-              "type": "string",
-              "const": "GreatBritain"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRight"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRightOrange"
-            },
-            {
-              "type": "string",
-              "const": "Computer"
-            },
-            {
-              "type": "string",
-              "const": "Seed"
-            },
-            {
-              "type": "string",
-              "const": "ArrowsPointingOut"
-            }
-          ],
-          "type": "string",
-          "title": "Icon"
-        }
-      },
-      "required": [
-        "backgroundImage",
-        "mobileLogo",
-        "title",
-        "text",
-        "linkText",
-        "href",
-        "icon"
-      ],
-      "title": "deco-sites/eicomorg/components/moreAboutEicomDCE/MoreAboutEicomDCE.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL05ld3NsZXR0ZXIudHN4@Props": {
       "type": "object",
@@ -14874,6 +14881,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0ZBUS50c3g=": {
+      "title": "./islands/FAQ.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/FAQ.tsx"
+          ],
+          "default": "./islands/FAQ.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0Zvb3Rlci50c3g=": {
       "title": "./islands/Footer.tsx",
       "type": "object",
@@ -15045,6 +15073,27 @@
             "./islands/HomeWhyEicomSection.tsx"
           ],
           "default": "./islands/HomeWhyEicomSection.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL01vcmVBYm91dEVpY29tRENFLnRzeA==": {
+      "title": "./islands/MoreAboutEicomDCE.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL21vcmVBYm91dEVpY29tRENFL01vcmVBYm91dEVpY29tRENFLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/MoreAboutEicomDCE.tsx"
+          ],
+          "default": "./islands/MoreAboutEicomDCE.tsx"
         }
       }
     },
@@ -17540,6 +17589,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL2V4ZWN1dGl2ZVByb2dyYW1lQ2FyZC50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0ZBUS50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Zvb3Rlci50c3g="
         },
         {
@@ -17565,6 +17617,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0hvbWVXaHlFaWNvbVNlY3Rpb24udHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL01vcmVBYm91dEVpY29tRENFLnRzeA=="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL091dE9mU3RvY2sudHN4"

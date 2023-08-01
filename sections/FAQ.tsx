@@ -1,1 +1,1 @@
-export { default } from "$store/components/faq/FAQ.tsx";
+export { default } from "$store/islands/FAQ.tsx";

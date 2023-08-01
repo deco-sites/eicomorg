@@ -1,5 +1,8 @@
 import type { HTML } from "deco-sites/std/components/types.ts";
 import Icon from "$store/components/ui/Icon.tsx";
+import { useState } from "preact/hooks";
+import { useUI } from "$store/sdk/useUI.ts";
+import Question from './Questions.tsx'
 
 export interface Questions {
   question: HTML;
@@ -12,48 +15,30 @@ export interface Props {
 }
 
 function Faq({ title, questions = [] }: Props) {
+  const [showDetails, setShowDetails] = useState(false);
+  const { displayNavbarMenu } = useUI();
+
+  const toggleExpand = () => {
+    setShowDetails(!showDetails);
+  };
+
   return (
     <>
-      <div class="py-24">
-        <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
+      <div class="py-[100px]">
+        <div class="z-auto max-w-[1120px] lg:pr-0 lg:pl-0 xs:px-3 relative mx-auto">
           <div>
             <div>
-              <h1 class="text-center my-5 text-3xl uppercase bold">
+              <h1 class="text-center my-5 text-3xl uppercase bold font-AvenirNextLTPro">
                 <span dangerouslySetInnerHTML={{ __html: title }}></span>
               </h1>
             </div>
           </div>
-          <div>
-            {questions.map((question) => {
-              return (
-                <div class="pb-3">
-                  <details class="cursor-pointer  flex relative">
-                    <summary class="text-left justify-between p-4 flex border border-solid border-gray-300 rounded-md">
-                      <span
-                        dangerouslySetInnerHTML={{ __html: question.question }}
-                      >
-                      </span>
-                      <Icon
-                        id="ChevronDown"
-                        width={20}
-                        height={20}
-                        strokeWidth={2}
-                      />
-                    </summary>
-                    <div class="border border-solid border-gray-300 rounded-b-md mt-[-1px] mx-1 pt-3 pl-3 pb-1 pr-5">
-                      <p>
-                        <span
-                          dangerouslySetInnerHTML={{ __html: question.answer }}
-                        >
-                        </span>
-                      </p>
-                    </div>
-                  </details>
-                </div>
-              );
-            })}
+            {questions.map((question, index) => (
+                <Question
+                  questionAnswer={{ ...question }}
+                />
+            ))}
           </div>
-        </div>
       </div>
     </>
   );
