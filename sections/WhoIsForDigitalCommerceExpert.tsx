@@ -1,1 +1,1 @@
-export { default } from "$store/components/whoIsForDigitalCommerceExpert/WhoIsForDigitalCommerceExpert.tsx";
+export { default } from "$store/islands/WhoIsForDigitalCommerceExpert.tsx";

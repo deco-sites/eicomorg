@@ -2,7 +2,8 @@ import type {
   HTML,
   Image as LiveImage,
 } from "deco-sites/std/components/types.ts";
-import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import { Ref } from "preact/hooks";
+import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface Props {
   backgroundImage: LiveImage;
@@ -29,9 +30,11 @@ function WhoIsForDigitalCommerceExpert(
     emoji3,
   }: Props,
 ) {
+  const [elementRef, isShown] = useScrollShow();
   return (
     <>
       <div
+        ref={elementRef as Ref<HTMLDivElement>}
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",
@@ -55,9 +58,11 @@ function WhoIsForDigitalCommerceExpert(
               </div>
             </div>
             <div class="md:w-1/2 xs:w-full float-left md:px-3 relative">
-              <div class="bg-white border-0 border-solid border-gray-300
-                        rounded-md xs:pt-5 xs:pl-5 xs:pr-3 md:p-10 absolute md:top-[60px] bottom-auto md:left-[-68px] shadow-md">
-                <h2 class="md:my-5 block xs:text-2xl md:text-3xl xs:mt-3text-left font-bold">
+              <div class={`bg-white border-0 border-solid border-gray-300
+                        rounded-md xs:pt-5 xs:pl-5 xs:pr-3 md:p-10 absolute md:top-[60px] bottom-auto md:left-[-68px] shadow-[4px_4px_7px_rgba(38,38,40,0.1)]
+                        ${isShown ? "animate-slide-left" : ""}`
+                      }>
+                <h2 class="md:my-5 block xs:text-2xl md:text-3xl xs:mt-3text-left font-bold font-AvenirNextLTPro">
                   <span dangerouslySetInnerHTML={{ __html: title }}></span>
                 </h2>
                 <div class="mx-0 overflow-hidden">

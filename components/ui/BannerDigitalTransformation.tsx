@@ -39,10 +39,10 @@ function BannerDigitalTransformation(
       <div class="container-fluid grid relative lg:h-[640px] bg-[#585858]">
         <div class="lg:w-[1120px] md:w-full h-full block mx-auto z-[2]">
           <div
-          style={{ backgroundImage: `url(${backgroundImage.mobile})` }}
-          class={`lg:hidden w-full md:bg-[80%] xs:bg-[100%] bg-cover bg-no-repeat md:h-[30px] xs:h-[200px] block z-0`}
+            style={{ backgroundImage: `url(${backgroundImage.mobile})` }}
+            class={`lg:hidden w-full md:bg-[80%] xs:bg-[100%] bg-cover bg-no-repeat md:h-[30px] xs:h-[200px] block z-0`}
           >
-         </div>
+          </div>
           <div class="lg:py-[60px] md:pt-[80px] xs:py-[30px] lg:w-7/12 md:w-full xs:w-11/12 xs:m-auto md:m-0 md:px-5 lg:px-0 md:leading-[62px] xs:leading-[42px] text-[#fefefe]">
             {image
               ? (
@@ -59,7 +59,7 @@ function BannerDigitalTransformation(
                 {title}
               </h1>
             </div>
-              
+
             <div class="md:pt-[40px] pb-[16px]">
               <a
                 href={button.href}
