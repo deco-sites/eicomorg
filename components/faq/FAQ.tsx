@@ -2,7 +2,7 @@ import type { HTML } from "deco-sites/std/components/types.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import { useState } from "preact/hooks";
 import { useUI } from "$store/sdk/useUI.ts";
-import Question from './Questions.tsx'
+import Question from "./Questions.tsx";
 
 export interface Questions {
   question: HTML;
@@ -33,12 +33,12 @@ function Faq({ title, questions = [] }: Props) {
               </h1>
             </div>
           </div>
-            {questions.map((question, index) => (
-                <Question
-                  questionAnswer={{ ...question }}
-                />
-            ))}
-          </div>
+          {questions.map((question, index) => (
+            <Question
+              questionAnswer={{ ...question }}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

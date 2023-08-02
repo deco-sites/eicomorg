@@ -26,7 +26,7 @@ function BestDigitalCourse(
   }: Props,
 ) {
   return (
-    <div class="lg:py-[100px] md:py-[60px] xs:py-[40px] xs:px-[10px] md:px-[20px] lg:px-0 box-border">
+    <div class="lg:pt-[100px] lg:pb-[260px] md:pt-[60px] md:pb-[340px] xs:pt-[40px] xs:pb-[560px] xs:px-[10px] md:px-[20px] lg:px-0 box-border">
       <div>
         <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
           <div class="max-w-[700px] mx-auto">
@@ -39,7 +39,7 @@ function BestDigitalCourse(
           </div>
         </div>
         <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
-          <div class="md:mt-10 mb-0 mx-[-10px]">
+          <div class="md:mt-10 mb-0 md:mx-[-10px]">
             {benefits.map((benefit, index) => (
               < Benefit
                 benefit={benefit}
