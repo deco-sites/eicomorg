@@ -15,7 +15,7 @@ export interface Props {
   linkText: HTML;
   href: string;
   icon: AvailableIcons;
-  arrow: LiveImage
+  arrow: LiveImage;
 }
 
 function MoreAboutEicomDCE(
@@ -27,15 +27,17 @@ function MoreAboutEicomDCE(
     linkText,
     href,
     icon,
-    arrow
+    arrow,
   }: Props,
 ) {
   const [elementRef, isShown] = useScrollShow();
   return (
     <>
       {/* mobile view */}
-      <div ref={elementRef as Ref<HTMLDivElement>} 
-      class="py-10 px-3 h-[330px] bg-[#262628] xs:block md:hidden">
+      <div
+        ref={elementRef as Ref<HTMLDivElement>}
+        class="py-10 px-3 h-[330px] bg-[#262628] xs:block md:hidden"
+      >
         <div class="mx-auto">
           <div class="mx-0">
             <div class="px-0 text-center w-full left-auto right-auto float-left relative">
@@ -51,12 +53,14 @@ function MoreAboutEicomDCE(
               <h2 class="my-3 mb-5 block text-2xl text-left font-bold font-AvenirNextLTPro">
                 <span dangerouslySetInnerHTML={{ __html: title }}></span>
               </h2>
-              <p class={`text-left mb-3 mt-0 text-base
-                ${isShown ? "animate-slide-left" : ""}`}>
+              <p
+                class={`text-left mb-3 mt-0 text-base
+                ${isShown ? "animate-slide-left" : ""}`}
+              >
                 <span dangerouslySetInnerHTML={{ __html: text }}></span>
               </p>
               <div class="flex flex-row mt-3">
-              <a
+                <a
                   href={href}
                   class="tracking-[1px] uppercase cursor-pointer font-AvenirNextLTPro font-bold inline-block
                   border-0 py-[9px] pr-[15px] text-[14px]"
@@ -71,13 +75,11 @@ function MoreAboutEicomDCE(
                 >
                   <span dangerouslySetInnerHTML={{ __html: linkText }}></span>
                 </a>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-
 
       {/* desktop view */}
       <div
@@ -106,8 +108,10 @@ function MoreAboutEicomDCE(
               <h2 class="my-5 block md:text-[30px] leading-[34px] font-AvenirNextLTPro text-left font-bold ">
                 <span dangerouslySetInnerHTML={{ __html: title }}></span>
               </h2>
-              <p class={`text-left mb-3 mt-0 md:text-[22px] leading-[30px] font-Gravity
-              ${isShown ? "animate-slide-left" : ""}`}>
+              <p
+                class={`text-left mb-3 mt-0 md:text-[22px] leading-[30px] font-Gravity
+              ${isShown ? "animate-slide-left" : ""}`}
+              >
                 <span dangerouslySetInnerHTML={{ __html: text }}></span>
               </p>
               <div class="flex flex-row mt-3">
@@ -125,7 +129,6 @@ function MoreAboutEicomDCE(
                 >
                   <span dangerouslySetInnerHTML={{ __html: linkText }}></span>
                 </a>
-
               </div>
             </div>
           </div>
