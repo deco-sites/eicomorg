@@ -11,7 +11,7 @@ export interface BenefitProps {
   text: HTML;
 }
 
-function BenefitBottomRow (
+function BenefitBottomRow(
   { benefit }: {
     benefit: BenefitProps;
   },

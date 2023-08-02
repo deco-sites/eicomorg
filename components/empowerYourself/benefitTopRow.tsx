@@ -22,7 +22,6 @@ function BenefitTopRow(
     text,
   } = benefit;
 
-
   return (
     <div
       class={`md:pt-5 lg:pt-0 md:px-[60px] md:w-1/4 float-left relative xs:text-left xs:py-[10px] xs:px-0`}

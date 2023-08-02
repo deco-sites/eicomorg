@@ -24,7 +24,7 @@ function EmpowerYourself(
   {
     title,
     benefitsTopRow = [],
-    benefitsBottomRow = [],    
+    benefitsBottomRow = [],
   }: Props,
 ) {
   return (
@@ -36,19 +36,19 @@ function EmpowerYourself(
           </h2>
         </div>
         <div class="md:mt-[10px] mb-0 md:mx-[-10px]">
-            {benefitsTopRow.map((benefit) => (
-                <BenefitTopRow
-                benefit={benefit}
-                />
-            ))}
+          {benefitsTopRow.map((benefit) => (
+            <BenefitTopRow
+              benefit={benefit}
+            />
+          ))}
         </div>
         <div class="mt-[280px]"></div>
         <div class="md:[mt-10px] mb-0 md:mx-[-10px]">
-            {benefitsBottomRow.map((benefit) => (
-                <BenefitBottomRow
-                benefit={benefit}
-                />
-            ))}
+          {benefitsBottomRow.map((benefit) => (
+            <BenefitBottomRow
+              benefit={benefit}
+            />
+          ))}
         </div>
       </div>
     </div>
