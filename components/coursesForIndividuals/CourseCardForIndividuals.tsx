@@ -62,9 +62,9 @@ function CourseCardForIndividuals(
         rel="noopener"
         class="cursor-pointer bg-white border border-[#dfdfdf] rounded-[4px]
         hover:shadow-[1px_1px_10px_rgba(0,0,0,0.2)]
-      flex flex-col md:max-w-[400px] justify-between items-stretch transition-all duration-200 relative lg:max-w-full"
+      flex flex-col md:max-w-[400px] justify-between items-stretch transition-all duration-200 relative lg:max-w-full group"
       >
-        <div class="bg-white border-none border-gray-300 rounded-[4px] p-0 shadow-sm group">
+        <div class="bg-white border-none border-gray-300 rounded-[4px] p-0 shadow-sm">
           <div
             style={{
               backgroundImage: `url(${image.src})`,

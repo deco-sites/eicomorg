@@ -64,9 +64,9 @@ function CourseCard(
         rel="noopener"
         class="cursor-pointer bg-white border border-gray-300 rounded-md
         hover:shadow-[1px_1px_10px_rgba(0,0,0,0.2)]
-      flex flex-col md:max-w-[400px] justify-between items-stretch transition-all duration-200 relative lg:max-w-full"
+      flex flex-col md:max-w-[400px] justify-between items-stretch transition-all duration-200 relative lg:max-w-full group"
       >
-        <div class="bg-transparent border-none border-gray-300 rounded-md p-0 shadow-sm group">
+        <div class="bg-transparent border-none border-gray-300 rounded-md p-0 shadow-sm">
           <div
             style={{
               backgroundImage: `url(${image.src})`,
