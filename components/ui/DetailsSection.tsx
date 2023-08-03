@@ -13,6 +13,11 @@ export interface MobileButton {
   href: string;
 }
 
+export interface MainImage {
+  src: LiveImage;
+  alt: string;
+}
+
 export interface SectionItemImage {
   source: LiveImage;
   alt: string;
@@ -35,7 +40,7 @@ export interface Props {
   containerTitle: HTML;
 
   imageFooter: ImageFooter;
-
+  mainImage: MainImage;
   firstSectionItem: SectionItem;
   secondSectionItem: SectionItem;
   thirdSectionItem: SectionItem;
@@ -49,7 +54,7 @@ function DetailsSection(
     containerTitle,
 
     imageFooter,
-
+    mainImage,
     firstSectionItem,
     secondSectionItem,
     thirdSectionItem,
@@ -65,7 +70,7 @@ function DetailsSection(
             <div
               style={{
                 backgroundImage:
-                  `url(https://global-uploads.webflow.com/611d568e03584148cb24ca2b/63dd9320c757d1fb15a2d605_HFC-Costado-580x366.jpeg)`,
+                  `url(${mainImage.src})`,
               }}
               class="lg:w-[400px] md:h-[420px] md:w-[300px] xs:w-full xs:h-[200px] bg-cover bg-[40%_50%]"
             />
