@@ -64,7 +64,7 @@ function Navbar({ items, logo, searchbar }: {
           <Buttons variant="search" />
         </span>
 
-        <div class="md:hidden xs:flex ml-4 my-4">
+        <div class="md:hidden xs:flex xs:ml-1 md:ml-4 my-4">
           {items.map((item, index) => (
             <NavItem item={{ ...item, isMobile: true, itemIndex: index }} />
           ))}
