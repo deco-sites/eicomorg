@@ -69,8 +69,7 @@ function DetailsSection(
           <div class="md:top-[-8.5rem] xs:top-0 relative items-end">
             <div
               style={{
-                backgroundImage:
-                  `url(${mainImage.src})`,
+                backgroundImage: `url(${mainImage.src})`,
               }}
               class="lg:w-[400px] md:h-[420px] md:w-[300px] xs:w-full xs:h-[200px] bg-cover bg-[40%_50%]"
             />

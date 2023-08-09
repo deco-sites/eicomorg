@@ -38,6 +38,7 @@ export default {
         "slide-banner-right": "slide-banner-right-frame 1s ease normal",
         "progress": "progress-frame ease normal",
         "expand-bar": "expand-bar-frame 1s infinite ease-out normal",
+        "button-expand": "expand-button-frame 1s ease normal forwards",
       },
       keyframes: {
         "slide-banner-right-frame": {
@@ -59,6 +60,10 @@ export default {
         "expand-bar-frame": {
           from: { width: "0%" },
           to: { width: "100%" },
+        },
+        "expand-button-frame": {
+          from: { transform: "scale(.3)", visibility: "hidden", opacity: 0 },
+          to: { transform: "scale(1)", visibility: "visible", opacity: 1 },
         },
         "progress-frame": {
           from: {
