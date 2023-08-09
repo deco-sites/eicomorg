@@ -25,7 +25,7 @@ function ExecutiveProgrammeWarning(
           <div class="w-[40%] justify-end flex static items-center">
             <a
               href={buttonUrl}
-              class="btn border-2 border-solid border-orange-500 rounded-md mr-0 tracking-[0.5px] cursor-pointer py-[7px] px-[16px] text-[14px] ml-auto text-center font-bold w-[220px] h-[40px] min-h-[40px] text-white"
+              class="btn border-2 border-solid border-orange-500 rounded-md mr-0 tracking-[0.5px] cursor-pointer py-[7px] px-[16px] text-[14px] ml-auto text-center font-bold w-[220px] h-[40px] min-h-[40px] text-white invisible animate-button-expand"
               style={{ backgroundColor: buttonColor }}
             >
               {buttonText}
