@@ -62,8 +62,8 @@ export default {
           to: { width: "100%" },
         },
         "expand-button-frame": {
-          from: { transform: "scale(.3)", visibility: 'hidden', opacity: 0 },
-          to: { transform: "scale(1)", visibility: 'visible', opacity: 1 },
+          from: { transform: "scale(.3)", visibility: "hidden", opacity: 0 },
+          to: { transform: "scale(1)", visibility: "visible", opacity: 1 },
         },
         "progress-frame": {
           from: {
