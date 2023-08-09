@@ -41,10 +41,20 @@ function GlobalTags() {
             font-weight: 600;
             font-display: swap;
             src: url(${asset("/fonts/AvenirNextLTPro-Bold.woff2")})
-          })    
+          })  
+            
         `,
+        
         }}
       />
+
+    <style
+          type="text/css"
+          dangerouslySetInnerHTML={{
+            __html:
+              `section[data-manifest-key="deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx"] { position: sticky; top: 70px; z-index: 100; }`,
+          }}
+        />
 
       <style
         dangerouslySetInnerHTML={{
