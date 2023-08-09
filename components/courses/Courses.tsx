@@ -44,7 +44,7 @@ function Courses(
         <div class="max-w-[560px] mt-10 xs:p-2 md:p-0 xs:mb-[10px] md:mb-[50px] tracking-wider mx-auto pb-0 text-center xs:text-[14px] md:text-[16px] font-Gravity font-normal xs:leading[22px] md:leading-6">
           <p dangerouslySetInnerHTML={{ __html: content }} class=""></p>
         </div>
-        <div class="flex xs:flex-col md:flex-row md:pt-[60px] mx-[-10px] mt-[40px] items-stretch justify-center">
+        <div class="flex xs:flex-col md:flex-row md:pt-[60px] md:mx-[-10px] xs:mx-[0px] mt-[40px] items-stretch justify-center">
           {courses.map((courseCard, index) => (
             <CourseCard
               courseCard={courseCard}
