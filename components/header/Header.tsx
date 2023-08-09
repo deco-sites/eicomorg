@@ -65,7 +65,7 @@ function Header(
   return (
     <>
       <header>
-        <div class="container-fluid fixed md:h-[70px] xs:h-[100px] z-[1000] w-[100%] bg-white shadow-md">
+        <div class="container-fluid fixed md:h-[70px] xs:h-[100px] z-[1000] md:w-[100%] xs:w-[100%] bg-white shadow-md">
           <Navbar items={navItems} logo={logo} searchbar={searchbar} />
         </div>
       </header>

@@ -38,7 +38,12 @@ function BannerDigitalTransformation(
     <div class="translate-y-[70px]">
       <div class="container-fluid grid relative lg:h-[640px] bg-[#585858]">
         <div class="lg:w-[1120px] md:w-full h-full block mx-auto z-[2]">
-          <div class="md:py-[60px] xs:py-[30px] lg:w-7/12 md:w-full xs:w-11/12 xs:m-auto md:m-0 md:px-5 lg:px-0 md:leading-[62px] xs:leading-[42px] text-[#fefefe]">
+          <div
+            style={{ backgroundImage: `url(${backgroundImage.mobile})` }}
+            class={`lg:hidden w-full md:bg-[80%] xs:bg-[100%] bg-cover bg-no-repeat md:h-[30px] xs:h-[200px] block z-0`}
+          >
+          </div>
+          <div class="lg:py-[60px] md:pt-[80px] xs:py-[30px] lg:w-7/12 md:w-full xs:w-11/12 xs:m-auto md:m-0 md:px-5 lg:px-0 md:leading-[62px] xs:leading-[42px] text-[#fefefe]">
             {image
               ? (
                 <img
@@ -49,21 +54,23 @@ function BannerDigitalTransformation(
               )
               : <></>}
 
-            <div class="lg:my-9 md:my-3 lg:mb-[72px] md:mb-[40px] xs:mb-[35px]">
-              <h1 class="lg:text-[58px] md:text-[52px] xs:text-[32px] font-AvenirNextLTPro">
+            <div class="lg:mt-9  md:my-3 lg:mb-[20px] md:mb-[0px] xs:mb-[35px]">
+              <h1 class="lg:text-[58px] md:text-[52px] xs:text-[32px] font-AvenirNextLTPro md:leading-[68px] xs:leading-[4  2px]">
                 {title}
               </h1>
             </div>
 
-            <a
-              href={button.href}
-              class="rounded bg-[#f26f21] font-bold uppercase px-[24px] xs:block md:inline-block xs:w-full md:w-auto cursor-pointer text-center"
-            >
-              {button.content}
-            </a>
+            <div class="md:pt-[40px] pb-[16px]">
+              <a
+                href={button.href}
+                class="rounded bg-[#f26f21] font-bold uppercase px-[24px] xs:block md:inline-block xs:w-full md:w-auto cursor-pointer text-center"
+              >
+                {button.content}
+              </a>
+            </div>
 
             <div
-              class="richtext lg:my-6 md:my-0"
+              class="richtext lg:my-6 md:my-0 text-[12px] leading-[14px]"
               dangerouslySetInnerHTML={{ __html: footerContent }}
             />
           </div>
@@ -72,12 +79,6 @@ function BannerDigitalTransformation(
         <div
           style={{ backgroundImage: `url(${backgroundImage.desktop})` }}
           class={`hidden lg:block w-full bg-[100%] h-full absolute top-0 right-0 bg-contain bg-no-repeat z-0`}
-        >
-        </div>
-
-        <div
-          style={{ backgroundImage: `url(${backgroundImage.mobile})` }}
-          class={`lg:hidden w-full md:bg-[80%] xs:bg-[100%] bg-cover bg-no-repeat md:h-[300px] xs:h-[200px] block z-0`}
         >
         </div>
       </div>

@@ -63,11 +63,15 @@
               "./islands/AddToCartButton.tsx",
               "./islands/Alerts.tsx",
               "./islands/BannerSectionForIndividuals.tsx",
+              "./islands/BestDigitalCourse.tsx",
               "./islands/CourseCard.tsx",
               "./islands/CourseInfo.tsx",
               "./islands/CoursesForIndividuals.tsx",
               "./islands/DetailsSection.tsx",
+              "./islands/DigitalCommerceExpert.tsx",
+              "./islands/EmpowerYourself.tsx",
               "./islands/executiveProgrameCard.tsx",
+              "./islands/FAQ.tsx",
               "./islands/Footer.tsx",
               "./islands/GreatExperience.tsx",
               "./islands/Header.tsx",
@@ -77,11 +81,13 @@
               "./islands/HomeAboutSection.tsx",
               "./islands/HomeWhyEicomBlocksSection.tsx",
               "./islands/HomeWhyEicomSection.tsx",
+              "./islands/MoreAboutEicomDCE.tsx",
               "./islands/OutOfStock.tsx",
               "./islands/ProductImageZoom.tsx",
               "./islands/SearchControls.tsx",
               "./islands/ShippingSimulation.tsx",
               "./islands/SliderJS.tsx",
+              "./islands/WhoIsForDigitalCommerceExpert.tsx",
               "./islands/WishlistButton.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
@@ -104,6 +110,7 @@
               "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx",
               "deco-sites/eicomorg/sections/Bar.tsx",
               "deco-sites/eicomorg/sections/BecomeASponsor.tsx",
+              "deco-sites/eicomorg/sections/BestDigitalCourse.tsx",
               "deco-sites/eicomorg/sections/Bonus.tsx",
               "deco-sites/eicomorg/sections/Brochure.tsx",
               "deco-sites/eicomorg/sections/Carousel.tsx",
@@ -113,7 +120,9 @@
               "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx",
               "deco-sites/eicomorg/sections/DesignSystem.tsx",
               "deco-sites/eicomorg/sections/DetailsSection.tsx",
+              "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx",
               "deco-sites/eicomorg/sections/ElevateYourCareer.tsx",
+              "deco-sites/eicomorg/sections/EmpowerYourself.tsx",
               "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx",
               "deco-sites/eicomorg/sections/Faculty.tsx",
               "deco-sites/eicomorg/sections/FacultyExecutiveProgramme.tsx",
@@ -7026,6 +7035,68 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/BannerSectionForIndividuals.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2Jlc3REaWdpdGFsQ291cnNlLnRzeA==@BenefitProps": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "image",
+        "text"
+      ],
+      "title": "BenefitProps"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2Jlc3REaWdpdGFsQ291cnNlLnRzeA==@BenefitProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2Jlc3REaWdpdGFsQ291cnNlLnRzeA==@BenefitProps"
+      },
+      "title": "BenefitProps[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2Jlc3REaWdpdGFsQ291cnNlLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        },
+        "benefits": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2Jlc3REaWdpdGFsQ291cnNlLnRzeA==@BenefitProps[]",
+          "title": "Benefits"
+        }
+      },
+      "required": [
+        "title",
+        "content",
+        "benefits"
+      ],
+      "title": "deco-sites/eicomorg/components/bestDigitalCourse/bestDigitalCourse.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZXMvQ291cnNlQ2FyZC50c3g=@CourseCard": {
       "type": "object",
       "properties": {
@@ -7727,6 +7798,24 @@
       ],
       "title": "ImageFooter"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0RldGFpbHNTZWN0aW9uLnRzeA==@MainImage": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Src"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        }
+      },
+      "required": [
+        "src",
+        "alt"
+      ],
+      "title": "MainImage"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0RldGFpbHNTZWN0aW9uLnRzeA==@SectionItemImage": {
       "type": "object",
       "properties": {
@@ -7806,6 +7895,10 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0RldGFpbHNTZWN0aW9uLnRzeA==@ImageFooter",
           "title": "Image Footer"
         },
+        "mainImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0RldGFpbHNTZWN0aW9uLnRzeA==@MainImage",
+          "title": "Main Image"
+        },
         "firstSectionItem": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0RldGFpbHNTZWN0aW9uLnRzeA==@SectionItem",
           "title": "First Section Item"
@@ -7827,12 +7920,142 @@
         "title",
         "containerTitle",
         "imageFooter",
+        "mainImage",
         "firstSectionItem",
         "secondSectionItem",
         "thirdSectionItem",
         "joinCard"
       ],
       "title": "deco-sites/eicomorg/components/ui/DetailsSection.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2RpZ2l0YWxDb21tZXJjZUV4cGVydC50c3g=@BenefitProps": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "image",
+        "text"
+      ],
+      "title": "BenefitProps"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2RpZ2l0YWxDb21tZXJjZUV4cGVydC50c3g=@BenefitProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2RpZ2l0YWxDb21tZXJjZUV4cGVydC50c3g=@BenefitProps"
+      },
+      "title": "BenefitProps[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2RpZ2l0YWxDb21tZXJjZUV4cGVydC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        },
+        "benefits": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2RpZ2l0YWxDb21tZXJjZUV4cGVydC50c3g=@BenefitProps[]",
+          "title": "Benefits"
+        }
+      },
+      "required": [
+        "title",
+        "content",
+        "benefits"
+      ],
+      "title": "deco-sites/eicomorg/components/bestDigitalCourse/digitalCommerceExpert.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2VtcG93ZXJZb3Vyc2VsZi9lbXBvd2VyWW91cnNlbGYudHN4@BenefitProps": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "image",
+        "title",
+        "text"
+      ],
+      "title": "BenefitProps"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2VtcG93ZXJZb3Vyc2VsZi9lbXBvd2VyWW91cnNlbGYudHN4@BenefitProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2VtcG93ZXJZb3Vyc2VsZi9lbXBvd2VyWW91cnNlbGYudHN4@BenefitProps"
+      },
+      "title": "BenefitProps[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2VtcG93ZXJZb3Vyc2VsZi9lbXBvd2VyWW91cnNlbGYudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "benefitsTopRow": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2VtcG93ZXJZb3Vyc2VsZi9lbXBvd2VyWW91cnNlbGYudHN4@BenefitProps[]",
+          "title": "Benefits Top Row"
+        },
+        "benefitsBottomRow": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2VtcG93ZXJZb3Vyc2VsZi9lbXBvd2VyWW91cnNlbGYudHN4@BenefitProps[]",
+          "title": "Benefits Bottom Row"
+        }
+      },
+      "required": [
+        "title",
+        "benefitsTopRow",
+        "benefitsBottomRow"
+      ],
+      "title": "deco-sites/eicomorg/components/empowerYourself/empowerYourself.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps": {
       "type": "object",
@@ -7939,6 +8162,49 @@
         "executiveProgramme"
       ],
       "title": "deco-sites/eicomorg/components/forIndividual/executiveProgrameCard.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Question"
+        },
+        "answer": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Answer"
+        }
+      },
+      "required": [
+        "question",
+        "answer"
+      ],
+      "title": "Questions"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions"
+      },
+      "title": "Questions[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "questions": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]",
+          "title": "Questions"
+        }
+      },
+      "required": [
+        "title",
+        "questions"
+      ],
+      "title": "deco-sites/eicomorg/components/faq/FAQ.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Zvb3Rlci9Gb290ZXIudHN4@Logo": {
       "type": "object",
@@ -8946,6 +9212,248 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/HomeWhyEicomSection.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL21vcmVBYm91dEVpY29tRENFL01vcmVBYm91dEVpY29tRENFLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Image"
+        },
+        "mobileLogo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile Logo"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "linkText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Link Text"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "icon": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ChevronLeft"
+            },
+            {
+              "type": "string",
+              "const": "ChevronRight"
+            },
+            {
+              "type": "string",
+              "const": "ChevronUp"
+            },
+            {
+              "type": "string",
+              "const": "ChevronDown"
+            },
+            {
+              "type": "string",
+              "const": "QuestionMarkCircle"
+            },
+            {
+              "type": "string",
+              "const": "User"
+            },
+            {
+              "type": "string",
+              "const": "ShoppingCart"
+            },
+            {
+              "type": "string",
+              "const": "Bars3"
+            },
+            {
+              "type": "string",
+              "const": "Heart"
+            },
+            {
+              "type": "string",
+              "const": "MagnifyingGlass"
+            },
+            {
+              "type": "string",
+              "const": "XMark"
+            },
+            {
+              "type": "string",
+              "const": "Plus"
+            },
+            {
+              "type": "string",
+              "const": "Minus"
+            },
+            {
+              "type": "string",
+              "const": "MapPin"
+            },
+            {
+              "type": "string",
+              "const": "Phone"
+            },
+            {
+              "type": "string",
+              "const": "Elo"
+            },
+            {
+              "type": "string",
+              "const": "Mastercard"
+            },
+            {
+              "type": "string",
+              "const": "Visa"
+            },
+            {
+              "type": "string",
+              "const": "Pix"
+            },
+            {
+              "type": "string",
+              "const": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "FacebookBlack"
+            },
+            {
+              "type": "string",
+              "const": "Instagram"
+            },
+            {
+              "type": "string",
+              "const": "InstagramBlack"
+            },
+            {
+              "type": "string",
+              "const": "Tiktok"
+            },
+            {
+              "type": "string",
+              "const": "Truck"
+            },
+            {
+              "type": "string",
+              "const": "Discount"
+            },
+            {
+              "type": "string",
+              "const": "Return"
+            },
+            {
+              "type": "string",
+              "const": "CreditCard"
+            },
+            {
+              "type": "string",
+              "const": "Deco"
+            },
+            {
+              "type": "string",
+              "const": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "Trash"
+            },
+            {
+              "type": "string",
+              "const": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "Linkedin"
+            },
+            {
+              "type": "string",
+              "const": "LinkedinBlack"
+            },
+            {
+              "type": "string",
+              "const": "YoutubeBlack"
+            },
+            {
+              "type": "string",
+              "const": "Brazil"
+            },
+            {
+              "type": "string",
+              "const": "Spain"
+            },
+            {
+              "type": "string",
+              "const": "Italy"
+            },
+            {
+              "type": "string",
+              "const": "Chile"
+            },
+            {
+              "type": "string",
+              "const": "Romania"
+            },
+            {
+              "type": "string",
+              "const": "GreatBritain"
+            },
+            {
+              "type": "string",
+              "const": "ArrowRight"
+            },
+            {
+              "type": "string",
+              "const": "ArrowRightOrange"
+            },
+            {
+              "type": "string",
+              "const": "Computer"
+            },
+            {
+              "type": "string",
+              "const": "Seed"
+            },
+            {
+              "type": "string",
+              "const": "ArrowsPointingOut"
+            }
+          ],
+          "type": "string",
+          "title": "Icon"
+        },
+        "arrow": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Arrow"
+        }
+      },
+      "required": [
+        "backgroundImage",
+        "mobileLogo",
+        "title",
+        "text",
+        "linkText",
+        "href",
+        "icon",
+        "arrow"
+      ],
+      "title": "deco-sites/eicomorg/components/moreAboutEicomDCE/MoreAboutEicomDCE.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvcGFja3MvdnRleC90eXBlcy50cw==@SKU": {
       "type": "object",
       "properties": {
@@ -8984,6 +9492,59 @@
         "items"
       ],
       "title": "deco-sites/eicomorg/components/ui/ShippingSimulation.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0L1dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Image"
+        },
+        "cardImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Card Image"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "paragraph1": {
+          "type": "string",
+          "title": "Paragraph1"
+        },
+        "emoji1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Emoji1"
+        },
+        "paragraph2": {
+          "type": "string",
+          "title": "Paragraph2"
+        },
+        "emoji2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Emoji2"
+        },
+        "paragraph3": {
+          "type": "string",
+          "title": "Paragraph3"
+        },
+        "emoji3": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Emoji3"
+        }
+      },
+      "required": [
+        "backgroundImage",
+        "cardImage",
+        "title",
+        "paragraph1",
+        "emoji1",
+        "paragraph2",
+        "emoji2",
+        "paragraph3",
+        "emoji3"
+      ],
+      "title": "deco-sites/eicomorg/components/whoIsForDigitalCommerceExpert/WhoIsForDigitalCommerceExpert.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL2hhbmRsZXJzL2RldlBhZ2UudHM=@DevConfig": {
       "type": "object",
@@ -10890,7 +11451,8 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@54c56595516f3defa721f32350b78287&Colors": {
+
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -10906,7 +11468,7 @@
           "required": []
         }
       ],
-      "title": "54c56595516f3defa721f32350b78287&Colors"
+      "title": "059c94444960270fb25f4ccb03e57ec3&Colors"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -11009,7 +11571,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@54c56595516f3defa721f32350b78287&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -11306,49 +11868,6 @@
         "facultyMembers"
       ],
       "title": "deco-sites/eicomorg/components/facultyExecutiveProgramme/FacultyExecutiveProgramme.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions": {
-      "type": "object",
-      "properties": {
-        "question": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Question"
-        },
-        "answer": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Answer"
-        }
-      },
-      "required": [
-        "question",
-        "answer"
-      ],
-      "title": "Questions"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions"
-      },
-      "title": "Questions[]"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Props": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "questions": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]",
-          "title": "Questions"
-        }
-      },
-      "required": [
-        "title",
-        "questions"
-      ],
-      "title": "deco-sites/eicomorg/components/faq/FAQ.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0ZlYXR1cmVzLnRzeA==@Feature": {
       "type": "object",
@@ -11893,243 +12412,6 @@
       "required": [],
       "title": "deco-sites/eicomorg/components/ui/LinkTree.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL21vcmVBYm91dEVpY29tRENFL01vcmVBYm91dEVpY29tRENFLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "backgroundImage": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Background Image"
-        },
-        "mobileLogo": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Mobile Logo"
-        },
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        },
-        "linkText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Link Text"
-        },
-        "href": {
-          "type": "string",
-          "title": "Href"
-        },
-        "icon": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "ChevronLeft"
-            },
-            {
-              "type": "string",
-              "const": "ChevronRight"
-            },
-            {
-              "type": "string",
-              "const": "ChevronUp"
-            },
-            {
-              "type": "string",
-              "const": "ChevronDown"
-            },
-            {
-              "type": "string",
-              "const": "QuestionMarkCircle"
-            },
-            {
-              "type": "string",
-              "const": "User"
-            },
-            {
-              "type": "string",
-              "const": "ShoppingCart"
-            },
-            {
-              "type": "string",
-              "const": "Bars3"
-            },
-            {
-              "type": "string",
-              "const": "Heart"
-            },
-            {
-              "type": "string",
-              "const": "MagnifyingGlass"
-            },
-            {
-              "type": "string",
-              "const": "XMark"
-            },
-            {
-              "type": "string",
-              "const": "Plus"
-            },
-            {
-              "type": "string",
-              "const": "Minus"
-            },
-            {
-              "type": "string",
-              "const": "MapPin"
-            },
-            {
-              "type": "string",
-              "const": "Phone"
-            },
-            {
-              "type": "string",
-              "const": "Elo"
-            },
-            {
-              "type": "string",
-              "const": "Mastercard"
-            },
-            {
-              "type": "string",
-              "const": "Visa"
-            },
-            {
-              "type": "string",
-              "const": "Pix"
-            },
-            {
-              "type": "string",
-              "const": "Logo"
-            },
-            {
-              "type": "string",
-              "const": "Facebook"
-            },
-            {
-              "type": "string",
-              "const": "FacebookBlack"
-            },
-            {
-              "type": "string",
-              "const": "Instagram"
-            },
-            {
-              "type": "string",
-              "const": "InstagramBlack"
-            },
-            {
-              "type": "string",
-              "const": "Tiktok"
-            },
-            {
-              "type": "string",
-              "const": "Truck"
-            },
-            {
-              "type": "string",
-              "const": "Discount"
-            },
-            {
-              "type": "string",
-              "const": "Return"
-            },
-            {
-              "type": "string",
-              "const": "CreditCard"
-            },
-            {
-              "type": "string",
-              "const": "Deco"
-            },
-            {
-              "type": "string",
-              "const": "Discord"
-            },
-            {
-              "type": "string",
-              "const": "Trash"
-            },
-            {
-              "type": "string",
-              "const": "FilterList"
-            },
-            {
-              "type": "string",
-              "const": "WhatsApp"
-            },
-            {
-              "type": "string",
-              "const": "Linkedin"
-            },
-            {
-              "type": "string",
-              "const": "LinkedinBlack"
-            },
-            {
-              "type": "string",
-              "const": "YoutubeBlack"
-            },
-            {
-              "type": "string",
-              "const": "Brazil"
-            },
-            {
-              "type": "string",
-              "const": "Spain"
-            },
-            {
-              "type": "string",
-              "const": "Italy"
-            },
-            {
-              "type": "string",
-              "const": "Chile"
-            },
-            {
-              "type": "string",
-              "const": "Romania"
-            },
-            {
-              "type": "string",
-              "const": "GreatBritain"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRight"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRightOrange"
-            },
-            {
-              "type": "string",
-              "const": "Computer"
-            },
-            {
-              "type": "string",
-              "const": "Seed"
-            },
-            {
-              "type": "string",
-              "const": "ArrowsPointingOut"
-            }
-          ],
-          "type": "string",
-          "title": "Icon"
-        }
-      },
-      "required": [
-        "backgroundImage",
-        "mobileLogo",
-        "title",
-        "text",
-        "linkText",
-        "href",
-        "icon"
-      ],
-      "title": "deco-sites/eicomorg/components/moreAboutEicomDCE/MoreAboutEicomDCE.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL05ld3NsZXR0ZXIudHN4@Props": {
       "type": "object",
       "properties": {
@@ -12604,59 +12886,6 @@
       },
       "required": [],
       "title": "deco-sites/eicomorg/components/ui/WhatsApp.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0L1dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0LnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "backgroundImage": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Background Image"
-        },
-        "cardImage": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Card Image"
-        },
-        "title": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Title"
-        },
-        "paragraph1": {
-          "type": "string",
-          "title": "Paragraph1"
-        },
-        "emoji1": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Emoji1"
-        },
-        "paragraph2": {
-          "type": "string",
-          "title": "Paragraph2"
-        },
-        "emoji2": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Emoji2"
-        },
-        "paragraph3": {
-          "type": "string",
-          "title": "Paragraph3"
-        },
-        "emoji3": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Emoji3"
-        }
-      },
-      "required": [
-        "backgroundImage",
-        "cardImage",
-        "title",
-        "paragraph1",
-        "emoji1",
-        "paragraph2",
-        "emoji2",
-        "paragraph3",
-        "emoji3"
-      ],
-      "title": "deco-sites/eicomorg/components/whoIsForDigitalCommerceExpert/WhoIsForDigitalCommerceExpert.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9BbmFseXRpY3MudHN4@Props": {
       "type": "object",
@@ -14773,6 +15002,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0Jlc3REaWdpdGFsQ291cnNlLnRzeA==": {
+      "title": "./islands/BestDigitalCourse.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2Jlc3REaWdpdGFsQ291cnNlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/BestDigitalCourse.tsx"
+          ],
+          "default": "./islands/BestDigitalCourse.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0NvdXJzZUNhcmQudHN4": {
       "title": "./islands/CourseCard.tsx",
       "type": "object",
@@ -14852,6 +15102,48 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0RpZ2l0YWxDb21tZXJjZUV4cGVydC50c3g=": {
+      "title": "./islands/DigitalCommerceExpert.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2RpZ2l0YWxDb21tZXJjZUV4cGVydC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/DigitalCommerceExpert.tsx"
+          ],
+          "default": "./islands/DigitalCommerceExpert.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL0VtcG93ZXJZb3Vyc2VsZi50c3g=": {
+      "title": "./islands/EmpowerYourself.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2VtcG93ZXJZb3Vyc2VsZi9lbXBvd2VyWW91cnNlbGYudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/EmpowerYourself.tsx"
+          ],
+          "default": "./islands/EmpowerYourself.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL2V4ZWN1dGl2ZVByb2dyYW1lQ2FyZC50c3g=": {
       "title": "./islands/executiveProgrameCard.tsx",
       "type": "object",
@@ -14870,6 +15162,27 @@
             "./islands/executiveProgrameCard.tsx"
           ],
           "default": "./islands/executiveProgrameCard.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL0ZBUS50c3g=": {
+      "title": "./islands/FAQ.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/FAQ.tsx"
+          ],
+          "default": "./islands/FAQ.tsx"
         }
       }
     },
@@ -15047,6 +15360,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL01vcmVBYm91dEVpY29tRENFLnRzeA==": {
+      "title": "./islands/MoreAboutEicomDCE.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL21vcmVBYm91dEVpY29tRENFL01vcmVBYm91dEVpY29tRENFLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/MoreAboutEicomDCE.tsx"
+          ],
+          "default": "./islands/MoreAboutEicomDCE.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL091dE9mU3RvY2sudHN4": {
       "title": "./islands/OutOfStock.tsx",
       "type": "object",
@@ -15129,6 +15463,27 @@
             "./islands/SliderJS.tsx"
           ],
           "default": "./islands/SliderJS.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL1dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0LnRzeA==": {
+      "title": "./islands/WhoIsForDigitalCommerceExpert.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0L1dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/WhoIsForDigitalCommerceExpert.tsx"
+          ],
+          "default": "./islands/WhoIsForDigitalCommerceExpert.tsx"
         }
       }
     },
@@ -15593,6 +15948,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CZXN0RGlnaXRhbENvdXJzZS50c3g=": {
+      "title": "deco-sites/eicomorg/sections/BestDigitalCourse.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2Jlc3REaWdpdGFsQ291cnNlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/BestDigitalCourse.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/BestDigitalCourse.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Cb251cy50c3g=": {
       "title": "deco-sites/eicomorg/sections/Bonus.tsx",
       "type": "object",
@@ -15777,6 +16153,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EaWdpdGFsQ29tbWVyY2VFeHBlcnQudHN4": {
+      "title": "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jlc3REaWdpdGFsQ291cnNlL2RpZ2l0YWxDb21tZXJjZUV4cGVydC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FbGV2YXRlWW91ckNhcmVlci50c3g=": {
       "title": "deco-sites/eicomorg/sections/ElevateYourCareer.tsx",
       "type": "object",
@@ -15795,6 +16192,27 @@
             "deco-sites/eicomorg/sections/ElevateYourCareer.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/ElevateYourCareer.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FbXBvd2VyWW91cnNlbGYudHN4": {
+      "title": "deco-sites/eicomorg/sections/EmpowerYourself.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2VtcG93ZXJZb3Vyc2VsZi9lbXBvd2VyWW91cnNlbGYudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/EmpowerYourself.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/EmpowerYourself.tsx"
         }
       }
     },
@@ -17503,6 +17921,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0Jlc3REaWdpdGFsQ291cnNlLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0NvdXJzZUNhcmQudHN4"
         },
         {
@@ -17515,7 +17936,16 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0RldGFpbHNTZWN0aW9uLnRzeA=="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0RpZ2l0YWxDb21tZXJjZUV4cGVydC50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0VtcG93ZXJZb3Vyc2VsZi50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL2V4ZWN1dGl2ZVByb2dyYW1lQ2FyZC50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0ZBUS50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Zvb3Rlci50c3g="
@@ -17545,6 +17975,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0hvbWVXaHlFaWNvbVNlY3Rpb24udHN4"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL01vcmVBYm91dEVpY29tRENFLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL091dE9mU3RvY2sudHN4"
         },
         {
@@ -17558,6 +17991,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpTLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0LnRzeA=="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL1dpc2hsaXN0QnV0dG9uLnRzeA=="
@@ -17650,6 +18086,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CZWNvbWVBU3BvbnNvci50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CZXN0RGlnaXRhbENvdXJzZS50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Cb251cy50c3g="
         },
         {
@@ -17677,7 +18116,13 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXRhaWxzU2VjdGlvbi50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EaWdpdGFsQ29tbWVyY2VFeHBlcnQudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FbGV2YXRlWW91ckNhcmVlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FbXBvd2VyWW91cnNlbGYudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FeGVjdXRpdmVQcm9ncmFtbWVXYXJuaW5nLnRzeA=="
