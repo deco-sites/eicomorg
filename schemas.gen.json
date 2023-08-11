@@ -64,6 +64,7 @@
               "./islands/Alerts.tsx",
               "./islands/BannerSectionForIndividuals.tsx",
               "./islands/BestDigitalCourse.tsx",
+              "./islands/CmxLevels.tsx",
               "./islands/CourseCard.tsx",
               "./islands/CourseInfo.tsx",
               "./islands/CoursesForIndividuals.tsx",
@@ -115,6 +116,7 @@
               "deco-sites/eicomorg/sections/Bonus.tsx",
               "deco-sites/eicomorg/sections/Brochure.tsx",
               "deco-sites/eicomorg/sections/Carousel.tsx",
+              "deco-sites/eicomorg/sections/CmxLevels.tsx",
               "deco-sites/eicomorg/sections/CookieConsent.tsx",
               "deco-sites/eicomorg/sections/CourseInfo.tsx",
               "deco-sites/eicomorg/sections/Courses.tsx",
@@ -7097,6 +7099,139 @@
         "benefits"
       ],
       "title": "deco-sites/eicomorg/components/bestDigitalCourse/bestDigitalCourse.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@CardTopic": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "subtitle": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Subtitle"
+        },
+        "icon": {
+          "type": "object",
+          "properties": {
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            },
+            "image": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Image"
+            }
+          },
+          "required": [
+            "alt",
+            "image"
+          ],
+          "title": "Icon"
+        }
+      },
+      "required": [
+        "title",
+        "icon"
+      ],
+      "title": "CardTopic"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@CardTopic[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@CardTopic"
+      },
+      "title": "CardTopic[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@Card": {
+      "type": "object",
+      "properties": {
+        "header": {
+          "type": "object",
+          "properties": {
+            "backgroundImage": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Background Image"
+            },
+            "title": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+              "title": "Title"
+            }
+          },
+          "required": [
+            "backgroundImage",
+            "title"
+          ],
+          "title": "Header"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "description": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Description"
+        },
+        "topics": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@CardTopic[]",
+          "title": "Topics"
+        }
+      },
+      "required": [
+        "header",
+        "href",
+        "description",
+        "topics"
+      ],
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@Card[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@Card"
+      },
+      "title": "Card[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@Button": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "title",
+        "href"
+      ],
+      "title": "Button"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "cards": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@Card[]",
+          "title": "Cards"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@Button",
+          "title": "Button"
+        }
+      },
+      "required": [
+        "title",
+        "cards",
+        "button"
+      ],
+      "title": "deco-sites/eicomorg/components/cmx-levels/CmxLevels.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZXMvQ291cnNlQ2FyZC50c3g=@CourseCard": {
       "type": "object",
@@ -15056,6 +15191,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0NteExldmVscy50c3g=": {
+      "title": "./islands/CmxLevels.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/CmxLevels.tsx"
+          ],
+          "default": "./islands/CmxLevels.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0NvdXJzZUNhcmQudHN4": {
       "title": "./islands/CourseCard.tsx",
       "type": "object",
@@ -16083,6 +16239,27 @@
             "deco-sites/eicomorg/sections/Carousel.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/Carousel.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DbXhMZXZlbHMudHN4": {
+      "title": "deco-sites/eicomorg/sections/CmxLevels.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteC1sZXZlbHMvQ214TGV2ZWxzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/CmxLevels.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/CmxLevels.tsx"
         }
       }
     },
@@ -17978,6 +18155,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0Jlc3REaWdpdGFsQ291cnNlLnRzeA=="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0NteExldmVscy50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0NvdXJzZUNhcmQudHN4"
         },
         {
@@ -18153,6 +18333,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DYXJvdXNlbC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DbXhMZXZlbHMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db29raWVDb25zZW50LnRzeA=="
