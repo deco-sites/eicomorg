@@ -25,7 +25,7 @@ function BannerCmxExam(
   const [elementRef, isShown] = useScrollShow();
   return (
     <>
-      <div>
+      <div class="">
         <div
           ref={elementRef as Ref<HTMLDivElement>}
           style={{
@@ -38,13 +38,13 @@ function BannerCmxExam(
             padding: "0 10px 40px",
             margin: "0",
           }}
-          class="bg-[#f3f3f3] h-[70vh]"
+          class="h-[70vh]"
         >
-        </div>
-        <div>
-          <button class="rounded bg-[#f2a91d] px-[20px] py-[14px] w-auto text-[16px] font-bold text-white cursor-pointer text-[#f2a91d]">
-            {buttonText}
-          </button>
+          <div class="z-10">
+            <button class="rounded bg-[#f2a91d] px-[20px] py-[14px] w-auto text-[16px] font-bold text-white cursor-pointer text-[#f2a91d]">
+              {buttonText}
+            </button>
+          </div>
         </div>
       </div>
     </>
