@@ -104,6 +104,7 @@
               "$live/sections/UseSlot.tsx",
               "deco-sites/eicomorg/sections/Alert.tsx",
               "deco-sites/eicomorg/sections/Alumni.tsx",
+              "deco-sites/eicomorg/sections/BannerCmxExam.tsx",
               "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
               "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx",
               "deco-sites/eicomorg/sections/BannerGrid.tsx",
@@ -10309,6 +10310,39 @@
       ],
       "title": "deco-sites/eicomorg/components/alumni/Alumni.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteEV4YW1SZWdpc3Rlck5vdy9CYW5uZXJDbXhFeGFtLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Image"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "paragraph": {
+          "type": "string",
+          "title": "Paragraph"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        },
+        "linkText": {
+          "type": "string",
+          "title": "Link Text"
+        }
+      },
+      "required": [
+        "backgroundImage",
+        "title",
+        "paragraph",
+        "buttonText",
+        "linkText"
+      ],
+      "title": "deco-sites/eicomorg/components/cmxExamRegisterNow/BannerCmxExam.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpZ2l0YWxUcmFuc2Zvcm1hdGlvbi50c3g=@Image": {
       "type": "object",
       "properties": {
@@ -11630,7 +11664,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@9acf53fb852f538c689c2e8537ee6758&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@54c56595516f3defa721f32350b78287&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -11646,7 +11680,7 @@
           "required": []
         }
       ],
-      "title": "9acf53fb852f538c689c2e8537ee6758&Colors"
+      "title": "54c56595516f3defa721f32350b78287&Colors"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -11749,7 +11783,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@9acf53fb852f538c689c2e8537ee6758&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@54c56595516f3defa721f32350b78287&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -16061,6 +16095,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJDbXhFeGFtLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/BannerCmxExam.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NteEV4YW1SZWdpc3Rlck5vdy9CYW5uZXJDbXhFeGFtLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/BannerCmxExam.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/BannerCmxExam.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4": {
       "title": "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
       "type": "object",
@@ -18410,6 +18465,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BbHVtbmkudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJDbXhFeGFtLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4"
