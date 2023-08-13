@@ -8,7 +8,7 @@ export interface Props {
 
 function Bar({ image }: Props) {
   return (
-    <div class="bg-[#272f35] relative top-[70px] py-[10px] px-[10px]">
+    <div class="bg-[#272f35] relative pt-[80px] pb-[10px] px-[10px]">
       <img class="w-[170px] h-auto my-[auto] mx-[auto]" src={image} alt="" />
     </div>
   );
