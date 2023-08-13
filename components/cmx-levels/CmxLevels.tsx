@@ -41,7 +41,7 @@ function CmxLevels(
   }: Props,
 ) {
   return (
-    <div class="max-w-[1120px] mx-auto py-[80px] my-20">
+    <div class="max-w-[1120px] mx-auto py-[80px] mt-20">
       <div class="text-center mx-auto [&>span]:leading-10 [&>span]:font-AvenirNextLTPro max-w-[710px] mb-[60px]">
         <span dangerouslySetInnerHTML={{ __html: title }} />
       </div>
