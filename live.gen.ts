@@ -91,6 +91,7 @@ import * as $$$$$$$$51 from "./sections/TestimonialsSection.tsx";
 import * as $$$$$$$$52 from "./sections/GreatExperienceSection.tsx";
 import * as $$$$$$$$53 from "./sections/HomeWhyEicomBlocksSection.tsx";
 import * as $$$$$$$$54 from "./sections/Courses.tsx";
+import * as $$$$$$$$55 from "./sections/WhoIsThisCertificationFor.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -311,6 +312,7 @@ const manifest = {
     "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$48,
     "deco-sites/eicomorg/sections/WhoIsForDigitalCommerceExpert.tsx":
       $$$$$$$$41,
+    "deco-sites/eicomorg/sections/WhoIsThisCertificationFor.tsx": $$$$$$$$55,
     "deco-sites/eicomorg/sections/WishlistGallery.tsx": $$$$$$$$15,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,

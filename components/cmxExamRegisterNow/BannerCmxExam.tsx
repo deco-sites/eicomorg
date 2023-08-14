@@ -8,7 +8,7 @@ import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 export interface Props {
   backgroundImage: LiveImage;
   title: HTML;
-  paragraph: string;
+  paragraph: HTML;
   buttonText: string;
   linkText: string;
 }
@@ -40,10 +40,20 @@ function BannerCmxExam(
           }}
           class="h-[70vh]"
         >
-          <div class="z-10">
-            <button class="rounded bg-[#f2a91d] px-[20px] py-[14px] w-auto text-[16px] font-bold text-white cursor-pointer text-[#f2a91d]">
-              {buttonText}
-            </button>
+          <div class="z-10 max-w-[1120px] h-[70vh] m-auto">
+            <div>
+              <span
+                class="[&>*]:font-Gravity"
+                dangerouslySetInnerHTML={{ __html: title }}
+              >
+              </span>
+              {/* <div>{paragraph}</div> */}
+              {
+                /* <div>
+                <button class="rounded bg-[#f2a91d] px-[20px] py-[14px] w-auto text-[16px] font-bold text-white cursor-pointer text-[#f2a91d]">{buttonText}</button>
+              </div> */
+              }
+            </div>
           </div>
         </div>
       </div>
