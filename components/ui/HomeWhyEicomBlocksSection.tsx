@@ -30,7 +30,7 @@ export interface Props {
 interface SectionBlockProps {
   block: Block;
   index: number;
-  isShown: boolean | MutableRef<HTMLDivElement | null>;
+  isShown: boolean | MutableRef<HTMLDivElement | HTMLAnchorElement | null>;
 }
 
 function SectionBlock({ block, index, isShown }: SectionBlockProps) {
