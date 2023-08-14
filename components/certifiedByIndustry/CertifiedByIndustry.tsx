@@ -1,5 +1,6 @@
-import type { Image } from "deco-sites/std/components/types.ts";
 import type { HTML } from "deco-sites/std/components/types.ts";
+import { Ref } from "preact/hooks";
+import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface Button {
   title: string;
@@ -19,6 +20,8 @@ function CertifiedByIndustry(
     button,
   }: Props,
 ) {
+  const [elementRef, isShown] = useScrollShow();
+
   return (
     <div class="container-fluid mx-auto md:py-[80px] xs:py-[40px] bg-[#f3f3f3]">
       <div class="text-center mx-auto [&>span]:leading-10 [&>span]:font-AvenirNextLTPro [&>span]:text-[32px] max-w-[710px] mb-[10px]">
@@ -37,7 +40,10 @@ function CertifiedByIndustry(
 
       <div class="md:mt-[50px] xs:mt-[20px] text-center">
         <a
-          class="bg-[#f2a91d] py-[14px] px-[20px] font-bold font-Gravity uppercase rounded text-white md:inline md:w-auto xs:block xs:w-11/12 xs:m-auto"
+          class={`bg-[#f2a91d] py-[14px] px-[20px] font-bold font-Gravity uppercase rounded text-white md:inline-block md:w-auto xs:block xs:w-11/12 xs:m-auto ${
+            isShown ? "animate-long-slide-right" : ""
+          }`}
+          ref={elementRef as Ref<HTMLAnchorElement>}
           href={button.href}
         >
           {button.title}

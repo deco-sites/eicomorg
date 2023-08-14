@@ -34,6 +34,7 @@ export default {
       animation: {
         "slide-left": "slide-left-frame 1s ease normal",
         "slide-right": "slide-right-frame 1s ease normal",
+        "long-slide-right": "long-slide-right-frame .7s ease normal",
         "slide-bottom": "slide-bottom-frame 1s ease normal forwards",
         "slide-banner-right": "slide-banner-right-frame 1s ease normal",
         "progress": "progress-frame ease normal",
@@ -51,6 +52,10 @@ export default {
         },
         "slide-right-frame": {
           from: { opacity: 0, transform: "translateX(-20%)" },
+          to: { opacity: 1, transform: "translateX(0)" },
+        },
+        "long-slide-right-frame": {
+          from: { opacity: 0, transform: "translateX(-70%)" },
           to: { opacity: 1, transform: "translateX(0)" },
         },
         "slide-bottom-frame": {
