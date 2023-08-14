@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "preact/hooks";
 
 export const useScrollShow = () => {
-  const elementRef = useRef<HTMLDivElement | null>(null);
+  const elementRef = useRef<HTMLDivElement | HTMLAnchorElement | null>(null);
   const [isShown, setIsShown] = useState(false);
 
   useEffect(() => {

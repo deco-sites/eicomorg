@@ -1,19 +1,29 @@
 import { Card } from "./CmxLevels.tsx";
+import { Ref } from "preact/hooks";
+import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 function CmxLevelCard(
   {
+    index,
     card: {
       header,
       description,
       href,
       topics,
     },
-  }: { card: Card },
+  }: { card: Card; index: number },
 ) {
+  const [elementRef, isShown] = useScrollShow();
+
   return (
     <a
       href={href}
-      class="lg:w-[340px] md:w-[524px] xs:w-[385px] md:block xs:block md:m-auto xs:m-auto md:mb-[20px] xs:mb-[20px] bg-[#fff] shadow-[1px_1px_10px_rgba(0,0,0,.2)] hover:shadow-[1px_1px_10px_rgba(0,0,0,.3)] rounded-tr-[41px]"
+      class={`
+        lg:w-[340px] md:w-[524px] xs:w-[385px] md:block xs:block md:m-auto xs:m-auto md:mb-[20px] xs:mb-[20px] bg-[#fff] shadow-[1px_1px_10px_rgba(0,0,0,.2)] hover:shadow-[1px_1px_10px_rgba(0,0,0,.3)] rounded-tr-[41px]
+        ${isShown ? "animate-slide-bottom" : ""}  
+      `}
+      style={{ animationDelay: `${index * 120}ms` }}
+      ref={elementRef as Ref<HTMLAnchorElement>}
     >
       <header
         style={{ backgroundImage: `url(${header.backgroundImage})` }}
