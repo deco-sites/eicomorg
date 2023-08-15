@@ -8,51 +8,52 @@ import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$1 from "./routes/styles.css.ts";
 import * as $$$$$0 from "./islands/BannerEcommerceSolutionsArchitect.tsx";
 import * as $$$$$1 from "./islands/OutOfStock.tsx";
-import * as $$$$$2 from "./islands/DigitalCommerceExpert.tsx";
-import * as $$$$$3 from "./islands/BestDigitalCourse.tsx";
-import * as $$$$$4 from "./islands/HeaderSearchbar.tsx";
-import * as $$$$$5 from "./islands/GreatExperience.tsx";
-import * as $$$$$6 from "./islands/executiveProgrameCard.tsx";
-import * as $$$$$7 from "./islands/CourseCard.tsx";
-import * as $$$$$8 from "./islands/HomeAboutSection.tsx";
-import * as $$$$$9 from "./islands/HeaderModals.tsx";
-import * as $$$$$10 from "./islands/HomeWhyEicomSection.tsx";
-import * as $$$$$11 from "./islands/Footer.tsx";
-import * as $$$$$12 from "./islands/BannerSectionForIndividuals.tsx";
-import * as $$$$$13 from "./islands/FAQ.tsx";
-import * as $$$$$14 from "./islands/SearchControls.tsx";
-import * as $$$$$15 from "./islands/CmxLevels.tsx";
-import * as $$$$$16 from "./islands/Header.tsx";
-import * as $$$$$17 from "./islands/DetailsSection.tsx";
-import * as $$$$$18 from "./islands/ProductImageZoom.tsx";
-import * as $$$$$19 from "./islands/MoreAboutEicomDCE.tsx";
-import * as $$$$$20 from "./islands/SliderJS.tsx";
-import * as $$$$$21 from "./islands/CertifiedByIndustry.tsx";
-import * as $$$$$22 from "./islands/WhoIsForDigitalCommerceExpert.tsx";
-import * as $$$$$23 from "./islands/Alerts.tsx";
-import * as $$$$$24 from "./islands/CourseInfo.tsx";
-import * as $$$$$25 from "./islands/WishlistButton.tsx";
-import * as $$$$$26 from "./islands/EmpowerYourself.tsx";
-import * as $$$$$27 from "./islands/CoursesForIndividuals.tsx";
-import * as $$$$$28 from "./islands/HeaderButton.tsx";
-import * as $$$$$29 from "./islands/ShippingSimulation.tsx";
-import * as $$$$$30 from "./islands/AddToCartButton.tsx";
-import * as $$$$$31 from "./islands/HomeWhyEicomBlocksSection.tsx";
+import * as $$$$$2 from "./islands/SomeNumbers.tsx";
+import * as $$$$$3 from "./islands/DigitalCommerceExpert.tsx";
+import * as $$$$$4 from "./islands/BestDigitalCourse.tsx";
+import * as $$$$$5 from "./islands/HeaderSearchbar.tsx";
+import * as $$$$$6 from "./islands/GreatExperience.tsx";
+import * as $$$$$7 from "./islands/executiveProgrameCard.tsx";
+import * as $$$$$8 from "./islands/CourseCard.tsx";
+import * as $$$$$9 from "./islands/HomeAboutSection.tsx";
+import * as $$$$$10 from "./islands/HeaderModals.tsx";
+import * as $$$$$11 from "./islands/HomeWhyEicomSection.tsx";
+import * as $$$$$12 from "./islands/Footer.tsx";
+import * as $$$$$13 from "./islands/BannerSectionForIndividuals.tsx";
+import * as $$$$$14 from "./islands/FAQ.tsx";
+import * as $$$$$15 from "./islands/SearchControls.tsx";
+import * as $$$$$16 from "./islands/CmxLevels.tsx";
+import * as $$$$$17 from "./islands/Header.tsx";
+import * as $$$$$18 from "./islands/DetailsSection.tsx";
+import * as $$$$$19 from "./islands/ProductImageZoom.tsx";
+import * as $$$$$20 from "./islands/MoreAboutEicomDCE.tsx";
+import * as $$$$$21 from "./islands/SliderJS.tsx";
+import * as $$$$$22 from "./islands/CertifiedByIndustry.tsx";
+import * as $$$$$23 from "./islands/WhoIsForDigitalCommerceExpert.tsx";
+import * as $$$$$24 from "./islands/Alerts.tsx";
+import * as $$$$$25 from "./islands/CourseInfo.tsx";
+import * as $$$$$26 from "./islands/WishlistButton.tsx";
+import * as $$$$$27 from "./islands/EmpowerYourself.tsx";
+import * as $$$$$28 from "./islands/CoursesForIndividuals.tsx";
+import * as $$$$$29 from "./islands/HeaderButton.tsx";
+import * as $$$$$30 from "./islands/ShippingSimulation.tsx";
+import * as $$$$$31 from "./islands/AddToCartButton.tsx";
+import * as $$$$$32 from "./islands/HomeWhyEicomBlocksSection.tsx";
 import * as $$$$$$$$0 from "./sections/ProductShelf.tsx";
 import * as $$$$$$$$1 from "./sections/BannerEcommerceSolutionsArchitect.tsx";
 import * as $$$$$$$$2 from "./sections/ShouldCertified.tsx";
 import * as $$$$$$$$3 from "./sections/Bonus.tsx";
 import * as $$$$$$$$4 from "./sections/ExecutiveProgrammeWarning.tsx";
-import * as $$$$$$$$5 from "./sections/WaitingList.tsx";
-import * as $$$$$$$$6 from "./sections/BannerDigitalTransformation.tsx";
-import * as $$$$$$$$7 from "./sections/DigitalCommerceExpert.tsx";
-import * as $$$$$$$$8 from "./sections/DesignSystem.tsx";
-import * as $$$$$$$$9 from "./sections/LinkTree.tsx";
-import * as $$$$$$$$10 from "./sections/Features.tsx";
-import * as $$$$$$$$11 from "./sections/BestDigitalCourse.tsx";
-import * as $$$$$$$$12 from "./sections/ScaleUpCareer.tsx";
-import * as $$$$$$$$13 from "./sections/Alumni.tsx";
-import * as $$$$$$$$14 from "./sections/someNumbers.tsx";
+import * as $$$$$$$$5 from "./sections/SomeNumbers.tsx";
+import * as $$$$$$$$6 from "./sections/WaitingList.tsx";
+import * as $$$$$$$$7 from "./sections/BannerDigitalTransformation.tsx";
+import * as $$$$$$$$8 from "./sections/DigitalCommerceExpert.tsx";
+import * as $$$$$$$$9 from "./sections/DesignSystem.tsx";
+import * as $$$$$$$$10 from "./sections/LinkTree.tsx";
+import * as $$$$$$$$11 from "./sections/Features.tsx";
+import * as $$$$$$$$12 from "./sections/BestDigitalCourse.tsx";
+import * as $$$$$$$$13 from "./sections/ScaleUpCareer.tsx";
+import * as $$$$$$$$14 from "./sections/Alumni.tsx";
 import * as $$$$$$$$15 from "./sections/HomeAboutSection.tsx";
 import * as $$$$$$$$16 from "./sections/forIndividualsExecuteProgrameCard.tsx";
 import * as $$$$$$$$17 from "./sections/WishlistGallery.tsx";
@@ -226,47 +227,48 @@ const manifest = {
     "./routes/styles.css.ts": $$$$1,
   },
   "islands": {
-    "./islands/AddToCartButton.tsx": $$$$$30,
-    "./islands/Alerts.tsx": $$$$$23,
+    "./islands/AddToCartButton.tsx": $$$$$31,
+    "./islands/Alerts.tsx": $$$$$24,
     "./islands/BannerEcommerceSolutionsArchitect.tsx": $$$$$0,
-    "./islands/BannerSectionForIndividuals.tsx": $$$$$12,
-    "./islands/BestDigitalCourse.tsx": $$$$$3,
-    "./islands/CertifiedByIndustry.tsx": $$$$$21,
-    "./islands/CmxLevels.tsx": $$$$$15,
-    "./islands/CourseCard.tsx": $$$$$7,
-    "./islands/CourseInfo.tsx": $$$$$24,
-    "./islands/CoursesForIndividuals.tsx": $$$$$27,
-    "./islands/DetailsSection.tsx": $$$$$17,
-    "./islands/DigitalCommerceExpert.tsx": $$$$$2,
-    "./islands/EmpowerYourself.tsx": $$$$$26,
-    "./islands/executiveProgrameCard.tsx": $$$$$6,
-    "./islands/FAQ.tsx": $$$$$13,
-    "./islands/Footer.tsx": $$$$$11,
-    "./islands/GreatExperience.tsx": $$$$$5,
-    "./islands/Header.tsx": $$$$$16,
-    "./islands/HeaderButton.tsx": $$$$$28,
-    "./islands/HeaderModals.tsx": $$$$$9,
-    "./islands/HeaderSearchbar.tsx": $$$$$4,
-    "./islands/HomeAboutSection.tsx": $$$$$8,
-    "./islands/HomeWhyEicomBlocksSection.tsx": $$$$$31,
-    "./islands/HomeWhyEicomSection.tsx": $$$$$10,
-    "./islands/MoreAboutEicomDCE.tsx": $$$$$19,
+    "./islands/BannerSectionForIndividuals.tsx": $$$$$13,
+    "./islands/BestDigitalCourse.tsx": $$$$$4,
+    "./islands/CertifiedByIndustry.tsx": $$$$$22,
+    "./islands/CmxLevels.tsx": $$$$$16,
+    "./islands/CourseCard.tsx": $$$$$8,
+    "./islands/CourseInfo.tsx": $$$$$25,
+    "./islands/CoursesForIndividuals.tsx": $$$$$28,
+    "./islands/DetailsSection.tsx": $$$$$18,
+    "./islands/DigitalCommerceExpert.tsx": $$$$$3,
+    "./islands/EmpowerYourself.tsx": $$$$$27,
+    "./islands/executiveProgrameCard.tsx": $$$$$7,
+    "./islands/FAQ.tsx": $$$$$14,
+    "./islands/Footer.tsx": $$$$$12,
+    "./islands/GreatExperience.tsx": $$$$$6,
+    "./islands/Header.tsx": $$$$$17,
+    "./islands/HeaderButton.tsx": $$$$$29,
+    "./islands/HeaderModals.tsx": $$$$$10,
+    "./islands/HeaderSearchbar.tsx": $$$$$5,
+    "./islands/HomeAboutSection.tsx": $$$$$9,
+    "./islands/HomeWhyEicomBlocksSection.tsx": $$$$$32,
+    "./islands/HomeWhyEicomSection.tsx": $$$$$11,
+    "./islands/MoreAboutEicomDCE.tsx": $$$$$20,
     "./islands/OutOfStock.tsx": $$$$$1,
-    "./islands/ProductImageZoom.tsx": $$$$$18,
-    "./islands/SearchControls.tsx": $$$$$14,
-    "./islands/ShippingSimulation.tsx": $$$$$29,
-    "./islands/SliderJS.tsx": $$$$$20,
-    "./islands/WhoIsForDigitalCommerceExpert.tsx": $$$$$22,
-    "./islands/WishlistButton.tsx": $$$$$25,
+    "./islands/ProductImageZoom.tsx": $$$$$19,
+    "./islands/SearchControls.tsx": $$$$$15,
+    "./islands/ShippingSimulation.tsx": $$$$$30,
+    "./islands/SliderJS.tsx": $$$$$21,
+    "./islands/SomeNumbers.tsx": $$$$$2,
+    "./islands/WhoIsForDigitalCommerceExpert.tsx": $$$$$23,
+    "./islands/WishlistButton.tsx": $$$$$26,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
     "deco-sites/eicomorg/sections/Alert.tsx": $$$$$$$$47,
-    "deco-sites/eicomorg/sections/Alumni.tsx": $$$$$$$$13,
+    "deco-sites/eicomorg/sections/Alumni.tsx": $$$$$$$$14,
     "deco-sites/eicomorg/sections/BannerCmxExam.tsx": $$$$$$$$30,
-    "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx": $$$$$$$$6,
+    "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx": $$$$$$$$7,
     "deco-sites/eicomorg/sections/BannerEcommerceSolutionsArchitect.tsx":
       $$$$$$$$1,
     "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx": $$$$$$$$40,
@@ -276,7 +278,7 @@ const manifest = {
     "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx": $$$$$$$$26,
     "deco-sites/eicomorg/sections/Bar.tsx": $$$$$$$$33,
     "deco-sites/eicomorg/sections/BecomeASponsor.tsx": $$$$$$$$19,
-    "deco-sites/eicomorg/sections/BestDigitalCourse.tsx": $$$$$$$$11,
+    "deco-sites/eicomorg/sections/BestDigitalCourse.tsx": $$$$$$$$12,
     "deco-sites/eicomorg/sections/Bonus.tsx": $$$$$$$$3,
     "deco-sites/eicomorg/sections/Brochure.tsx": $$$$$$$$21,
     "deco-sites/eicomorg/sections/Carousel.tsx": $$$$$$$$34,
@@ -286,16 +288,16 @@ const manifest = {
     "deco-sites/eicomorg/sections/CourseInfo.tsx": $$$$$$$$45,
     "deco-sites/eicomorg/sections/Courses.tsx": $$$$$$$$57,
     "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx": $$$$$$$$50,
-    "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$8,
+    "deco-sites/eicomorg/sections/DesignSystem.tsx": $$$$$$$$9,
     "deco-sites/eicomorg/sections/DetailsSection.tsx": $$$$$$$$37,
-    "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx": $$$$$$$$7,
+    "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx": $$$$$$$$8,
     "deco-sites/eicomorg/sections/ElevateYourCareer.tsx": $$$$$$$$52,
     "deco-sites/eicomorg/sections/EmpowerYourself.tsx": $$$$$$$$46,
     "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx": $$$$$$$$4,
     "deco-sites/eicomorg/sections/Faculty.tsx": $$$$$$$$18,
     "deco-sites/eicomorg/sections/FacultyExecutiveProgramme.tsx": $$$$$$$$23,
     "deco-sites/eicomorg/sections/FAQ.tsx": $$$$$$$$27,
-    "deco-sites/eicomorg/sections/Features.tsx": $$$$$$$$10,
+    "deco-sites/eicomorg/sections/Features.tsx": $$$$$$$$11,
     "deco-sites/eicomorg/sections/Footer.tsx": $$$$$$$$25,
     "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx":
       $$$$$$$$16,
@@ -308,18 +310,18 @@ const manifest = {
     "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx": $$$$$$$$56,
     "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx": $$$$$$$$22,
     "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx": $$$$$$$$28,
-    "deco-sites/eicomorg/sections/LinkTree.tsx": $$$$$$$$9,
+    "deco-sites/eicomorg/sections/LinkTree.tsx": $$$$$$$$10,
     "deco-sites/eicomorg/sections/MoreAboutEicomDCE.tsx": $$$$$$$$38,
     "deco-sites/eicomorg/sections/Newsletter.tsx": $$$$$$$$29,
     "deco-sites/eicomorg/sections/ProductDetails.tsx": $$$$$$$$24,
     "deco-sites/eicomorg/sections/ProductShelf.tsx": $$$$$$$$0,
-    "deco-sites/eicomorg/sections/ScaleUpCareer.tsx": $$$$$$$$12,
+    "deco-sites/eicomorg/sections/ScaleUpCareer.tsx": $$$$$$$$13,
     "deco-sites/eicomorg/sections/SearchResult.tsx": $$$$$$$$35,
     "deco-sites/eicomorg/sections/ShouldCertified.tsx": $$$$$$$$2,
-    "deco-sites/eicomorg/sections/someNumbers.tsx": $$$$$$$$14,
+    "deco-sites/eicomorg/sections/SomeNumbers.tsx": $$$$$$$$5,
     "deco-sites/eicomorg/sections/TestimonialsSection.tsx": $$$$$$$$54,
     "deco-sites/eicomorg/sections/TextSection.tsx": $$$$$$$$42,
-    "deco-sites/eicomorg/sections/WaitingList.tsx": $$$$$$$$5,
+    "deco-sites/eicomorg/sections/WaitingList.tsx": $$$$$$$$6,
     "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$51,
     "deco-sites/eicomorg/sections/WhoIsForDigitalCommerceExpert.tsx":
       $$$$$$$$44,
