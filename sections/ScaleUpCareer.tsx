@@ -1,1 +1,1 @@
-export { default } from "$store/components/scaleUpCareer/ScaleUpCareer.tsx";
+export { default } from "$store/islands/ScaleUpCareer.tsx";
