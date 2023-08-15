@@ -45,7 +45,7 @@ function WhoIsThisCertificationFor(
     <div
       ref={elementRef as Ref<HTMLDivElement>}
       style={{ backgroundColor: "white" }}
-      class="container-fluid py-[100px] pb-[100px] md:h-[43rem] xs:min-h-[42rem]"
+      class="container-fluid pb-[100px] md:h-[43rem] xs:min-h-[42rem]"
     >
       <div class="lg:w-[1120px] m-auto relative">
         <div class="
