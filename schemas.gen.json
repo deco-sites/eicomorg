@@ -156,6 +156,7 @@
               "deco-sites/eicomorg/sections/ScaleUpCareer.tsx",
               "deco-sites/eicomorg/sections/SearchResult.tsx",
               "deco-sites/eicomorg/sections/ShouldCertified.tsx",
+              "deco-sites/eicomorg/sections/SideLogos.tsx",
               "deco-sites/eicomorg/sections/SomeNumbers.tsx",
               "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
               "deco-sites/eicomorg/sections/TextSection.tsx",
@@ -13111,6 +13112,63 @@
       ],
       "title": "deco-sites/eicomorg/components/shouldCertified/ShouldCertified.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NpZGVMb2dvcy9TaWRlTG9nb3MudHN4@BenefitProps": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "image",
+        "title",
+        "text"
+      ],
+      "title": "BenefitProps"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NpZGVMb2dvcy9TaWRlTG9nb3MudHN4@BenefitProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NpZGVMb2dvcy9TaWRlTG9nb3MudHN4@BenefitProps"
+      },
+      "title": "BenefitProps[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NpZGVMb2dvcy9TaWRlTG9nb3MudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "benefits": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NpZGVMb2dvcy9TaWRlTG9nb3MudHN4@BenefitProps[]",
+          "title": "Benefits"
+        }
+      },
+      "required": [
+        "benefits"
+      ],
+      "title": "deco-sites/eicomorg/components/sideLogos/SideLogos.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@TestimonialPerson": {
       "type": "object",
       "properties": {
@@ -17427,6 +17485,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TaWRlTG9nb3MudHN4": {
+      "title": "deco-sites/eicomorg/sections/SideLogos.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NpZGVMb2dvcy9TaWRlTG9nb3MudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/SideLogos.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/SideLogos.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Tb21lTnVtYmVycy50c3g=": {
       "title": "deco-sites/eicomorg/sections/SomeNumbers.tsx",
       "type": "object",
@@ -18971,6 +19050,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TaG91bGRDZXJ0aWZpZWQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TaWRlTG9nb3MudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Tb21lTnVtYmVycy50c3g="
