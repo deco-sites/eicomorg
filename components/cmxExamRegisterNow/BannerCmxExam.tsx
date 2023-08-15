@@ -52,21 +52,23 @@ function BannerCmxExam(
           <div class="z-10 max-w-[1120px] h-[70vh] m-auto relative">
             <div class="absolute w-[50%] top-[20%] bottom-auto right-auto left-[0%] mt-[24px]">
               <span
-                class="[&>*]:font-AvenirNextLTPro leading-[41px]"
+                class="[&>*]:font-AvenirNextLTPro leading-[40px]"
                 dangerouslySetInnerHTML={{ __html: title }}
               >
               </span>
-              <span
-                class="[&>*]:font-Gravity text-[#505050]"
-                dangerouslySetInnerHTML={{ __html: paragraph }}
-              >
-              </span>
-              <div>
-                <button class="rounded bg-[#f2a91d] px-[20px] py-[14px] w-auto text-[16px] font-bold text-white cursor-pointer text-[#f2a91d]">
+              <div class="mt-[20px]">
+                <span
+                  class="[&>*]:font-Gravity text-[#505050] leading-[28px]"
+                  dangerouslySetInnerHTML={{ __html: paragraph }}
+                >
+                </span>
+              </div>
+              <div class="flex flex-row">
+                <button class="rounded mt-[20px] bg-[#f2a91d] px-[20px] py-[14px] w-fit text-[16px] font-bold text-white cursor-pointer text-[#f2a91d]">
                   {buttonText}
                 </button>
                 <a
-                  class="w-fit lg:text-[14px] xs:text-[12px] block bold lg:my-4 xs:my-2 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
+                  class="w-fit ml-[20px] mt-[2rem] lg:text-[14px] xs:text-[12px] block bold lg:my-4 xs:my-2 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
                   style={actionLinkBtn}
                   href="#"
                 >
