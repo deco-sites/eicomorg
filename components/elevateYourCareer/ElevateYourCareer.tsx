@@ -26,8 +26,8 @@ function ElevateYourCareer(
 ) {
   return (
     <>
-      <div class="py-24 bg-gray-100">
-        <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
+      <div class="py-24 bg-gray-100 xs:max-w-[385px] md:max-w-full md:w-[98%] lg:w-full">
+        <div class="z-auto md:max-w-[1120px]  pr-0 relative mx-auto">
           <div class="text-center pb-5">
             <h2 class="text-bold text-center text-3xl md:mt-5 xs:mb-5 md:uppercase block font-AvenirNextLTPro">
               <span dangerouslySetInnerHTML={{ __html: title }}></span>

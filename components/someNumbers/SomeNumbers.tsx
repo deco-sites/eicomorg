@@ -34,7 +34,7 @@ function SomeNumbers(
           backgroundPosition: "120% 0",
           backgroundAttachment: "scroll,",
         }}
-        class="lg:px-24 md:px-5 md:pb-14 bg-gray-100 xs:h-[700px] md:h-[500px]"
+        class="lg:px-24 md:px-5 md:pb-14 xs:w-full  md:pl-0 xs:max-w-[385px] md:max-w-full bg-gray-100 xs:h-[700px] md:h-[500px]"
       >
         <div 
         class="max-w-[1120px] pr-0 relative mx-auto">
