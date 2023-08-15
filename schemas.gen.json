@@ -62,6 +62,7 @@
               "deco-sites/std/loaders/vtex/wishlist.ts",
               "./islands/AddToCartButton.tsx",
               "./islands/Alerts.tsx",
+              "./islands/BannerEcommerceSolutionsArchitect.tsx",
               "./islands/BannerSectionForIndividuals.tsx",
               "./islands/BestDigitalCourse.tsx",
               "./islands/CertifiedByIndustry.tsx",
@@ -89,6 +90,7 @@
               "./islands/SearchControls.tsx",
               "./islands/ShippingSimulation.tsx",
               "./islands/SliderJS.tsx",
+              "./islands/SomeNumbers.tsx",
               "./islands/WhoIsForDigitalCommerceExpert.tsx",
               "./islands/WishlistButton.tsx",
               "$live/handlers/devPage.ts",
@@ -106,6 +108,7 @@
               "deco-sites/eicomorg/sections/Alumni.tsx",
               "deco-sites/eicomorg/sections/BannerCmxExam.tsx",
               "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
+              "deco-sites/eicomorg/sections/BannerEcommerceSolutionsArchitect.tsx",
               "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx",
               "deco-sites/eicomorg/sections/BannerGrid.tsx",
               "deco-sites/eicomorg/sections/BannerPLP.tsx",
@@ -152,7 +155,7 @@
               "deco-sites/eicomorg/sections/ScaleUpCareer.tsx",
               "deco-sites/eicomorg/sections/SearchResult.tsx",
               "deco-sites/eicomorg/sections/ShouldCertified.tsx",
-              "deco-sites/eicomorg/sections/someNumbers.tsx",
+              "deco-sites/eicomorg/sections/SomeNumbers.tsx",
               "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
               "deco-sites/eicomorg/sections/TextSection.tsx",
               "deco-sites/eicomorg/sections/WaitingList.tsx",
@@ -6960,6 +6963,159 @@
       ],
       "title": "deco-sites/eicomorg/components/header/Alert.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@BannerBackgroundImage": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Desktop"
+        },
+        "mobile": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile"
+      ],
+      "title": "BannerBackgroundImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@CourseLogo": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Desktop"
+        },
+        "mobile": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile"
+      ],
+      "title": "CourseLogo"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@Button": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "buttonColor": {
+          "type": "string",
+          "title": "Button Color"
+        }
+      },
+      "required": [
+        "text",
+        "href",
+        "buttonColor"
+      ],
+      "title": "Button"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@BannerBackgroundImage",
+          "title": "Background Image"
+        },
+        "courseLogo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@CourseLogo",
+          "title": "Course Logo"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@Button",
+          "title": "Button"
+        },
+        "smallText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Small Text"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "backgroundImage",
+        "courseLogo",
+        "button",
+        "smallText"
+      ],
+      "title": "deco-sites/eicomorg/components/bannerEcommerceSolutionsArchitect/BannerEcommerceSolutionsArchitect.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@BannerBackgroundImage": {
       "type": "object",
       "properties": {
@@ -9674,6 +9830,62 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/ShippingSimulation.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL1NvbWVOdW1iZXJzLnRzeA==@Card": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Number"
+        },
+        "subtitle": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Subtitle"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "source": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Source"
+        }
+      },
+      "required": [
+        "number",
+        "subtitle",
+        "text",
+        "source"
+      ],
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL1NvbWVOdW1iZXJzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Image"
+        },
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Top Text"
+        },
+        "leftCard": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL1NvbWVOdW1iZXJzLnRzeA==@Card",
+          "title": "Left Card"
+        },
+        "rightCard": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL1NvbWVOdW1iZXJzLnRzeA==@Card",
+          "title": "Right Card"
+        }
+      },
+      "required": [
+        "backgroundImage",
+        "topText",
+        "leftCard",
+        "rightCard"
+      ],
+      "title": "deco-sites/eicomorg/components/someNumbers/SomeNumbers.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0L1dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0LnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -11665,7 +11877,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@54c56595516f3defa721f32350b78287&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -11681,7 +11893,7 @@
           "required": []
         }
       ],
-      "title": "54c56595516f3defa721f32350b78287&Colors"
+      "title": "059c94444960270fb25f4ccb03e57ec3&Colors"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -11784,7 +11996,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@54c56595516f3defa721f32350b78287&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -12897,62 +13109,6 @@
         "items"
       ],
       "title": "deco-sites/eicomorg/components/shouldCertified/ShouldCertified.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL3NvbWVOdW1iZXJzLnRzeA==@Card": {
-      "type": "object",
-      "properties": {
-        "number": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Number"
-        },
-        "subtitle": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Subtitle"
-        },
-        "text": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Text"
-        },
-        "source": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Source"
-        }
-      },
-      "required": [
-        "number",
-        "subtitle",
-        "text",
-        "source"
-      ],
-      "title": "Card"
-    },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL3NvbWVOdW1iZXJzLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "backgroundImage": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Background Image"
-        },
-        "topText": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Top Text"
-        },
-        "leftCard": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL3NvbWVOdW1iZXJzLnRzeA==@Card",
-          "title": "Left Card"
-        },
-        "rightCard": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL3NvbWVOdW1iZXJzLnRzeA==@Card",
-          "title": "Right Card"
-        }
-      },
-      "required": [
-        "backgroundImage",
-        "topText",
-        "leftCard",
-        "rightCard"
-      ],
-      "title": "deco-sites/eicomorg/components/someNumbers/someNumbers.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Rlc3RpbW9uaWFsc1NlY3Rpb24udHN4@TestimonialPerson": {
       "type": "object",
@@ -15342,6 +15498,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC50c3g=": {
+      "title": "./islands/BannerEcommerceSolutionsArchitect.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/BannerEcommerceSolutionsArchitect.tsx"
+          ],
+          "default": "./islands/BannerEcommerceSolutionsArchitect.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=": {
       "title": "./islands/BannerSectionForIndividuals.tsx",
       "type": "object",
@@ -15869,6 +16046,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1NvbWVOdW1iZXJzLnRzeA==": {
+      "title": "./islands/SomeNumbers.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL1NvbWVOdW1iZXJzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/SomeNumbers.tsx"
+          ],
+          "default": "./islands/SomeNumbers.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0LnRzeA==": {
       "title": "./islands/WhoIsForDigitalCommerceExpert.tsx",
       "type": "object",
@@ -16222,6 +16420,27 @@
             "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4": {
+      "title": "deco-sites/eicomorg/sections/BannerEcommerceSolutionsArchitect.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/BannerEcommerceSolutionsArchitect.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/BannerEcommerceSolutionsArchitect.tsx"
         }
       }
     },
@@ -17186,12 +17405,12 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9zb21lTnVtYmVycy50c3g=": {
-      "title": "deco-sites/eicomorg/sections/someNumbers.tsx",
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Tb21lTnVtYmVycy50c3g=": {
+      "title": "deco-sites/eicomorg/sections/SomeNumbers.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL3NvbWVOdW1iZXJzLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NvbWVOdW1iZXJzL1NvbWVOdW1iZXJzLnRzeA==@Props"
         }
       ],
       "required": [
@@ -17201,9 +17420,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "deco-sites/eicomorg/sections/someNumbers.tsx"
+            "deco-sites/eicomorg/sections/SomeNumbers.tsx"
           ],
-          "default": "deco-sites/eicomorg/sections/someNumbers.tsx"
+          "default": "deco-sites/eicomorg/sections/SomeNumbers.tsx"
         }
       }
     },
@@ -18426,6 +18645,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0FsZXJ0cy50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g="
         },
         {
@@ -18507,6 +18729,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpTLnRzeA=="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1NvbWVOdW1iZXJzLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL1dob0lzRm9yRGlnaXRhbENvbW1lcmNlRXhwZXJ0LnRzeA=="
         },
         {
@@ -18580,6 +18805,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJFeGVjdXRpdmVQcm9ncmFtLnRzeA=="
@@ -18720,7 +18948,7 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TaG91bGRDZXJ0aWZpZWQudHN4"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9zb21lTnVtYmVycy50c3g="
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Tb21lTnVtYmVycy50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXN0aW1vbmlhbHNTZWN0aW9uLnRzeA=="

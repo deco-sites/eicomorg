@@ -29,7 +29,7 @@ function ElevateYourCareer(
       <div class="py-24 bg-gray-100">
         <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
           <div class="text-center pb-5">
-            <h2 class="text-bold text-center text-3xl md:mt-5 xs:mb-5 md:uppercase block">
+            <h2 class="text-bold text-center text-3xl md:mt-5 xs:mb-5 md:uppercase block font-AvenirNextLTPro">
               <span dangerouslySetInnerHTML={{ __html: title }}></span>
             </h2>
           </div>
@@ -37,7 +37,7 @@ function ElevateYourCareer(
             <div class="xs:w-full md:w-[40%] md:mt-16 float-left px-3 mb-3 relative md:">
               <p>
                 <span
-                  class="text-left pb-3 text-2xl mb-3"
+                  class="text-left pb-[10px] text-[22px] leading-[30px] mb-[10px] font-Gravity"
                   dangerouslySetInnerHTML={{ __html: subTitle }}
                 >
                 </span>
