@@ -4,14 +4,23 @@ import type {
 } from "deco-sites/std/components/types.ts";
 import { Ref } from "preact/hooks";
 import { useScrollShow } from "$store/sdk/useScrollShow.ts";
+import { JSX } from "preact";
 
 export interface Props {
   backgroundImage: LiveImage;
   title: HTML;
-  paragraph: string;
+  paragraph: HTML;
   buttonText: string;
   linkText: string;
 }
+
+const actionLinkBtn: JSX.CSSProperties = {
+  color: "#000",
+  backgroundImage: `url(/icons/Arrow-right-black.svg)`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "20px",
+  backgroundPosition: "100%",
+};
 
 function BannerCmxExam(
   {
@@ -40,10 +49,31 @@ function BannerCmxExam(
           }}
           class="h-[70vh]"
         >
-          <div class="z-10">
-            <button class="rounded bg-[#f2a91d] px-[20px] py-[14px] w-auto text-[16px] font-bold text-white cursor-pointer text-[#f2a91d]">
-              {buttonText}
-            </button>
+          <div class="z-10 max-w-[1120px] h-[70vh] m-auto relative">
+            <div class="absolute w-[50%] top-[20%] bottom-auto right-auto left-[0%] mt-[24px]">
+              <span
+                class="[&>*]:font-AvenirNextLTPro leading-[41px]"
+                dangerouslySetInnerHTML={{ __html: title }}
+              >
+              </span>
+              <span
+                class="[&>*]:font-Gravity text-[#505050]"
+                dangerouslySetInnerHTML={{ __html: paragraph }}
+              >
+              </span>
+              <div>
+                <button class="rounded bg-[#f2a91d] px-[20px] py-[14px] w-auto text-[16px] font-bold text-white cursor-pointer text-[#f2a91d]">
+                  {buttonText}
+                </button>
+                <a
+                  class="w-fit lg:text-[14px] xs:text-[12px] block bold lg:my-4 xs:my-2 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
+                  style={actionLinkBtn}
+                  href="#"
+                >
+                  {linkText}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
