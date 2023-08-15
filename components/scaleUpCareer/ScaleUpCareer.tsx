@@ -16,8 +16,10 @@ function ScaleUpCareer(
 ) {
   const [elementRef, isShown] = useScrollShow();
   return (
-    <div class="xs:px-3 xs:pt-10 lg:px-0 lg:pb-[180px] lg:pt-[140px] lg:mb-[140px] lg:h-[800px] md:h-[900px] xs:h-[1100px]"
-    ref={elementRef as Ref<HTMLDivElement>}>
+    <div
+      class="xs:px-3 xs:pt-10 lg:px-0 lg:pb-[180px] lg:pt-[140px] lg:mb-[140px] lg:h-[800px] md:h-[900px] xs:h-[1100px]"
+      ref={elementRef as Ref<HTMLDivElement>}
+    >
       <div class="xs:max-w-none md:max-w-[1120px] relative mx-auto">
         <div class="text-center xs:pb-5 md:pb-7 lg:pb-5">
           <h2 class="text-left uppercase md:mt-3 md:mb-5 lg:mx-5 text-3xl font-bold block font-AvenirNextLTPro">
@@ -25,8 +27,10 @@ function ScaleUpCareer(
           </h2>
         </div>
         <div class="xs:mx-0 md:mx-[-10px] md:mt-0 lg:mt-[120px] relative">
-          <div class={`xs:w-full left-auto right-auto lg:w-1/2 float-left px-3 relative
-          ${isShown ? "lg:animate-slide-right" : ""}`}>
+          <div
+            class={`xs:w-full left-auto right-auto lg:w-1/2 float-left px-3 relative
+          ${isShown ? "lg:animate-slide-right" : ""}`}
+          >
             <div
               style={{
                 backgroundImage: `url(${image})`,
@@ -38,9 +42,10 @@ function ScaleUpCareer(
             >
             </div>
           </div>
-          <div class={`xs:w-[94%] md:w-[97%] md:left-auto md:right-auto lg:w-1/2 float-left px-3 relative
-          ${isShown ? "lg:animate-slide-left" : ""}`
-            }>
+          <div
+            class={`xs:w-[94%] md:w-[97%] md:left-auto md:right-auto lg:w-1/2 float-left px-3 relative
+          ${isShown ? "lg:animate-slide-left" : ""}`}
+          >
             <div class="z-[-1] xs:px-10 xs:pt-10 xs:pb-5 lg:pl-[120px] lg:pr-[60px] md:left-auto lg:left-[-80px]
                         xs:w-full lg:w-[630px] md:h-auto lg:h-[400px] lg:pt-[70px] absolute md:top-0 lg:top-[-50px] bg-[#dbdbdf]">
               <h1 class="text-[32px] leading-[36px] mt-0 md:font-bold mb-[10px] font-AvenirNextLTPro">
