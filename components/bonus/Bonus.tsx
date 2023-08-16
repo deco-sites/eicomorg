@@ -23,17 +23,17 @@ function Bonus(
   { title, card1, card2, card3 }: Props,
 ) {
   return (
-    <div class="py-24 bg-gray-100 h-[610px]">
+    <div class="py-[100px] bg-gray-100 md:h-[610px] xs:h-[1200px] xs:w-[97%] md:w-full">
       <div class="z-auto max-w-[1120px] pr-0 relative mx-auto">
         <div class="max-w-[700px] mx-auto">
-          <h2 class="mt-5 text-center text-3xl uppercase block">
+          <h2 class="mt-5 text-center text-3xl uppercase block font-AvenirNextLTPro">
             <span dangerouslySetInnerHTML={{ __html: title }}></span>
           </h2>
         </div>
         <div class="mx-[-10px]">
-          <BonusCard bonusCard={card1} />
-          <BonusCard bonusCard={card2} />
-          <BonusCard bonusCard={card3} />
+          <BonusCard bonusCard={card1} delay="120ms" />
+          <BonusCard bonusCard={card2} delay="240ms" />
+          <BonusCard bonusCard={card3} delay="0ms" />
         </div>
       </div>
     </div>
