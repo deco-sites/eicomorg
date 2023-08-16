@@ -42,6 +42,10 @@
   .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
+
+  .clip-ploygon {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 82% 100%, 0% 100%);
+  }
   
   .richtext h4,
   .richtext h3,
