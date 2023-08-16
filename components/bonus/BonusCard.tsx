@@ -13,14 +13,18 @@ export interface BonusCard {
   text: HTML;
 }
 
-function BonusCard({ bonusCard, delay }: { bonusCard: BonusCard, delay: string }) {
+function BonusCard(
+  { bonusCard, delay }: { bonusCard: BonusCard; delay: string },
+) {
   const { image, title, text } = bonusCard;
   const [elementRef, isShown] = useScrollShow();
   return (
-    <div class={`mt-5 px-10 pt-0 xs:w-full md:w-1/3 float-left relative block
+    <div
+      class={`mt-5 px-10 pt-0 xs:w-full md:w-1/3 float-left relative block
     ${isShown && delay !== "0ms" ? "animate-slide-bottom" : ""}`}
-    style={{ animationDelay: delay }}
-    ref={elementRef as Ref<HTMLDivElement>}>
+      style={{ animationDelay: delay }}
+      ref={elementRef as Ref<HTMLDivElement>}
+    >
       <div
         style={{
           backgroundImage: `url(${image.src})`,

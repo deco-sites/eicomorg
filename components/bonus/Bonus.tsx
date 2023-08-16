@@ -32,8 +32,8 @@ function Bonus(
         </div>
         <div class="mx-[-10px]">
           <BonusCard bonusCard={card1} delay="120ms" />
-          <BonusCard bonusCard={card2} delay="240ms"/>
-          <BonusCard bonusCard={card3} delay="0ms"/>
+          <BonusCard bonusCard={card2} delay="240ms" />
+          <BonusCard bonusCard={card3} delay="0ms" />
         </div>
       </div>
     </div>
