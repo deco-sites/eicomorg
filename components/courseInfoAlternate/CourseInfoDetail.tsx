@@ -27,8 +27,7 @@ function CourseInfoDetail({ course, backgroundColor }: {
 
   return (
     <>
-      <div class="pb-3"
-      style={{backgroundColor: backgroundColor}}>
+      <div class="pb-3" style={{ backgroundColor: backgroundColor }}>
         <div
           onClick={toggleExpand}
           className={`border-orange-500 cursor-pointer border rounded-md p-[10px] flex relative justify-between 

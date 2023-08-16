@@ -104,7 +104,10 @@ function CourseInfoAlternate(
             )}
             <div class="mt-5">
               {courseInfoDetails.map((course) => (
-                <CourseInfoDetail course={course} backgroundColor={backgroundInfo.color}/>
+                <CourseInfoDetail
+                  course={course}
+                  backgroundColor={backgroundInfo.color}
+                />
               ))}
             </div>
           </div>
