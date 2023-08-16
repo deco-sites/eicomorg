@@ -8,7 +8,7 @@ export interface BenefitProps {
     alt: string;
   };
   title: HTML;
-  text: HTML
+  text: HTML;
 }
 
 function Benefit(
@@ -34,7 +34,7 @@ function Benefit(
         class="max-w-full align-middle inline-block mb-[00px] mx-auto xs:mr-5 md:mr-0"
       />
       <h3 class="text-[18px] leading-[24px] mt-5 font-AvenirNextLTPro mb-[10px]">
-      <span dangerouslySetInnerHTML={{ __html: title }}></span>
+        <span dangerouslySetInnerHTML={{ __html: title }}></span>
       </h3>
       <p class="md:text-[16px] xs:text-[14px] xs:leading-[22px] font-Gravity text-left mb-[10px] md:leading-[20px] lg:leading-[1.6rem]">
         <span dangerouslySetInnerHTML={{ __html: text }}></span>

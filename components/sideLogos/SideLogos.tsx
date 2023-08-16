@@ -23,16 +23,16 @@ function SideLogos(
   }: Props,
 ) {
   return (
-      <div class="pb-[100px] lg:pt-10 xs:h-[700px] md:h-[400px] lg:h-[400px]">
-        <div class="max-w-[1120px] pr-0 mx-auto">
-          <div class="md:mt-10 mb-0 md:mx-[-10px]">
-            {benefits.map((benefit, index) => (
-              <Benefit
-                benefit={benefit}
-              />
-            ))}
-          </div>
+    <div class="pb-[100px] lg:pt-10 xs:h-[700px] md:h-[400px] lg:h-[400px]">
+      <div class="max-w-[1120px] pr-0 mx-auto">
+        <div class="md:mt-10 mb-0 md:mx-[-10px]">
+          {benefits.map((benefit, index) => (
+            <Benefit
+              benefit={benefit}
+            />
+          ))}
         </div>
+      </div>
     </div>
   );
 }
