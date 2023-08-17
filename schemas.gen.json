@@ -152,6 +152,7 @@
               "deco-sites/eicomorg/sections/HomeTextSection.tsx",
               "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx",
               "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx",
+              "deco-sites/eicomorg/sections/JoinWaitinListESA.tsx",
               "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx",
               "deco-sites/eicomorg/sections/LinkTree.tsx",
               "deco-sites/eicomorg/sections/MoreAboutEicomDCE.tsx",
@@ -12933,6 +12934,114 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/HomeTextSection.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML"
+      },
+      "title": "HTML[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0TGlzdEVTQS50c3g=@LeftPart": {
+      "type": "object",
+      "properties": {
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Top Text"
+        },
+        "bottomText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Text"
+        },
+        "benefits": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML[]",
+          "title": "Benefits"
+        }
+      },
+      "required": [
+        "topText",
+        "bottomText",
+        "benefits"
+      ],
+      "title": "LeftPart"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0TGlzdEVTQS50c3g=@FormInput": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "string",
+          "title": "Input"
+        },
+        "inputId": {
+          "type": "string",
+          "title": "Input Id"
+        },
+        "placeholder": {
+          "type": "string",
+          "title": "Placeholder"
+        },
+        "required": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Required"
+        }
+      },
+      "required": [
+        "input",
+        "inputId",
+        "placeholder"
+      ],
+      "title": "FormInput"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0TGlzdEVTQS50c3g=@FormInput[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0TGlzdEVTQS50c3g=@FormInput"
+      },
+      "title": "FormInput[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0TGlzdEVTQS50c3g=@Form": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0TGlzdEVTQS50c3g=@FormInput[]",
+          "title": "Input"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        }
+      },
+      "required": [
+        "input",
+        "buttonText"
+      ],
+      "title": "Form"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0TGlzdEVTQS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "leftPart": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0TGlzdEVTQS50c3g=@LeftPart",
+          "title": "Left Part"
+        },
+        "form": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0TGlzdEVTQS50c3g=@Form",
+          "title": "Form"
+        }
+      },
+      "required": [
+        "title",
+        "leftPart",
+        "form"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/JoinWaitListESA.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0bGlzdFNlY3Rpb24udHN4@Header": {
       "type": "object",
       "properties": {
@@ -17636,6 +17745,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Kb2luV2FpdGluTGlzdEVTQS50c3g=": {
+      "title": "deco-sites/eicomorg/sections/JoinWaitinListESA.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0pvaW5XYWl0TGlzdEVTQS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/JoinWaitinListESA.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/JoinWaitinListESA.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Kb2luV2FpdGxpc3RTZWN0aW9uLnRzeA==": {
       "title": "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx",
       "type": "object",
@@ -19420,6 +19550,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lV2h5RWljb21TZWN0aW9uLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Kb2luV2FpdGluTGlzdEVTQS50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Kb2luV2FpdGxpc3RTZWN0aW9uLnRzeA=="
