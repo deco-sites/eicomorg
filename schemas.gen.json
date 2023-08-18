@@ -63,6 +63,7 @@
               "./islands/AddToCartButton.tsx",
               "./islands/Alerts.tsx",
               "./islands/BannerEcommerceSolutionsArchitect.tsx",
+              "./islands/BannerInCompany.tsx",
               "./islands/BannerSectionForIndividuals.tsx",
               "./islands/BestDigitalCourse.tsx",
               "./islands/Bonus.tsx",
@@ -116,6 +117,7 @@
               "deco-sites/eicomorg/sections/BannerEcommerceSolutionsArchitect.tsx",
               "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx",
               "deco-sites/eicomorg/sections/BannerGrid.tsx",
+              "deco-sites/eicomorg/sections/BannerInCompany.tsx",
               "deco-sites/eicomorg/sections/BannerPLP.tsx",
               "deco-sites/eicomorg/sections/BannerSection.tsx",
               "deco-sites/eicomorg/sections/BannerSectionForIndividuals.tsx",
@@ -7125,6 +7127,88 @@
         "smallText"
       ],
       "title": "deco-sites/eicomorg/components/bannerEcommerceSolutionsArchitect/BannerEcommerceSolutionsArchitect.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckluQ29tcGFueS50c3g=@BannerBackgroundImage": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile"
+      ],
+      "title": "BannerBackgroundImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckluQ29tcGFueS50c3g=@ActionLink": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "text",
+        "href"
+      ],
+      "title": "ActionLink"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckluQ29tcGFueS50c3g=@ActionLinksContainer": {
+      "type": "object",
+      "properties": {
+        "firstButton": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckluQ29tcGFueS50c3g=@ActionLink",
+          "title": "First Button"
+        },
+        "secondButton": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckluQ29tcGFueS50c3g=@ActionLink",
+          "title": "Second Button"
+        }
+      },
+      "required": [
+        "firstButton",
+        "secondButton"
+      ],
+      "title": "ActionLinksContainer"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckluQ29tcGFueS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Top Text"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckluQ29tcGFueS50c3g=@BannerBackgroundImage",
+          "title": "Background Image"
+        },
+        "buttons": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckluQ29tcGFueS50c3g=@ActionLinksContainer",
+          "title": "Buttons"
+        }
+      },
+      "required": [
+        "topText",
+        "title",
+        "backgroundImage",
+        "buttons"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/BannerInCompany.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=@BannerBackgroundImage": {
       "type": "object",
@@ -15927,6 +16011,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0Jhbm5lckluQ29tcGFueS50c3g=": {
+      "title": "./islands/BannerInCompany.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckluQ29tcGFueS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/BannerInCompany.tsx"
+          ],
+          "default": "./islands/BannerInCompany.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g=": {
       "title": "./islands/BannerSectionForIndividuals.tsx",
       "type": "object",
@@ -16996,6 +17101,27 @@
             "deco-sites/eicomorg/sections/BannerGrid.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/BannerGrid.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJJbkNvbXBhbnkudHN4": {
+      "title": "deco-sites/eicomorg/sections/BannerInCompany.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckluQ29tcGFueS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/BannerInCompany.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/BannerInCompany.tsx"
         }
       }
     },
@@ -19266,6 +19392,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lckluQ29tcGFueS50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lclNlY3Rpb25Gb3JJbmRpdmlkdWFscy50c3g="
         },
         {
@@ -19447,6 +19576,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJHcmlkLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJJbkNvbXBhbnkudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJQTFAudHN4"
