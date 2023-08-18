@@ -21,7 +21,7 @@ export interface ActionLinksContainer {
 }
 
 export interface Props {
-  title: string;
+  title: HTML;
   backgroundImage: BannerBackgroundImage;
   actionLinksContainer: ActionLinksContainer;
 }
@@ -60,7 +60,7 @@ function BannerSection(
             class="
             lg:w-[660px]
             lg:h-[300px]
-            lg:leading-[68px]
+            lg:leading-[54px]
             lg:px-12
             lg:py-12 
             lg:text-[58px]
@@ -82,7 +82,11 @@ function BannerSection(
             font-AvenirNextLTPro"
             style={titleContainer}
           >
-            {title}
+            <span
+              class="text-[18px]"
+              dangerouslySetInnerHTML={{ __html: title }}
+            >
+            </span>
           </div>
         </div>
 
