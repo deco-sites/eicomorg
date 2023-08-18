@@ -16,11 +16,9 @@ export interface Props {
 }
 
 function Faq({ title, questions = [], backgroundColor }: Props) {
-
   return (
     <>
-      <div class="py-[100px]"
-      style={{backgroundColor: backgroundColor}}>
+      <div class="py-[100px]" style={{ backgroundColor: backgroundColor }}>
         <div class="z-auto max-w-[1120px] lg:pr-0 lg:pl-0 xs:px-3 relative mx-auto">
           <div>
             <div>
