@@ -40,6 +40,7 @@ function BannerInCompany(
         ref={elementRef as Ref<HTMLDivElement>}
       >
         <div class="box-border">
+          <div class="h-[60px]"></div>
           <div class="z-10 h-[640px] max-w-[1120px] relative mx-auto">
             <div class="h-[640px] flex-col flex justify-between items-start pt-[60px] pb-[40px] relative">
               <div
@@ -135,7 +136,7 @@ function BannerInCompany(
             </div>
           </div>
           <div
-            class="md:block xs:hidden w-[100%] h-[300px] max-w-none top-auto bottom-0 left-auto right-0"
+            class="md:block xs:hidden w-[100%] h-[300px] mt-[70px] max-w-none top-auto bottom-0 left-auto right-0"
             style={{
               backgroundImage: `url(${backgroundImage.mobile})`,
               backgroundRepeat: "no-repeat",
@@ -145,7 +146,7 @@ function BannerInCompany(
           >
           </div>
           <div
-            class="md:hidden xs:block w-[100%] h-[200px] max-w-none top-auto bottom-0 left-auto right-0"
+            class="md:hidden xs:block w-[100%] h-[200px] mt-[100px] max-w-none top-auto bottom-0 left-auto right-0"
             style={{
               backgroundImage: `url(${backgroundImage.mobile})`,
               backgroundRepeat: "no-repeat",
