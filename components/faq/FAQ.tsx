@@ -12,19 +12,15 @@ export interface Questions {
 export interface Props {
   title: HTML;
   questions: Questions[];
+  backgroundColor: string;
 }
 
-function Faq({ title, questions = [] }: Props) {
-  const [showDetails, setShowDetails] = useState(false);
-  const { displayNavbarMenu } = useUI();
-
-  const toggleExpand = () => {
-    setShowDetails(!showDetails);
-  };
+function Faq({ title, questions = [], backgroundColor }: Props) {
 
   return (
     <>
-      <div class="py-[100px]">
+      <div class="py-[100px]"
+      style={{backgroundColor: backgroundColor}}>
         <div class="z-auto max-w-[1120px] lg:pr-0 lg:pl-0 xs:px-3 relative mx-auto">
           <div>
             <div>
@@ -33,7 +29,7 @@ function Faq({ title, questions = [] }: Props) {
               </h1>
             </div>
           </div>
-          {questions.map((question, index) => (
+          {questions.map((question) => (
             <Question
               questionAnswer={{ ...question }}
             />

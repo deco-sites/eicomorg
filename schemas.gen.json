@@ -8728,11 +8728,16 @@
         "questions": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZhcS9GQVEudHN4@Questions[]",
           "title": "Questions"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "title": "Background Color"
         }
       },
       "required": [
         "title",
-        "questions"
+        "questions",
+        "backgroundColor"
       ],
       "title": "deco-sites/eicomorg/components/faq/FAQ.tsx@Props"
     },
