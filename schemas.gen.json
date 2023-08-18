@@ -79,6 +79,7 @@
               "./islands/executiveProgrameCard.tsx",
               "./islands/FAQ.tsx",
               "./islands/Footer.tsx",
+              "./islands/GraphicInCompany.tsx",
               "./islands/GreatExperience.tsx",
               "./islands/Header.tsx",
               "./islands/HeaderButton.tsx",
@@ -146,6 +147,7 @@
               "deco-sites/eicomorg/sections/Features.tsx",
               "deco-sites/eicomorg/sections/Footer.tsx",
               "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx",
+              "deco-sites/eicomorg/sections/GraphicInCompany.tsx",
               "deco-sites/eicomorg/sections/Graphics.tsx",
               "deco-sites/eicomorg/sections/GreatExperienceSection.tsx",
               "deco-sites/eicomorg/sections/Header.tsx",
@@ -9179,6 +9181,75 @@
       ],
       "title": "deco-sites/eicomorg/components/footer/Footer.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0dyYXBoaWNJbkNvbXBhbnkudHN4@Graphic": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Desktop"
+        },
+        "mobile": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile"
+      ],
+      "title": "Graphic"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0dyYXBoaWNJbkNvbXBhbnkudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Top Text"
+        },
+        "bottomText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Text"
+        },
+        "graphic": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0dyYXBoaWNJbkNvbXBhbnkudHN4@Graphic",
+          "title": "Graphic"
+        }
+      },
+      "required": [
+        "topText",
+        "bottomText",
+        "graphic"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/GraphicInCompany.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2dyZWF0RXhwZXJpZW5jZS9HcmVhdEV4cGVyaWVuY2UudHN4@Props": {
       "type": "object",
       "properties": {
@@ -16342,6 +16413,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0dyYXBoaWNJbkNvbXBhbnkudHN4": {
+      "title": "./islands/GraphicInCompany.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0dyYXBoaWNJbkNvbXBhbnkudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/GraphicInCompany.tsx"
+          ],
+          "default": "./islands/GraphicInCompany.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0dyZWF0RXhwZXJpZW5jZS50c3g=": {
       "title": "./islands/GreatExperience.tsx",
       "type": "object",
@@ -17705,6 +17797,27 @@
             "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/forIndividualsExecuteProgrameCard.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmFwaGljSW5Db21wYW55LnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/GraphicInCompany.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0dyYXBoaWNJbkNvbXBhbnkudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/GraphicInCompany.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/GraphicInCompany.tsx"
         }
       }
     },
@@ -19440,6 +19553,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0Zvb3Rlci50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0dyYXBoaWNJbkNvbXBhbnkudHN4"
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0dyZWF0RXhwZXJpZW5jZS50c3g="
         },
         {
@@ -19663,6 +19779,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9mb3JJbmRpdmlkdWFsc0V4ZWN1dGVQcm9ncmFtZUNhcmQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmFwaGljSW5Db21wYW55LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9HcmFwaGljcy50c3g="
