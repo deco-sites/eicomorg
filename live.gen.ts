@@ -102,12 +102,13 @@ import * as $$$$$$$$54 from "./sections/SideLogosThree.tsx";
 import * as $$$$$$$$55 from "./sections/SomeNumbers.tsx";
 import * as $$$$$$$$56 from "./sections/TestimonialsSection.tsx";
 import * as $$$$$$$$57 from "./sections/TextSection.tsx";
-import * as $$$$$$$$58 from "./sections/WaitingList.tsx";
-import * as $$$$$$$$59 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$60 from "./sections/WhoIsForDigitalCommerceExpert.tsx";
-import * as $$$$$$$$61 from "./sections/WhoIsForDigitalEcommerceSolutionsArchitect.tsx";
-import * as $$$$$$$$62 from "./sections/WhoIsThisCertificationFor.tsx";
-import * as $$$$$$$$63 from "./sections/WishlistGallery.tsx";
+import * as $$$$$$$$58 from "./sections/TrustedByTheseCompanies.tsx";
+import * as $$$$$$$$59 from "./sections/WaitingList.tsx";
+import * as $$$$$$$$60 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$61 from "./sections/WhoIsForDigitalCommerceExpert.tsx";
+import * as $$$$$$$$62 from "./sections/WhoIsForDigitalEcommerceSolutionsArchitect.tsx";
+import * as $$$$$$$$63 from "./sections/WhoIsThisCertificationFor.tsx";
+import * as $$$$$$$$64 from "./sections/WishlistGallery.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -340,14 +341,15 @@ const manifest = {
     "deco-sites/eicomorg/sections/SomeNumbers.tsx": $$$$$$$$55,
     "deco-sites/eicomorg/sections/TestimonialsSection.tsx": $$$$$$$$56,
     "deco-sites/eicomorg/sections/TextSection.tsx": $$$$$$$$57,
-    "deco-sites/eicomorg/sections/WaitingList.tsx": $$$$$$$$58,
-    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$59,
+    "deco-sites/eicomorg/sections/TrustedByTheseCompanies.tsx": $$$$$$$$58,
+    "deco-sites/eicomorg/sections/WaitingList.tsx": $$$$$$$$59,
+    "deco-sites/eicomorg/sections/WhatsApp.tsx": $$$$$$$$60,
     "deco-sites/eicomorg/sections/WhoIsForDigitalCommerceExpert.tsx":
-      $$$$$$$$60,
-    "deco-sites/eicomorg/sections/WhoIsForDigitalEcommerceSolutionsArchitect.tsx":
       $$$$$$$$61,
-    "deco-sites/eicomorg/sections/WhoIsThisCertificationFor.tsx": $$$$$$$$62,
-    "deco-sites/eicomorg/sections/WishlistGallery.tsx": $$$$$$$$63,
+    "deco-sites/eicomorg/sections/WhoIsForDigitalEcommerceSolutionsArchitect.tsx":
+      $$$$$$$$62,
+    "deco-sites/eicomorg/sections/WhoIsThisCertificationFor.tsx": $$$$$$$$63,
+    "deco-sites/eicomorg/sections/WishlistGallery.tsx": $$$$$$$$64,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,

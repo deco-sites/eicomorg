@@ -167,6 +167,7 @@
               "deco-sites/eicomorg/sections/SomeNumbers.tsx",
               "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
               "deco-sites/eicomorg/sections/TextSection.tsx",
+              "deco-sites/eicomorg/sections/TrustedByTheseCompanies.tsx",
               "deco-sites/eicomorg/sections/WaitingList.tsx",
               "deco-sites/eicomorg/sections/WhatsApp.tsx",
               "deco-sites/eicomorg/sections/WhoIsForDigitalCommerceExpert.tsx",
@@ -13610,6 +13611,44 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/TextSection.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL1RydXN0ZWRCeVRoZXNlQ29tcGFuaWVzL1RydXN0ZWRCeVRoZXNlQ29tcGFuaWVzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "company1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Company1"
+        },
+        "company2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Company2"
+        },
+        "company3": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Company3"
+        },
+        "company4": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Company4"
+        },
+        "company5": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Company5"
+        }
+      },
+      "required": [
+        "title",
+        "company1",
+        "company2",
+        "company3",
+        "company4",
+        "company5"
+      ],
+      "title": "deco-sites/eicomorg/components/TrustedByTheseCompanies/TrustedByTheseCompanies.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3dhaXRpbmdMaXN0L1dhaXRpbmdMaXN0LnRzeA==@LeftText": {
       "type": "object",
       "properties": {
@@ -18060,6 +18099,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UcnVzdGVkQnlUaGVzZUNvbXBhbmllcy50c3g=": {
+      "title": "deco-sites/eicomorg/sections/TrustedByTheseCompanies.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL1RydXN0ZWRCeVRoZXNlQ29tcGFuaWVzL1RydXN0ZWRCeVRoZXNlQ29tcGFuaWVzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/TrustedByTheseCompanies.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/TrustedByTheseCompanies.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XYWl0aW5nTGlzdC50c3g=": {
       "title": "deco-sites/eicomorg/sections/WaitingList.tsx",
       "type": "object",
@@ -19595,6 +19655,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXh0U2VjdGlvbi50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UcnVzdGVkQnlUaGVzZUNvbXBhbmllcy50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XYWl0aW5nTGlzdC50c3g="
