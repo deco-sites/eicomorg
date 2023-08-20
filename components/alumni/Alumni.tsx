@@ -47,12 +47,12 @@ function AlumniCard(
   };
 
   const animationsPositions: { [index: number]: string } = {
-    0: 'animate-slide-top-right', // top left
-    1: 'animate-slide-top-bottom', // top center
-    2: 'animate-slide-top-left', // top right
-    5: 'animate-slide-bottom-right', // bottom left
-    4: 'animate-slide-bottom-top', // bottom center
-    3: 'animate-slide-bottom-left', // bottom right
+    0: "animate-slide-top-right", // top left
+    1: "animate-slide-top-bottom", // top center
+    2: "animate-slide-top-left", // top right
+    5: "animate-slide-bottom-right", // bottom left
+    4: "animate-slide-bottom-top", // bottom center
+    3: "animate-slide-bottom-left", // bottom right
   };
 
   return (
@@ -60,7 +60,7 @@ function AlumniCard(
       ref={elementRef as Ref<HTMLDivElement>}
       class={`border border-solid bg-white bg-red border-[#dfdfdf] w-full mx-auto pt-[20px] px-[30px] pb-[10px] relative 
       ${gridPositions[index]}
-      ${isShown ? animationsPositions[index] : ''}
+      ${isShown ? animationsPositions[index] : ""}
       md:w-auto lg:col-span-1 xs:col-span-3 xs:w-[97%]`}
     >
       <div class="items-center flex justify-start">

@@ -44,10 +44,13 @@ export default {
         "slide-bottom-top": "slide-bottom-top-frame 1s ease normal forwards",
         "slide-top-right": "slide-top-right-frame 1s ease normal forwards",
         "slide-top-left": "slide-top-left-frame 1s ease normal forwards",
-        "slide-bottom-right": "slide-bottom-right-frame 1s ease normal forwards",
+        "slide-bottom-right":
+          "slide-bottom-right-frame 1s ease normal forwards",
         "slide-bottom-left": "slide-bottom-left-frame 1s ease normal forwards",
-        "navbar-item-open-icon": "navbar-item-open-icon-frame 1s ease normal forwards",
-        "navbar-item-close-icon": "navbar-item-close-icon-frame 1s ease normal forwards",
+        "navbar-item-open-icon":
+          "navbar-item-open-icon-frame 1s ease normal forwards",
+        "navbar-item-close-icon":
+          "navbar-item-close-icon-frame 1s ease normal forwards",
       },
       keyframes: {
         "slide-banner-right-frame": {

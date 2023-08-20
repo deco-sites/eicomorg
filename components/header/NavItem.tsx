@@ -47,7 +47,7 @@ function NavItem({ item }: { item: INavItem }) {
     backgroundRepeat: "no-repeat",
   };
 
-  const isItemActive = (item.children && displayNavbarMenu.value === itemIndex);
+  const isItemActive = item.children && displayNavbarMenu.value === itemIndex;
 
   return (
     <div class="flex md:mr-3 xs:mr-3 cursor-pointer h-[100%] md:relative">
@@ -75,11 +75,15 @@ function NavItem({ item }: { item: INavItem }) {
         </a>
 
         <Icon
-          id='ChevronDown'
+          id="ChevronDown"
           width={!isMobile ? 12 : 10}
           height={!isMobile ? 12 : 10}
           strokeWidth={3}
-          class={`ml-2 top-[1px] relative text-[#696969] font-bold ${isItemActive ? 'animate-navbar-item-open-icon' : 'animate-navbar-item-close-icon'}`}
+          class={`ml-2 top-[1px] relative text-[#696969] font-bold ${
+            isItemActive
+              ? "animate-navbar-item-open-icon"
+              : "animate-navbar-item-close-icon"
+          }`}
           onClick={toggleExpand}
         />
       </div>
