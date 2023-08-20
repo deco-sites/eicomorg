@@ -40,6 +40,14 @@ export default {
         "progress": "progress-frame ease normal",
         "expand-bar": "expand-bar-frame 1s infinite ease-out normal",
         "button-expand": "expand-button-frame 1s ease normal forwards",
+        "slide-top-bottom": "slide-top-bottom-frame 1s ease normal forwards",
+        "slide-bottom-top": "slide-bottom-top-frame 1s ease normal forwards",
+        "slide-top-right": "slide-top-right-frame 1s ease normal forwards",
+        "slide-top-left": "slide-top-left-frame 1s ease normal forwards",
+        "slide-bottom-right": "slide-bottom-right-frame 1s ease normal forwards",
+        "slide-bottom-left": "slide-bottom-left-frame 1s ease normal forwards",
+        "navbar-item-open-icon": "navbar-item-open-icon-frame 1s ease normal forwards",
+        "navbar-item-close-icon": "navbar-item-close-icon-frame 1s ease normal forwards",
       },
       keyframes: {
         "slide-banner-right-frame": {
@@ -77,6 +85,38 @@ export default {
           to: {
             "--dot-progress": "100%",
           },
+        },
+        "slide-top-bottom-frame": {
+          from: { opacity: 0, transform: "translateY(-20%)" },
+          to: { opacity: 1, transform: "translateY(0)" },
+        },
+        "slide-bottom-top-frame": {
+          from: { opacity: 0, transform: "translateY(20%)" },
+          to: { opacity: 1, transform: "translateY(0)" },
+        },
+        "slide-top-right-frame": {
+          from: { opacity: 0, transform: "translateY(-20%) translateX(-20%)" },
+          to: { opacity: 1, transform: "translateY(0) translateX(0)" },
+        },
+        "slide-top-left-frame": {
+          from: { opacity: 0, transform: "translateY(-20%) translateX(20%)" },
+          to: { opacity: 1, transform: "translateY(0) translateX(0)" },
+        },
+        "slide-bottom-right-frame": {
+          from: { opacity: 0, transform: "translateY(20%) translateX(-20%)" },
+          to: { opacity: 1, transform: "translateY(0) translateX(0)" },
+        },
+        "slide-bottom-left-frame": {
+          from: { opacity: 0, transform: "translateY(-20%) translateX(20%)" },
+          to: { opacity: 1, transform: "translateY(0) translateX(0)" },
+        },
+        "navbar-item-open-icon-frame": {
+          from: { transform: "rotateX(0)" },
+          to: { transform: "rotateX(180deg)" },
+        },
+        "navbar-item-close-icon-frame": {
+          from: { transform: "rotateX(180deg)" },
+          to: { transform: "rotateX(0)" },
         },
       },
       fontFamily: {
