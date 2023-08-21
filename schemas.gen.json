@@ -60,6 +60,7 @@
               "deco-sites/std/loaders/vtex/proxy.ts",
               "deco-sites/std/loaders/vtex/user.ts",
               "deco-sites/std/loaders/vtex/wishlist.ts",
+              "./islands/AcelerateYourGrowth.tsx",
               "./islands/AddToCartButton.tsx",
               "./islands/Alerts.tsx",
               "./islands/BannerEcommerceSolutionsArchitect.tsx",
@@ -111,6 +112,7 @@
               "$live/sections/PageInclude.tsx",
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
+              "deco-sites/eicomorg/sections/AcelerateYourGrowth.tsx",
               "deco-sites/eicomorg/sections/Alert.tsx",
               "deco-sites/eicomorg/sections/Alumni.tsx",
               "deco-sites/eicomorg/sections/BannerCmxExam.tsx",
@@ -6929,10 +6931,63 @@
       "format": "html",
       "title": "HTML"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0FjZWxlcmF0ZVlvdXJHcm93dGgudHN4@Countries": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Country"
+        }
+      },
+      "required": [
+        "country"
+      ],
+      "title": "Countries"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0FjZWxlcmF0ZVlvdXJHcm93dGgudHN4@Countries[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0FjZWxlcmF0ZVlvdXJHcm93dGgudHN4@Countries"
+      },
+      "title": "Countries[]"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
       "type": "string",
       "format": "image-uri",
       "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0FjZWxlcmF0ZVlvdXJHcm93dGgudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "contentTop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content Top"
+        },
+        "contentBottom": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content Bottom"
+        },
+        "countries": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0FjZWxlcmF0ZVlvdXJHcm93dGgudHN4@Countries[]",
+          "title": "Countries"
+        },
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Image"
+        }
+      },
+      "required": [
+        "title",
+        "contentTop",
+        "contentBottom",
+        "countries",
+        "backgroundImage"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/AcelerateYourGrowth.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2hlYWRlci9BbGVydC50c3g=@Alert": {
       "type": "object",
@@ -16024,6 +16079,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0FjZWxlcmF0ZVlvdXJHcm93dGgudHN4": {
+      "title": "./islands/AcelerateYourGrowth.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0FjZWxlcmF0ZVlvdXJHcm93dGgudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/AcelerateYourGrowth.tsx"
+          ],
+          "default": "./islands/AcelerateYourGrowth.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0FkZFRvQ2FydEJ1dHRvbi50c3g=": {
       "title": "./islands/AddToCartButton.tsx",
       "type": "object",
@@ -17046,6 +17122,27 @@
             "$live/sections/UseSlot.tsx"
           ],
           "default": "$live/sections/UseSlot.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BY2VsZXJhdGVZb3VyR3Jvd3RoLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/AcelerateYourGrowth.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0FjZWxlcmF0ZVlvdXJHcm93dGgudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/AcelerateYourGrowth.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/AcelerateYourGrowth.tsx"
         }
       }
     },
@@ -19496,6 +19593,9 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0FjZWxlcmF0ZVlvdXJHcm93dGgudHN4"
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0FkZFRvQ2FydEJ1dHRvbi50c3g="
         },
         {
@@ -19671,6 +19771,9 @@
         },
         {
           "$ref": "#/definitions/JGxpdmUvc2VjdGlvbnMvVXNlU2xvdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BY2VsZXJhdGVZb3VyR3Jvd3RoLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9BbGVydC50c3g="
