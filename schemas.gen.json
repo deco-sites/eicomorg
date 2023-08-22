@@ -89,6 +89,7 @@
               "./islands/HomeAboutSection.tsx",
               "./islands/HomeWhyEicomBlocksSection.tsx",
               "./islands/HomeWhyEicomSection.tsx",
+              "./islands/InCompanyCourses.tsx",
               "./islands/MoreAboutEicomDCE.tsx",
               "./islands/OutOfStock.tsx",
               "./islands/ProductImageZoom.tsx",
@@ -158,6 +159,7 @@
               "deco-sites/eicomorg/sections/HomeTextSection.tsx",
               "deco-sites/eicomorg/sections/HomeWhyEicomBlocksSection.tsx",
               "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx",
+              "deco-sites/eicomorg/sections/InCompanyCourses.tsx",
               "deco-sites/eicomorg/sections/JoinWaitinListESA.tsx",
               "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx",
               "deco-sites/eicomorg/sections/LinkTree.tsx",
@@ -9957,6 +9959,144 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/HomeWhyEicomSection.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@CourseInfo": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "backgroundPosition": {
+              "type": "string",
+              "title": "Background Position"
+            }
+          },
+          "required": [
+            "src",
+            "backgroundPosition"
+          ],
+          "title": "Image"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "paragraphWithIcon": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+                "title": "Text"
+              },
+              "icon": {
+                "type": "object",
+                "properties": {
+                  "src": {
+                    "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                    "title": "Src"
+                  },
+                  "alt": {
+                    "type": "string",
+                    "title": "Alt"
+                  }
+                },
+                "required": [
+                  "src",
+                  "alt"
+                ],
+                "title": "Icon"
+              }
+            },
+            "required": [
+              "text",
+              "icon"
+            ]
+          },
+          "title": "Paragraph With Icon"
+        }
+      },
+      "required": [
+        "image",
+        "title"
+      ],
+      "title": "CourseInfo"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@CourseInfo[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@CourseInfo"
+      },
+      "title": "CourseInfo[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@ActionLink": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "text",
+        "href"
+      ],
+      "title": "ActionLink"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@ActionLinksContainer": {
+      "type": "object",
+      "properties": {
+        "firstButton": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@ActionLink",
+          "title": "First Button"
+        },
+        "secondButton": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@ActionLink",
+          "title": "Second Button"
+        }
+      },
+      "required": [
+        "firstButton",
+        "secondButton"
+      ],
+      "title": "ActionLinksContainer"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "courses": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@CourseInfo[]",
+          "title": "Courses"
+        },
+        "buttons": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@ActionLinksContainer",
+          "description": "Maximum of 4 courses",
+          "title": "Buttons"
+        }
+      },
+      "required": [
+        "title",
+        "courses",
+        "buttons"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/InCompanyCourses.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL21vcmVBYm91dEVpY29tRENFL01vcmVBYm91dEVpY29tRENFLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -16663,6 +16803,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0luQ29tcGFueUNvdXJzZXMudHN4": {
+      "title": "./islands/InCompanyCourses.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/InCompanyCourses.tsx"
+          ],
+          "default": "./islands/InCompanyCourses.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL01vcmVBYm91dEVpY29tRENFLnRzeA==": {
       "title": "./islands/MoreAboutEicomDCE.tsx",
       "type": "object",
@@ -18083,6 +18244,27 @@
             "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/HomeWhyEicomSection.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9JbkNvbXBhbnlDb3Vyc2VzLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/InCompanyCourses.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0luQ29tcGFueUNvdXJzZXMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/InCompanyCourses.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/InCompanyCourses.tsx"
         }
       }
     },
@@ -19680,6 +19862,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0hvbWVXaHlFaWNvbVNlY3Rpb24udHN4"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0luQ29tcGFueUNvdXJzZXMudHN4"
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL01vcmVBYm91dEVpY29tRENFLnRzeA=="
         },
         {
@@ -19909,6 +20094,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Ib21lV2h5RWljb21TZWN0aW9uLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9JbkNvbXBhbnlDb3Vyc2VzLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Kb2luV2FpdGluTGlzdEVTQS50c3g="
