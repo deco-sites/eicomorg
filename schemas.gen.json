@@ -170,12 +170,14 @@
               "deco-sites/eicomorg/sections/ProductShelf.tsx",
               "deco-sites/eicomorg/sections/ScaleUpCareer.tsx",
               "deco-sites/eicomorg/sections/SearchResult.tsx",
+              "deco-sites/eicomorg/sections/ShapeTheFuture.tsx",
               "deco-sites/eicomorg/sections/ShouldCertified.tsx",
               "deco-sites/eicomorg/sections/SideLogos.tsx",
               "deco-sites/eicomorg/sections/SideLogosThree.tsx",
               "deco-sites/eicomorg/sections/SomeNumbers.tsx",
               "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
               "deco-sites/eicomorg/sections/TextSection.tsx",
+              "deco-sites/eicomorg/sections/TrustedBy.tsx",
               "deco-sites/eicomorg/sections/WaitingList.tsx",
               "deco-sites/eicomorg/sections/WhatsApp.tsx",
               "deco-sites/eicomorg/sections/WhoIsForDigitalCommerceExpert.tsx",
@@ -13751,6 +13753,78 @@
       ],
       "title": "deco-sites/eicomorg/components/search/SearchResult.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1NoYXBlVGhlRnV0dXJlLnRzeA==@Highlights": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        }
+      },
+      "required": [
+        "image",
+        "title"
+      ],
+      "title": "Highlights"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1NoYXBlVGhlRnV0dXJlLnRzeA==@Highlights[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1NoYXBlVGhlRnV0dXJlLnRzeA==@Highlights"
+      },
+      "title": "Highlights[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1NoYXBlVGhlRnV0dXJlLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Top Text"
+        },
+        "highlights": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1NoYXBlVGhlRnV0dXJlLnRzeA==@Highlights[]",
+          "title": "Highlights"
+        },
+        "youtubeText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Youtube Text"
+        },
+        "youtubeURL": {
+          "type": "string",
+          "title": "Youtube U R L"
+        }
+      },
+      "required": [
+        "title",
+        "topText",
+        "highlights",
+        "youtubeText",
+        "youtubeURL"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/ShapeTheFuture.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3Nob3VsZENlcnRpZmllZC9TaG91bGRDZXJ0aWZpZWQudHN4@ItemIcon": {
       "type": "object",
       "properties": {
@@ -13965,6 +14039,58 @@
         "mobileButton"
       ],
       "title": "deco-sites/eicomorg/components/ui/TextSection.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1RydXN0ZWRCeS50c3g=@Brand": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        }
+      },
+      "required": [
+        "image"
+      ],
+      "title": "Brand"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1RydXN0ZWRCeS50c3g=@Brand[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1RydXN0ZWRCeS50c3g=@Brand"
+      },
+      "title": "Brand[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1RydXN0ZWRCeS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "brands": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1RydXN0ZWRCeS50c3g=@Brand[]",
+          "title": "Brands"
+        }
+      },
+      "required": [
+        "text",
+        "brands"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/TrustedBy.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3dhaXRpbmdMaXN0L1dhaXRpbmdMaXN0LnRzeA==@LeftText": {
       "type": "object",
@@ -18479,6 +18605,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TaGFwZVRoZUZ1dHVyZS50c3g=": {
+      "title": "deco-sites/eicomorg/sections/ShapeTheFuture.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1NoYXBlVGhlRnV0dXJlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/ShapeTheFuture.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/ShapeTheFuture.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TaG91bGRDZXJ0aWZpZWQudHN4": {
       "title": "deco-sites/eicomorg/sections/ShouldCertified.tsx",
       "type": "object",
@@ -18602,6 +18749,27 @@
             "deco-sites/eicomorg/sections/TextSection.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/TextSection.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UcnVzdGVkQnkudHN4": {
+      "title": "deco-sites/eicomorg/sections/TrustedBy.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1RydXN0ZWRCeS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/TrustedBy.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/TrustedBy.tsx"
         }
       }
     },
@@ -20151,6 +20319,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TZWFyY2hSZXN1bHQudHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TaGFwZVRoZUZ1dHVyZS50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TaG91bGRDZXJ0aWZpZWQudHN4"
         },
         {
@@ -20167,6 +20338,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UZXh0U2VjdGlvbi50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9UcnVzdGVkQnkudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XYWl0aW5nTGlzdC50c3g="
