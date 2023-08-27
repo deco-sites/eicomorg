@@ -31,7 +31,7 @@ function Courses(
   return (
     <>
       <div
-        class="lg:py-[100px] md:py-[60px] md:px-5 lg:px-0 xs:px-[10px] xs:py-[40px] box-border"
+        class="lg:py-[100px] md:py-[60px] md:px-5 lg:px-0 xs:px-[10px] xs:py-[40px] box-border lg:h-[600px] md:h-[500px] xs:h-[600px]"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",
