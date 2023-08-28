@@ -79,7 +79,11 @@ function BannerSection(
             font-AvenirNextLTPro"
             style={titleContainer}
           >
-            <img class="lg:w-[210px] xs:w-[150px] pb-[40px]" src={ image.src } alt={ image.alt } />
+            <img
+              class="lg:w-[210px] xs:w-[150px] pb-[40px]"
+              src={image.src}
+              alt={image.alt}
+            />
             {title}
           </div>
         </div>
@@ -100,7 +104,12 @@ function BannerSection(
           </span>
 
           <div class="mt-6">
-            <a class="bg-[#f26f21] font-Gravity uppercase py-[16px] px-[24px] text-white font-semibold rounded" href={ actionLinksContainer.button.href }>{ actionLinksContainer.button.text }</a>
+            <a
+              class="bg-[#f26f21] font-Gravity uppercase py-[16px] px-[24px] text-white font-semibold rounded"
+              href={actionLinksContainer.button.href}
+            >
+              {actionLinksContainer.button.text}
+            </a>
           </div>
         </div>
       </div>
