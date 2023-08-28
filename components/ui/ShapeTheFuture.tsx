@@ -31,7 +31,7 @@ function ShapeTheFuture(
 ) {
   return (
     <>
-      <div class="py-[100px] bg-[#f3f3f3] box-border">
+      <div class="py-[100px] bg-[#f3f3f3] box-border xs:w-[97%] lg:w-full">
         <div class="max-w-[1120px] mx-auto ">
           <div class="mb-0 py-5">
             <h1 class="text-center font-AvenirNextLTPro my-5 block text-[28px] leading-[34px]">
@@ -68,9 +68,8 @@ function ShapeTheFuture(
                 <span dangerouslySetInnerHTML={{ __html: youtubeText }}></span>
               </p>
             </div>
-            {
-              /* <div class="max-w-[700px] mx-auto py-0">
-							<div style={{paddingTop: "56.17021276595745%"}} class="w-full relative p-0">
+              <div class="max-w-[700px] mx-auto py-0">
+							<div style={{paddingTop: "56.17021276595745%"}} class="w-full relative p-0 md:bottom-[400px] xs:bottom-[200px]">
 								<iframe
 								class="w-full h-full border-0 absolute left-0 right-0"
 								src={`${youtubeURL}`}
@@ -79,8 +78,7 @@ function ShapeTheFuture(
 								title="In-Company Digital Commerce Education | Testimonials from VTEX Digital Commerce Specialist students">
 								</iframe>
 							</div>
-						</div> */
-            }
+						</div>
           </div>
         </div>
       </div>
