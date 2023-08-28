@@ -122,6 +122,7 @@
               "deco-sites/eicomorg/sections/Alumni.tsx",
               "deco-sites/eicomorg/sections/BannerCmxExam.tsx",
               "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
+              "deco-sites/eicomorg/sections/BannerDiscoverNewCommerceTalents.tsx",
               "deco-sites/eicomorg/sections/BannerEcommerceSolutionsArchitect.tsx",
               "deco-sites/eicomorg/sections/BannerExecutiveProgram.tsx",
               "deco-sites/eicomorg/sections/BannerGrid.tsx",
@@ -145,6 +146,7 @@
               "deco-sites/eicomorg/sections/DesignSystem.tsx",
               "deco-sites/eicomorg/sections/DetailsSection.tsx",
               "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx",
+              "deco-sites/eicomorg/sections/DigitalCommerceKnowledgeDimensions.tsx",
               "deco-sites/eicomorg/sections/ElevateYourCareer.tsx",
               "deco-sites/eicomorg/sections/EmpowerYourself.tsx",
               "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx",
@@ -9724,11 +9726,31 @@
         "bottomBoxText": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
           "title": "Bottom Box Text"
+        },
+        "bottomButtonText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Bottom Button Text"
+        },
+        "bottomButtonHref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Bottom Button Href"
+        },
+        "topMargin": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Top Margin"
         }
       },
       "required": [
         "image",
-        "npsGrade",
         "npsBackGroundColor",
         "npsText",
         "bottomBoxTitle",
@@ -11575,6 +11597,106 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/BannerDigitalTransformation.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpc2NvdmVyTmV3Q29tbWVyY2VUYWxlbnRzLnRzeA==@Image": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Src"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        }
+      },
+      "required": [
+        "src",
+        "alt"
+      ],
+      "title": "Image"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpc2NvdmVyTmV3Q29tbWVyY2VUYWxlbnRzLnRzeA==@BannerBackgroundImage": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile"
+      ],
+      "title": "BannerBackgroundImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpc2NvdmVyTmV3Q29tbWVyY2VUYWxlbnRzLnRzeA==@ActionButton": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "text",
+        "href"
+      ],
+      "title": "ActionButton"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpc2NvdmVyTmV3Q29tbWVyY2VUYWxlbnRzLnRzeA==@ActionLinksContainer": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpc2NvdmVyTmV3Q29tbWVyY2VUYWxlbnRzLnRzeA==@ActionButton",
+          "title": "Button"
+        }
+      },
+      "required": [
+        "title",
+        "button"
+      ],
+      "title": "ActionLinksContainer"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpc2NvdmVyTmV3Q29tbWVyY2VUYWxlbnRzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpc2NvdmVyTmV3Q29tbWVyY2VUYWxlbnRzLnRzeA==@Image",
+          "title": "Image"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpc2NvdmVyTmV3Q29tbWVyY2VUYWxlbnRzLnRzeA==@BannerBackgroundImage",
+          "title": "Background Image"
+        },
+        "actionLinksContainer": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpc2NvdmVyTmV3Q29tbWVyY2VUYWxlbnRzLnRzeA==@ActionLinksContainer",
+          "title": "Action Links Container"
+        }
+      },
+      "required": [
+        "image",
+        "title",
+        "backgroundImage",
+        "actionLinksContainer"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/BannerDiscoverNewCommerceTalents.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckV4ZWN1dGl2ZVByb2dyYW0udHN4@BannerBackground": {
       "type": "object",
       "properties": {
@@ -12878,6 +13000,48 @@
       },
       "required": [],
       "title": "deco-sites/eicomorg/sections/DesignSystem.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0RpZ2l0YWxDb21tZXJjZUtub3dsZWRnZURpbWVuc2lvbnMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "containerTitle": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Container Title"
+        },
+        "formTitle": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Form Title"
+        },
+        "content": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Content"
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        }
+      },
+      "required": [
+        "containerTitle",
+        "formTitle",
+        "content",
+        "image"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/DigitalCommerceKnowledgeDimensions.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2VsZXZhdGVZb3VyQ2FyZWVyL0VsZXZhdGVZb3VyQ2FyZWVyLnRzeA==@Props": {
       "type": "object",
@@ -17841,6 +18005,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaXNjb3Zlck5ld0NvbW1lcmNlVGFsZW50cy50c3g=": {
+      "title": "deco-sites/eicomorg/sections/BannerDiscoverNewCommerceTalents.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckRpc2NvdmVyTmV3Q29tbWVyY2VUYWxlbnRzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/BannerDiscoverNewCommerceTalents.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/BannerDiscoverNewCommerceTalents.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4": {
       "title": "deco-sites/eicomorg/sections/BannerEcommerceSolutionsArchitect.tsx",
       "type": "object",
@@ -18316,6 +18501,27 @@
             "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EaWdpdGFsQ29tbWVyY2VLbm93bGVkZ2VEaW1lbnNpb25zLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/DigitalCommerceKnowledgeDimensions.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0RpZ2l0YWxDb21tZXJjZUtub3dsZWRnZURpbWVuc2lvbnMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/DigitalCommerceKnowledgeDimensions.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/DigitalCommerceKnowledgeDimensions.tsx"
         }
       }
     },
@@ -20540,6 +20746,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaXNjb3Zlck5ld0NvbW1lcmNlVGFsZW50cy50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4"
         },
         {
@@ -20607,6 +20816,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EaWdpdGFsQ29tbWVyY2VFeHBlcnQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EaWdpdGFsQ29tbWVyY2VLbm93bGVkZ2VEaW1lbnNpb25zLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FbGV2YXRlWW91ckNhcmVlci50c3g="
