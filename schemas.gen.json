@@ -76,6 +76,7 @@
               "./islands/CourseInfo.tsx",
               "./islands/CourseInfoAlternate.tsx",
               "./islands/CoursesForIndividuals.tsx",
+              "./islands/CreateImpact.tsx",
               "./islands/DetailsSection.tsx",
               "./islands/DigitalCommerceExpert.tsx",
               "./islands/EmpowerYourself.tsx",
@@ -145,6 +146,7 @@
               "deco-sites/eicomorg/sections/CourseInfoAlternate.tsx",
               "deco-sites/eicomorg/sections/Courses.tsx",
               "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx",
+              "deco-sites/eicomorg/sections/CreateImpact.tsx",
               "deco-sites/eicomorg/sections/DesignSystem.tsx",
               "deco-sites/eicomorg/sections/DetailsSection.tsx",
               "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx",
@@ -8608,6 +8610,24 @@
         "courses"
       ],
       "title": "deco-sites/eicomorg/components/coursesForIndividuals/CoursesForIndividuals.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0NyZWF0ZUltcGFjdC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "title",
+        "text"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/CreateImpact.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0RldGFpbHNTZWN0aW9uLnRzeA==@ImageFooter": {
       "type": "object",
@@ -17136,6 +17156,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0NyZWF0ZUltcGFjdC50c3g=": {
+      "title": "./islands/CreateImpact.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0NyZWF0ZUltcGFjdC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/CreateImpact.tsx"
+          ],
+          "default": "./islands/CreateImpact.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0RldGFpbHNTZWN0aW9uLnRzeA==": {
       "title": "./islands/DetailsSection.tsx",
       "type": "object",
@@ -18541,6 +18582,27 @@
             "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/CoursesForIndividuals.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DcmVhdGVJbXBhY3QudHN4": {
+      "title": "deco-sites/eicomorg/sections/CreateImpact.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0NyZWF0ZUltcGFjdC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/CreateImpact.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/CreateImpact.tsx"
         }
       }
     },
@@ -20687,6 +20749,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0NvdXJzZXNGb3JJbmRpdmlkdWFscy50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0NyZWF0ZUltcGFjdC50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0RldGFpbHNTZWN0aW9uLnRzeA=="
         },
         {
@@ -20916,6 +20981,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db3Vyc2VzRm9ySW5kaXZpZHVhbHMudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DcmVhdGVJbXBhY3QudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4"
