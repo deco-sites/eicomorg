@@ -99,6 +99,7 @@
               "./islands/MoreAboutEicomDCE.tsx",
               "./islands/OutOfStock.tsx",
               "./islands/ProductImageZoom.tsx",
+              "./islands/ProgrammesAndCertification.tsx",
               "./islands/ScaleUpCareer.tsx",
               "./islands/SearchControls.tsx",
               "./islands/ShippingSimulation.tsx",
@@ -180,6 +181,7 @@
               "deco-sites/eicomorg/sections/Newsletter.tsx",
               "deco-sites/eicomorg/sections/ProductDetails.tsx",
               "deco-sites/eicomorg/sections/ProductShelf.tsx",
+              "deco-sites/eicomorg/sections/ProgrammesAndCertification.tsx",
               "deco-sites/eicomorg/sections/ScaleUpCareer.tsx",
               "deco-sites/eicomorg/sections/SearchResult.tsx",
               "deco-sites/eicomorg/sections/ShapeTheFuture.tsx",
@@ -10962,6 +10964,81 @@
       ],
       "title": "deco-sites/eicomorg/components/moreAboutEicomDCE/MoreAboutEicomDCE.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Byb2dyYW1tZXNBbmRDZXJ0aWZpY2F0aW9uLnRzeA==@Card": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "list": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+                "title": "Text"
+              },
+              "href": {
+                "type": "string",
+                "title": "Href"
+              }
+            },
+            "required": [
+              "text",
+              "href"
+            ]
+          },
+          "title": "List"
+        }
+      },
+      "required": [
+        "title",
+        "list"
+      ],
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Byb2dyYW1tZXNBbmRDZXJ0aWZpY2F0aW9uLnRzeA==@Card[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Byb2dyYW1tZXNBbmRDZXJ0aWZpY2F0aW9uLnRzeA==@Card"
+      },
+      "title": "Card[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Byb2dyYW1tZXNBbmRDZXJ0aWZpY2F0aW9uLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "cards": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Byb2dyYW1tZXNBbmRDZXJ0aWZpY2F0aW9uLnRzeA==@Card[]",
+          "title": "Cards"
+        },
+        "arrowImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Arrow Image"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "image",
+        "cards",
+        "arrowImage"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/ProgrammesAndCertification.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3NjYWxlVXBDYXJlZXIvU2NhbGVVcENhcmVlci50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -17614,6 +17691,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1Byb2dyYW1tZXNBbmRDZXJ0aWZpY2F0aW9uLnRzeA==": {
+      "title": "./islands/ProgrammesAndCertification.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Byb2dyYW1tZXNBbmRDZXJ0aWZpY2F0aW9uLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ProgrammesAndCertification.tsx"
+          ],
+          "default": "./islands/ProgrammesAndCertification.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1NjYWxlVXBDYXJlZXIudHN4": {
       "title": "./islands/ScaleUpCareer.tsx",
       "type": "object",
@@ -19299,6 +19397,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Qcm9ncmFtbWVzQW5kQ2VydGlmaWNhdGlvbi50c3g=": {
+      "title": "deco-sites/eicomorg/sections/ProgrammesAndCertification.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Byb2dyYW1tZXNBbmRDZXJ0aWZpY2F0aW9uLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/ProgrammesAndCertification.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/ProgrammesAndCertification.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TY2FsZVVwQ2FyZWVyLnRzeA==": {
       "title": "deco-sites/eicomorg/sections/ScaleUpCareer.tsx",
       "type": "object",
@@ -20818,6 +20937,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL1Byb2R1Y3RJbWFnZVpvb20udHN4"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1Byb2dyYW1tZXNBbmRDZXJ0aWZpY2F0aW9uLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL1NjYWxlVXBDYXJlZXIudHN4"
         },
         {
@@ -21083,6 +21205,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Qcm9kdWN0U2hlbGYudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Qcm9ncmFtbWVzQW5kQ2VydGlmaWNhdGlvbi50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TY2FsZVVwQ2FyZWVyLnRzeA=="

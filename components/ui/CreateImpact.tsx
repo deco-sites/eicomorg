@@ -23,8 +23,10 @@ function CreateImpact(
       >
         <div class="lg:justify-end md:justify-center flex z-auto max-w-[1120px] pr relative mx-auto">
         </div>
-        <div class={`lg:justify-end md:justify-center flex z-auto max-w-[1120px] pr relative mx-auto
-        ${isShown ? 'animate-slide-left' : ''}`}>
+        <div
+          class={`lg:justify-end md:justify-center flex z-auto max-w-[1120px] pr relative mx-auto
+        ${isShown ? "animate-slide-left" : ""}`}
+        >
           <div class="pt-10 max-w-[710px]">
             <h2 class="text-left uppercase md:my-5 xs:mt-[10px] xs:mb-5 font-AvenirNextLTPro md:text-[30px] md:leading-[34px] xs:text-[24px] xs:leading-[32px] block">
               <span dangerouslySetInnerHTML={{ __html: title }}></span>
