@@ -35,11 +35,13 @@ function ProgrammesAndCertification(
         <div class="z-auto max-w-[1120px] pr-0 mx-auto relative">
           <div class="justify-end md:flex md:mx-0 xs:mx-auto xs:block">
             <div
-              class="lg:h-[480px] md:h-[350px] lg:w-[400px] md:w-[300px] xs:w-full xs:h-[300px] md:absolute xs:relative lg:top-[-23%] md:top-[-15%] xs:top-[-10px] bottom-auto right-auto md:left-0 xs:left-auto xs:bg-[50%] md:bg-[50% 100%]"
+              class={`lg:h-[480px] md:h-[350px] lg:w-[400px] md:w-[300px] xs:w-full xs:h-[300px]
+              md:absolute xs:relative lg:top-[-23%] md:top-[-15%] xs:top-[-10px] bottom-auto
+              right-auto md:left-0 xs:left-auto xs:bg-[50%] md:bg-[50% 100%]
+              ${isShown ? "animate-slide-right" : ""}`}
               style={{
                 backgroundImage: `url(${image})`,
-                backgroundSize: "cover"
-                ,
+                backgroundSize: "cover",
               }}
             >
             </div>
@@ -47,7 +49,8 @@ function ProgrammesAndCertification(
               <h2 class="text-left uppercase lg:my-5 xs:mt-[10px] xs:mb-5 font-AvenirNextLTPro md:text-[30px] md:leading-[34px] xs:text-[24px] xs:leading-[32px] block">
                 <span dangerouslySetInnerHTML={{ __html: title }}></span>
               </h2>
-              <p class="text-left font-Gravity md:text-[16px] xs:text-[14px] mb-[10px] md:leading-[1.6rem] xs:leading-[22px]">
+              <p class={`text-left font-Gravity md:text-[16px] xs:text-[14px] mb-[10px] md:leading-[1.6rem] xs:leading-[22px]
+              ${isShown ? "animate-slide-left" : ""}`}>
                 <span dangerouslySetInnerHTML={{ __html: text }}></span>
               </p>
               {cards.map((card) => {
