@@ -49,8 +49,10 @@ function ProgrammesAndCertification(
               <h2 class="text-left uppercase lg:my-5 xs:mt-[10px] xs:mb-5 font-AvenirNextLTPro md:text-[30px] md:leading-[34px] xs:text-[24px] xs:leading-[32px] block">
                 <span dangerouslySetInnerHTML={{ __html: title }}></span>
               </h2>
-              <p class={`text-left font-Gravity md:text-[16px] xs:text-[14px] mb-[10px] md:leading-[1.6rem] xs:leading-[22px]
-              ${isShown ? "animate-slide-left" : ""}`}>
+              <p
+                class={`text-left font-Gravity md:text-[16px] xs:text-[14px] mb-[10px] md:leading-[1.6rem] xs:leading-[22px]
+              ${isShown ? "animate-slide-left" : ""}`}
+              >
                 <span dangerouslySetInnerHTML={{ __html: text }}></span>
               </p>
               {cards.map((card) => {
