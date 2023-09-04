@@ -195,6 +195,7 @@
               "deco-sites/eicomorg/sections/TextSection.tsx",
               "deco-sites/eicomorg/sections/TrustedBy.tsx",
               "deco-sites/eicomorg/sections/WaitingList.tsx",
+              "deco-sites/eicomorg/sections/WhatBenefits.tsx",
               "deco-sites/eicomorg/sections/WhatsApp.tsx",
               "deco-sites/eicomorg/sections/WhoIsForDigitalCommerceExpert.tsx",
               "deco-sites/eicomorg/sections/WhoIsForDigitalEcommerceSolutionsArchitect.tsx",
@@ -14893,6 +14894,128 @@
       ],
       "title": "deco-sites/eicomorg/components/waitingList/WaitingList.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@topImage": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        }
+      },
+      "required": [
+        "image"
+      ],
+      "title": "topImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@Card": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Image"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "image"
+      ],
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Top Text"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "topImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@topImage",
+          "title": "Top Image"
+        },
+        "card1": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@Card",
+          "title": "Card1"
+        },
+        "card2": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@Card",
+          "title": "Card2"
+        },
+        "card3": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@Card",
+          "title": "Card3"
+        },
+        "card4": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@Card",
+          "title": "Card4"
+        },
+        "card5": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@Card",
+          "title": "Card5"
+        },
+        "card6": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@Card",
+          "title": "Card6"
+        },
+        "card7": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@Card",
+          "title": "Card7"
+        }
+      },
+      "required": [
+        "topText",
+        "title",
+        "topImage",
+        "card1",
+        "card2",
+        "card3",
+        "card4",
+        "card5",
+        "card6",
+        "card7"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/WhatBenefits.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRzQXBwLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -19835,6 +19958,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XaGF0QmVuZWZpdHMudHN4": {
+      "title": "deco-sites/eicomorg/sections/WhatBenefits.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/WhatBenefits.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/WhatBenefits.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XaGF0c0FwcC50c3g=": {
       "title": "deco-sites/eicomorg/sections/WhatsApp.tsx",
       "type": "object",
@@ -21433,6 +21577,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XYWl0aW5nTGlzdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XaGF0QmVuZWZpdHMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XaGF0c0FwcC50c3g="
