@@ -34,7 +34,8 @@ export interface Props {
 }
 
 function Owners(
-  { topText, title, topImage, card1, card2, card3, card4, card5, card6, card7 }: Props,
+  { topText, title, topImage, card1, card2, card3, card4, card5, card6, card7 }:
+    Props,
 ) {
   return (
     <>
@@ -45,20 +46,20 @@ function Owners(
           <div class="mb-[60px] text-center mx-auto max-w-[710px]">
             <div class="text-center font-Gravity mb-[10px] xs:text-[14px] xs:leading-[22px] lg:leading-[1.6rem] md:leading-5 md:text-[16px]">
               <p>
-                <span dangerouslySetInnerHTML={{__html: topText}}></span>
+                <span dangerouslySetInnerHTML={{ __html: topText }}></span>
               </p>
             </div>
             <Image
-                src={topImage.image.src}
-                alt={topImage.image.alt}
-                width={208}
-                height={74}
-                class="mt-[10px] mb-10 max-w-full align-middle inline-block w-[208px] h-[74px]"
-                loading="lazy"
-              />
+              src={topImage.image.src}
+              alt={topImage.image.alt}
+              width={208}
+              height={74}
+              class="mt-[10px] mb-10 max-w-full align-middle inline-block w-[208px] h-[74px]"
+              loading="lazy"
+            />
           </div>
           <h1 class="font-AvenirNextLTPro text-center block my-5 md:text-[28px] md:leading-[34px] xs:text-[26px] xs:leading-[32px]">
-            <span dangerouslySetInnerHTML={{__html: title}}></span>
+            <span dangerouslySetInnerHTML={{ __html: title }}></span>
           </h1>
           <div class="md:mx-[-10px] xs:mx-0">
             <div class="md:px-10 xs:px-[10px] my-0 p-5 md:w-1/2 xs:w-full float-left relative">
@@ -75,7 +76,7 @@ function Owners(
               </h3>
               <div class="text-left font-Gravity mb-[10px] xs:text-[14px] xs:leading-[22px] md:leading-[1.6rem] md:text-[16px]">
                 <p>
-                  <span dangerouslySetInnerHTML={{__html: card1.text}}></span>
+                  <span dangerouslySetInnerHTML={{ __html: card1.text }}></span>
                 </p>
               </div>
             </div>
@@ -93,7 +94,7 @@ function Owners(
               </h3>
               <div class="text-left font-Gravity mb-[10px] xs:text-[14px] xs:leading-[22px] md:leading-[1.6rem] md:text-[16px]">
                 <p>
-                  <span dangerouslySetInnerHTML={{__html: card2.text}}></span>
+                  <span dangerouslySetInnerHTML={{ __html: card2.text }}></span>
                 </p>
               </div>
             </div>
@@ -113,7 +114,7 @@ function Owners(
               </h3>
               <div class="text-left font-Gravity mb-[10px] xs:text-[14px] xs:leading-[22px] md:leading-[1.6rem] md:text-[16px]">
                 <p>
-                  <span dangerouslySetInnerHTML={{__html: card3.text}}></span>
+                  <span dangerouslySetInnerHTML={{ __html: card3.text }}></span>
                 </p>
               </div>
             </div>
@@ -131,7 +132,7 @@ function Owners(
               </h3>
               <div class="text-left font-Gravity mb-[10px] xs:text-[14px] xs:leading-[22px] md:leading-[1.6rem] md:text-[16px]">
                 <p>
-                  <span dangerouslySetInnerHTML={{__html: card4.text}}></span>
+                  <span dangerouslySetInnerHTML={{ __html: card4.text }}></span>
                 </p>
               </div>
             </div>
@@ -151,7 +152,7 @@ function Owners(
               </h3>
               <div class="text-left font-Gravity mb-[10px] xs:text-[14px] xs:leading-[22px] md:leading-[1.6rem] md:text-[16px]">
                 <p>
-                  <span dangerouslySetInnerHTML={{__html: card5.text}}></span>
+                  <span dangerouslySetInnerHTML={{ __html: card5.text }}></span>
                 </p>
               </div>
             </div>
@@ -169,13 +170,14 @@ function Owners(
               </h3>
               <div class="text-left font-Gravity mb-[10px] xs:text-[14px] xs:leading-[22px] md:leading-[1.6rem] md:text-[16px]">
                 <p>
-                  <span dangerouslySetInnerHTML={{__html: card6.text}}></span>
+                  <span dangerouslySetInnerHTML={{ __html: card6.text }}></span>
                 </p>
               </div>
             </div>
           </div>
           <div class="md:mx-[-10px] xs:mx-0">
-            <div class="my-0 p-5 md:px-[10px] lg:px-5 xs:px-0 py-[10px] md:w-1/4 xs:w-full float-left relative"></div>
+            <div class="my-0 p-5 md:px-[10px] lg:px-5 xs:px-0 py-[10px] md:w-1/4 xs:w-full float-left relative">
+            </div>
             <div class="md:px-10 xs:px-[10px] my-0 p-5 md:w-1/2 xs:w-full float-left relative">
               <Image
                 src={card7.image.src}
@@ -190,7 +192,7 @@ function Owners(
               </h3>
               <div class="text-left font-Gravity mb-[10px] xs:text-[14px] xs:leading-[22px] md:leading-[1.6rem] md:text-[16px]">
                 <p>
-                  <span dangerouslySetInnerHTML={{__html: card7.text}}></span>
+                  <span dangerouslySetInnerHTML={{ __html: card7.text }}></span>
                 </p>
               </div>
             </div>

@@ -98,6 +98,7 @@
               "./islands/Methodology.tsx",
               "./islands/MoreAboutEicomDCE.tsx",
               "./islands/OutOfStock.tsx",
+              "./islands/PreRequisites.tsx",
               "./islands/ProductImageZoom.tsx",
               "./islands/ProgrammesAndCertification.tsx",
               "./islands/ScaleUpCareer.tsx",
@@ -181,6 +182,7 @@
               "deco-sites/eicomorg/sections/MoreAboutEicomDCE.tsx",
               "deco-sites/eicomorg/sections/Newsletter.tsx",
               "deco-sites/eicomorg/sections/Owners.tsx",
+              "deco-sites/eicomorg/sections/PreRequisites.tsx",
               "deco-sites/eicomorg/sections/ProductDetails.tsx",
               "deco-sites/eicomorg/sections/ProductShelf.tsx",
               "deco-sites/eicomorg/sections/ProgrammesAndCertification.tsx",
@@ -10967,6 +10969,64 @@
       ],
       "title": "deco-sites/eicomorg/components/moreAboutEicomDCE/MoreAboutEicomDCE.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1ByZVJlcXVpc2l0ZXMudHN4@ListItems": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "image",
+        "text"
+      ],
+      "title": "ListItems"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1ByZVJlcXVpc2l0ZXMudHN4@ListItems[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1ByZVJlcXVpc2l0ZXMudHN4@ListItems"
+      },
+      "title": "ListItems[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1ByZVJlcXVpc2l0ZXMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Background Image"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "listItems": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1ByZVJlcXVpc2l0ZXMudHN4@ListItems[]",
+          "title": "List Items"
+        }
+      },
+      "required": [
+        "backgroundImage",
+        "image",
+        "title",
+        "text",
+        "listItems"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/PreRequisites.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Byb2dyYW1tZXNBbmRDZXJ0aWZpY2F0aW9uLnRzeA==@Card": {
       "type": "object",
       "properties": {
@@ -17942,6 +18002,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1ByZVJlcXVpc2l0ZXMudHN4": {
+      "title": "./islands/PreRequisites.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1ByZVJlcXVpc2l0ZXMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/PreRequisites.tsx"
+          ],
+          "default": "./islands/PreRequisites.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1Byb2R1Y3RJbWFnZVpvb20udHN4": {
       "title": "./islands/ProductImageZoom.tsx",
       "type": "object",
@@ -19664,6 +19745,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9QcmVSZXF1aXNpdGVzLnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/PreRequisites.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1ByZVJlcXVpc2l0ZXMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/PreRequisites.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/PreRequisites.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Qcm9kdWN0RGV0YWlscy50c3g=": {
       "title": "deco-sites/eicomorg/sections/ProductDetails.tsx",
       "type": "object",
@@ -21264,6 +21366,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL091dE9mU3RvY2sudHN4"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1ByZVJlcXVpc2l0ZXMudHN4"
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL1Byb2R1Y3RJbWFnZVpvb20udHN4"
         },
         {
@@ -21535,6 +21640,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Pd25lcnMudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9QcmVSZXF1aXNpdGVzLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Qcm9kdWN0RGV0YWlscy50c3g="
