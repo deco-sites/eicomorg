@@ -39,7 +39,7 @@ function InCompanyIncludes(
           backgroundRepeat: "no-repeat",
           backgroundSize: "auto 120%'",
           backgroundPosition: "120% 0",
-          backgroundAttachment: "scroll"
+          backgroundAttachment: "scroll",
         }}
         ref={elementRef as Ref<HTMLDivElement>}
       >
@@ -64,8 +64,7 @@ function InCompanyIncludes(
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "50% 70%",
                   backgroundSize: "cover",
-                  clipPath:
-                    "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)",
+                  clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)",
                 }}
                 class="lg:hidden xs:hidden md:block w-[500px] h-[300px]"
               >
