@@ -13,15 +13,15 @@ export interface FormData {
     questions: Array<{
       id: string;
       value: string;
-      name: string
-      text: HTML
-    }>
-  }
+      name: string;
+      text: HTML;
+    }>;
+  };
   textArea: {
     text: HTML;
     id: string;
     name: string;
-  }
+  };
   action: string;
   buttonColor: string;
   buttonText: string;
@@ -36,7 +36,6 @@ export interface Props {
 
 function AnyQuestions(
   {
-
     title,
     text,
     form,
@@ -94,27 +93,53 @@ function AnyQuestions(
                   <fieldset class="pt-[0.01em] text-[14px">
                     <div class="flex">
                       <legend>
-                        <span dangerouslySetInnerHTML={{ __html: form.checkBoxFields.title }}></span>
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: form.checkBoxFields.title,
+                          }}
+                        >
+                        </span>
                       </legend>
                     </div>
                     {form.checkBoxFields.questions.map((question) => {
                       return (
                         <div class="flex text-[14px]">
-                          <input type="checkbox" id={question.id} name={question.name} value={question.value}/>
+                          <input
+                            type="checkbox"
+                            id={question.id}
+                            name={question.name}
+                            value={question.value}
+                          />
                           <label htmlFor={question.id}>
-                            <span dangerouslySetInnerHTML={{ __html: question.text }}></span>
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: question.text,
+                              }}
+                            >
+                            </span>
                           </label>
                         </div>
-                      )
+                      );
                     })}
                   </fieldset>
                 </div>
                 <div class="w-full relative pb-[10px] max-w-full">
-                  <label htmlFor={form.textArea.id} class="font-bold mb-[5px] block text-[14px]">
-                    <span dangerouslySetInnerHTML={{ __html: form.textArea.text }}></span>
+                  <label
+                    htmlFor={form.textArea.id}
+                    class="font-bold mb-[5px] block text-[14px]"
+                  >
+                    <span
+                      dangerouslySetInnerHTML={{ __html: form.textArea.text }}
+                    >
+                    </span>
                   </label>
                   <div class="relative text-[14px]">
-                    <textarea id={form.textArea.id} name={form.textArea.name} class="h-[160.75px] block w-full box-border border-[1px] border-solid border-[#bcbcbc] p-[8px] text-[14px]"></textarea>
+                    <textarea
+                      id={form.textArea.id}
+                      name={form.textArea.name}
+                      class="h-[160.75px] block w-full box-border border-[1px] border-solid border-[#bcbcbc] p-[8px] text-[14px]"
+                    >
+                    </textarea>
                   </div>
                 </div>
                 <div class="w-full outline-0 ">
