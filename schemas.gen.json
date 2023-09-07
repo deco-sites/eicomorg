@@ -184,6 +184,7 @@
               "deco-sites/eicomorg/sections/JoinWaitinListESA.tsx",
               "deco-sites/eicomorg/sections/JoinWaitlistSection.tsx",
               "deco-sites/eicomorg/sections/LinkTree.tsx",
+              "deco-sites/eicomorg/sections/MakeAnImpact.tsx",
               "deco-sites/eicomorg/sections/Methodology.tsx",
               "deco-sites/eicomorg/sections/MoreAboutEicomDCE.tsx",
               "deco-sites/eicomorg/sections/Newsletter.tsx",
@@ -14812,6 +14813,52 @@
       "required": [],
       "title": "deco-sites/eicomorg/components/ui/LinkTree.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL01ha2VBbkltcGFjdC50c3g=@Button": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string",
+          "title": "Color"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        }
+      },
+      "required": [
+        "color",
+        "text",
+        "url"
+      ],
+      "title": "Button"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL01ha2VBbkltcGFjdC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "leftText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Left Text"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL01ha2VBbkltcGFjdC50c3g=@Button",
+          "title": "Button"
+        },
+        "rightText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Right Text"
+        }
+      },
+      "required": [
+        "leftText",
+        "button",
+        "rightText"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/MakeAnImpact.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL05ld3NsZXR0ZXIudHN4@Props": {
       "type": "object",
       "properties": {
@@ -20336,6 +20383,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9NYWtlQW5JbXBhY3QudHN4": {
+      "title": "deco-sites/eicomorg/sections/MakeAnImpact.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL01ha2VBbkltcGFjdC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/MakeAnImpact.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/MakeAnImpact.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9NZXRob2RvbG9neS50c3g=": {
       "title": "deco-sites/eicomorg/sections/Methodology.tsx",
       "type": "object",
@@ -22321,6 +22389,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9MaW5rVHJlZS50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9NYWtlQW5JbXBhY3QudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9NZXRob2RvbG9neS50c3g="

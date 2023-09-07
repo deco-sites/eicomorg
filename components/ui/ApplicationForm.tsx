@@ -3,7 +3,7 @@ import type { HTML } from "deco-sites/std/components/types.ts";
 
 export interface FormData {
   title: HTML;
-  text: HTML
+  text: HTML;
   textFields: Array<{
     placeholder?: string;
     field: string;
@@ -28,8 +28,8 @@ export interface FormData {
     options: Array<{
       value: string;
       text: string;
-    }>
-  }>
+    }>;
+  }>;
   applicationDetails: HTML;
   selectFieldsBottom: Array<{
     id: string;
@@ -40,8 +40,8 @@ export interface FormData {
     options: Array<{
       value: string;
       text: string;
-    }>
-  }>
+    }>;
+  }>;
   textArea: Array<{
     text: HTML;
     id: string;
@@ -69,7 +69,7 @@ function ApplicationForm(
       <div
         class={`lg:py-[100px] md:py-[60px] md:px-5 lg:px-0 xs:px-[10px] xs:py-[40px] box-border`}
       >
-        <div class="z-auto max-w-[1120px] pr-0 relative mx-auto blocl">
+        <div class="z-auto max-w-[1120px] pr-0 relative mx-auto block">
           <h2 class="font-AvenirNextLTPro text-center my-5 md:text-[28px] md:leading-[34px] xs:text-[26px] xs:leading-[32px] bloco">
             <span dangerouslySetInnerHTML={{ __html: title }}></span>
           </h2>
@@ -83,10 +83,12 @@ function ApplicationForm(
                 <div class="w-full float-none clear-both relative mb-[10px] max-w-100%">
                   <div class="outline-0">
                     <h3 class="my-[10px] font-AvenirNextLTPro leading-[28px]">
-                      <span dangerouslySetInnerHTML={{ __html: form.title }}></span>
+                      <span dangerouslySetInnerHTML={{ __html: form.title }}>
+                      </span>
                     </h3>
                     <p class="mb-[10px] font-Gravity leading-[1.6rem]">
-                      <span dangerouslySetInnerHTML={{ __html: form.text }}></span>
+                      <span dangerouslySetInnerHTML={{ __html: form.text }}>
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -159,27 +161,34 @@ function ApplicationForm(
                         </span>
                       </label>
                       <div class="relative text-[14px]">
-                        <select name={select.name} id={select.id} required={select.required} data-name={select.data_name}
-                         class="border-[1px] border-solid rounded-[1px] border-[#dfdfdf] p-[4px] block w-full box-border text-[14px]">
+                        <select
+                          name={select.name}
+                          id={select.id}
+                          required={select.required}
+                          data-name={select.data_name}
+                          class="border-[1px] border-solid rounded-[1px] border-[#dfdfdf] p-[4px] block w-full box-border text-[14px]"
+                        >
                           <option selected></option>
                           {select.options.map((option) => {
                             return (
-                              <option value={option.value}>{option.text}</option>
-                            )
+                              <option value={option.value}>
+                                {option.text}
+                              </option>
+                            );
                           })}
                         </select>
                       </div>
                     </div>
-                  )
+                  );
                 })}
                 <div class="w-full realtive mb-[10px] max-w-full">
                   <div class="">
                     <h3 class="my-[10px] font-AvenirNextLTPro leading-[28px]">
                       <span
-                          dangerouslySetInnerHTML={{
-                            __html: form.applicationDetails,
-                          }}
-                        >
+                        dangerouslySetInnerHTML={{
+                          __html: form.applicationDetails,
+                        }}
+                      >
                       </span>
                     </h3>
                   </div>
@@ -196,41 +205,48 @@ function ApplicationForm(
                         </span>
                       </label>
                       <div class="relative text-[14px]">
-                        <select name={select.name} id={select.id} required={select.required} data-name={select.data_name}
-                         class="border-[1px] border-solid rounded-[1px] border-[#dfdfdf] p-[4px] block w-full box-border text-[14px]">
+                        <select
+                          name={select.name}
+                          id={select.id}
+                          required={select.required}
+                          data-name={select.data_name}
+                          class="border-[1px] border-solid rounded-[1px] border-[#dfdfdf] p-[4px] block w-full box-border text-[14px]"
+                        >
                           <option selected></option>
                           {select.options.map((option) => {
                             return (
-                              <option value={option.value}>{option.text}</option>
-                            )
+                              <option value={option.value}>
+                                {option.text}
+                              </option>
+                            );
                           })}
                         </select>
                       </div>
                     </div>
-                  )
+                  );
                 })}
                 {form.textArea.map((textArea) => {
                   return (
                     <div class="w-full relative pb-[10px] max-w-full">
-                    <label
-                      htmlFor={textArea.id}
-                      class="font-bold mb-[5px] block text-[14px]"
-                    >
-                      <span
-                        dangerouslySetInnerHTML={{ __html: textArea.text }}
+                      <label
+                        htmlFor={textArea.id}
+                        class="font-bold mb-[5px] block text-[14px]"
                       >
-                      </span>
-                    </label>
-                    <div class="relative text-[14px]">
-                      <textarea
-                        id={textArea.id}
-                        name={textArea.name}
-                        class="h-auto block w-full box-border border-[1px] border-solid border-[#bcbcbc] p-[8px] text-[14px]"
-                      >
-                      </textarea>
+                        <span
+                          dangerouslySetInnerHTML={{ __html: textArea.text }}
+                        >
+                        </span>
+                      </label>
+                      <div class="relative text-[14px]">
+                        <textarea
+                          id={textArea.id}
+                          name={textArea.name}
+                          class="h-auto block w-full box-border border-[1px] border-solid border-[#bcbcbc] p-[8px] text-[14px]"
+                        >
+                        </textarea>
+                      </div>
                     </div>
-                  </div>
-                  )
+                  );
                 })}
 
                 <div class="w-full outline-0 ">
