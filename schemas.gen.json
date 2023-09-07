@@ -81,6 +81,7 @@
               "./islands/DetailsSection.tsx",
               "./islands/DigitalCommerceExpert.tsx",
               "./islands/EmpowerYourself.tsx",
+              "./islands/Enrollment.tsx",
               "./islands/executiveProgrameCard.tsx",
               "./islands/FAQ.tsx",
               "./islands/Footer.tsx",
@@ -159,6 +160,7 @@
               "deco-sites/eicomorg/sections/DigitalCommerceKnowledgeDimensions.tsx",
               "deco-sites/eicomorg/sections/ElevateYourCareer.tsx",
               "deco-sites/eicomorg/sections/EmpowerYourself.tsx",
+              "deco-sites/eicomorg/sections/Enrollment.tsx",
               "deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx",
               "deco-sites/eicomorg/sections/Faculty.tsx",
               "deco-sites/eicomorg/sections/FacultyExecutiveProgramme.tsx",
@@ -9174,6 +9176,44 @@
       ],
       "title": "deco-sites/eicomorg/components/empowerYourself/empowerYourself.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Vucm9sbG1lbnQudHN4@Card": {
+      "type": "object",
+      "properties": {
+        "leftText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Left Text"
+        },
+        "rightText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Right Text"
+        }
+      },
+      "required": [
+        "leftText",
+        "rightText"
+      ],
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Vucm9sbG1lbnQudHN4@Card[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Vucm9sbG1lbnQudHN4@Card"
+      },
+      "title": "Card[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Vucm9sbG1lbnQudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "cards": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Vucm9sbG1lbnQudHN4@Card[]",
+          "title": "Cards"
+        }
+      },
+      "required": [
+        "cards"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/Enrollment.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2ZvckluZGl2aWR1YWwvZXhlY3V0aXZlUHJvZ3JhbWVDYXJkLnRzeA==@topTextProps": {
       "type": "object",
       "properties": {
@@ -17887,6 +17927,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0Vucm9sbG1lbnQudHN4": {
+      "title": "./islands/Enrollment.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Vucm9sbG1lbnQudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Enrollment.tsx"
+          ],
+          "default": "./islands/Enrollment.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL2V4ZWN1dGl2ZVByb2dyYW1lQ2FyZC50c3g=": {
       "title": "./islands/executiveProgrameCard.tsx",
       "type": "object",
@@ -19481,6 +19542,27 @@
             "deco-sites/eicomorg/sections/EmpowerYourself.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/EmpowerYourself.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FbnJvbGxtZW50LnRzeA==": {
+      "title": "deco-sites/eicomorg/sections/Enrollment.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Vucm9sbG1lbnQudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/Enrollment.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/Enrollment.tsx"
         }
       }
     },
@@ -21600,6 +21682,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0VtcG93ZXJZb3Vyc2VsZi50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0Vucm9sbG1lbnQudHN4"
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL2V4ZWN1dGl2ZVByb2dyYW1lQ2FyZC50c3g="
         },
         {
@@ -21856,6 +21941,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FbXBvd2VyWW91cnNlbGYudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FbnJvbGxtZW50LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FeGVjdXRpdmVQcm9ncmFtbWVXYXJuaW5nLnRzeA=="
