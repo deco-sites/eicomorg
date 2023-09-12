@@ -149,6 +149,7 @@
               "deco-sites/eicomorg/sections/Carousel.tsx",
               "deco-sites/eicomorg/sections/CertifiedByIndustry.tsx",
               "deco-sites/eicomorg/sections/CmxLevels.tsx",
+              "deco-sites/eicomorg/sections/ContactUs.tsx",
               "deco-sites/eicomorg/sections/CookieConsent.tsx",
               "deco-sites/eicomorg/sections/CourseInfo.tsx",
               "deco-sites/eicomorg/sections/CourseInfoAlternate.tsx",
@@ -13193,6 +13194,243 @@
       "required": [],
       "title": "deco-sites/eicomorg/components/ui/BannerCarousel.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0NvbnRhY3RVcy50c3g=@LeftSide": {
+      "type": "object",
+      "properties": {
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Top Text"
+        },
+        "phoneNumber": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+              "title": "Text"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "text",
+            "href"
+          ],
+          "title": "Phone Number"
+        },
+        "email": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+              "title": "Text"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "text",
+            "href"
+          ],
+          "title": "Email"
+        },
+        "campus": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Campus"
+        },
+        "bottomText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Text"
+        }
+      },
+      "required": [
+        "topText",
+        "phoneNumber",
+        "email",
+        "campus",
+        "bottomText"
+      ],
+      "title": "LeftSide"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0NvbnRhY3RVcy50c3g=@FormData": {
+      "type": "object",
+      "properties": {
+        "textFields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "placeholder": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Placeholder"
+              },
+              "field": {
+                "type": "string",
+                "title": "Field"
+              },
+              "id": {
+                "type": "string",
+                "title": "Id"
+              },
+              "required": {
+                "type": "boolean",
+                "title": "Required"
+              }
+            },
+            "required": [
+              "field",
+              "id",
+              "required"
+            ]
+          },
+          "title": "Text Fields"
+        },
+        "selectFields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "Id"
+              },
+              "name": {
+                "type": "string",
+                "title": "Name"
+              },
+              "required": {
+                "type": "boolean",
+                "title": "Required"
+              },
+              "data_name": {
+                "type": "string",
+                "title": "Data_name"
+              },
+              "text": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+                "title": "Text"
+              },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "string",
+                      "title": "Value"
+                    },
+                    "text": {
+                      "type": "string",
+                      "title": "Text"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "text"
+                  ]
+                },
+                "title": "Options"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "required",
+              "data_name",
+              "text",
+              "options"
+            ]
+          },
+          "title": "Select Fields"
+        },
+        "textArea": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+                "title": "Text"
+              },
+              "id": {
+                "type": "string",
+                "title": "Id"
+              },
+              "name": {
+                "type": "string",
+                "title": "Name"
+              }
+            },
+            "required": [
+              "text",
+              "id",
+              "name"
+            ]
+          },
+          "title": "Text Area"
+        },
+        "privacyPolicy": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Privacy Policy"
+        },
+        "action": {
+          "type": "string",
+          "title": "Action"
+        },
+        "buttonColor": {
+          "type": "string",
+          "title": "Button Color"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        },
+        "buttonUrl": {
+          "type": "string",
+          "title": "Button Url"
+        }
+      },
+      "required": [
+        "textFields",
+        "selectFields",
+        "textArea",
+        "privacyPolicy",
+        "action",
+        "buttonColor",
+        "buttonText",
+        "buttonUrl"
+      ],
+      "title": "FormData"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0NvbnRhY3RVcy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "leftSide": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0NvbnRhY3RVcy50c3g=@LeftSide",
+          "title": "Left Side"
+        },
+        "form": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0NvbnRhY3RVcy50c3g=@FormData",
+          "title": "Form"
+        }
+      },
+      "required": [
+        "title",
+        "leftSide",
+        "form"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/ContactUs.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NvdXJzZXMvQ291cnNlcy50c3g=@CourseInfo": {
       "type": "object",
       "properties": {
@@ -13703,7 +13941,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors&f5a3baebe1c797e427c8141dce94fe7d": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -13719,7 +13957,7 @@
           "required": []
         }
       ],
-      "title": "059c94444960270fb25f4ccb03e57ec3&Colors"
+      "title": "Colors&f5a3baebe1c797e427c8141dce94fe7d"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -13822,7 +14060,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@059c94444960270fb25f4ccb03e57ec3&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors&f5a3baebe1c797e427c8141dce94fe7d",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -19653,6 +19891,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db250YWN0VXMudHN4": {
+      "title": "deco-sites/eicomorg/sections/ContactUs.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0NvbnRhY3RVcy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/ContactUs.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/ContactUs.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db29raWVDb25zZW50LnRzeA==": {
       "title": "deco-sites/eicomorg/sections/CookieConsent.tsx",
       "type": "object",
@@ -22284,6 +22543,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DbXhMZXZlbHMudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db250YWN0VXMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Db29raWVDb25zZW50LnRzeA=="
