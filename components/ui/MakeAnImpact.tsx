@@ -33,7 +33,7 @@ function MakeAnImpact(
               <div class="lg:w-[340px] xs:w-auto block">
                 <div class="mb-5 text-left font-Gravity md:text-[16px] lg:leading-[1.6rem] md:leading-[20px] xs:text-[14px] xs:leading-[22px]">
                   <p>
-                    <span dangerouslySetInnerHTML={{__html: leftText}}></span>
+                    <span dangerouslySetInnerHTML={{ __html: leftText }}></span>
                   </p>
                 </div>
                 <a
@@ -48,7 +48,7 @@ function MakeAnImpact(
             </div>
             <div class="justify-around md:pl-[60px] md:pt-0 flex md:w-2/3 xs:w-full float-left pr-[10px] relative md:border-l-[1px] md:border-l-solid md:border-l-[#000]">
               <h1 class="font-AvenirNextLTPro md:text-[38px] md:leading-[44px] xs:text-[28px] xs:leading-[36px] mb-[10px]">
-                <span dangerouslySetInnerHTML={{__html: rightText}}></span>
+                <span dangerouslySetInnerHTML={{ __html: rightText }}></span>
               </h1>
             </div>
           </div>
