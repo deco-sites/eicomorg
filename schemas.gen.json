@@ -15401,12 +15401,37 @@
         "article3": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Jldmlld0JvZHkudHN4@Article",
           "title": "Article3"
+        },
+        "featuredArticle": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Featured Article"
+        },
+        "article4": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Jldmlld0JvZHkudHN4@Article",
+          "title": "Article4"
+        },
+        "article5": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Jldmlld0JvZHkudHN4@Article",
+          "title": "Article5"
+        },
+        "article6": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Jldmlld0JvZHkudHN4@Article",
+          "title": "Article6"
+        },
+        "article7": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1Jldmlld0JvZHkudHN4@Article",
+          "title": "Article7"
         }
       },
       "required": [
         "article1",
         "article2",
-        "article3"
+        "article3",
+        "featuredArticle",
+        "article4",
+        "article5",
+        "article6",
+        "article7"
       ],
       "title": "deco-sites/eicomorg/components/ui/ReviewBody.tsx@Props"
     },
