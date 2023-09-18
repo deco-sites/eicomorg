@@ -142,6 +142,7 @@
               "deco-sites/eicomorg/sections/BannerTheInstitute.tsx",
               "deco-sites/eicomorg/sections/Bar.tsx",
               "deco-sites/eicomorg/sections/BecomeASponsor.tsx",
+              "deco-sites/eicomorg/sections/BecomeReviewAuthor.tsx",
               "deco-sites/eicomorg/sections/BestDigitalCourse.tsx",
               "deco-sites/eicomorg/sections/Bonus.tsx",
               "deco-sites/eicomorg/sections/Brand.tsx",
@@ -12945,6 +12946,52 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/BecomeASponsor.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0JlY29tZVJldmlld0F1dGhvci50c3g=@Button": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string",
+          "title": "Color"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        }
+      },
+      "required": [
+        "color",
+        "text",
+        "url"
+      ],
+      "title": "Button"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0JlY29tZVJldmlld0F1dGhvci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "leftText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Left Text"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0JlY29tZVJldmlld0F1dGhvci50c3g=@Button",
+          "title": "Button"
+        },
+        "rightText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Right Text"
+        }
+      },
+      "required": [
+        "leftText",
+        "button",
+        "rightText"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/BecomeReviewAuthor.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0JyYW5kLnRzeA==@Link": {
       "type": "object",
       "properties": {
@@ -20171,6 +20218,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CZWNvbWVSZXZpZXdBdXRob3IudHN4": {
+      "title": "deco-sites/eicomorg/sections/BecomeReviewAuthor.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0JlY29tZVJldmlld0F1dGhvci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/BecomeReviewAuthor.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/BecomeReviewAuthor.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CZXN0RGlnaXRhbENvdXJzZS50c3g=": {
       "title": "deco-sites/eicomorg/sections/BestDigitalCourse.tsx",
       "type": "object",
@@ -23054,6 +23122,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CZWNvbWVBU3BvbnNvci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CZWNvbWVSZXZpZXdBdXRob3IudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CZXN0RGlnaXRhbENvdXJzZS50c3g="

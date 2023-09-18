@@ -18,8 +18,9 @@ function ReviewBanner(
 ) {
   return (
     <>
+      <div class="md:h-[70px] xs:h-[100px]"></div>
       <div
-        class="mt-[70px] box-border"
+        class="box-border"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundRepeat: "no-repeat",

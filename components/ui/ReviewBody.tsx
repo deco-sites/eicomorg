@@ -30,11 +30,11 @@ function ReviewBody(
     article1,
     article2,
     article3,
-		featuredArticle,
-		article4,
-		article5,
-		article6,
-		article7,
+    featuredArticle,
+    article4,
+    article5,
+    article6,
+    article7,
   }: Props,
 ) {
   return (
@@ -119,7 +119,7 @@ function ReviewBody(
 
           {/* articles 2 and 3 */}
           <div class="">
-            <div role="list" class="md:mx-[-10px] xs:mx-[10px]">
+            <div role="list" class="md:mx-[-10px]">
               {/* article 2 */}
               <div
                 role="listitem"
@@ -138,7 +138,7 @@ function ReviewBody(
                         backgroundSize: "cover",
                         backgroundColor: "#f5f6f6",
                       }}
-                      class="h-[180px] border-t-[4px] lg:bg-[50% 40%] xs:bg-[50%]"
+                      class="h-[180px] lg:bg-[50% 40%] xs:bg-[50%]"
                     >
                     </div>
                     <div class="bg-[#f26f21] w-0 h-1 transition-all duration-1000 lg:group-hover:w-full">
@@ -200,7 +200,7 @@ function ReviewBody(
                         backgroundSize: "cover",
                         backgroundColor: "#f5f6f6",
                       }}
-                      class="h-[180px] border-t-[4px] lg:bg-[50% 40%] xs:bg-[50%]"
+                      class="h-[180px] lg:bg-[50% 40%] xs:bg-[50%]"
                     >
                     </div>
                     <div class="bg-[#f26f21] w-0 h-1 transition-all duration-1000 lg:group-hover:w-full">
@@ -248,17 +248,17 @@ function ReviewBody(
           </div>
 
           {/* Featured Article ** Article 4 */}
-					<div class="mb-0 pt-10 pb-[10px]">
-						<h3 class="text-[18px] leading-[24px] lg:mt-5 md:mt-[10px] mb-[10px] font-AvenirNextLTPro">
-							<span
-							dangerouslySetInnerHTML={{
-								__html: featuredArticle,
-							}}
-							>
-							</span>
-						</h3>
-					</div>
-					<div class="mb-[60px] py-0">
+          <div class="mb-0 pt-10 pb-[10px]">
+            <h3 class="text-[18px] leading-[24px] lg:mt-5 md:mt-[10px] mb-[10px] font-AvenirNextLTPro">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: featuredArticle,
+                }}
+              >
+              </span>
+            </h3>
+          </div>
+          <div class="mb-[60px] py-0">
             <div role="list" class="">
               <div role="listitem">
                 <a
@@ -331,12 +331,12 @@ function ReviewBody(
                 </a>
               </div>
             </div>
-					</div>
+          </div>
 
-					{/* Articles 5, 6 and 7*/}
-					<div class="">
-						<div role="list" class="md:mx-[-10px] xs:mx-[10px]">
-						<div
+          {/* Articles 5, 6 and 7*/}
+          <div class="">
+            <div role="list" class="md:mx-[-10px] xs:mx-0">
+              <div
                 role="listitem"
                 class="md:w-1/3 xs:w-full float-left md:px-[10px] xs:px-0 md:mb-0 xs:mx-0 relative"
               >
@@ -351,9 +351,10 @@ function ReviewBody(
                         backgroundImage: `url(${article5.image.src})`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
-                        backgroundColor: "hsla(212.19512195121953, 6.89%, 54.89%, 1.00)",
+                        backgroundColor:
+                          "hsla(212.19512195121953, 6.89%, 54.89%, 1.00)",
                       }}
-                      class="h-[180px] border-t-[4px] lg:bg-[50% 40%] xs:bg-[50%]"
+                      class="h-[180px] lg:bg-[50% 40%] xs:bg-[50%]"
                     >
                     </div>
                     <div class="bg-[#f26f21] w-0 h-1 transition-all duration-1000 lg:group-hover:w-full">
@@ -398,7 +399,7 @@ function ReviewBody(
                 </a>
               </div>
 
-							<div
+              <div
                 role="listitem"
                 class="md:w-1/3 xs:w-full float-left md:px-[10px] xs:px-0 md:mb-0 xs:mx-0 relative"
               >
@@ -415,7 +416,7 @@ function ReviewBody(
                         backgroundSize: "cover",
                         backgroundColor: "hsla(206, 0.00%, 80.98%, 1.00)",
                       }}
-                      class="h-[180px] border-t-[4px] lg:bg-[50% 40%] xs:bg-[50%]"
+                      class="h-[180px] lg:bg-[50% 40%] xs:bg-[50%]"
                     >
                     </div>
                     <div class="bg-[#f26f21] w-0 h-1 transition-all duration-1000 lg:group-hover:w-full">
@@ -460,7 +461,7 @@ function ReviewBody(
                 </a>
               </div>
 
-							<div
+              <div
                 role="listitem"
                 class="md:w-1/3 xs:w-full float-left md:px-[10px] xs:px-0 md:mb-0 xs:mx-0 relative"
               >
@@ -475,9 +476,10 @@ function ReviewBody(
                         backgroundImage: `url(${article7.image.src})`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "cover",
-                        backgroundColor: "hsla(212.19512195121953, 6.89%, 54.89%, 1.00)",
+                        backgroundColor:
+                          "hsla(212.19512195121953, 6.89%, 54.89%, 1.00)",
                       }}
-                      class="h-[180px] border-t-[4px] lg:bg-[50% 40%] xs:bg-[50%]"
+                      class="h-[180px] lg:bg-[50% 40%] xs:bg-[50%]"
                     >
                     </div>
                     <div class="bg-[#f26f21] w-0 h-1 transition-all duration-1000 lg:group-hover:w-full">
@@ -521,11 +523,8 @@ function ReviewBody(
                   </div>
                 </a>
               </div>
-
-						</div>
-					</div>
-
-
+            </div>
+          </div>
         </div>
       </div>
     </>
