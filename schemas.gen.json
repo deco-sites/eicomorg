@@ -64,6 +64,7 @@
               "./islands/AddToCartButton.tsx",
               "./islands/Alerts.tsx",
               "./islands/Alumni.tsx",
+              "./islands/BannerCommerce.tsx",
               "./islands/BannerEcommerceSolutionsArchitect.tsx",
               "./islands/BannerInCompany.tsx",
               "./islands/BannerScholarship.tsx",
@@ -129,6 +130,7 @@
               "deco-sites/eicomorg/sections/AnyQuestions.tsx",
               "deco-sites/eicomorg/sections/ApplicationForm.tsx",
               "deco-sites/eicomorg/sections/BannerCmxExam.tsx",
+              "deco-sites/eicomorg/sections/BannerCommerce.tsx",
               "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
               "deco-sites/eicomorg/sections/BannerDiscoverNewCommerceTalents.tsx",
               "deco-sites/eicomorg/sections/BannerEcommerceSolutionsArchitect.tsx",
@@ -7347,6 +7349,89 @@
         "cards"
       ],
       "title": "deco-sites/eicomorg/components/alumni/Alumni.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@BannerBackgroundImage": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile"
+      ],
+      "title": "BannerBackgroundImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@ActionLink": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "text",
+        "href"
+      ],
+      "title": "ActionLink"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "logo": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Logo"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@BannerBackgroundImage",
+          "title": "Background Image"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@ActionLink",
+          "title": "Button"
+        }
+      },
+      "required": [
+        "title",
+        "logo",
+        "text",
+        "backgroundImage",
+        "button"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/BannerCommerce.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@BannerBackgroundImage": {
       "type": "object",
@@ -18621,6 +18706,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0Jhbm5lckNvbW1lcmNlLnRzeA==": {
+      "title": "./islands/BannerCommerce.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/BannerCommerce.tsx"
+          ],
+          "default": "./islands/BannerCommerce.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC50c3g=": {
       "title": "./islands/BannerEcommerceSolutionsArchitect.tsx",
       "type": "object",
@@ -19942,6 +20048,27 @@
             "deco-sites/eicomorg/sections/BannerCmxExam.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/BannerCmxExam.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJDb21tZXJjZS50c3g=": {
+      "title": "deco-sites/eicomorg/sections/BannerCommerce.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/BannerCommerce.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/BannerCommerce.tsx"
         }
       }
     },
@@ -22866,6 +22993,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0FsdW1uaS50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lckNvbW1lcmNlLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC50c3g="
         },
         {
@@ -23083,6 +23213,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJDbXhFeGFtLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJDb21tZXJjZS50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4"
