@@ -64,6 +64,7 @@
               "./islands/AddToCartButton.tsx",
               "./islands/Alerts.tsx",
               "./islands/Alumni.tsx",
+              "./islands/BannerCommerce.tsx",
               "./islands/BannerEcommerceSolutionsArchitect.tsx",
               "./islands/BannerInCompany.tsx",
               "./islands/BannerScholarship.tsx",
@@ -129,6 +130,7 @@
               "deco-sites/eicomorg/sections/AnyQuestions.tsx",
               "deco-sites/eicomorg/sections/ApplicationForm.tsx",
               "deco-sites/eicomorg/sections/BannerCmxExam.tsx",
+              "deco-sites/eicomorg/sections/BannerCommerce.tsx",
               "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
               "deco-sites/eicomorg/sections/BannerDiscoverNewCommerceTalents.tsx",
               "deco-sites/eicomorg/sections/BannerEcommerceSolutionsArchitect.tsx",
@@ -161,6 +163,7 @@
               "deco-sites/eicomorg/sections/DetailsSection.tsx",
               "deco-sites/eicomorg/sections/DigitalCommerceExpert.tsx",
               "deco-sites/eicomorg/sections/DigitalCommerceKnowledgeDimensions.tsx",
+              "deco-sites/eicomorg/sections/DownloadPresentations.tsx",
               "deco-sites/eicomorg/sections/ElevateYourCareer.tsx",
               "deco-sites/eicomorg/sections/EmpowerYourself.tsx",
               "deco-sites/eicomorg/sections/Enrollment.tsx",
@@ -204,11 +207,13 @@
               "deco-sites/eicomorg/sections/SideLogos.tsx",
               "deco-sites/eicomorg/sections/SideLogosThree.tsx",
               "deco-sites/eicomorg/sections/SomeNumbers.tsx",
+              "deco-sites/eicomorg/sections/SpreadTheKnowledge.tsx",
               "deco-sites/eicomorg/sections/Suggestion.tsx",
               "deco-sites/eicomorg/sections/TestimonialsSection.tsx",
               "deco-sites/eicomorg/sections/TextSection.tsx",
               "deco-sites/eicomorg/sections/TrustedBy.tsx",
               "deco-sites/eicomorg/sections/WaitingList.tsx",
+              "deco-sites/eicomorg/sections/WatchPastChats.tsx",
               "deco-sites/eicomorg/sections/WhatBenefits.tsx",
               "deco-sites/eicomorg/sections/WhatsApp.tsx",
               "deco-sites/eicomorg/sections/WhoIsForDigitalCommerceExpert.tsx",
@@ -7348,6 +7353,89 @@
       ],
       "title": "deco-sites/eicomorg/components/alumni/Alumni.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@BannerBackgroundImage": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile"
+      ],
+      "title": "BannerBackgroundImage"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@ActionLink": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "text",
+        "href"
+      ],
+      "title": "ActionLink"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "logo": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Src"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "src",
+            "alt"
+          ],
+          "title": "Logo"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "backgroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@BannerBackgroundImage",
+          "title": "Background Image"
+        },
+        "button": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@ActionLink",
+          "title": "Button"
+        }
+      },
+      "required": [
+        "title",
+        "logo",
+        "text",
+        "backgroundImage",
+        "button"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/BannerCommerce.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC9CYW5uZXJFY29tbWVyY2VTb2x1dGlvbnNBcmNoaXRlY3QudHN4@BannerBackgroundImage": {
       "type": "object",
       "properties": {
@@ -14169,6 +14257,155 @@
       ],
       "title": "deco-sites/eicomorg/components/ui/DigitalCommerceKnowledgeDimensions.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Rvd25sb2FkUHJlc2VudGF0aW9ucy50c3g=@FormData": {
+      "type": "object",
+      "properties": {
+        "textFields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "placeholder": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Placeholder"
+              },
+              "field": {
+                "type": "string",
+                "title": "Field"
+              },
+              "id": {
+                "type": "string",
+                "title": "Id"
+              },
+              "required": {
+                "type": "boolean",
+                "title": "Required"
+              }
+            },
+            "required": [
+              "field",
+              "id",
+              "required"
+            ]
+          },
+          "title": "Text Fields"
+        },
+        "selectFields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "Id"
+              },
+              "name": {
+                "type": "string",
+                "title": "Name"
+              },
+              "required": {
+                "type": "boolean",
+                "title": "Required"
+              },
+              "data_name": {
+                "type": "string",
+                "title": "Data_name"
+              },
+              "text": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+                "title": "Text"
+              },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "string",
+                      "title": "Value"
+                    },
+                    "text": {
+                      "type": "string",
+                      "title": "Text"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "text"
+                  ]
+                },
+                "title": "Options"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "required",
+              "data_name",
+              "text",
+              "options"
+            ]
+          },
+          "title": "Select Fields"
+        },
+        "action": {
+          "type": "string",
+          "title": "Action"
+        },
+        "buttonColor": {
+          "type": "string",
+          "title": "Button Color"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        },
+        "buttonUrl": {
+          "type": "string",
+          "title": "Button Url"
+        }
+      },
+      "required": [
+        "textFields",
+        "selectFields",
+        "action",
+        "buttonColor",
+        "buttonText",
+        "buttonUrl"
+      ],
+      "title": "FormData"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Rvd25sb2FkUHJlc2VudGF0aW9ucy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "form": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Rvd25sb2FkUHJlc2VudGF0aW9ucy50c3g=@FormData",
+          "title": "Form"
+        },
+        "bottomText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Text"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "form",
+        "bottomText"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/DownloadPresentations.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2VsZXZhdGVZb3VyQ2FyZWVyL0VsZXZhdGVZb3VyQ2FyZWVyLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -15727,6 +15964,39 @@
       ],
       "title": "deco-sites/eicomorg/components/sideLogos/SideLogos.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1NwcmVhZFRoZUtub3dsZWRnZS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "youtubeURL": {
+          "type": "string",
+          "title": "Youtube U R L"
+        },
+        "youtubeBackGroundImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Youtube Back Ground Image"
+        },
+        "topText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Top Text"
+        },
+        "bottomText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Bottom Text"
+        }
+      },
+      "required": [
+        "title",
+        "youtubeURL",
+        "youtubeBackGroundImage",
+        "topText",
+        "bottomText"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/SpreadTheKnowledge.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1N1Z2dlc3Rpb24udHN4@FormData": {
       "type": "object",
       "properties": {
@@ -16136,6 +16406,116 @@
         "form"
       ],
       "title": "deco-sites/eicomorg/components/waitingList/WaitingList.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1dhdGNoUGFzdENoYXRzLnRzeA==@Card": {
+      "type": "object",
+      "properties": {
+        "youtubeURL": {
+          "type": "string",
+          "title": "Youtube U R L"
+        },
+        "youtubeImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Youtube Image"
+        },
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "avatar": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Avatar"
+        },
+        "person": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Person"
+        }
+      },
+      "required": [
+        "youtubeURL",
+        "youtubeImage",
+        "title",
+        "text",
+        "avatar",
+        "person"
+      ],
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1dhdGNoUGFzdENoYXRzLnRzeA==@Card[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1dhdGNoUGFzdENoYXRzLnRzeA==@Card"
+      },
+      "title": "Card[]"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1dhdGNoUGFzdENoYXRzLnRzeA==@Navigation": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Text"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        }
+      },
+      "required": [
+        "text",
+        "url"
+      ],
+      "title": "Navigation"
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1dhdGNoUGFzdENoYXRzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "cards": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1dhdGNoUGFzdENoYXRzLnRzeA==@Card[]",
+          "title": "Cards"
+        },
+        "clickImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Click Image"
+        },
+        "previous": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1dhdGNoUGFzdENoYXRzLnRzeA==@Navigation",
+          "title": "Previous"
+        },
+        "next": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1dhdGNoUGFzdENoYXRzLnRzeA==@Navigation",
+          "title": "Next"
+        },
+        "firstPage": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "First Page"
+        },
+        "lastPage": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Last Page"
+        }
+      },
+      "required": [
+        "title",
+        "cards",
+        "clickImage",
+        "previous",
+        "next"
+      ],
+      "title": "deco-sites/eicomorg/components/ui/WatchPastChats.tsx@Props"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1doYXRCZW5lZml0cy50c3g=@topImage": {
       "type": "object",
@@ -18621,6 +19001,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0Jhbm5lckNvbW1lcmNlLnRzeA==": {
+      "title": "./islands/BannerCommerce.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/BannerCommerce.tsx"
+          ],
+          "default": "./islands/BannerCommerce.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC50c3g=": {
       "title": "./islands/BannerEcommerceSolutionsArchitect.tsx",
       "type": "object",
@@ -19945,6 +20346,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJDb21tZXJjZS50c3g=": {
+      "title": "deco-sites/eicomorg/sections/BannerCommerce.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Jhbm5lckNvbW1lcmNlLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/BannerCommerce.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/BannerCommerce.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4": {
       "title": "deco-sites/eicomorg/sections/BannerDigitalTransformation.tsx",
       "type": "object",
@@ -20609,6 +21031,27 @@
             "deco-sites/eicomorg/sections/DigitalCommerceKnowledgeDimensions.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/DigitalCommerceKnowledgeDimensions.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Eb3dubG9hZFByZXNlbnRhdGlvbnMudHN4": {
+      "title": "deco-sites/eicomorg/sections/DownloadPresentations.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL0Rvd25sb2FkUHJlc2VudGF0aW9ucy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/DownloadPresentations.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/DownloadPresentations.tsx"
         }
       }
     },
@@ -21515,6 +21958,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TcHJlYWRUaGVLbm93bGVkZ2UudHN4": {
+      "title": "deco-sites/eicomorg/sections/SpreadTheKnowledge.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1NwcmVhZFRoZUtub3dsZWRnZS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/SpreadTheKnowledge.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/SpreadTheKnowledge.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TdWdnZXN0aW9uLnRzeA==": {
       "title": "deco-sites/eicomorg/sections/Suggestion.tsx",
       "type": "object",
@@ -21617,6 +22081,27 @@
             "deco-sites/eicomorg/sections/WaitingList.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/WaitingList.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XYXRjaFBhc3RDaGF0cy50c3g=": {
+      "title": "deco-sites/eicomorg/sections/WatchPastChats.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL3VpL1dhdGNoUGFzdENoYXRzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/WatchPastChats.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/WatchPastChats.tsx"
         }
       }
     },
@@ -22866,6 +23351,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0FsdW1uaS50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lckNvbW1lcmNlLnRzeA=="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Jhbm5lckVjb21tZXJjZVNvbHV0aW9uc0FyY2hpdGVjdC50c3g="
         },
         {
@@ -23085,6 +23573,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJDbXhFeGFtLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJDb21tZXJjZS50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9CYW5uZXJEaWdpdGFsVHJhbnNmb3JtYXRpb24udHN4"
         },
         {
@@ -23179,6 +23670,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EaWdpdGFsQ29tbWVyY2VLbm93bGVkZ2VEaW1lbnNpb25zLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Eb3dubG9hZFByZXNlbnRhdGlvbnMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9FbGV2YXRlWW91ckNhcmVlci50c3g="
@@ -23310,6 +23804,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9Tb21lTnVtYmVycy50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TcHJlYWRUaGVLbm93bGVkZ2UudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9TdWdnZXN0aW9uLnRzeA=="
         },
         {
@@ -23323,6 +23820,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XYWl0aW5nTGlzdC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XYXRjaFBhc3RDaGF0cy50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9XaGF0QmVuZWZpdHMudHN4"

@@ -45,7 +45,7 @@ function MakeAnImpact(
                 class={`mx-auto md:w-auto xs:w-full uppercase cursor-pointer bg-[#f26f21]
                 hover:bg-[#f07d39] rounded md:py-[16px] lg:px-[24px] xs:py-[12px] xs:px-[20px] font-Gravity text-[16px] font-bold text-white inline-block text-center
                 `}
-                >
+              >
                 {button.text}
               </a>
             </div>
@@ -57,7 +57,3 @@ function MakeAnImpact(
 }
 
 export default MakeAnImpact;
-
-
-
-
