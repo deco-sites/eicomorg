@@ -19,8 +19,8 @@ export interface Props {
   title: HTML;
   logo: {
     src: LiveImage;
-    alt: string
-  }
+    alt: string;
+  };
   text: HTML;
   backgroundImage: BannerBackgroundImage;
   button: ActionLink;
@@ -49,12 +49,12 @@ function BannerCommerce(
                 }}
               >
                 <Image
-                src={logo.src}
-                alt={logo.alt}
-                loading="lazy"
-                height={96}
-                width={130}
-                class="w-[130px] h-auto max-w-full inline-block align-middle"
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  height={96}
+                  width={130}
+                  class="w-[130px] h-auto max-w-full inline-block align-middle"
                 />
                 <h1 class="my-5 font-AvenirNextLTPro text-[44px] leading-[54px] ml-0">
                   <span dangerouslySetInnerHTML={{ __html: title }}></span>
@@ -106,12 +106,12 @@ function BannerCommerce(
                 }}
               >
                 <Image
-                src={logo.src}
-                alt={logo.alt}
-                loading="lazy"
-                height={96}
-                width={130}
-                class="xs:w-[80px] md:w-[130px] h-auto max-w-full inline-block align-middle"
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  height={96}
+                  width={130}
+                  class="xs:w-[80px] md:w-[130px] h-auto max-w-full inline-block align-middle"
                 />
                 <h1 class="tracking-[.1px] mb-5 font-AvenirNextLTPro md:text-[46px] md:leading-[56px] xs:text-[30px] leading-[36px] mt-[20px]">
                   <span dangerouslySetInnerHTML={{ __html: title }}></span>
