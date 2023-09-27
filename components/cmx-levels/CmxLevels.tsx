@@ -46,7 +46,7 @@ function CmxLevels(
 
   return (
     <div
-      class="max-w-[1120px] mx-auto py-[80px] mt-20"
+      class="max-w-[1120px] mx-auto py-[80px]"
       ref={elementRef as Ref<HTMLDivElement>}
     >
       <div class="text-center mx-auto [&>span]:leading-10 [&>span]:font-AvenirNextLTPro max-w-[710px] mb-[60px]">

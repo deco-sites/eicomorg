@@ -24,8 +24,8 @@ export interface ContainerImage {
 }
 
 const actionLinkBtn: JSX.CSSProperties = {
-  color: "#000",
-  backgroundImage: `url(/icons/Arrow-right-black.svg)`,
+  color: "#f26f21",
+  backgroundImage: `url(/icons/Arrow-right-ORANGE.svg)`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "20px",
   backgroundPosition: "100%",
@@ -64,14 +64,12 @@ function WhoIsThisCertificationFor(
             
             md:left-[10px]
 
-            lg:w-[600px]
-            lg:h-[400px]
+            lg:w-[550px]
+            lg:h-[280px]
 
             md:w-[500px]
-            md:h-[300px]
-            
-            lg:[clip-path:polygon(0%_0%,100%_0%,100%_75%,82%_100%,0%_100%)]
 
+            bg-[50%]
             bg-repeat
             bg-cover
             
@@ -101,21 +99,21 @@ function WhoIsThisCertificationFor(
           </div>
           <div
             style={{
-              boxShadow: "4px 4px 7px rgba(38, 38, 40, .1)",
-              borderRadius: "2px",
+              boxShadow: "1px 1px 9px rgba(0, 0, 0, .1)",
+              borderRadius: "4px",
+              border: "1px solid #dfdfdf",
             }}
             class={`
               md:absolute
               xs:relative
               
-              lg:w-[640px]
-              lg:h-[280px]
+              lg:w-[620px]
+              lg:h-[200px]
 
               md:w-[520px]
-              md:h-[270px]
 
-              lg:right-[-2px]
-              md:top-[161px]
+              lg:right-[-12px]
+              md:top-[140px]
               
               xs:top-[50px]
 
@@ -159,7 +157,7 @@ function WhoIsThisCertificationFor(
               style={actionLinkBtn}
               href="#"
             >
-              CMX TITLEHOLDERS
+              KNOW MORE
             </a>
           </div>
         </div>

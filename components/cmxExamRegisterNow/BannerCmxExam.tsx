@@ -5,7 +5,6 @@ import type {
 import { Ref } from "preact/hooks";
 import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 import { JSX } from "preact";
-
 export interface Props {
   backgroundImage: LiveImage;
   title: HTML;
@@ -49,7 +48,7 @@ function BannerCmxExam(
           }}
           class="h-[70vh]"
         >
-          <div class="z-10 max-w-[1120px] h-[70vh] m-auto relative">
+          <div class="z-10 max-w-[1120px] h-[70vh] m-auto relative animate-slide-right">
             <div class="absolute w-[50%] top-[20%] bottom-auto right-auto left-[0%] mt-[24px]">
               <span
                 class="[&>*]:font-AvenirNextLTPro leading-[40px]"
@@ -68,8 +67,11 @@ function BannerCmxExam(
                   {buttonText}
                 </button>
                 <a
-                  class="w-fit ml-[20px] mt-[2rem] lg:text-[14px] xs:text-[12px] block bold lg:my-4 xs:my-2 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
-                  style={actionLinkBtn}
+                  class="animate-slide-right w-fit ml-[20px] mt-[2rem] lg:text-[14px] xs:text-[12px] block bold lg:mt-[2.3rem] xs:my-2 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
+                  style={{
+                    ...actionLinkBtn,
+                    animationDuration: "1.5s",
+                  }}
                   href="#"
                 >
                   {linkText}

@@ -1,1 +1,1 @@
-export { default } from "$store/components/cmxExamRegisterNow/BannerCmxExam.tsx";
+export { default } from "$store/islands/BannerCmxExam.tsx";

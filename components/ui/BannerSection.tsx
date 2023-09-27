@@ -21,18 +21,34 @@ export interface ActionLinksContainer {
 }
 
 export interface Props {
+  padding: string;
   title: HTML;
   backgroundImage: BannerBackgroundImage;
   actionLinksContainer: ActionLinksContainer;
 }
 
 function BannerSection(
-  { title, backgroundImage, actionLinksContainer }: Props,
+  { padding, title, backgroundImage, actionLinksContainer }: Props,
 ) {
+  const getSize = (size: string) => {
+    if (size == "small") {
+      return "100px";
+    }
+
+    return "100px";
+  };
+
+  const margin = getSize("small");
+  const marginTitle = "3rem";
+  const paddingTitle = "2rem";
+  const paddingParagraph = "4rem";
+
   const titleContainer: JSX.CSSProperties = {
     backgroundColor: "#fff",
     clipPath: "polygon(0% 0%, 100% 0%, 100% 70%, 85% 100%, 0% 100%)",
     color: "#262628",
+    paddingTop: paddingTitle,
+    paddingBottom: paddingTitle,
   };
 
   const actionLinkBtn: JSX.CSSProperties = {
@@ -55,14 +71,16 @@ function BannerSection(
         sm:w-auto
         z-[1]
       ">
-        <div class="lg:mx-8 xl:mx-36 lg:my-16 w-full my-64 mb-0">
+        <div
+          class="lg:mx-8 xl:mx-36 w-full my-64 mb-0"
+          style={{ marginTop: marginTitle, marginBottom: marginTitle }}
+        >
           <div
             class="
             lg:w-[660px]
             lg:h-[300px]
             lg:leading-[54px]
             lg:px-12
-            lg:py-12 
             lg:text-[58px]
             
             md:text-[52px]
@@ -90,29 +108,30 @@ function BannerSection(
           </div>
         </div>
 
-        <div class="
+        <div
+          class="
           lg:w-[460px]
           lg:mx-20
           xl:mx-44
 
           md:px-4
-
-          py-8
-        ">
+        "
+          style={{ marginTop: paddingParagraph }}
+        >
           <span
-            class="text-[18px]"
+            class="text-[18px] [&>*]:font-Gravity"
             dangerouslySetInnerHTML={{ __html: actionLinksContainer.title }}
           >
           </span>
           <a
-            class="w-fit lg:text-[16px] xs:text-[14px] block bold lg:my-4 xs:my-2 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
+            class="w-fit lg:text-[14px] xs:text-[14px] block bold lg:my-4 xs:my-2 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
             style={actionLinkBtn}
             href={actionLinksContainer.firstButton.href}
           >
             {actionLinksContainer.firstButton.text}
           </a>
           <a
-            class="w-fit lg:text-[16px] xs:text-[14px] block bold lg:my-2 xs:my-4 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
+            class="w-fit lg:text-[14px] xs:text-[14px] block bold lg:my-2 xs:my-4 font-bold hover:underline pr-[30px] hover:pr-[34px] uppercase tracking-[1px] font-AvenirNextLTPro"
             style={actionLinkBtn}
             href={actionLinksContainer.secondButton.href}
           >

@@ -1,1 +1,1 @@
-export { default } from "$store/components/ui/WhoIsThisCertificationFor.tsx";
+export { default } from "$store/islands/WhoIsThisCertificationFor.tsx";

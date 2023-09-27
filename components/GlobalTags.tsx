@@ -48,22 +48,22 @@ function GlobalTags() {
       />
 
       <style
-        type="text/css"
         dangerouslySetInnerHTML={{
-          __html:
-            `section[data-manifest-key="deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx"] { position: sticky; top: 70px; z-index: 100; }`,
+          __html: `@font-face {
+        font-family: 'Gravity';
+        src: url('https://uploads-ssl.webflow.com/611d568e03584148cb24ca2b/611e6e89afcb291fb0bf3870_Gravity-Regular.otf') format('opentype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }`,
         }}
       />
 
       <style
+        type="text/css"
         dangerouslySetInnerHTML={{
-          __html: `
-          /* Gravity-Regular */
-          @font-face {
-            font-family: 'Gravity';
-            src: url(${asset("/fonts/Gravity-Regular.woff2")});
-          })   
-        `,
+          __html:
+            `section[data-manifest-key="deco-sites/eicomorg/sections/ExecutiveProgrammeWarning.tsx"] { position: sticky; top: 70px; z-index: 100; }`,
         }}
       />
     </Head>
