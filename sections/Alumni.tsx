@@ -1,1 +1,1 @@
-export { default } from "$store/components/alumni/Alumni.tsx";
+export { default } from "$store/islands/Alumni.tsx";

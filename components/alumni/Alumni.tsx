@@ -1,6 +1,8 @@
 import type { Image } from "deco-sites/std/components/types.ts";
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import type { HTML } from "deco-sites/std/components/types.ts";
+import { Ref } from "preact/hooks";
+import { useScrollShow } from "$store/sdk/useScrollShow.ts";
 
 export interface Card {
   name: string;
@@ -33,6 +35,8 @@ function AlumniCard(
     index,
   }: { card: Card; index: number },
 ) {
+  const [elementRef, isShown] = useScrollShow();
+
   const gridPositions: { [index: number]: string } = {
     0: "lg:row-span-3 lg:col-start-1 lg:row-start-1",
     1: "lg:row-span-4",
@@ -42,11 +46,22 @@ function AlumniCard(
     5: "lg:row-span-3 lg:col-start-1 lg:row-start-4",
   };
 
+  const animationsPositions: { [index: number]: string } = {
+    0: "animate-slide-top-right", // top left
+    1: "animate-slide-top-bottom", // top center
+    2: "animate-slide-top-left", // top right
+    5: "animate-slide-bottom-right", // bottom left
+    4: "animate-slide-bottom-top", // bottom center
+    3: "animate-slide-bottom-left", // bottom right
+  };
+
   return (
     <div
-      class={`border border-solid bg-white border-[#dfdfdf] w-full mx-auto pt-[20px] px-[30px] pb-[10px] relative ${
-        gridPositions[index]
-      } md:w-auto lg:col-span-1 xs:col-span-3 xs:w-[97%]`}
+      ref={elementRef as Ref<HTMLDivElement>}
+      class={`border border-solid bg-white bg-red border-[#dfdfdf] w-full mx-auto pt-[20px] px-[30px] pb-[10px] relative 
+      ${gridPositions[index]}
+      ${isShown ? animationsPositions[index] : ""}
+      md:w-auto lg:col-span-1 xs:col-span-3 xs:w-[97%]`}
     >
       <div class="items-center flex justify-start">
         <Icon
@@ -63,7 +78,7 @@ function AlumniCard(
         />
         <div class="font-Gravity text-[#696969] pl-[20px] py-[10px]">
           <span class="block text-[14px] leading-[22px] uppercase font-bold">
-            {name}
+            {name} {index}
           </span>
           <span class="block text-[12px] leading-[16px]">{position}</span>
         </div>
