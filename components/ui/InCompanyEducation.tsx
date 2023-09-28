@@ -112,7 +112,7 @@ function WhoIsThisCertificationFor(
 
               md:w-[520px]
 
-              lg:right-[-12px]
+              lg:right-[5px]
               md:top-[140px]
               
               xs:top-[50px]

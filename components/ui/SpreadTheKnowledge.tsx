@@ -30,7 +30,7 @@ function SpreadTheKnowledge(
             <div class="md:w-1/2 xs:w-full float-left px-[10px] relative">
               <div class="max-w-[700px] mx-auto py-0">
                 <div
-                  style={{ 
+                  style={{
                     paddingTop: "56.17021276595745%",
                   }}
                   class="w-full relative p-0 lg:bottom-[300px] md:bottom-[225px] xs:bottom-[200px]"
@@ -52,12 +52,12 @@ function SpreadTheKnowledge(
             <div class="max-w-[700px] pb-0  mx-auto pt-[10px] block">
               <div class="font-Gravity md:text-[22px] md:leading-[30px] xs:text-[20px] xs:leading-[28px] text-left mb-[10px]">
                 <p>
-                  <span dangerouslySetInnerHTML={{__html: topText}}></span>
+                  <span dangerouslySetInnerHTML={{ __html: topText }}></span>
                 </p>
               </div>
               <div class="font-Gravity text-[16px] leading-[1.6rem] text-left mb-[10px]">
                 <p>
-                  <span dangerouslySetInnerHTML={{__html: bottomText}}></span>
+                  <span dangerouslySetInnerHTML={{ __html: bottomText }}></span>
                 </p>
               </div>
             </div>
