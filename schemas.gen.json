@@ -73,6 +73,7 @@
               "./islands/BannerTheInstitute.tsx",
               "./islands/BestDigitalCourse.tsx",
               "./islands/Bonus.tsx",
+              "./islands/CertificationCards.tsx",
               "./islands/CertifiedByIndustry.tsx",
               "./islands/CmxLevels.tsx",
               "./islands/CourseCard.tsx",
@@ -153,6 +154,7 @@
               "deco-sites/eicomorg/sections/Brand.tsx",
               "deco-sites/eicomorg/sections/Brochure.tsx",
               "deco-sites/eicomorg/sections/Carousel.tsx",
+              "deco-sites/eicomorg/sections/CertificationCards.tsx",
               "deco-sites/eicomorg/sections/CertifiedByIndustry.tsx",
               "deco-sites/eicomorg/sections/CmxLevels.tsx",
               "deco-sites/eicomorg/sections/ContactUs.tsx",
@@ -8042,6 +8044,24 @@
       ],
       "title": "deco-sites/eicomorg/components/bonus/Bonus.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NlcnRpZmNhdGlvbkNhcmRzL0NlcnRpZmljYXRpb25DYXJkcy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Title"
+        },
+        "subtitle": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Subtitle"
+        }
+      },
+      "required": [
+        "title",
+        "subtitle"
+      ],
+      "title": "deco-sites/eicomorg/components/certifcationCards/CertificationCards.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NlcnRpZmllZEJ5SW5kdXN0cnkvQ2VydGlmaWVkQnlJbmR1c3RyeS50c3g=@Button": {
       "type": "object",
       "properties": {
@@ -14266,7 +14286,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@54c56595516f3defa721f32350b78287&Colors": {
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors&a9e81937554b5a4efbd75cb8eced015d": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -14282,7 +14302,7 @@
           "required": []
         }
       ],
-      "title": "54c56595516f3defa721f32350b78287&Colors"
+      "title": "Colors&a9e81937554b5a4efbd75cb8eced015d"
     },
     "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -14385,7 +14405,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@54c56595516f3defa721f32350b78287&Colors",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors&a9e81937554b5a4efbd75cb8eced015d",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -19344,6 +19364,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0NlcnRpZmljYXRpb25DYXJkcy50c3g=": {
+      "title": "./islands/CertificationCards.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NlcnRpZmNhdGlvbkNhcmRzL0NlcnRpZmljYXRpb25DYXJkcy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/CertificationCards.tsx"
+          ],
+          "default": "./islands/CertificationCards.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0NlcnRpZmllZEJ5SW5kdXN0cnkudHN4": {
       "title": "./islands/CertifiedByIndustry.tsx",
       "type": "object",
@@ -20980,6 +21021,27 @@
             "deco-sites/eicomorg/sections/Carousel.tsx"
           ],
           "default": "deco-sites/eicomorg/sections/Carousel.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DZXJ0aWZpY2F0aW9uQ2FyZHMudHN4": {
+      "title": "deco-sites/eicomorg/sections/CertificationCards.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9jb21wb25lbnRzL2NlcnRpZmNhdGlvbkNhcmRzL0NlcnRpZmljYXRpb25DYXJkcy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/eicomorg/sections/CertificationCards.tsx"
+          ],
+          "default": "deco-sites/eicomorg/sections/CertificationCards.tsx"
         }
       }
     },
@@ -23658,6 +23720,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0JvbnVzLnRzeA=="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0NlcnRpZmljYXRpb25DYXJkcy50c3g="
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0NlcnRpZmllZEJ5SW5kdXN0cnkudHN4"
         },
         {
@@ -23920,6 +23985,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DYXJvdXNlbC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DZXJ0aWZpY2F0aW9uQ2FyZHMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9laWNvbW9yZy9zZWN0aW9ucy9DZXJ0aWZpZWRCeUluZHVzdHJ5LnRzeA=="
