@@ -11,7 +11,7 @@ export interface Props {
 function CertificationCards(
   {
     title,
-    subtitle
+    subtitle,
   }: Props,
 ) {
   const [elementRef, isShown] = useScrollShow();
@@ -20,8 +20,8 @@ function CertificationCards(
     <>
       <div class="max-w-[1120px]">
         <div>
-          <span dangerouslySetInnerHTML={{__html: title}}></span>
-          <span dangerouslySetInnerHTML={{__html: subtitle}}></span>
+          <span dangerouslySetInnerHTML={{ __html: title }}></span>
+          <span dangerouslySetInnerHTML={{ __html: subtitle }}></span>
         </div>
 
         <div>
